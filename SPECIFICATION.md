@@ -267,3 +267,169 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 6. **Curios**: единственная система слотов; всё, что добавляет слоты (Artifacts, Jewelry, Elytra Slot, Iron's Spells), цепляется к нему — второй системы слотов в паке нет.
 7. **GeckoLib** требуется 14 модами пака; версия должна быть ≥ 4.4.4 (Alex's Caves, Cataclysm, BMD проверены на ней).
 8. Скрипт проверки: [scripts/validate_dependencies.sh](scripts/validate_dependencies.sh) — сверяет `manifest.json` → файлы в `mods/` → `mods.toml` (modid/version).
+<a id="config-plan"></a>
+## 7. План конфигурации
+
+Готовых конфигов в репозитории: **59** (файлы `config/opts/<mod-id>.conf`). Каждый файл содержит: путь к реальному конфигу, параметр, значение по умолчанию, рекомендуемое значение и **причину**, привязанную к дизайну пака.
+
+### 7.1 Индекс конфигов
+
+| Мод | Файл пака | Реальный путь в инстансе | Параметров |
+|---|---|---|---|
+| Apotheosis 7 | [`config/opts/apotheosis.conf`](opts/apotheosis.conf) | `config/apotheosis/*.json (common/settings, affixes, gems, spawner, enchantments)` | 6 |
+| Iron's Spells 'n Spellbooks | [`config/opts/irons_spellbooks.conf`](opts/irons_spellbooks.conf) | `config/irons_spellbooks-common.toml + client.toml + server.toml` | 6 |
+| Better Combat | [`config/opts/bettercombat.conf`](opts/bettercombat.conf) | `config/bettercombat/ (client/server json)` | 5 |
+| Combat Roll | [`config/opts/combat_roll.conf`](opts/combat_roll.conf) | `config/combat_roll.json` | 5 |
+| First Aid | [`config/opts/firstaid.conf`](opts/firstaid.conf) | `config/firstaid-common.toml` | 6 |
+| Tough As Nails | [`config/opts/toughasnails.conf`](opts/toughasnails.conf) | `config/toughasnails-common.toml` | 4 |
+| Serene Seasons | [`config/opts/serene_seasons.conf`](opts/serene_seasons.conf) | `config/sereneseasons/seasons.toml` | 5 |
+| Project MMO | [`config/opts/projectmmo.conf`](opts/projectmmo.conf) | `config/pmmo/*.json (settings, perks, requirements)` | 6 |
+| Pufferfish's Skills | [`config/opts/puffish_skills.conf`](opts/puffish_skills.conf) | `config/puffish_skills/config.json + skills/*.json` | 5 |
+| Origins (Forge) | [`config/opts/origins.conf`](opts/origins.conf) | `config/origins/ + world/datapacks/01_origins_plus_plus` | 4 |
+| KubeJS | [`config/opts/kubejs.conf`](opts/kubejs.conf) | `kubejs/config/common.properties + startup/server/client_scripts` | 4 |
+| Terralith | [`config/opts/terralith.conf`](opts/terralith.conf) | `config/terralith.json (или datapack-конфиг)` | 3 |
+| Tectonic | [`config/opts/tectonic.conf`](opts/tectonic.conf) | `config/tectonic.json` | 4 |
+| ChoiceTheorem's Overhauled Village | [`config/opts/ctov.conf`](opts/ctov.conf) | `config/ctov/*.json` | 5 |
+| When Dungeons Arise | [`config/opts/wda.conf`](opts/wda.conf) | `config/wda.cfg (server)` | 5 |
+| Gateways to Eternity | [`config/opts/gateways.conf`](opts/gateways.conf) | `config/gateways/gateways.json` | 4 |
+| L_Ender's Cataclysm | [`config/opts/cataclysm.conf`](opts/cataclysm.conf) | `config/cataclysm-common.toml` | 4 |
+| Mowzie's Mobs | [`config/opts/mowzies.conf`](opts/mowzies.conf) | `config/mowziesmobs-common.toml` | 3 |
+| Alex's Mobs | [`config/opts/alexsmobs.conf`](opts/alexsmobs.conf) | `config/alexsmobs.toml` | 4 |
+| Alex's Caves | [`config/opts/alexscaves.conf`](opts/alexscaves.conf) | `config/alexscaves-general.toml` | 4 |
+| Ice and Fire | [`config/opts/iceandfire.conf`](opts/iceandfire.conf) | `config/iceandfire-common.toml` | 5 |
+| Twilight Forest | [`config/opts/twilightforest.conf`](opts/twilightforest.conf) | `config/twilightforest-common.toml` | 3 |
+| The Aether | [`config/opts/aether.conf`](opts/aether.conf) | `config/aether-common.toml` | 3 |
+| Croptopia | [`config/opts/croptopia.conf`](opts/croptopia.conf) | `config/croptopia.json` | 3 |
+| Farmer's Delight | [`config/opts/farmersdelight.conf`](opts/farmersdelight.conf) | `config/farmersdelight-common.toml` | 3 |
+| Aquaculture 2 | [`config/opts/aquaculture.conf`](opts/aquaculture.conf) | `config/aquaculture.json` | 3 |
+| Productive Bees | [`config/opts/productivebees.conf`](opts/productivebees.conf) | `config/productivebees-common.toml` | 3 |
+| Diet | [`config/opts/diet.conf`](opts/diet.conf) | `config/diet/diet_groups.json + diet.json` | 3 |
+| Corail Tombstone | [`config/opts/corail_tombstone.conf`](opts/corail_tombstone.conf) | `config/tombstone-common.toml` | 5 |
+| FTB Quests | [`config/opts/ftbquests.conf`](opts/ftbquests.conf) | `config/ftbquests/ (server: quests.json — в датапаке)` | 5 |
+| Bountiful | [`config/opts/bountiful.conf`](opts/bountiful.conf) | `config/bountiful/bountiful.json` | 3 |
+| Easy NPC | [`config/opts/easynpc.conf`](opts/easynpc.conf) | `config/easy_npc/ + скрипты пака` | 3 |
+| Guard Villagers | [`config/opts/guardvillagers.conf`](opts/guardvillagers.conf) | `config/guardvillagers.json` | 3 |
+| Waystones | [`config/opts/waystones.conf`](opts/waystones.conf) | `config/waystones-server.toml` | 3 |
+| Numismatic Overhaul | [`config/opts/numismatic.conf`](opts/numismatic.conf) | `config/numismatic.json` | 3 |
+| JEI | [`config/opts/jei.conf`](opts/jei.conf) | `config/jei/jei-client.toml + world/client config` | 4 |
+| JourneyMap | [`config/opts/journeymap.conf`](opts/journeymap.conf) | `config/journeymap/journeymap.cfg` | 4 |
+| Jade | [`config/opts/jade.conf`](opts/jade.conf) | `config/jade/*.json` | 3 |
+| Embeddium | [`config/opts/embeddium.conf`](opts/embeddium.conf) | `config/embeddium-sodium-options.json` | 3 |
+| Oculus | [`config/opts/oculus.conf`](opts/oculus.conf) | `config/oculus.properties` | 3 |
+| ModernFix | [`config/opts/modernfix.conf`](opts/modernfix.conf) | `config/modernfix-mixins.properties` | 4 |
+| Canary | [`config/opts/canary.conf`](opts/canary.conf) | `config/canary.properties` | 3 |
+| EntityCulling | [`config/opts/entityculling.conf`](opts/entityculling.conf) | `config/entityculling.json` | 2 |
+| Packet Fixer | [`config/opts/packetfixer.conf`](opts/packetfixer.conf) | `config/packetfixer.properties` | 2 |
+| spark | [`config/opts/spark.conf`](opts/spark.conf) | `config/spark/config.json` | 2 |
+| Tetra | [`config/opts/tetra.conf`](opts/tetra.conf) | `config/tetra/ + kubejs/server_scripts/tetra_bettercombat.js` | 3 |
+| Curios API | [`config/opts/curios.conf`](opts/curios.conf) | `config/curios-common.toml / curios-server.toml` | 4 |
+| Sophisticated Backpacks | [`config/opts/sophisticatedbackpacks.conf`](opts/sophisticatedbackpacks.conf) | `config/sophisticatedbackpacks-server.toml` | 3 |
+| Legendary Tooltips | [`config/opts/legendarytooltips.conf`](opts/legendarytooltips.conf) | `config/legendarytooltips.json` | 3 |
+| Chunky | [`config/opts/chunky.conf`](opts/chunky.conf) | `config/chunky.json` | 3 |
+| Vampirism | [`config/opts/vampirism.conf`](opts/vampirism.conf) | `config/vampirism-*.toml` | 4 |
+| Goety | [`config/opts/goety.conf`](opts/goety.conf) | `config/goety-common.toml` | 3 |
+| Ars Nouveau | [`config/opts/ars_nouveau.conf`](opts/ars_nouveau.conf) | `config/ars_nouveau-common.toml` | 3 |
+| Botania | [`config/opts/botania.conf`](opts/botania.conf) | `config/botania-common.toml` | 3 |
+| Open Parties and Claims | [`config/opts/opac.conf`](opts/opac.conf) | `config/openpartiesandclaims-server.toml` | 3 |
+| Simple Voice Chat | [`config/opts/voicechat.conf`](opts/voicechat.conf) | `config/voicechat/voicechat-server.properties` | 3 |
+| Connectivity | [`config/opts/connectivity.conf`](opts/connectivity.conf) | `config/connectivity.properties` | 2 |
+| LootJS (скрипты пака) | [`config/opts/lootjs.conf`](opts/lootjs.conf) | `kubejs/server_scripts/loot/*.js` | 3 |
+| KubeJS — чистка JEI (скрипт пака) | [`config/opts/kubejs_scrub.conf`](opts/kubejs_scrub.conf) | `kubejs/client_scripts/hide_items.js` | 2 |
+
+**Итого параметров под контролем: 215.**
+
+
+### 7.2 Гейтинг прогрессии (стадии): что и когда разблокируется
+
+Реализация — **KubeJS + FTB Quests-гейт + PMMO-требования**. Стадия = FX-флаг в NBT игрока (`stage_aetherfall`), проверяется скриптом.
+
+| Стадия | Условие входа | Разблокирует | Блокирует |
+|---|---|---|---|
+| **0. Призванный** | Первый вход | Деревня-хаб, 1-й квест, железо, кожа, PMMO 1–20 | Портал Twilight, Aether, драконьи бои, Nether-структуры |
+| **1. Становление** | Раса + класс выбраны, 1 квест старосты | Nether (0–8 ч), сады, шахты YUNG's, торговля 2-го слота | Dungeon Crawl (тир 3), Ice and Fire драконы |
+| **2. Кровь и сталь** | Убит 1-й босс (BMD), ванильный уровень 15 | CTOV-города, WDA данжи, Ars Nouveau ритуалы, Twilight Forest | Alex's Caves (нужен Mining 30) |
+| **3. Глубины** | Mining 30 + убит Cataclysm-босс | Alex's Caves, Deeper and Darker, Gateways тир 3, Aether | Энд, драконьи маунты |
+| **4. Раскол** | Ванильный уровень 35, все фракции ≥ «Уважение» | Энд, Nullscape, Ice and Fire драконы, GameStage «Endgame», глобальные вейпоинты | — |
+| **5. Пост-эндгейм** | Убиты 5+ боссов тира 4 | Gateways тир 5, мифические аффиксы, «Легенда» фракций, кастомный компаньон | — |
+
+**Как реализуется:** `kubejs/server_scripts/stages.js` → `player.stages.add('aetherfall:t3')`; проверки предметов — PMMO `requirements` (например, `alexscaves:*` требует Mining ≥ 30); FTB Quests `hide_until_unlocked` скрывает главы.
+
+### 7.3 Унификация руд, слитков и металлов (рецепты-мосты)
+
+| Проблема | Решение (KubeJS, `server_scripts/unification.js`) |
+|---|---|
+| Tin/Lead/Silver/Uranium из 4 модов как разные предметы | Единый тег: `#forge:ingots/tin` → оставить `thermal:tin_ingot`… **в паке нет Thermal** → владелец `immersive_armors`-независимый: тег `#forge:ingots/silver` → предмет `iceandfire:silver_ingot` |
+| Медь: ваниль + Aquaculture + Ice and Fire | `#forge:ingots/copper` → `minecraft:copper_ingot`; все «медные» рецепты модов переписаны на тег |
+| Сталь из 3 модов (Ice and Fire, Tetra, Apotheosis-аффиксы) | `#forge:ingots/steel` → `iceandfire:dragonsteel_ingot` только после тира 4; до этого — `tetra:steel` |
+| Самоцветы Apotheosis vs ванильные | `#forge:gems/*` теги + `apotheosis:gem` только из боссов/данжей |
+| Шёлк/верёвка/ткань (Supplementaries, Farmer's Delight, Ice and Fire) | три тега: `#forge:string`, `#forge:fabric`, `#forge:leather`; рецепты через тег |
+| Дубли рецептов (3 мода крафтят «кожу») | один «канонический» рецепт, остальные удаляются: `serverEvents.recipes(e => e.remove({id: ...}))` |
+
+**Правило:** ни один рецепт пака не ссылается на конкретный предмет, если существует тег. Проверка — `scripts/validate_dependencies.sh --tags` (ищет в `kubejs/` прямые ссылки на `_ingot` без тега).
+
+### 7.4 Скорость прокачки и стоимость талантов
+
+| Параметр | Значение | Обоснование |
+|---|---|---|
+| XP за уровень (ванильный) | стандарт 1.20.1 | не меняем: ванильные уровни — валюта талантов, знакомый ритм |
+| Очков таланта за уровень | 1 | 30 уровней ≈ 30 очков |
+| Всего очков для полного дерева | ~140 | нельзя выкупить всё за один сезон → выбор значим |
+| Стартовые очки | 3 | «выбор при создании» |
+| Респек | 1 «Эхо Раскола» (крафт: 4 осколка + алмаз) | платный, но не грабительский |
+| Максимум очков с боссов | +6 (по 1 за первых 6 уникальных боссов) | награда за контент, а не за гринд |
+| PMMO XP-множитель | 0.75 | прокачка навыка до 100 ≈ 35–45 ч чистой игры |
+| PMMO множитель за «разнообразие» | +10 % если игрок за сессию использовал 3+ навыка | поощряет мультиклассовое поведение |
+
+### 7.5 Баланс жизненных навыков (сводка; полная таблица — [liveskills.md](config/liveskills.md))
+
+| Навык | XP за действие | До 50 | До 100 | Ключевые разблокировки |
+|---|---|---|---|---|
+| Farming | 12 за сбор урожая, 30 за мутацию | ~4 ч | ~22 ч | 25 → теплица; 50 → скрещивание; 75 → мутации; 100 → золотые сорта |
+| Fishing | 10 за обычную рыбу, 60 за редкую | ~5 ч | ~26 ч | 20 → сеть; 45 → коптильня; 70 → глубоководный лов; 100 → «Золотая рыбка» |
+| Cooking | 8 за базовое блюдо, 25 за элитное | ~3 ч | ~18 ч | 15 → сыроварня; 40 → выдержка; 65 → блюда с эффектами; 100 → расовые деликатесы |
+| Husbandry | 6 за кормление, 40 за рождение редкой породы | ~6 ч | ~30 ч | 20 → кормушка; 40 → генетика; 60 → ветеринария; 85 → мутации; 100 → элитные породы |
+| Mining (доп.) | 4 за руду, 25 за редкую жилу | ~4 ч | ~20 ч | 30 → доступ в Alex's Caves; 60 → «фарт» +15 %; 90 → глубинные жилы |
+| Crafting (доп.) | 5 за крафт, 30 за предмет высшего качества | ~5 ч | ~24 ч | 30 → шанс «мастерского» предмета 8 %; 70 → 20 %; 100 → «шедевр» (аффикс гарантирован) |
+
+### 7.6 Скейлинг мобов и сложность
+
+| Механика | Реализация | Значение |
+|---|---|---|
+| HP/урон по расстоянию от спавна | Apotheosis `tiered_items_scale_difficulty` + KubeJS-модификатор | +3 % HP за каждые 500 блоков, максимум +60 % |
+| Ночь | Serene Seasons + Enhanced Celestials | 22:00–04:00: +1 к спавну враждебных, «кровавая луна» = волна 15 мобов (1/20 ночей) |
+| Боссы | Progressive Bosses | ванильные боссы: +25 % HP за каждое убийство этим игроком, максимум ×3 |
+| Элитные варианты | Apotheosis | 6 % мобов = элита (аффикс-бафф), 0.4 % = «мимик» с лутом |
+| Осада деревни | Guard Villagers + Illager Invasion + KubeJS-таймер | раз в 5 дней, волны 8/12/18 мобов по тиру деревни |
+| Ночь первая | отдельно для новичков | до стадии 1: спавн враждебных −50 %, нет «охотников» (Born in Chaos) |
+
+### 7.7 Квесты и репутация — параметры баланса
+
+| Параметр | Значение | Почему |
+|---|---|---|
+| Обновление личных квестов NPC | каждые **3 игровых дня** | не «станок», но и не «раз в неделю» |
+| Одновременно активных квестов от NPC | **3** (тир 1–2), **5** (Почёт+) | управляемость без перегруза |
+| XP за квест по сложности | базовый 200 / редкий 600 / эпический 1500 / сюжетный 3000 | 12 обычных квестов ≈ 1 уровень |
+| Награда-монеты | 15 / 60 / 180 / 500 | привязано к ценам Numismatic (хлеб = 2 монеты) |
+| Репутация за квест | +15 обычный, +40 редкий, +120 эпический, +250 сюжетный | от Неитрально (0) до Легенды (1000) |
+| Репутация за покупку | +1 за 10 монет | торговля — медленный путь |
+| Репутация за подарок | +25 (фаворит), +5 (обычный) | фавориты — см. reputation-system.md |
+| Штраф за кражу/вандализм | −60 (кража), −120 (разрушение дома) | вандализм должен быть ощутим |
+| Убийство союзного фракции | −150 | одна ошибка — откат на статус |
+| Смена статуса | Враждебно −500…−151 · Недоверие −150…−1 · Нейтрально 0…199 · Уважение 200…499 · Почёт 500…899 · Легенда 900+ | 6 статусов |
+| Затухание репутации | −1 % в игровой день, но не ниже текущего статуса | нельзя «законсервировать» Легенду, но и нельзя потерять статус из-за отпуска |
+
+### 7.8 Чистка EMI/JEI и информационная гигиена
+
+1. Скрыть: спавн-яйца всех мобов (кроме приручаемых питомцев), технические блоки (внутренние мультиблоки Ars/Goety), пустые вёдра, debug-предметы, «обломки» рецептов Tetra.
+2. **Не** скрывать: сложные предметы (они — цель), все книги/свитки (обучение), лут-контейнеры.
+3. `Just Enough Resources` + `Just Enough Breeding`: показать дроп мобов, лут структур (`/jer` источник), разведение.
+4. `Jade`: HP боссов, владелец деревни (`ctov:village_type`), требуемый уровень навыка (`pmmo:requirement`).
+5. Всегда: `Legendary Tooltips` + `Apotheosis` рамки редкости — единый визуальный язык лута.
+
+### 7.9 Отклонения от плана (журнал)
+
+| Дата | Мод | Параметр | Факт | Почему |
+|---|---|---|---|---|
+| — | — | — | — | заполняется при сборке: если ключ не найден в текущей версии мода, фиксируем здесь и правим `config/opts/*.conf` |
+
+**Самопроверка раздела:** 59 конфигов ✓ 215 параметров ✓ гейтинг ✓ унификация ✓ прокачка ✓ мобы ✓ квесты/репутация ✓ JEI ✓.
