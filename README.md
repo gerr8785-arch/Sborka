@@ -83,7 +83,7 @@ RAM: **12 ГБ** на клиент (из 16) · сервер — **8 ГБ**. Jav
 | RAM сервер | 8 ГБ, `-Xms8G -Xmx8G` | Фиксированный heap против фрагментации на длинной сессии. |
 | GC | G1GC + `-XX:+ParallelRefProcEnabled` | ZGC/Shenandoah на 12 ГБ дают паузы хуже; G1 проверен на 1.20.1. |
 | Шейдеры | **Oculus 1.7.0 + Embeddium 0.3.x** | OptiFine несовместим с Embeddium/ModernFix — исключён (см. [conflicts.md](config/conflicts.md#shaders)). |
-| Мультиплеер | Dedicated server, всё в `both`, client-only помечены | 12 модов помечены `client` — на сервер их не ставить. |
+| Мультиплеер | Dedicated server + Prism | **43 мода помечены `client`** — на сервер их не ставить (список: `Side=client` в [docs/MODLIST.md](docs/MODLIST.md)). |
 
 Готовая JVM-строка: [config/launch-args.txt](config/launch-args.txt).
 

@@ -85,7 +85,7 @@
 | Целевой TPS | 20.0 при 8 игроках и 250+ загруженных чанках; ≥ 19.5 в бою с 40 мобами |
 | Разрешение | 1920×1080, render distance **10** чанков (клиент), simulation distance **6** (сервер) |
 | Платформа | Prism Launcher 8.x, инстанс `Aetherfall` |
-| Мультиплеер | Dedicated Forge-сервер; 12 client-only модов помечены в [MODLIST](docs/MODLIST.md) |
+| Мультиплеер | Dedicated Forge-сервер; на сервер **не ставятся 43 client-only мода** (столбец Side=`client` в [MODLIST](docs/MODLIST.md)) |
 
 ### 2.3 JVM-аргументы (готовые строки)
 
@@ -276,65 +276,65 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 
 | Мод | Файл пака | Реальный путь в инстансе | Параметров |
 |---|---|---|---|
-| Apotheosis 7 | [`config/opts/apotheosis.conf`](opts/apotheosis.conf) | `config/apotheosis/*.json (common/settings, affixes, gems, spawner, enchantments)` | 6 |
-| Iron's Spells 'n Spellbooks | [`config/opts/irons_spellbooks.conf`](opts/irons_spellbooks.conf) | `config/irons_spellbooks-common.toml + client.toml + server.toml` | 6 |
-| Better Combat | [`config/opts/bettercombat.conf`](opts/bettercombat.conf) | `config/bettercombat/ (client/server json)` | 5 |
-| Combat Roll | [`config/opts/combat_roll.conf`](opts/combat_roll.conf) | `config/combat_roll.json` | 5 |
-| First Aid | [`config/opts/firstaid.conf`](opts/firstaid.conf) | `config/firstaid-common.toml` | 6 |
-| Tough As Nails | [`config/opts/toughasnails.conf`](opts/toughasnails.conf) | `config/toughasnails-common.toml` | 4 |
-| Serene Seasons | [`config/opts/serene_seasons.conf`](opts/serene_seasons.conf) | `config/sereneseasons/seasons.toml` | 5 |
-| Project MMO | [`config/opts/projectmmo.conf`](opts/projectmmo.conf) | `config/pmmo/*.json (settings, perks, requirements)` | 6 |
-| Pufferfish's Skills | [`config/opts/puffish_skills.conf`](opts/puffish_skills.conf) | `config/puffish_skills/config.json + skills/*.json` | 5 |
-| Origins (Forge) | [`config/opts/origins.conf`](opts/origins.conf) | `config/origins/ + world/datapacks/01_origins_plus_plus` | 4 |
-| KubeJS | [`config/opts/kubejs.conf`](opts/kubejs.conf) | `kubejs/config/common.properties + startup/server/client_scripts` | 4 |
-| Terralith | [`config/opts/terralith.conf`](opts/terralith.conf) | `config/terralith.json (или datapack-конфиг)` | 3 |
-| Tectonic | [`config/opts/tectonic.conf`](opts/tectonic.conf) | `config/tectonic.json` | 4 |
-| ChoiceTheorem's Overhauled Village | [`config/opts/ctov.conf`](opts/ctov.conf) | `config/ctov/*.json` | 5 |
-| When Dungeons Arise | [`config/opts/wda.conf`](opts/wda.conf) | `config/wda.cfg (server)` | 5 |
-| Gateways to Eternity | [`config/opts/gateways.conf`](opts/gateways.conf) | `config/gateways/gateways.json` | 4 |
-| L_Ender's Cataclysm | [`config/opts/cataclysm.conf`](opts/cataclysm.conf) | `config/cataclysm-common.toml` | 4 |
-| Mowzie's Mobs | [`config/opts/mowzies.conf`](opts/mowzies.conf) | `config/mowziesmobs-common.toml` | 3 |
-| Alex's Mobs | [`config/opts/alexsmobs.conf`](opts/alexsmobs.conf) | `config/alexsmobs.toml` | 4 |
-| Alex's Caves | [`config/opts/alexscaves.conf`](opts/alexscaves.conf) | `config/alexscaves-general.toml` | 4 |
-| Ice and Fire | [`config/opts/iceandfire.conf`](opts/iceandfire.conf) | `config/iceandfire-common.toml` | 5 |
-| Twilight Forest | [`config/opts/twilightforest.conf`](opts/twilightforest.conf) | `config/twilightforest-common.toml` | 3 |
-| The Aether | [`config/opts/aether.conf`](opts/aether.conf) | `config/aether-common.toml` | 3 |
-| Croptopia | [`config/opts/croptopia.conf`](opts/croptopia.conf) | `config/croptopia.json` | 3 |
-| Farmer's Delight | [`config/opts/farmersdelight.conf`](opts/farmersdelight.conf) | `config/farmersdelight-common.toml` | 3 |
-| Aquaculture 2 | [`config/opts/aquaculture.conf`](opts/aquaculture.conf) | `config/aquaculture.json` | 3 |
-| Productive Bees | [`config/opts/productivebees.conf`](opts/productivebees.conf) | `config/productivebees-common.toml` | 3 |
-| Diet | [`config/opts/diet.conf`](opts/diet.conf) | `config/diet/diet_groups.json + diet.json` | 3 |
-| Corail Tombstone | [`config/opts/corail_tombstone.conf`](opts/corail_tombstone.conf) | `config/tombstone-common.toml` | 5 |
-| FTB Quests | [`config/opts/ftbquests.conf`](opts/ftbquests.conf) | `config/ftbquests/ (server: quests.json — в датапаке)` | 5 |
-| Bountiful | [`config/opts/bountiful.conf`](opts/bountiful.conf) | `config/bountiful/bountiful.json` | 3 |
-| Easy NPC | [`config/opts/easynpc.conf`](opts/easynpc.conf) | `config/easy_npc/ + скрипты пака` | 3 |
-| Guard Villagers | [`config/opts/guardvillagers.conf`](opts/guardvillagers.conf) | `config/guardvillagers.json` | 3 |
-| Waystones | [`config/opts/waystones.conf`](opts/waystones.conf) | `config/waystones-server.toml` | 3 |
-| Numismatic Overhaul | [`config/opts/numismatic.conf`](opts/numismatic.conf) | `config/numismatic.json` | 3 |
-| JEI | [`config/opts/jei.conf`](opts/jei.conf) | `config/jei/jei-client.toml + world/client config` | 4 |
-| JourneyMap | [`config/opts/journeymap.conf`](opts/journeymap.conf) | `config/journeymap/journeymap.cfg` | 4 |
-| Jade | [`config/opts/jade.conf`](opts/jade.conf) | `config/jade/*.json` | 3 |
-| Embeddium | [`config/opts/embeddium.conf`](opts/embeddium.conf) | `config/embeddium-sodium-options.json` | 3 |
-| Oculus | [`config/opts/oculus.conf`](opts/oculus.conf) | `config/oculus.properties` | 3 |
-| ModernFix | [`config/opts/modernfix.conf`](opts/modernfix.conf) | `config/modernfix-mixins.properties` | 4 |
-| Canary | [`config/opts/canary.conf`](opts/canary.conf) | `config/canary.properties` | 3 |
-| EntityCulling | [`config/opts/entityculling.conf`](opts/entityculling.conf) | `config/entityculling.json` | 2 |
-| Packet Fixer | [`config/opts/packetfixer.conf`](opts/packetfixer.conf) | `config/packetfixer.properties` | 2 |
-| spark | [`config/opts/spark.conf`](opts/spark.conf) | `config/spark/config.json` | 2 |
-| Tetra | [`config/opts/tetra.conf`](opts/tetra.conf) | `config/tetra/ + kubejs/server_scripts/tetra_bettercombat.js` | 3 |
-| Curios API | [`config/opts/curios.conf`](opts/curios.conf) | `config/curios-common.toml / curios-server.toml` | 4 |
-| Sophisticated Backpacks | [`config/opts/sophisticatedbackpacks.conf`](opts/sophisticatedbackpacks.conf) | `config/sophisticatedbackpacks-server.toml` | 3 |
-| Legendary Tooltips | [`config/opts/legendarytooltips.conf`](opts/legendarytooltips.conf) | `config/legendarytooltips.json` | 3 |
-| Chunky | [`config/opts/chunky.conf`](opts/chunky.conf) | `config/chunky.json` | 3 |
-| Vampirism | [`config/opts/vampirism.conf`](opts/vampirism.conf) | `config/vampirism-*.toml` | 4 |
-| Goety | [`config/opts/goety.conf`](opts/goety.conf) | `config/goety-common.toml` | 3 |
-| Ars Nouveau | [`config/opts/ars_nouveau.conf`](opts/ars_nouveau.conf) | `config/ars_nouveau-common.toml` | 3 |
-| Botania | [`config/opts/botania.conf`](opts/botania.conf) | `config/botania-common.toml` | 3 |
-| Open Parties and Claims | [`config/opts/opac.conf`](opts/opac.conf) | `config/openpartiesandclaims-server.toml` | 3 |
-| Simple Voice Chat | [`config/opts/voicechat.conf`](opts/voicechat.conf) | `config/voicechat/voicechat-server.properties` | 3 |
-| Connectivity | [`config/opts/connectivity.conf`](opts/connectivity.conf) | `config/connectivity.properties` | 2 |
-| LootJS (скрипты пака) | [`config/opts/lootjs.conf`](opts/lootjs.conf) | `kubejs/server_scripts/loot/*.js` | 3 |
-| KubeJS — чистка JEI (скрипт пака) | [`config/opts/kubejs_scrub.conf`](opts/kubejs_scrub.conf) | `kubejs/client_scripts/hide_items.js` | 2 |
+| Apotheosis 7 | [`config/opts/apotheosis.conf`](config/opts/apotheosis.conf) | `config/apotheosis/*.json (common/settings, affixes, gems, spawner, enchantments)` | 6 |
+| Iron's Spells 'n Spellbooks | [`config/opts/irons_spellbooks.conf`](config/opts/irons_spellbooks.conf) | `config/irons_spellbooks-common.toml + client.toml + server.toml` | 6 |
+| Better Combat | [`config/opts/bettercombat.conf`](config/opts/bettercombat.conf) | `config/bettercombat/ (client/server json)` | 5 |
+| Combat Roll | [`config/opts/combat_roll.conf`](config/opts/combat_roll.conf) | `config/combat_roll.json` | 5 |
+| First Aid | [`config/opts/firstaid.conf`](config/opts/firstaid.conf) | `config/firstaid-common.toml` | 6 |
+| Tough As Nails | [`config/opts/toughasnails.conf`](config/opts/toughasnails.conf) | `config/toughasnails-common.toml` | 4 |
+| Serene Seasons | [`config/opts/serene_seasons.conf`](config/opts/serene_seasons.conf) | `config/sereneseasons/seasons.toml` | 5 |
+| Project MMO | [`config/opts/projectmmo.conf`](config/opts/projectmmo.conf) | `config/pmmo/*.json (settings, perks, requirements)` | 6 |
+| Pufferfish's Skills | [`config/opts/puffish_skills.conf`](config/opts/puffish_skills.conf) | `config/puffish_skills/config.json + skills/*.json` | 5 |
+| Origins (Forge) | [`config/opts/origins.conf`](config/opts/origins.conf) | `config/origins/ + world/datapacks/01_origins_plus_plus` | 4 |
+| KubeJS | [`config/opts/kubejs.conf`](config/opts/kubejs.conf) | `kubejs/config/common.properties + startup/server/client_scripts` | 4 |
+| Terralith | [`config/opts/terralith.conf`](config/opts/terralith.conf) | `config/terralith.json (или datapack-конфиг)` | 3 |
+| Tectonic | [`config/opts/tectonic.conf`](config/opts/tectonic.conf) | `config/tectonic.json` | 4 |
+| ChoiceTheorem's Overhauled Village | [`config/opts/ctov.conf`](config/opts/ctov.conf) | `config/ctov/*.json` | 5 |
+| When Dungeons Arise | [`config/opts/wda.conf`](config/opts/wda.conf) | `config/wda.cfg (server)` | 5 |
+| Gateways to Eternity | [`config/opts/gateways.conf`](config/opts/gateways.conf) | `config/gateways/gateways.json` | 4 |
+| L_Ender's Cataclysm | [`config/opts/cataclysm.conf`](config/opts/cataclysm.conf) | `config/cataclysm-common.toml` | 4 |
+| Mowzie's Mobs | [`config/opts/mowzies.conf`](config/opts/mowzies.conf) | `config/mowziesmobs-common.toml` | 3 |
+| Alex's Mobs | [`config/opts/alexsmobs.conf`](config/opts/alexsmobs.conf) | `config/alexsmobs.toml` | 4 |
+| Alex's Caves | [`config/opts/alexscaves.conf`](config/opts/alexscaves.conf) | `config/alexscaves-general.toml` | 4 |
+| Ice and Fire | [`config/opts/iceandfire.conf`](config/opts/iceandfire.conf) | `config/iceandfire-common.toml` | 5 |
+| Twilight Forest | [`config/opts/twilightforest.conf`](config/opts/twilightforest.conf) | `config/twilightforest-common.toml` | 3 |
+| The Aether | [`config/opts/aether.conf`](config/opts/aether.conf) | `config/aether-common.toml` | 3 |
+| Croptopia | [`config/opts/croptopia.conf`](config/opts/croptopia.conf) | `config/croptopia.json` | 3 |
+| Farmer's Delight | [`config/opts/farmersdelight.conf`](config/opts/farmersdelight.conf) | `config/farmersdelight-common.toml` | 3 |
+| Aquaculture 2 | [`config/opts/aquaculture.conf`](config/opts/aquaculture.conf) | `config/aquaculture.json` | 3 |
+| Productive Bees | [`config/opts/productivebees.conf`](config/opts/productivebees.conf) | `config/productivebees-common.toml` | 3 |
+| Diet | [`config/opts/diet.conf`](config/opts/diet.conf) | `config/diet/diet_groups.json + diet.json` | 3 |
+| Corail Tombstone | [`config/opts/corail_tombstone.conf`](config/opts/corail_tombstone.conf) | `config/tombstone-common.toml` | 5 |
+| FTB Quests | [`config/opts/ftbquests.conf`](config/opts/ftbquests.conf) | `config/ftbquests/ (server: quests.json — в датапаке)` | 5 |
+| Bountiful | [`config/opts/bountiful.conf`](config/opts/bountiful.conf) | `config/bountiful/bountiful.json` | 3 |
+| Easy NPC | [`config/opts/easynpc.conf`](config/opts/easynpc.conf) | `config/easy_npc/ + скрипты пака` | 3 |
+| Guard Villagers | [`config/opts/guardvillagers.conf`](config/opts/guardvillagers.conf) | `config/guardvillagers.json` | 3 |
+| Waystones | [`config/opts/waystones.conf`](config/opts/waystones.conf) | `config/waystones-server.toml` | 3 |
+| Numismatic Overhaul | [`config/opts/numismatic.conf`](config/opts/numismatic.conf) | `config/numismatic.json` | 3 |
+| JEI | [`config/opts/jei.conf`](config/opts/jei.conf) | `config/jei/jei-client.toml + world/client config` | 4 |
+| JourneyMap | [`config/opts/journeymap.conf`](config/opts/journeymap.conf) | `config/journeymap/journeymap.cfg` | 4 |
+| Jade | [`config/opts/jade.conf`](config/opts/jade.conf) | `config/jade/*.json` | 3 |
+| Embeddium | [`config/opts/embeddium.conf`](config/opts/embeddium.conf) | `config/embeddium-sodium-options.json` | 3 |
+| Oculus | [`config/opts/oculus.conf`](config/opts/oculus.conf) | `config/oculus.properties` | 3 |
+| ModernFix | [`config/opts/modernfix.conf`](config/opts/modernfix.conf) | `config/modernfix-mixins.properties` | 4 |
+| Canary | [`config/opts/canary.conf`](config/opts/canary.conf) | `config/canary.properties` | 3 |
+| EntityCulling | [`config/opts/entityculling.conf`](config/opts/entityculling.conf) | `config/entityculling.json` | 2 |
+| Packet Fixer | [`config/opts/packetfixer.conf`](config/opts/packetfixer.conf) | `config/packetfixer.properties` | 2 |
+| spark | [`config/opts/spark.conf`](config/opts/spark.conf) | `config/spark/config.json` | 2 |
+| Tetra | [`config/opts/tetra.conf`](config/opts/tetra.conf) | `config/tetra/ + kubejs/server_scripts/tetra_bettercombat.js` | 3 |
+| Curios API | [`config/opts/curios.conf`](config/opts/curios.conf) | `config/curios-common.toml / curios-server.toml` | 4 |
+| Sophisticated Backpacks | [`config/opts/sophisticatedbackpacks.conf`](config/opts/sophisticatedbackpacks.conf) | `config/sophisticatedbackpacks-server.toml` | 3 |
+| Legendary Tooltips | [`config/opts/legendarytooltips.conf`](config/opts/legendarytooltips.conf) | `config/legendarytooltips.json` | 3 |
+| Chunky | [`config/opts/chunky.conf`](config/opts/chunky.conf) | `config/chunky.json` | 3 |
+| Vampirism | [`config/opts/vampirism.conf`](config/opts/vampirism.conf) | `config/vampirism-*.toml` | 4 |
+| Goety | [`config/opts/goety.conf`](config/opts/goety.conf) | `config/goety-common.toml` | 3 |
+| Ars Nouveau | [`config/opts/ars_nouveau.conf`](config/opts/ars_nouveau.conf) | `config/ars_nouveau-common.toml` | 3 |
+| Botania | [`config/opts/botania.conf`](config/opts/botania.conf) | `config/botania-common.toml` | 3 |
+| Open Parties and Claims | [`config/opts/opac.conf`](config/opts/opac.conf) | `config/openpartiesandclaims-server.toml` | 3 |
+| Simple Voice Chat | [`config/opts/voicechat.conf`](config/opts/voicechat.conf) | `config/voicechat/voicechat-server.properties` | 3 |
+| Connectivity | [`config/opts/connectivity.conf`](config/opts/connectivity.conf) | `config/connectivity.properties` | 2 |
+| LootJS (скрипты пака) | [`config/opts/lootjs.conf`](config/opts/lootjs.conf) | `kubejs/server_scripts/loot/*.js` | 3 |
+| KubeJS — чистка JEI (скрипт пака) | [`config/opts/kubejs_scrub.conf`](config/opts/kubejs_scrub.conf) | `kubejs/client_scripts/hide_items.js` | 2 |
 
 **Итого параметров под контролем: 215.**
 

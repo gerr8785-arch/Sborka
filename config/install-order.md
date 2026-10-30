@@ -32,7 +32,7 @@
 mkdir -p ~/aetherfall-server && cd ~/aetherfall-server
 wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.2.20/forge-1.20.1-47.2.20-installer.jar
 java -jar forge-1.20.1-47.2.20-installer.jar --installServer
-# 2. Моды: ВСЁ, кроме 12 client-only (см. MODLIST, столбец Side = client)
+# 2. Моды: ВСЁ, кроме 43 client-only (см. MODLIST, столбец Side = client)
 # 3. Память (user_jvm_args.txt)
 echo "-Xms8G -Xmx8G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+AlwaysPreTouch -XX:+DisableExplicitGC" > user_jvm_args.txt
 # 4. Конфиги сервера
