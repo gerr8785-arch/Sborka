@@ -218,6 +218,7 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 **J. Квесты/репутация:** FTB Quests (движок) + Bountiful (доска баунти) + Easy NPC (диалоги) + KubeJS-репутация. Подробно — [reputation-system.md](config/reputation-system.md).
 
 **M/N.** UI: JourneyMap + JEI + Jade + Neat + AppleSkin + Legendary Tooltips (синергия с редкостями Apotheosis). Оптимизация: Embeddium+Oculus / ModernFix / FerriteCore / Canary / EntityCulling / ImmediatelyFast / Packet Fixer. **Не** смешиваем Sodium/Rubidium/Embeddium/OptiFine — это главный источник крашей (см. [conflicts.md#optimizers](config/conflicts.md#optimizers)).
+
 <a id="libraries"></a>
 ## 4. Библиотеки и зависимости
 
@@ -240,7 +241,6 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 | **Prism** | Библиотека цветов/рендера | Legendary Tooltips | both |
 | **Fzzy Config** | Конфиг-UI | — | both |
 | **Kotlin for Forge** | Kotlin-рантайм | — | both |
-| **Sinytra Connector ⚠** | Запуск Fabric-модов на Forge | — | both |
 | **Cristel Lib** | Библиотека структур (Incendium, Amplified Nether) | Amplified Nether | both |
 | **Structure Gel API** | API для структурных датапаков | — | both |
 | **SmartBrainLib** | Библиотека ИИ (нужна ряду мобов) | — | both |
