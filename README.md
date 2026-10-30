@@ -27,7 +27,7 @@
 | 12. Репутация и квесты жителей | [config/reputation-system.md](config/reputation-system.md) | `#reputation` |
 | 13. Ресурспаки, шейдеры, звук | [resources/texturepacks.txt](resources/texturepacks.txt) · [resources/shaders.txt](resources/shaders.txt) | `#resources` |
 | 14. Чек-лист тестирования (48 пунктов) | [config/checklist.md](config/checklist.md) | `#checklist` |
-| 15. Типичные проблемы и их лечение | [README.md](README.md#troubleshooting) | `#troubleshooting` |
+| 15. Типичные проблемы и их лечение | [README.md](README.md#troubleshooting) · [config/opts/keybinds.txt](config/opts/keybinds.txt) | `#troubleshooting` |
 | 16. Скрипты автоматизации | [scripts/](scripts/) | `#scripts` |
 | 17. Расширение (20 опциональных / 10 запрещённых) | [SPECIFICATION.md](SPECIFICATION.md#extension) | `#extension` |
 

@@ -267,6 +267,36 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 6. **Curios**: единственная система слотов; всё, что добавляет слоты (Artifacts, Jewelry, Elytra Slot, Iron's Spells), цепляется к нему — второй системы слотов в паке нет.
 7. **GeckoLib** требуется 14 модами пака; версия должна быть ≥ 4.4.4 (Alex's Caves, Cataclysm, BMD проверены на ней).
 8. Скрипт проверки: [scripts/validate_dependencies.sh](scripts/validate_dependencies.sh) — сверяет `manifest.json` → файлы в `mods/` → `mods.toml` (modid/version).
+<a id="conflicts"></a>
+## 5. Матрица конфликтов и решений
+
+Полная матрица — **[config/conflicts.md](config/conflicts.md)**: **38 строк** конфликтов с симптомом, решением и статусом проверки, плюс 8 подразделов:
+
+| Подраздел | Что покрыто |
+|---|---|
+| [5.1 Генерация мира](config/conflicts.md#worldgen) | Terralith↔BOP/BYG, Terralith↔Tectonic, CTOV↔Tectonic, WDA↔деревни, Incendium↔Amplified Nether, RS↔Terralith, Dynamic Trees↔Terralith |
+| [5.2 Оптимизаторы](config/conflicts.md#optimizers) | Embeddium↔OptiFine/Rubidium, Oculus↔Embeddium 0.4, Canary↔Radium/AI Improvements, ModernFix↔FerriteCore, EntityCulling↔шейдеры |
+| [5.3 Бой](config/conflicts.md#combat) | Better Combat↔Epic Fight (исключён), Better Combat↔Iron's Spells, Tetra↔Better Combat, Combat Roll↔кулдауны, First Aid↔Apotheosis HP |
+| [5.4 Уровни/характеристики](config/conflicts.md#xp) | PMMO↔Puffish (разделение ролей), Apotheosis↔AttributeFix, Origins↔Pehkui |
+| [5.5 Жизненные навыки](config/conflicts.md#lifeskills-conflicts) | PMMO↔Croptopia/Productive Bees/Aquaculture (кто получает XP), Diet↔Farmer's Delight |
+| [5.6 Квесты/репутация](config/conflicts.md#quests) | FTB Quests↔Bountiful/Easy NPC, KubeJS-репутация↔Vampirism, Guard Villagers |
+| [5.7 Шейдеры](config/conflicts.md#shaders) | Oculus↔старые OptiFine-шейдеры, Alex's Caves-туман |
+| [5.8 Один класс — несколько миксинов](config/conflicts.md#mixin) | `PlayerRenderer`, `LivingEntity#travel`, `ChunkMap#tick`, `MerchantOffer`, `Entity#hurt` |
+
+**Итог:** 7 пар «тип A» решены исключением мода, 21 — конфигом, 6 — скриптом-патчем, 4 — задокументированной совместимостью. Ни одна строка не оставлена «без решения».
+
+<a id="install-order"></a>
+## 6. Порядок установки и загрузки
+
+Полный порядок — **[config/install-order.md](config/install-order.md)**:
+
+- **A. 17 шагов сборки инстанса**: Java 17 → Prism/Forge 47.2.20 → память → пустой запуск → библиотеки → ядро RPG → магия → экипировка → выживание/навыки → мобы/боссы → worldgen → квесты → декор/UI/оптимизация → конфиги → датапаки → прогрев → релиз. После шагов 7, 12, 16 — обязательный тестовый запуск.
+- **A2. Dedicated server**: команды установки Forge, `user_jvm_args.txt`, `server.properties` (view-distance 8, simulation 6, `max-tick-time=-1`), UDP 24454 для голоса.
+- **B. Порядок первого запуска по времени** (t+0 … t+90 мин, когда прогревать Chunky).
+- **C. Порядок загрузки датапаков** (алфавитный, наши префиксы `00_`…`10_`).
+- **D. Что ломает пак** (5 антипаттернов с последствиями).
+
+
 <a id="config-plan"></a>
 ## 7. План конфигурации
 
@@ -519,6 +549,31 @@ Pufferfish's Skills (30+ узлов) ──► vanilla XP levels ──► Proje
 | 25–30 | Удочка → первый заброс (Fishing 1) + подсказка «ночь близко» | навык «Рыбалка» активен, TAN жажда тикает |
 
 **Самопроверка раздела:** экраны выбора ✓ (5 шагов, все на модах), связки рас/классов/талантов ✓ (таблица 7 связок), стартовый инвентарь ✓, хаб ✓, первый NPC ✓ (диалоги по репутации), тайминг ✓.
+
+<a id="balance"></a>
+## 9. Баланс и кривая прогрессии
+
+Полный документ — **[config/balance.md](config/balance.md)**: 6 тиров (T0 Призванный → T5 Пост-эндгейм) с уровнями, локациями, снаряжением, мобами, боссами, квестами, репутацией и требуемым уровнем навыка; числовые кривые HP мобов, DPS игрока, HP/маны, цен ресурсов; гейты переходов между тирами; 6 анти-эксплойтов.
+
+Ключевые числа: HP боссов 220 → 3500 по тирам · урон меча 4 → 18 · HP игрока 20 → 72 · максимум маны 200 · награда за квест 200/600/1500/3000 XP.
+
+<a id="quest-tree"></a>
+## 10. Квестовая линия
+
+Полный документ — **[config/quest-tree.md](config/quest-tree.md)**: **10 глав, 73 квеста** (Пролог → Становление → Средний тир → Эндгейм → Пост-эндгейм), в каждой главе — боевые, жизненные, строительные и торговые задачи; награды в XP/монетах/предметах/репутации; структура файлов FTB Quests (SNBT-пример) и ограничение движка (нельзя менять предмет задачи из скрипта — решено 4 предзаготовленными квестами с гейтом по дню).
+
+<a id="liveskills"></a>
+## 11. Система жизненных навыков
+
+Полный документ — **[config/liveskills.md](config/liveskills.md)**: **6 навыков** (Husbandry, Fishing, Farming, Cooking — обязательные; Mining, Crafting — дополнительные), у каждого — дерево уровней 1–100 с 8–16 разблокировками, 3–4 уникальные механики, влияние на статы, связи с расами/классами/квестами/репутацией, конфиги XP и порогов, HUD и fallback-план.
+
+Оценка дополнительных навыков (Herbalism, Transport, Trade, Alchemy, Archaeology) — с решением «включить/исключить» и обоснованием. Итог: 6 навыков вместо 4 минимальных, но без перегруза HUD.
+
+<a id="reputation"></a>
+## 12. Система репутации и квестов жителей
+
+Полный документ — **[config/reputation-system.md](config/reputation-system.md)**: 5 фракций (Земледельцы, Ремесленники, Стража, Алхимики, Торговый Дом), 6 статусов, 13 источников изменения репутации, 4 уровня открытий, локальная (по деревне) + глобальная шкала, 12 типов NPC с квестами и диалогами по статусу, связь стилей деревень CTOV с фракциями, техническая реализация (scoreboard + KubeJS-команды + мосты к FTB Quests, торговле и страже), конфиги и чек-лист из 8 пунктов.
+
 
 <a id="resources"></a>
 ## 13. Ресурспаки, шейдеры, звук
