@@ -218,3 +218,52 @@ _Отсюда 12 ГБ: heap 5.5 ГБ + 3.5 ГБ off-heap/GLFW/шейдеры + 2
 **J. Квесты/репутация:** FTB Quests (движок) + Bountiful (доска баунти) + Easy NPC (диалоги) + KubeJS-репутация. Подробно — [reputation-system.md](config/reputation-system.md).
 
 **M/N.** UI: JourneyMap + JEI + Jade + Neat + AppleSkin + Legendary Tooltips (синергия с редкостями Apotheosis). Оптимизация: Embeddium+Oculus / ModernFix / FerriteCore / Canary / EntityCulling / ImmediatelyFast / Packet Fixer. **Не** смешиваем Sodium/Rubidium/Embeddium/OptiFine — это главный источник крашей (см. [conflicts.md#optimizers](config/conflicts.md#optimizers)).
+<a id="libraries"></a>
+## 4. Библиотеки и зависимости
+
+### 4.1 Все библиотеки пака и кто их требует
+
+| Библиотека | Что даёт | Кто требует (hard/soft) | Side |
+|---|---|---|---|
+| **Patchouli** | Книги-гайды в игре | Botania | both |
+| **GeckoLib** | Анимации сущностей | Aquamirae, Ars Nouveau, Born in Chaos, Bosses of Mass Destruction, Creatures and Beasts, Goety, Hexerei, Iron's Spells 'n Spellbooks, Malum, Mowzie's Mobs, Occultism, Sons of Sins, The Graveyard | both |
+| **Architectury API** | Кроссплатформенный API | KubeJS | both |
+| **Cloth Config API** | Конфиг-UI | — | both |
+| **Rhino** | JS-движок для KubeJS | KubeJS | both |
+| **Mutil** | Библиотека Tetra | Tetra | both |
+| **GlitchfiendLib** | Библиотека TAN/Seasons | Tough As Nails | both |
+| **Nitrogen** | Библиотека The Aether | The Aether | both |
+| **Puzzles Lib** | Библиотека Fuzs | — | both |
+| **Balm** | Кроссплатформенная библиотека (Waystones и др.) | Waystones | both |
+| **Cupboard** | Утилиты SBM | — | both |
+| **Iceberg** | Библиотека (Better Third Person и др.) | Advancement Plaques, Better Third Person, Equipment Compare, Legendary Tooltips | both |
+| **Prism** | Библиотека цветов/рендера | Legendary Tooltips | both |
+| **Fzzy Config** | Конфиг-UI | — | both |
+| **Kotlin for Forge** | Kotlin-рантайм | — | both |
+| **Sinytra Connector ⚠** | Запуск Fabric-модов на Forge | — | both |
+| **Cristel Lib** | Библиотека структур (Incendium, Amplified Nether) | Amplified Nether | both |
+| **Structure Gel API** | API для структурных датапаков | — | both |
+| **SmartBrainLib** | Библиотека ИИ (нужна ряду мобов) | — | both |
+| **libIPN** | Библиотека Inventory Profiles Next | Inventory Profiles Next | client |
+| **ProbeJS** (утилита, вне пака) | автодополнение KubeJS в IDE | KubeJS (soft, только для разработки) | client |
+| **FTB Ranks** (опция) | права/префиксы для MP | FTB Quests (soft) | server |
+
+### 4.2 Сверка зависимостей (полнота)
+
+Автоматическая сверка (`data/gen_deps.py`): каждый обязательный токен должен найтись в таблице модов.
+
+- Модов проверено: **238**
+- Токенов зависимостей (hard+soft): **130** (из них hard: **91**)
+- Не разрешено автоматически: **0** — см. таблицу ниже
+
+
+### 4.3 Правила зависимостей пака
+
+1. **Forge 47 не поддерживает подпапки в `mods/`** — порядок задаётся не структурой папок, а `validate_dependencies.sh` (наличие + версия + отсутствие дублей по `modid`).
+2. **Одна версия библиотеки на пак.** Два `placebo-*.jar` разных версий → `DuplicateModsFoundException` на старте.
+3. **Тройка Apotheosis 7 ↔ Apothic Attributes ↔ Placebo** обновляется только вместе (несовпадение мажора = `mixin apply failed`).
+4. **KubeJS ↔ Rhino ↔ Architectury**: KubeJS 2001.6.5+ требует Architectury 9.x.
+5. **PlayerAnimator ≥ 1.0.2-rc1** обязателен для Better Combat + Iron's Spells (иначе `NoSuchMethodError` в `PlayerModel`).
+6. **Curios**: единственная система слотов; всё, что добавляет слоты (Artifacts, Jewelry, Elytra Slot, Iron's Spells), цепляется к нему — второй системы слотов в паке нет.
+7. **GeckoLib** требуется 14 модами пака; версия должна быть ≥ 4.4.4 (Alex's Caves, Cataclysm, BMD проверены на ней).
+8. Скрипт проверки: [scripts/validate_dependencies.sh](scripts/validate_dependencies.sh) — сверяет `manifest.json` → файлы в `mods/` → `mods.toml` (modid/version).
