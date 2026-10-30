@@ -1,0 +1,44 @@
+Dynamic Trees|E|Процедурно растущие деревья — лес выглядит живым|—|Dynamic Trees + Terralith compat|both|важный|Проверить совместимость с Terralith: часть биомов без DT-деревьев|—
+Structory|E|Небольшие руины и лагеря, вписанные в ландшафт|—|Structory: Towers|both|важный|—|—
+Structory: Towers|E|Башни-структуры с лутом|Structory|—|both|опциональный|—|—
+Moog's Voyager Structures|E|200+ малых структур по биомам|—|Repurposed Structures|both|важный|Снизить частоту, иначе мир «замусорен»|—
+Moog's End Structures|E|Структуры Энда|—|Nullscape|both|опциональный|—|—
+Towers of the Wild|E|Башни обзора в мире|—|—|both|опциональный|⚠ проверить ветку 1.20.1|—
+Repurposed Structures|E|Структуры в новых биомах (совместимость с datapack-биомами)|—|Terralith|both|важный|Обязателен для «структуры в биомах Terralith»|—
+YUNG's Better Jungle Temples|E|Храмы джунглей|YUNG's API|—|both|опциональный|—|YUNG-GANG/YUNGs-Better-Jungle-Temples
+YUNG's Better End Island|E|Остров Энда|YUNG's API|—|both|опциональный|—|—
+Amplified Nether|E|Усиленный рельеф Нижнего мира|Cristel Lib|Incendium|both|опциональный|—|—
+Effective (Forge)|E|Брызги, водопады, рябь (клиент)|Lucchi? ⚠ проверить|—|client|опциональный|Client-only|—
+Cristel Lib|LIB|Библиотека структур (Incendium, Amplified Nether)|—|—|both|ядро|—|—
+Structure Gel API|LIB|API для структурных датапаков|—|—|both|важный|Нужен части структур-паков|—
+SmartBrainLib|LIB|Библиотека ИИ (нужна ряду мобов)|—|—|both|важный|—|—
+Gateways to Eternity|F|Волновые арены-порталы с боссами и наградами|Placebo; Apothic Attributes|Apotheosis|both|важный|Связка с тирами данжей (волны 1-5)|—
+Sons of Sins|F|Боссы-демоны с аренами|GeckoLib|—|both|опциональный|⚠ проверить 1.20.1|—
+Illager Invasion|G|Новые илледжеры и рейды — угроза деревням|—|Guard Villagers|both|важный|Нужен для квестов «оборона деревни»|—
+Born in Chaos|G|40+ мрачных мобов и мини-боссов|GeckoLib|—|both|важный|—|—
+Creeper Overhaul|G|Варианты криперов по биомам|—|—|both|опциональный|—|—
+Enderman Overhaul|G|Варианты эндерменов|—|—|both|опциональный|—|—
+Friends & Foes|G|Мобы из моб-голосования (медные големы и др.)|—|—|both|опциональный|—|—
+Vampirism|G|Фракции вампиров/охотников с репутацией и уровнями|—|—|both|важный|Дополнительная ось репутации — не конфликтует с KubeJS-репутацией, живёт отдельно|—
+Human Companions|G|Наёмники-люди с экипировкой|—|Recruits|both|опциональный|—|—
+Productive Bees|I|Пасека, селекция и генетика пчёл — «скотоводство» для насекомых|—|—|both|важный|Даёт готовую генетику/селекцию, которой нет у ванильных животных|—
+Right Click Harvest|I|Сбор урожая правым кликом|—|—|both|важный|QoL для фермерства|—
+Cooking for Blockheads|I|Кухонный мультиблок, полки, рецепты|—|Farmer's Delight|both|важный|Закрывает «кухня» как рабочее место|—
+Sophisticated Storage|L|Сундуки/бочки с апгрейдами и сортировкой|Sophisticated Core|—|both|важный|—|—
+Comforts|L|Спальные мешки/гамаки (связка с усталостью)|—|—|both|опциональный|—|—
+Open Parties and Claims|L|Приваты и партии для мультиплеера|—|—|both|важный|Обязателен для честного MP: защита деревень/баз|—
+Simple Voice Chat|M|Голосовой чат|—|—|both|важный|Серверная часть — на сервере; клиентская — у игроков|—
+BetterF3|M|Читаемый F3-оверлей|—|—|client|опциональный|—|—
+Inventory Profiles Next|M|Профили инвентаря/сортировка|libIPN|—|client|важный|Заменяет Inventory Sorter|—
+libIPN|LIB|Библиотека Inventory Profiles Next|—|—|client|ядро|—|—
+lootjs|LIB|(входит в KubeJS-экосистему, см. A)|—|—|both|—|—|—
+Packet Fixer|N|Фикс размеров сетевых пакетов (200+ модов в MP)|—|—|both|ядро|Частая причина «disconnect» на больших паках|—
+Connectivity|N|Фикс таймаутов логина/соединения|—|—|both|важный|—|—
+Crash Assistant|N|Читаемый разбор крашей|—|—|client|важный|—|—
+Saturn|N|Оптимизация памяти/GC-давления|—|—|both|опциональный|⚠ проверить совместимость с ModernFix|—
+Carry On|D|Перенос сундуков/животных в руках — логистика|—|—|both|важный|Связка «транспортировка животных»|—
+Elytra Slot|D|Слот элитр в Curios|Curios|—|both|опциональный|—|—
+Cosmetic Armor Reworked|D|Косметические слоты брони|—|—|client|опциональный|Client-only|—
+Paraglider|B|Планирование/дельтаплан — мобильность без «читерского полёта»|—|—|both|опциональный|Тратит выносливость в конфиге|—
+Spartan Weaponry|B|Оружие разных культур с бонусами|—|Better Combat|both|опциональный|⚠ мувсеты пересекаются с Simply Swords — оставить один набор|—
+Just Enough Resources|M|(см. выше)|—|—|client|—|—|—
