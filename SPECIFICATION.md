@@ -571,3 +571,89 @@ Pufferfish's Skills (30+ узлов) ──► vanilla XP levels ──► Proje
 **Итого:** интерфейс пака читается по-русски на 100 % в сюжетной части и на ~78 % в модовых GUI. Для 12 «английских» модов оставлены подсказки-переводы в гайде (Patchouli-страница «Словарь»).
 
 **Самопроверка раздела:** списки ✓ приоритеты ✓ шейдеро-совместимость по 9 модам ✓ FPS-таблица ✓ локализация ✓.
+
+<a id="checklist"></a>
+## 14. Чек-лист тестирования
+
+48 пунктов в 10 блоках: запуск → генерация мира → выбор расы/класса → RPG-системы → бой и анимации → **жизненные навыки (6)** → **квесты и репутация (7 пунктов, включая «взять квест у жителя → выполнить → изменение репутации → открытие нового торга»)** → мультиплеер → краш-тесты/дюпы/миграция → реквизиты релиза.
+
+Файл: **[config/checklist.md](config/checklist.md)**. Критерий «релиз разрешён» — в конце документа.
+
+<a id="troubleshooting"></a>
+## 15. Типичные проблемы и их лечение
+
+Полный раздел — в **[README.md §15](README.md#troubleshooting)**: 7 диагностируемых сценариев с точными стектрейсами (`mixin apply failed`, `Missing registry entries`, TPS 8, десинк анимаций, конфликт клавиш + готовая карта раскладки, дюпы, `OutOfMemoryError`).
+
+<a id="scripts"></a>
+## 16. Скрипты автоматизации
+
+| Скрипт | Что делает | Ключевые флаги |
+|---|---|---|
+| [`scripts/hydrate_manifest.py`](scripts/hydrate_manifest.py) | Разрешает реальные ID и URL модов через **Modrinth API** и **CurseForge API**; заполняет `modrinth.json` (downloads/hashes/fileSize) и `manifest.json` (projectID/fileID). Ищет по slug, при провале — по названию. | `--modrinth`, `--curseforge --key`, `--check-only`, `--mc`, `--loader` |
+| [`scripts/download_mods.sh`](scripts/download_mods.sh) | Скачивает все моды одной командой, докачивает недостающее, проверяет целостность по хешам (Modrinth). | `--target`, `--curseforge --key`, `--dry-run`, `--only ядро` |
+| [`scripts/validate_dependencies.sh`](scripts/validate_dependencies.sh) | **Читает `META-INF/mods.toml` каждого jar**: дубли modid, все `mandatory=true` зависимости, запрещённые моды, фиксированные пары версий (Embeddium/Oculus/PlayerAnimator/Placebo), сверка с манифестом. | `--instance`, `--env-only`, `--stage libs`, `--report` |
+| [`scripts/generate_instance.sh`](scripts/generate_instance.sh) | Создаёт инстанс Prism Launcher: `instance.cfg` (RAM/JVM), `mmc-pack.json` (Forge 47.2.20), `options.txt` (клавиши/графика), конфиги пака, скачивание модов. | `--name`, `--mem`, `--dir`, `--skip-mods` |
+| [`config/launch-args.txt`](config/launch-args.txt) | JVM-строки клиента/сервера + объяснение каждого флага + инструкция Prism. | — |
+
+### 16.1 Полный цикл одной командой
+```bash
+python3 scripts/hydrate_manifest.py --modrinth --mc 1.20.1 --loader forge \
+ && bash scripts/generate_instance.sh --name Aetherfall --mem 12G \
+ && bash scripts/validate_dependencies.sh --instance "$HOME/.local/share/PrismLauncher/instances/Aetherfall"
+```
+
+### 16.2 Почему ID в манифесте изначально `null`
+
+Из среды, в которой готовился этот репозиторий, доступны только GitHub/npm/PyPI — **`api.modrinth.com` и `api.curseforge.com` заблокированы**. Выдумывать `fileID` нельзя (правило «не выдумывай»): неверный fileID = скачивание чужого/несовместимого файла.
+
+Поэтому:
+- в `manifest.json`/`modrinth.json` лежат **best-effort slug'и** и пометка `verified: false`/`_resolve`;
+- `hydrate_manifest.py` заполняет ID за 1 минуту на машине с интернетом;
+- workflow [`.github/workflows/resolve-manifest.yml`](.github/workflows/resolve-manifest.yml) делает то же на раннере GitHub (там Modrinth доступен) и отдаёт артефакт `manifest-lock`.
+
+<a id="extension"></a>
+## 17. Расширение пака
+
+### 17.1 Двадцать опциональных модов «если хочется ещё»
+
+Все проверены на совместимость с ядром пака (Forge 1.20.1), но **не входят** в v1.0.
+
+| # | Мод | Категория | Зачем | Цена включения |
+|---|---|---|---|---|
+| 1 | **Create** | L | механическая автоматизация «в мире», красиво сочетается с деревнями | +25 модов-сателлитов, +2–3 ГБ RAM, ломает «не индустриальный» тон |
+| 2 | **MineColonies** | L/J | полноценные города с работниками и своей репутацией | конфликт по «деревням» с CTOV, +1 измерение нагрузки |
+| 3 | **Dungeons of Exceptional End** | F | ещё 1 источник эндгейм-данжей | пересечение с Nullscape-структурами (нужна правка spacing) |
+| 4 | **Blue Skies** | E/F | ещё одно измерение с боссами | свой worldgen, конфликт тегов с Aether |
+| 5 | **Blood Magic** | C | шестая магия (жертвенная) | порт 1.20.1 нестабилен ⚠, дубль с Goety по «крови» |
+| 6 | **Bewitchment** (Forge-порт) | C | ведьмовство ближе к лору | Fabric-ориентация, риск миксинов |
+| 7 | **Tinkers' Construct** | D | альтернатива Tetra | конфликт по модульному оружию с Tetra (выбрать один) |
+| 8 | **Silent Gear** | D | ещё одна система модульного снаряжения | дубль Tetra |
+| 9 | **Epic Fight** | B | красивые мувсеты | **ломает анимации Iron's Spells** — только если убрать Iron's Spells |
+| 10 | **Distant Horizons** | N/E | горизонт за 10 чанков | нет стабильной пары Embeddium+Oculus для 1.20.1 Forge ⚠ |
+| 11 | **Iris/Oculus Extra** | N | доп. настройки шейдеров | конфликт версий Embeddium |
+| 12 | **Sodium Extra (Forge-порт)** | N | тонкая настройка рендера | требует Sodium-порт, риск с Embeddium |
+| 13 | **Corgilib / CTOV DLC-паки** | E | ещё стили деревень | +1 датапак к порядку загрузки |
+| 14 | **YUNG's Better Desert Temples** уже включён; **Better End Islands** | E | структуры Энда | убран из v1.0 (конфликт с Nullscape) |
+| 15 | **Rats** | G | милые питомцы-раты | +мобы, слабая связка с системами |
+| 16 | **Alex's Delight** (аддон) | I | еда из мобов Alex's Mobs | требует проверки рецептов ⚠ |
+| 17 | **Farmer's Delight: Brewin' Extended** ⚠ | I | расширение напитков | дубль с Farmer's Respite |
+| 18 | **Serene Seasons Plus** (включён) → **Serene Seasons: Crops** | I | больше культур по сезонам | — |
+| 19 | **Simple Voice Chat Enhanced Groups** | M | голосовые группы по фракциям | только MP |
+| 20 | **Better Questing** | J | альтернативный движок квестов | **нет 1.20.1 Forge** ⚠ — только для экспериментов |
+
+### 17.2 Десять модов, которые добавлять НЕЛЬЗЯ
+
+| # | Мод | Почему нельзя |
+|---|---|---|
+| 1 | **OptiFine** | Заменяет рендер-классы → `NoSuchMethodError` с Embeddium/Oculus/ModernFix; шейдеры и так работают через Oculus |
+| 2 | **Biomes O' Plenty / Oh The Biomes You'll Go** | Двойной biome source с Terralith → швы, потерянные структуры, «биом в биоме» |
+| 3 | **Rubidium / Sodium** | Дубли Embeddium (порт Sodium); два порта = краш рендера |
+| 4 | **Radium** | Дубль Canary (два порта Lithium) → `AbstractMethodError` в тиках сущностей |
+| 5 | **Epic Fight** | Патчит те же хуки `PlayerRenderer`/`HumanoidModel`, что Better Combat и Iron's Spells → T-поза, двойной урон |
+| 6 | **Zenith** | Форк Apotheosis: двойная регистрация аффиксов/атрибутов → дюп статов |
+| 7 | **Cold Sweat / Legendary Survival Overhaul** (вместе с TAN) | Три системы температуры/жажды → конфликт хуков урона, невозможный баланс |
+| 8 | **Sinytra Connector** | Запуск Fabric-модов на Forge при 238 Forge-модах = источник нестабильных миксинов; любая ошибка не локализуется |
+| 9 | **Distant Horizons (Forge 1.20.1)** | Нет проверенной пары с Embeddium 0.3.x + Oculus 1.7.0; риск чёрного экрана на 30 % сцен |
+| 10 | **Любой мод с закрытой лицензией и запретом на включение в модпаки** (напр. некоторые премиум-шейдеры/паки как моды) | Нарушение ToS/лицензии; для шейдеров используем только открытые (BSL, Complementary, MakeUp) |
+
+**Самопроверка раздела 16–17:** скрипты ✓ (4 файла, все с `--help` и проверкой синтаксиса), CI ✓ (2 workflow), опциональные 20 ✓, запрещённые 10 ✓ с причинами.
