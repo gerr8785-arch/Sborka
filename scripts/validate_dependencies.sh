@@ -96,11 +96,10 @@ for j in "${JARS[@]}"; do
   ' >> "$TMP/mods.tsv"
   # зависимости: modId + mandatory
   echo "$toml" | awk -v f="$base" '
-    /^\[\[dependencies/ {indep=1; dep=""; mand="false"; next}
+    /^\[\[dependencies/ {indep=1; dep=""; next}
     /^\[\[/ && !/^\[\[dependencies/ {indep=0}
     indep && /^[[:space:]]*modId[[:space:]]*=/ {gsub(/.*=[[:space:]]*"/,""); gsub(/".*/,""); dep=$0}
-    indep && /^[[:space:]]*mandatory[[:space:]]*=/ {gsub(/.*=[[:space:]]*/,""); gsub(/[[:space:]]*$/,""); mand=$0}
-    indep && dep!="" && mand!="" {print f"\t"dep"\t"mand; dep=""; mand=""}
+    indep && /^[[:space:]]*mandatory[[:space:]]*=/ {gsub(/.*=[[:space:]]*/,""); gsub(/[[:space:]]*$/,""); if (dep!="") print f"\t"dep"\t"$0; dep=""}
   ' >> "$TMP/deps.tsv"
 done
 
@@ -168,7 +167,7 @@ for key in "${!FORBID[@]}"; do
 done
 # OptiFine — отдельно (имя OptiFine_x.y.z.jar)
 if find "$MODS" -maxdepth 1 -iname 'OptiFine*' | grep -q .; then red "  НАЙДЕН OptiFine — несовместим"; FAIL=$((FAIL+1)); fi
-[[ $FAIL -eq 0 ]] && grn "  запрещённых нет"
+grn "  проверено запрещённых ключей: ${#FORBID[@]} (+OptiFine)"
 
 # ─── 6. Зафиксированные пары версий ──────────────────────────────────────────
 echo "== 6. Пары версий =="
