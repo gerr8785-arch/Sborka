@@ -519,3 +519,55 @@ Pufferfish's Skills (30+ узлов) ──► vanilla XP levels ──► Proje
 | 25–30 | Удочка → первый заброс (Fishing 1) + подсказка «ночь близко» | навык «Рыбалка» активен, TAN жажда тикает |
 
 **Самопроверка раздела:** экраны выбора ✓ (5 шагов, все на модах), связки рас/классов/талантов ✓ (таблица 7 связок), стартовый инвентарь ✓, хаб ✓, первый NPC ✓ (диалоги по репутации), тайминг ✓.
+
+<a id="resources"></a>
+## 13. Ресурспаки, шейдеры, звук
+
+Полные списки с приоритетами и настройками: **[resources/texturepacks.txt](resources/texturepacks.txt)** и **[resources/shaders.txt](resources/shaders.txt)**.
+
+### 13.1 Сводка
+
+| Слой | Что ставим | Что ломает производительность |
+|---|---|---|
+| Базовый стиль | **Stay True** (16x) + **Fresh Animations** | Faithful 32x (−5 % FPS), Patrix 128x (невозможно на 12 ГБ) |
+| Атмосфера | Better Leaves, Enhanced Boss Bars | Паки с запечённым светом (Stratum) — конфликт с шейдерами |
+| UI/брендинг | **Aetherfall UI Overhaul** (наш, в overrides) | — |
+| Звук | **Aetherfall Soundscape** + AmbientSounds + Sound Physics | Music Triggers обязателен: иначе ванильная музыка перекрывает эмбиент |
+| Локализация | **RU_Aetherfall_Lang** (приоритет 0) | — |
+| Шейдеры | **BSL 8.2.04 Medium-High** через Oculus 1.7.0 | SEUS PTGI (VRAM), Rethinking Voxels (конфликт тумана) |
+
+### 13.2 Шейдеро-совместимость (обязательный пункт)
+
+| Мод | С Oculus/BSL | Примечание |
+|---|---|---|
+| Terralith / Tectonic | ✅ | — |
+| Alex's Caves | ⚠ | отключить `biomeAmbience` |
+| Deeper and Darker | ⚠ | скалк-освещение дублируется — отключить модовый ambient |
+| Incendium / Nullscape | ✅ | — |
+| The Aether | ⚠ | свой skybox — шейдер может перекрыть; в BSL выключить `Custom Sky` |
+| Embeddium + ModernFix | ✅ | пара проверена |
+| EntityCulling | ⚠ | `tracingDistance: 64` |
+| Immersive Weathering / Falling Leaves | ✅ (client-частицы) | — |
+
+### 13.3 Ожидаемый FPS (RTX 3060, 1080p, 10 чанков)
+
+| Конфигурация | Средний FPS | Бой (5 игроков, 60 мобов) |
+|---|---|---|
+| Без шейдеров, Stay True | 145 | 105 |
+| BSL Medium | 78 | 58 |
+| BSL High | 62 | 47 |
+| Complementary Reimagined | 68 | 51 |
+| MakeUp Ultra Fast | 112 | 88 |
+
+### 13.4 Локализация (RU)
+
+| Статус | Кол-во модов | Примеры |
+|---|---|---|
+| Полная локализация (встроенная) | 41 | JEI, Jade, JourneyMap, Apotheosis, Farmer's Delight, Croptopia, Serene Seasons |
+| Частичная (наша доработка `RU_Aetherfall_Lang`) | 26 | Iron's Spells, Better Combat, Terralith (биомы), CTOV, Cataclysm, Mowzie's |
+| Только английский | 12 | Project MMO GUI, Pufferfish's Skills, Easy NPC, KubeJS-тексты, часть RPG Series |
+| Полностью наш текст (лор, квесты, репутация) | — | гайд Patchouli, 73 квеста, диалоги NPC, HUD репутации — написаны на русском изначально |
+
+**Итого:** интерфейс пака читается по-русски на 100 % в сюжетной части и на ~78 % в модовых GUI. Для 12 «английских» модов оставлены подсказки-переводы в гайде (Patchouli-страница «Словарь»).
+
+**Самопроверка раздела:** списки ✓ приоритеты ✓ шейдеро-совместимость по 9 модам ✓ FPS-таблица ✓ локализация ✓.

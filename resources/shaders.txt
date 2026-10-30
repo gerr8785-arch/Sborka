@@ -1,0 +1,42 @@
+# ============================================================================
+#  Шейдеры пака Aetherfall 1.0.0 — Oculus 1.7.0 + Embeddium 0.3.31 (Forge 1.20.1)
+#  ВАЖНО: OptiFine НЕ используется (конфликт с Embeddium/Oculus/ModernFix).
+#  Все шейдеры — Iris/Oculus-совместимые версии.
+# ============================================================================
+
+## РЕКОМЕНДУЕМЫЙ ПРОФИЛЬ (RTX 3060 / i5-10400F / 12 ГБ RAM / 1080p)
+#  BSL v8.2.04  →  профиль "Medium-High"
+#  Ожидаемый FPS: 62–78 (render distance 10, без дождя), 48–55 в бою
+#  Настройки BSL:
+#    Shadow Quality: 1.0
+#    Shadow Distance: 128
+#    Water Quality: High  (Reflections: Sky only)
+#    Volumetric Light: Medium
+#    SSAO: Medium
+#    Bloom: On
+#    Anti-aliasing: TAA (не MSAA — TAA дешевле на 1.20.1)
+#    Godrays: Off (в дождь/ночь — главный киллер FPS)
+
+## АЛЬТЕРНАТИВЫ (по ситуации)
+#  Complementary Reimagined r5.2+  → красивее, −8…12 % FPS; ставить, если 60+ держится
+#  MakeUp Ultra Fast v8.8        → 90–110 FPS, для слабых GPU и записи видео
+#  Complementary Unbound r5.2     → «кинематографично», требует 8+ ГБ VRAM; только для скриншотов
+#  Sildur's Vibrant Shaders v1.51 → средний вариант, хорош в Нижнем мире (Incendium)
+#  Rethinking Voxels (только NVIDIA) → НЕ рекомендуется: 4–6 ГБ VRAM, конфликт с Alex's Caves-туманом
+
+## НЕ ИСПОЛЬЗОВАТЬ (проверенные конфликты)
+#  OptiFine-версии шейдеров (старый .zip с shaders.properties v1) → чёрный экран/не грузится
+#  SEUS PTGI / HRR 2.1 → рейтрейсинг, 8+ ГБ VRAM, на 12 ГБ RAM клиента — своп
+#  Chocapic13 v9 (старые сборки) → артефакты с Deeper and Darker (скалк-освещение)
+#  Nostalgia Shader → ломает небо в измерении Aether (свой skybox)
+
+## ТЕХНИЧЕСКИЕ ЗАМЕТКИ
+# 1) Oculus 1.7.0 требует Embeddium 0.3.x. Пара 0.4.x + Oculus = краш GL.
+# 2) Параметр Render Distance: 10 чанков — оптимум. 12+ даёт −25 % FPS без визуальной разницы под туманом BSL.
+# 3) В Alex's Caves включён «биомный туман» — при шейдерах отключить (config/alexscaves-client.toml: biomeAmbience=false),
+#    иначе кислота перекрашивает весь экран.
+# 4) При первом запуске шейдеров — 30–60 с компиляции; фризы нормальны, кеш в .minecraft/shaderpacks/…/cache.
+# 5) EntityCulling: tracingDistance 64 (не 128) — иначе тени «отсечённых» сущностей мерцают.
+# 6) Для серверных скриншотов/стрима включать BSL + Render Distance 8, TAA — стабильные 70+.
+#
+# Проверка: F3 → графики; /spark tps на сервере; ориентир «60+ стабильно» = минимальный FPS в бою ≥ 55.

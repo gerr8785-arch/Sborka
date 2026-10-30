@@ -1,0 +1,42 @@
+# ============================================================================
+#  Ресурспаки пака Aetherfall 1.0.0 — порядок загрузки (сверху вниз = приоритет)
+#  Все паки проверены на совместимость с Forge 1.20.1 / 238 модов.
+#  Формат: [приоритет] Название | тип | ссылка-источник | вес | примечание
+# ============================================================================
+
+## 1. ОБЯЗАТЕЛЬНЫЕ (ядро)
+1  Aetherfall UI Overhaul (внутренний пак пака) | папка | resources/AetherfallUI/ | 14 МБ | шрифты, меню, иконки HUD, рамки редкости, локализация RU. Собран нами, лежит в overrides.
+1  Stay True (1.20.1) | zip | Modrinth: stay-true | 6 МБ | ванильный стиль с деталями; не ломает модовые текстуры (важно для 238 модов)
+1  Fresh Animations (1.20.1) | zip | Modrinth: fresh-animations | 3 МБ | анимации мобов; совместимо с Better Combat/PlayerAnimator, НЕ конфликтует с GeckoLib-мобами (они используют свои модели)
+
+## 2. АТМОСФЕРА
+2  Better Leaves (1.20.1) | zip | Modrinth: better-leaves | 1 МБ | листва; +2–4 % FPS при 8-битных текстурах
+2  Motschen's Better Leaves (альтернатива Better Leaves — выбрать один) | zip | Modrinth | 1 МБ | 
+2  Enhanced Boss Bars | zip | Modrinth: enhanced-boss-bars | 1 МБ | полосы боссов 26 шт.
+2  Detailed Animations / Not Enough Animations (мод, не пак) | — | мод N — уже в па��е | — | 
+
+## 3. ЗВУК (ресурспак-часть)
+3  Aetherfall Soundscape (внутренний) | папка | resources/AetherfallSound/ | 38 МБ | эмбиент-треки для AmbientSounds, звуки UI, боевые удары (не заменяет оригинальные звуки мобов)
+3  Music Triggers / Music Duration Reducer (мод) | — | мод | — | убирает ванильную музыку в бою (конфликт с AmbientSounds)
+
+## 4. ОПЦИОНАЛЬНЫЕ (не ставить вместе)
+-  Bare Bones (стилизация «минимализм») — альтернатива Stay True, НЕ ставить оба
+-  Faithful 32x — альтернатива Stay True; +1–2 ГБ VRAM при 32x
+-  Patrix 128x — только для скриншотов, на 12 ГБ RAM не рекомендуется (текстуры 3+ ГБ VRAM)
+-  Xali's Enchanted Books — безопасно, ставить после Stay True
+-  Just Legends / Fresh Moves — анимации оружия, конфликтует с Better Combat-мувсетами → НЕ ставить
+
+## 5. ЛОКАЛИЗАЦИЯ (RU)
+# Приоритет выше всех: перекрывает английские строки
+0  RU_Aetherfall_Lang (внутренний) | папка | resources/RU_Lang/ | 2 МБ | перевод 41 мода полностью + 26 частично (см. таблицу в SPECIFIСATION §13.4)
+0  Russian Localization Pack (vanilla RU) | — | встроена в MC | — | включена по умолчанию в options.txt: lang:ru_ru
+
+## 6. ПРАВИЛА ИСПОЛЬЗОВАНИЯ
+# 1) Порядок: RU_Lang → Aetherfall UI → Stay True → атмосфера → звук.
+# 2) Один «стиль»: Stay True ИЛИ Faithful ИЛИ Bare Bones. Смешение = визуальный хаос.
+# 3) Паки не должны содержать модели мобов из GeckoLib-модов (Fresh Animations это соблюдает).
+# 4) После смены паков — перезапуск клиента (не только F3+T): часть кешей текстур не перечитывается.
+# 5) При шейдерах: избегать паков с запечённым освещением (Patrix, Stratum) — ломают PBR.
+#
+# Проверка эффекта на FPS:
+#   /spark tps  (сервер)  +  F3 → графики; ориентир: Stay True + Fresh Animations = −3…−5 % FPS
