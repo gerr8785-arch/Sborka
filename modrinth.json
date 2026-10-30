@@ -1,0 +1,3100 @@
+{
+  "formatVersion": 1,
+  "game": "minecraft",
+  "versionId": "1.0.0",
+  "name": "Aetherfall: Chronicles of the Shattered Vale",
+  "summary": "Хардкорный RPG-модпак: расы, классы, таланты, жизненные навыки, деревни с репутацией.",
+  "files": [
+    {
+      "path": "mods/apotheosis.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "apotheosis",
+      "_name": "Apotheosis",
+      "_side": "both"
+    },
+    {
+      "path": "mods/apothic-attributes.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "apothic-attributes",
+      "_name": "Apothic Attributes",
+      "_side": "both"
+    },
+    {
+      "path": "mods/placebo.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "placebo",
+      "_name": "Placebo",
+      "_side": "both"
+    },
+    {
+      "path": "mods/irons-spells-n-spellbooks.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "irons-spells-n-spellbooks",
+      "_name": "Iron's Spells 'n Spellbooks",
+      "_side": "both"
+    },
+    {
+      "path": "mods/project-mmo.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "project-mmo",
+      "_name": "Project MMO",
+      "_side": "both"
+    },
+    {
+      "path": "mods/puffish-skills.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "puffish-skills",
+      "_name": "Pufferfish's Skills",
+      "_side": "both"
+    },
+    {
+      "path": "mods/puffish-attributes.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "puffish-attributes",
+      "_name": "Pufferfish's Attributes",
+      "_side": "both"
+    },
+    {
+      "path": "mods/origins.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "origins",
+      "_name": "Origins (Forge)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/origins-plus-plus.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "origins-plus-plus",
+      "_name": "Origins++",
+      "_side": "both"
+    },
+    {
+      "path": "mods/attributefix.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "attributefix",
+      "_name": "AttributeFix",
+      "_side": "both"
+    },
+    {
+      "path": "mods/kubejs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "kubejs",
+      "_name": "KubeJS",
+      "_side": "both"
+    },
+    {
+      "path": "mods/lootjs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "lootjs",
+      "_name": "LootJS",
+      "_side": "both"
+    },
+    {
+      "path": "mods/pehkui.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "pehkui",
+      "_name": "Pehkui",
+      "_side": "both"
+    },
+    {
+      "path": "mods/better-combat.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "better-combat",
+      "_name": "Better Combat",
+      "_side": "both"
+    },
+    {
+      "path": "mods/playeranimator.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "playeranimator",
+      "_name": "PlayerAnimator",
+      "_side": "both"
+    },
+    {
+      "path": "mods/combat-roll.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "combat-roll",
+      "_name": "Combat Roll",
+      "_side": "both"
+    },
+    {
+      "path": "mods/smp-simply-swords.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "smp-simply-swords",
+      "_name": "Simply Swords",
+      "_side": "both"
+    },
+    {
+      "path": "mods/reach-entity-attributes.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "reach-entity-attributes",
+      "_name": "Reach Entity Attributes",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ranged-weapon-api.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ranged-weapon-api",
+      "_name": "Ranged Weapon API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/archers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "archers",
+      "_name": "Archers (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/warriors-rpg-series.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "warriors-rpg-series",
+      "_name": "Warriors (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/paladins.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "paladins",
+      "_name": "Paladins (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/rogues.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "rogues",
+      "_name": "Rogues (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/spell-power-attributes.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "spell-power-attributes",
+      "_name": "Spell Power Attributes",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mobs-attempt-parkour.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "mobs-attempt-parkour",
+      "_name": "Mobs Attempt Parkour",
+      "_side": "both"
+    },
+    {
+      "path": "mods/zombie-awareness.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "zombie-awareness",
+      "_name": "Zombie Awareness",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ars-nouveau.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ars-nouveau",
+      "_name": "Ars Nouveau",
+      "_side": "both"
+    },
+    {
+      "path": "mods/botania.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "botania",
+      "_name": "Botania",
+      "_side": "both"
+    },
+    {
+      "path": "mods/goety.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "goety",
+      "_name": "Goety",
+      "_side": "both"
+    },
+    {
+      "path": "mods/malum.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "malum",
+      "_name": "Malum",
+      "_side": "both"
+    },
+    {
+      "path": "mods/hexerei.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "hexerei",
+      "_name": "Hexerei",
+      "_side": "both"
+    },
+    {
+      "path": "mods/occultism.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "occultism",
+      "_name": "Occultism",
+      "_side": "both"
+    },
+    {
+      "path": "mods/eidolon-repraised.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "eidolon-repraised",
+      "_name": "Eidolon Repraised",
+      "_side": "both"
+    },
+    {
+      "path": "mods/wizards.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "wizards",
+      "_name": "Wizards (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/traveloptics.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "traveloptics",
+      "_name": "Traveloptics",
+      "_side": "both"
+    },
+    {
+      "path": "mods/enigmatic-legacy.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "enigmatic-legacy",
+      "_name": "Enigmatic Legacy",
+      "_side": "both"
+    },
+    {
+      "path": "mods/artifacts.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "artifacts",
+      "_name": "Artifacts",
+      "_side": "both"
+    },
+    {
+      "path": "mods/jewelry.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "jewelry",
+      "_name": "Jewelry (RPG Series)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/immersive-armors.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "immersive-armors",
+      "_name": "Immersive Armors",
+      "_side": "both"
+    },
+    {
+      "path": "mods/tetra.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "tetra",
+      "_name": "Tetra",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sophisticated-backpacks.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sophisticated-backpacks",
+      "_name": "Sophisticated Backpacks",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sophisticated-core.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sophisticated-core",
+      "_name": "Sophisticated Core",
+      "_side": "both"
+    },
+    {
+      "path": "mods/travelers-backpack.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "travelers-backpack",
+      "_name": "Travelers Backpack",
+      "_side": "both"
+    },
+    {
+      "path": "mods/inventory-sorter.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "inventory-sorter",
+      "_name": "Inventory Sorter",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mouse-tweaks.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "mouse-tweaks",
+      "_name": "Mouse Tweaks",
+      "_side": "client"
+    },
+    {
+      "path": "mods/enchantment-descriptions.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "enchantment-descriptions",
+      "_name": "Enchantment Descriptions",
+      "_side": "client"
+    },
+    {
+      "path": "mods/bookshelf-lib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "bookshelf-lib",
+      "_name": "Bookshelf",
+      "_side": "both"
+    },
+    {
+      "path": "mods/corail-tombstone.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "corail-tombstone",
+      "_name": "Corail Tombstone",
+      "_side": "both"
+    },
+    {
+      "path": "mods/curios.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "curios",
+      "_name": "Curios API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ftb-quests.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ftb-quests",
+      "_name": "FTB Quests",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ftb-teams.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ftb-teams",
+      "_name": "FTB Teams",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ftb-library-forge.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ftb-library-forge",
+      "_name": "FTB Library",
+      "_side": "both"
+    },
+    {
+      "path": "mods/bountiful.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "bountiful",
+      "_name": "Bountiful",
+      "_side": "both"
+    },
+    {
+      "path": "mods/easy-npc.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "easy-npc",
+      "_name": "Easy NPC",
+      "_side": "both"
+    },
+    {
+      "path": "mods/guard-villagers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "guard-villagers",
+      "_name": "Guard Villagers",
+      "_side": "both"
+    },
+    {
+      "path": "mods/villager-names.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "villager-names",
+      "_name": "Villager Names",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-reputation-core-kubejs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Reputation Core (KubeJS)",
+      "_side": "both"
+    },
+    {
+      "path": "mods/recruits.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "recruits",
+      "_name": "Recruits",
+      "_side": "both"
+    },
+    {
+      "path": "mods/terralith.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "terralith",
+      "_name": "Terralith",
+      "_side": "both"
+    },
+    {
+      "path": "mods/tectonic.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "tectonic",
+      "_name": "Tectonic",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ct-overhaul-village.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ct-overhaul-village",
+      "_name": "ChoiceTheorem's Overhauled Village",
+      "_side": "both"
+    },
+    {
+      "path": "mods/towns-and-towers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "towns-and-towers",
+      "_name": "Towns and Towers",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-mineshafts.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-mineshafts",
+      "_name": "YUNG's Better Mineshafts",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-dungeons.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-dungeons",
+      "_name": "YUNG's Better Dungeons",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-strongholds.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-strongholds",
+      "_name": "YUNG's Better Strongholds",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-desert-temples.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-desert-temples",
+      "_name": "YUNG's Better Desert Temples",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-witch-huts.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-witch-huts",
+      "_name": "YUNG's Better Witch Huts",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-ocean-monuments.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-ocean-monuments",
+      "_name": "YUNG's Better Ocean Monuments",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-api.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-api",
+      "_name": "YUNG's API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/when-dungeons-arise.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "when-dungeons-arise",
+      "_name": "When Dungeons Arise",
+      "_side": "both"
+    },
+    {
+      "path": "mods/when-dungeons-arise-seven-seas.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "when-dungeons-arise-seven-seas",
+      "_name": "When Dungeons Arise: Seven Seas",
+      "_side": "both"
+    },
+    {
+      "path": "mods/dungeons-and-taverns.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "dungeons-and-taverns",
+      "_name": "Dungeons and Taverns",
+      "_side": "both"
+    },
+    {
+      "path": "mods/incendium.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "incendium",
+      "_name": "Incendium",
+      "_side": "both"
+    },
+    {
+      "path": "mods/nullscape.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "nullscape",
+      "_name": "Nullscape",
+      "_side": "both"
+    },
+    {
+      "path": "mods/deeperdarker.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "deeperdarker",
+      "_name": "Deeper and Darker",
+      "_side": "both"
+    },
+    {
+      "path": "mods/alexs-caves.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "alexs-caves",
+      "_name": "Alex's Caves",
+      "_side": "both"
+    },
+    {
+      "path": "mods/citadel.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "citadel",
+      "_name": "Citadel",
+      "_side": "both"
+    },
+    {
+      "path": "mods/serene-seasons.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "serene-seasons",
+      "_name": "Serene Seasons",
+      "_side": "both"
+    },
+    {
+      "path": "mods/serene-seasons-plus.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "serene-seasons-plus",
+      "_name": "Serene Seasons Plus",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sound-physics-remastered.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sound-physics-remastered",
+      "_name": "Sound Physics Remastered",
+      "_side": "client"
+    },
+    {
+      "path": "mods/ambientsounds.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ambientsounds",
+      "_name": "AmbientSounds",
+      "_side": "client"
+    },
+    {
+      "path": "mods/creativecore.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "creativecore",
+      "_name": "CreativeCore",
+      "_side": "both"
+    },
+    {
+      "path": "mods/fallingleaves-mod.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "fallingleaves-mod",
+      "_name": "Falling Leaves",
+      "_side": "client"
+    },
+    {
+      "path": "mods/visuality-reforged.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "visuality-reforged",
+      "_name": "Visuality Reforged",
+      "_side": "client"
+    },
+    {
+      "path": "mods/immersive-weathering.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "immersive-weathering",
+      "_name": "Immersive Weathering",
+      "_side": "both"
+    },
+    {
+      "path": "mods/moonlight.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "moonlight",
+      "_name": "Moonlight Lib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/enhanced-celestials.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "enhanced-celestials",
+      "_name": "Enhanced Celestials",
+      "_side": "both"
+    },
+    {
+      "path": "mods/dynamiclights.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "dynamiclights",
+      "_name": "Dynamic Lights",
+      "_side": "client"
+    },
+    {
+      "path": "mods/cataclysm.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cataclysm",
+      "_name": "L_Ender's Cataclysm",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mowzies-mobs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "mowzies-mobs",
+      "_name": "Mowzie's Mobs",
+      "_side": "both"
+    },
+    {
+      "path": "mods/bosses-of-mass-destruction.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "bosses-of-mass-destruction",
+      "_name": "Bosses of Mass Destruction",
+      "_side": "both"
+    },
+    {
+      "path": "mods/aquamirae.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "aquamirae",
+      "_name": "Aquamirae",
+      "_side": "both"
+    },
+    {
+      "path": "mods/the-graveyard-fabric.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "the-graveyard-fabric",
+      "_name": "The Graveyard",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mutant-monsters.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "mutant-monsters",
+      "_name": "Mutant Monsters",
+      "_side": "both"
+    },
+    {
+      "path": "mods/twilight-forest.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "twilight-forest",
+      "_name": "Twilight Forest",
+      "_side": "both"
+    },
+    {
+      "path": "mods/aether.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "aether",
+      "_name": "The Aether",
+      "_side": "both"
+    },
+    {
+      "path": "mods/progressive-bosses.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "progressive-bosses",
+      "_name": "Progressive Bosses",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-dungeon-crawl.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Dungeon Crawl",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-yung-s-better-nether-fortresses.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "YUNG's Better Nether Fortresses",
+      "_side": "both"
+    },
+    {
+      "path": "mods/stalwart-dungeons.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "stalwart-dungeons",
+      "_name": "Stalwart Dungeons",
+      "_side": "both"
+    },
+    {
+      "path": "mods/alexs-mobs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "alexs-mobs",
+      "_name": "Alex's Mobs",
+      "_side": "both"
+    },
+    {
+      "path": "mods/naturalist.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "naturalist",
+      "_name": "Naturalist",
+      "_side": "both"
+    },
+    {
+      "path": "mods/creatures-and-beasts.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "creatures-and-beasts",
+      "_name": "Creatures and Beasts",
+      "_side": "both"
+    },
+    {
+      "path": "mods/ice-and-fire-dragons.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ice-and-fire-dragons",
+      "_name": "Ice and Fire",
+      "_side": "both"
+    },
+    {
+      "path": "mods/domestication-innovation.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "domestication-innovation",
+      "_name": "Domestication Innovation",
+      "_side": "both"
+    },
+    {
+      "path": "mods/doggy-talents-next.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "doggy-talents-next",
+      "_name": "Doggy Talents Next",
+      "_side": "both"
+    },
+    {
+      "path": "mods/betteranimalsplus.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "betteranimalsplus",
+      "_name": "Better Animals Plus",
+      "_side": "both"
+    },
+    {
+      "path": "mods/saddled-companions.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "saddled-companions",
+      "_name": "Saddled Companions",
+      "_side": "both"
+    },
+    {
+      "path": "mods/immersive-aircraft.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "immersive-aircraft",
+      "_name": "Immersive Aircraft",
+      "_side": "both"
+    },
+    {
+      "path": "mods/small-ships.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "small-ships",
+      "_name": "Small Ships",
+      "_side": "both"
+    },
+    {
+      "path": "mods/firstaid.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "firstaid",
+      "_name": "First Aid",
+      "_side": "both"
+    },
+    {
+      "path": "mods/tough-as-nails.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "tough-as-nails",
+      "_name": "Tough As Nails",
+      "_side": "both"
+    },
+    {
+      "path": "mods/cold-sweat.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cold-sweat",
+      "_name": "Cold Sweat",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-legendary-survival-overhaul.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Legendary Survival Overhaul",
+      "_side": "both"
+    },
+    {
+      "path": "mods/diet.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "diet",
+      "_name": "Diet",
+      "_side": "both"
+    },
+    {
+      "path": "mods/farmers-delight.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "farmers-delight",
+      "_name": "Farmer's Delight",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-farmer-s-delight-nether-s-delight.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Farmer's Delight: Nether's Delight",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-farmer-s-delight-cultural-delights.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Farmer's Delight: Cultural Delights",
+      "_side": "both"
+    },
+    {
+      "path": "mods/croptopia.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "croptopia",
+      "_name": "Croptopia",
+      "_side": "both"
+    },
+    {
+      "path": "mods/farmers-respite.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "farmers-respite",
+      "_name": "Farmer's Respite",
+      "_side": "both"
+    },
+    {
+      "path": "mods/brewin-and-chewin.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "brewin-and-chewin",
+      "_name": "Brewin' and Chewin'",
+      "_side": "both"
+    },
+    {
+      "path": "mods/aquaculture.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "aquaculture",
+      "_name": "Aquaculture 2",
+      "_side": "both"
+    },
+    {
+      "path": "mods/fish-of-thieves.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "fish-of-thieves",
+      "_name": "Fish of Thieves",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-pam-s-harvestcraft-2.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Pam's HarvestCraft 2 ⚠",
+      "_side": "both"
+    },
+    {
+      "path": "mods/animal-feeding-trough.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "animal-feeding-trough",
+      "_name": "Animal Feeding Trough",
+      "_side": "both"
+    },
+    {
+      "path": "mods/just-enough-breeding.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "just-enough-breeding",
+      "_name": "Just Enough Breeding",
+      "_side": "client"
+    },
+    {
+      "path": "mods/just-enough-resources-jer.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "just-enough-resources-jer",
+      "_name": "Just Enough Resources",
+      "_side": "client"
+    },
+    {
+      "path": "mods/patchouli.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "patchouli",
+      "_name": "Patchouli",
+      "_side": "both"
+    },
+    {
+      "path": "mods/geckolib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "geckolib",
+      "_name": "GeckoLib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/architectury-api.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "architectury-api",
+      "_name": "Architectury API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/cloth-config.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cloth-config",
+      "_name": "Cloth Config API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/rhino.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "rhino",
+      "_name": "Rhino",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mutil.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "mutil",
+      "_name": "Mutil",
+      "_side": "both"
+    },
+    {
+      "path": "mods/glitchfiend-lib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "glitchfiend-lib",
+      "_name": "GlitchfiendLib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/nitrogen.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "nitrogen",
+      "_name": "Nitrogen",
+      "_side": "both"
+    },
+    {
+      "path": "mods/puzzles-lib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "puzzles-lib",
+      "_name": "Puzzles Lib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/balm.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "balm",
+      "_name": "Balm",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sisyphus?.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sisyphus?",
+      "_name": "Cupboard",
+      "_side": "both"
+    },
+    {
+      "path": "mods/iceberg.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "iceberg",
+      "_name": "Iceberg",
+      "_side": "both"
+    },
+    {
+      "path": "mods/prism-lib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "prism-lib",
+      "_name": "Prism",
+      "_side": "both"
+    },
+    {
+      "path": "mods/fzzy-config.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "fzzy-config",
+      "_name": "Fzzy Config",
+      "_side": "both"
+    },
+    {
+      "path": "mods/kotlin-for-forge.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "kotlin-for-forge",
+      "_name": "Kotlin for Forge",
+      "_side": "both"
+    },
+    {
+      "path": "mods/waystones.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "waystones",
+      "_name": "Waystones",
+      "_side": "both"
+    },
+    {
+      "path": "mods/supplementaries.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "supplementaries",
+      "_name": "Supplementaries",
+      "_side": "both"
+    },
+    {
+      "path": "mods/macaws-bridges.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "macaws-bridges",
+      "_name": "Macaw's Bridges",
+      "_side": "both"
+    },
+    {
+      "path": "mods/macaws-roofs.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "macaws-roofs",
+      "_name": "Macaw's Roofs",
+      "_side": "both"
+    },
+    {
+      "path": "mods/macaws-fences-and-walls.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "macaws-fences-and-walls",
+      "_name": "Macaw's Fences and Walls",
+      "_side": "both"
+    },
+    {
+      "path": "mods/handcrafted.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "handcrafted",
+      "_name": "Handcrafted",
+      "_side": "both"
+    },
+    {
+      "path": "mods/chipped.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "chipped",
+      "_name": "Chipped",
+      "_side": "both"
+    },
+    {
+      "path": "mods/framework.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "framework",
+      "_name": "Framework",
+      "_side": "both"
+    },
+    {
+      "path": "mods/storage-drawers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "storage-drawers",
+      "_name": "Storage Drawers",
+      "_side": "both"
+    },
+    {
+      "path": "mods/simple-storage-network.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "simple-storage-network",
+      "_name": "Simple Storage Network",
+      "_side": "both"
+    },
+    {
+      "path": "mods/numismatic-overhaul.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "numismatic-overhaul",
+      "_name": "Numismatic Overhaul",
+      "_side": "both"
+    },
+    {
+      "path": "mods/easy-villagers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "easy-villagers",
+      "_name": "Easy Villagers",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-auction-house.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Auction House ⚠",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-chestshop.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "ChestShop ⚠",
+      "_side": "both"
+    },
+    {
+      "path": "mods/journeymap.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "journeymap",
+      "_name": "JourneyMap",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mod-xaero-s-minimap.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Xaero's Minimap",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mod-xaero-s-world-map.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Xaero's World Map",
+      "_side": "client"
+    },
+    {
+      "path": "mods/jei.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "jei",
+      "_name": "JEI",
+      "_side": "client"
+    },
+    {
+      "path": "mods/jade.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "jade",
+      "_name": "Jade",
+      "_side": "both"
+    },
+    {
+      "path": "mods/neat.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "neat",
+      "_name": "Neat",
+      "_side": "client"
+    },
+    {
+      "path": "mods/appleskin.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "appleskin",
+      "_name": "AppleSkin",
+      "_side": "both"
+    },
+    {
+      "path": "mods/better-advancements.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "better-advancements",
+      "_name": "Better Advancements",
+      "_side": "client"
+    },
+    {
+      "path": "mods/controlling.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "controlling",
+      "_name": "Controlling",
+      "_side": "client"
+    },
+    {
+      "path": "mods/searchables.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "searchables",
+      "_name": "Searchables",
+      "_side": "client"
+    },
+    {
+      "path": "mods/inventory-hud+.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "inventory-hud+",
+      "_name": "Inventory HUD+",
+      "_side": "client"
+    },
+    {
+      "path": "mods/betterthirdperson.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "betterthirdperson",
+      "_name": "Better Third Person",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mod-shoulder-surfing-reloaded.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Shoulder Surfing Reloaded",
+      "_side": "client"
+    },
+    {
+      "path": "mods/first-person-model.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "first-person-model",
+      "_name": "First Person Model",
+      "_side": "client"
+    },
+    {
+      "path": "mods/notenoughanimations.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "notenoughanimations",
+      "_name": "Not Enough Animations",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mod-item-highlighter.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Item Highlighter",
+      "_side": "client"
+    },
+    {
+      "path": "mods/toast-control.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "toast-control",
+      "_name": "Toast Control",
+      "_side": "client"
+    },
+    {
+      "path": "mods/default-options.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "default-options",
+      "_name": "Default Options",
+      "_side": "client"
+    },
+    {
+      "path": "mods/fancymenu.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "fancymenu",
+      "_name": "FancyMenu",
+      "_side": "client"
+    },
+    {
+      "path": "mods/konkrete.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "konkrete",
+      "_name": "Konkrete",
+      "_side": "client"
+    },
+    {
+      "path": "mods/drippy-loading-screen.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "drippy-loading-screen",
+      "_name": "Drippy Loading Screen",
+      "_side": "client"
+    },
+    {
+      "path": "mods/advancement-plaques.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "advancement-plaques",
+      "_name": "Advancement Plaques",
+      "_side": "client"
+    },
+    {
+      "path": "mods/legendary-tooltips.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "legendary-tooltips",
+      "_name": "Legendary Tooltips",
+      "_side": "client"
+    },
+    {
+      "path": "mods/equipment-compare.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "equipment-compare",
+      "_name": "Equipment Compare",
+      "_side": "client"
+    },
+    {
+      "path": "mods/embeddium.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "embeddium",
+      "_name": "Embeddium",
+      "_side": "both"
+    },
+    {
+      "path": "mods/oculus.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "oculus",
+      "_name": "Oculus",
+      "_side": "client"
+    },
+    {
+      "path": "mods/ferritecore.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "ferritecore",
+      "_name": "FerriteCore",
+      "_side": "both"
+    },
+    {
+      "path": "mods/modernfix.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "modernfix",
+      "_name": "ModernFix",
+      "_side": "both"
+    },
+    {
+      "path": "mods/canary.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "canary",
+      "_name": "Canary",
+      "_side": "both"
+    },
+    {
+      "path": "mods/memoryleakfix.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "memoryleakfix",
+      "_name": "MemoryLeakFix",
+      "_side": "both"
+    },
+    {
+      "path": "mods/entityculling.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "entityculling",
+      "_name": "EntityCulling",
+      "_side": "client"
+    },
+    {
+      "path": "mods/immediatelyfast.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "immediatelyfast",
+      "_name": "ImmediatelyFast",
+      "_side": "client"
+    },
+    {
+      "path": "mods/clumps.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "clumps",
+      "_name": "Clumps",
+      "_side": "both"
+    },
+    {
+      "path": "mods/chunky.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "chunky",
+      "_name": "Chunky",
+      "_side": "both"
+    },
+    {
+      "path": "mods/spark.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "spark",
+      "_name": "spark",
+      "_side": "both"
+    },
+    {
+      "path": "mods/observable.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "observable",
+      "_name": "Observable",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-ai-improvements.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "AI Improvements ⚠",
+      "_side": "both"
+    },
+    {
+      "path": "mods/badoptimizations.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "badoptimizations",
+      "_name": "BadOptimizations",
+      "_side": "client"
+    },
+    {
+      "path": "mods/dynamic-fps.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "dynamic-fps",
+      "_name": "Dynamic FPS",
+      "_side": "client"
+    },
+    {
+      "path": "mods/dynamictrees.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "dynamictrees",
+      "_name": "Dynamic Trees",
+      "_side": "both"
+    },
+    {
+      "path": "mods/structory.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "structory",
+      "_name": "Structory",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-structory-towers.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Structory: Towers",
+      "_side": "both"
+    },
+    {
+      "path": "mods/moogs-voyager-structures.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "moogs-voyager-structures",
+      "_name": "Moog's Voyager Structures",
+      "_side": "both"
+    },
+    {
+      "path": "mods/moogs-end-structures.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "moogs-end-structures",
+      "_name": "Moog's End Structures",
+      "_side": "both"
+    },
+    {
+      "path": "mods/towers-of-the-wild.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "towers-of-the-wild",
+      "_name": "Towers of the Wild",
+      "_side": "both"
+    },
+    {
+      "path": "mods/repurposed-structures.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "repurposed-structures",
+      "_name": "Repurposed Structures",
+      "_side": "both"
+    },
+    {
+      "path": "mods/yungs-better-jungle-temples.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "yungs-better-jungle-temples",
+      "_name": "YUNG's Better Jungle Temples",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-yung-s-better-end-island.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "YUNG's Better End Island",
+      "_side": "both"
+    },
+    {
+      "path": "mods/amplified-nether.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "amplified-nether",
+      "_name": "Amplified Nether",
+      "_side": "both"
+    },
+    {
+      "path": "mods/effective.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "effective",
+      "_name": "Effective (Forge)",
+      "_side": "client"
+    },
+    {
+      "path": "mods/cristel-lib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cristel-lib",
+      "_name": "Cristel Lib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/structure-gel-api.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "structure-gel-api",
+      "_name": "Structure Gel API",
+      "_side": "both"
+    },
+    {
+      "path": "mods/smartbrainlib.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "smartbrainlib",
+      "_name": "SmartBrainLib",
+      "_side": "both"
+    },
+    {
+      "path": "mods/gateways-to-eternity.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "gateways-to-eternity",
+      "_name": "Gateways to Eternity",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sons-of-sins.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sons-of-sins",
+      "_name": "Sons of Sins",
+      "_side": "both"
+    },
+    {
+      "path": "mods/illager-invasion.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "illager-invasion",
+      "_name": "Illager Invasion",
+      "_side": "both"
+    },
+    {
+      "path": "mods/born-in-chaos.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "born-in-chaos",
+      "_name": "Born in Chaos",
+      "_side": "both"
+    },
+    {
+      "path": "mods/creeper-overhaul.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "creeper-overhaul",
+      "_name": "Creeper Overhaul",
+      "_side": "both"
+    },
+    {
+      "path": "mods/enderman-overhaul.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "enderman-overhaul",
+      "_name": "Enderman Overhaul",
+      "_side": "both"
+    },
+    {
+      "path": "mods/friends-and-foes.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "friends-and-foes",
+      "_name": "Friends & Foes",
+      "_side": "both"
+    },
+    {
+      "path": "mods/vampirism.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "vampirism",
+      "_name": "Vampirism",
+      "_side": "both"
+    },
+    {
+      "path": "mods/human-companions.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "human-companions",
+      "_name": "Human Companions",
+      "_side": "both"
+    },
+    {
+      "path": "mods/productivebees.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "productivebees",
+      "_name": "Productive Bees",
+      "_side": "both"
+    },
+    {
+      "path": "mods/rightclickharvest.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "rightclickharvest",
+      "_name": "Right Click Harvest",
+      "_side": "both"
+    },
+    {
+      "path": "mods/cooking-for-blockheads.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cooking-for-blockheads",
+      "_name": "Cooking for Blockheads",
+      "_side": "both"
+    },
+    {
+      "path": "mods/sophisticated-storage.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "sophisticated-storage",
+      "_name": "Sophisticated Storage",
+      "_side": "both"
+    },
+    {
+      "path": "mods/comforts.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "comforts",
+      "_name": "Comforts",
+      "_side": "both"
+    },
+    {
+      "path": "mods/open-parties-and-claims.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "open-parties-and-claims",
+      "_name": "Open Parties and Claims",
+      "_side": "both"
+    },
+    {
+      "path": "mods/simple-voice-chat.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "simple-voice-chat",
+      "_name": "Simple Voice Chat",
+      "_side": "both"
+    },
+    {
+      "path": "mods/betterf3.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "betterf3",
+      "_name": "BetterF3",
+      "_side": "client"
+    },
+    {
+      "path": "mods/inventory-profiles-next.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "inventory-profiles-next",
+      "_name": "Inventory Profiles Next",
+      "_side": "client"
+    },
+    {
+      "path": "mods/libipn.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "libipn",
+      "_name": "libIPN",
+      "_side": "client"
+    },
+    {
+      "path": "mods/packet-fixer.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "packet-fixer",
+      "_name": "Packet Fixer",
+      "_side": "both"
+    },
+    {
+      "path": "mods/connectivity.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "connectivity",
+      "_name": "Connectivity",
+      "_side": "both"
+    },
+    {
+      "path": "mods/crash-assistant.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "crash-assistant",
+      "_name": "Crash Assistant",
+      "_side": "client"
+    },
+    {
+      "path": "mods/mod-saturn.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Saturn",
+      "_side": "both"
+    },
+    {
+      "path": "mods/carry-on.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "carry-on",
+      "_name": "Carry On",
+      "_side": "both"
+    },
+    {
+      "path": "mods/elytra-slot.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "elytra-slot",
+      "_name": "Elytra Slot",
+      "_side": "both"
+    },
+    {
+      "path": "mods/cosmetic-armor-reworked.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "optional"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "cosmetic-armor-reworked",
+      "_name": "Cosmetic Armor Reworked",
+      "_side": "client"
+    },
+    {
+      "path": "mods/paraglider.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": "paraglider",
+      "_name": "Paraglider",
+      "_side": "both"
+    },
+    {
+      "path": "mods/mod-spartan-weaponry.jar",
+      "hashes": {},
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [],
+      "fileSize": 0,
+      "_project": null,
+      "_name": "Spartan Weaponry",
+      "_side": "both"
+    }
+  ],
+  "_meta": {
+    "note": "Файл подготовлен для modrinth CLI. URL/хеши заполняются scripts/hydrate_manifest.py --modrinth (Modrinth API доступен из CI и с твоей машины; из песочницы агента — нет).",
+    "loaders": [
+      "forge",
+      "neoforge"
+    ],
+    "gameVersions": [
+      "1.20.1"
+    ]
+  }
+}

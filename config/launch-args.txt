@@ -1,0 +1,57 @@
+# ============================================================================
+#  Aetherfall: Chronicles of the Shattered Vale — JVM-аргументы и запуск
+#  MC 1.20.1 · Forge 47.2.20 · Java 17 (Temurin 17.0.9+) · Prism Launcher 8.x
+# ============================================================================
+
+## 1. КЛИЕНТ — 12 ГБ (16 ГБ ОС)
+-Xms6G -Xmx12G
+-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=130
+-XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch
+-XX:G1NewSizePercent=28 -XX:G1MaxNewSizePercent=45 -XX:G1HeapRegionSize=16M
+-XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4
+-XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90
+-XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem
+-XX:MaxTenuringThreshold=1 -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8
+
+## 1b. КЛИЕНТ — «экономный» вариант, если ОС Windows и открыт браузер
+-Xms5G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=150
+-XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=25
+-XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15
+-XX:InitiatingHeapOccupancyPercent=20 -Dfile.encoding=UTF-8
+
+## 2. СЕРВЕР — 8 ГБ
+-Xms8G -Xmx8G
+-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200
+-XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch
+-XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=16M
+-XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4
+-XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90
+-XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem
+-XX:MaxTenuringThreshold=1 -Dfile.encoding=UTF-8
+
+## 3. Почему НЕ эти флаги
+#  -XX:+UseZGC            → на 12 ГБ +2-3 ГБ overhead, +15% CPU, паузы хуже G1 для геймплея
+#  -XX:+UseShenandoahGC   → известны краши с ModernFix.redirect на Forge 47 (JIT-профили)
+#  -XX:MaxMetaspaceSize=  → не фиксировать: 238 модов генерируют много классов, лимит = OOM metaspace
+#  -XX:+AggressiveOpts    → удалён в Java 11+, бесполезен
+#  -XX:ParallelGCThreads= → не задавать вручную: на i5-10400F (6C/12T) JVM выберет верно
+
+## 4. Настройка в Prism Launcher
+#  Instance → Edit → Settings → Java:
+#    Java path:  /usr/lib/jvm/temurin-17-jdk/bin/java   (или C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin\javaw.exe)
+#    Memory:     минимум 6144 MB / максимум 12288 MB
+#    JVM args:   (строка из блока 1, одной строкой через пробел)
+#    ☑ Skip Java compatibility checks — ВЫКЛ (нам нужно именно 17)
+#
+#  wrapper-строка (одной строкой, готова к вставке):
+#  -Xms6G -Xmx12G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=130 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=28 -XX:G1MaxNewSizePercent=45 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8
+
+## 5. Дополнительные аргументы клиента (необязательно)
+#  -Dsun.java2d.opengl=true        — если UI-рендер тормозит (Linux/AMD)
+#  -Dorg.lwjgl.util.NoChecks=true   — +1-2 FPS, отключает лишние GL-проверки
+#  -Dfml.earlyprogresswindow=false  — если лоадинг-скрин FancyMenu конфликтует
+
+## 6. Порядок проверки, что аргументы применились
+#  В логе (logs/latest.log) ищи строку:
+#    "Command Line: ... -Xmx12G ..."
+#  Если Xmx отличается — Prism перезаписал аргументы (Settings → Java → Override memory)

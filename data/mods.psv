@@ -1,0 +1,219 @@
+# name|cat|role|deps|soft|side|crit|note|gh
+Apotheosis|A|Аффиксы, редкости, самоцветы, зачарования, атрибуты мобов|Placebo; Apothic Attributes|Curios; LootJS|both|ядро|Не ставить вместе с Zenith — дубль системы атрибутов/аффиксов|Shadows-of-Fire/Apotheosis
+Apothic Attributes|A|Библиотека атрибутов и клиентских шкал игрока|—|—|both|ядро|Требуется Apotheosis 7.x|Shadows-of-Fire/Apothic-Attributes
+Placebo|A|Библиотека конфигов и регистрации|—|—|both|ядро|—|Shadows-of-Fire/Placebo
+Iron's Spells 'n Spellbooks|A|Мана, 4 школы магии, посохи, свитки, слоты заклинаний|Curios; GeckoLib; PlayerAnimator|Apothic Attributes|both|ядро|Несовместим с Epic Fight (оба перехватывают анимации рук)|iron431/irons-spells-n-spellbooks
+Project MMO|A|Движок жизненных навыков: XP за действия, уровни, требования|—|KubeJS|both|ядро|Единственный владелец шкал навыков в паке|Caltinor/Project-MMO
+Pufferfish's Skills|A|Дерево талантов, очки за уровни, респек|Pufferfish's Attributes|—|both|ядро|Заменяет Passive Skill Tree (дубль дерева)|—
+Pufferfish's Attributes|A|Библиотека атрибутов для Puffish Skills|—|—|both|ядро|—|—
+Origins (Forge)|A|Раса при первом входе, экран выбора, пассивки|⚠ проверить Apoli/Calio Forge-порты|Origins++|both|ядро|Требует проверки сборки под 1.20.1: если нет стабильного порта — включить fallback на KubeJS-расы (см. config/liveskills.md, раздел «Fallback»)|—
+Origins++|A|40+ готовых рас-ориджинов (датапак)|Origins (Forge)|—|both|ядро|Ставится как датапак в world/datapacks|—
+AttributeFix|A|Снимает ванильные лимиты атрибутов|—|—|both|ядро|Обязателен при 200+ модах с атрибутами|Darkhax/AttributeFix
+KubeJS|A|Скриптовый движок: связка рас/классов/репутации/рецептов|Rhino; Architectury|ProbeJS|both|ядро|Все кастомные механики пака живут здесь|KubeJS-Mods/KubeJS
+LootJS|A|Правка лут-таблиц из скриптов|KubeJS|—|both|ядро|Нужен для тиринга лута по уровням|—
+Pehkui|A|Масштаб/размер рас (гномы, орки, полурослики)|—|—|both|важный|Размер влияет на хитбокс и дальность|—
+Better Combat|B|Направленные атаки, дуги, комбо, посткнокбек, дуалы|PlayerAnimator; Reach Entity Attributes|Simply Swords|both|ядро|НЕ совместим с Epic Fight — Epic Fight исключён|ZsoltMolnarrr/BetterCombat
+PlayerAnimator|B|Библиотека анимаций игрока (нужна Better Combat и Iron's Spells)|—|—|both|ядро|—|KosmX/PlayerAnimator
+Combat Roll|B|Перекаты/уклонения с i-frames и кулдауном|PlayerAnimator|—|both|ядро|Настраивается через gamerule/конфиг|ZsoltMolnarrr/CombatRoll
+Simply Swords|B|60+ оружий с мувсетами под Better Combat|—|Better Combat|both|важный|Не дублирует Spartan Weaponry — тот исключён|—
+Reach Entity Attributes|B|Библиотека дальности атаки/взаимодействия|—|—|both|ядро|Требуется Better Combat|—
+Ranged Weapon API|B|Библиотека луков/арбалетов/метательного|—|Archers (RPG Series)|both|важный|—|—
+Archers (RPG Series)|B|Класс лукаря: луки, стрелы, скиллы|Ranged Weapon API; Spell Power Attributes|—|both|важный|—|—
+Warriors (RPG Series)|B|Класс воина: щиты, тяжёлое оружие, скиллы|Spell Power Attributes|—|both|важный|—|—
+Paladins (RPG Series)|B|Класс паладина: святая магия, ауры|Spell Power Attributes|—|both|важный|—|—
+Rogues (RPG Series)|B|Класс разбойника: кинжалы, яды, стелс|Spell Power Attributes|—|both|важный|—|—
+Spell Power Attributes|B|Библиотека магической силы/крита заклинаний|—|—|both|ядро|Нужна всем *RPG Series* и Iron's Spells-аддонам|—
+Mobs Attempt Parkour|B|Мобы прыгают через препятствия — тактика погони|—|—|both|опциональный|Может нагружать ИИ, ставить с Canary|—
+Zombie Awareness|B|Улучшенный таргетинг/слух/следование по запаху|—|—|both|важный|Конфиг: радиус слуха 24 блока|Corosus/Zombie-Awareness
+Ars Nouveau|C|Магия «конструктор заклинаний» + ритуальные круги|GeckoLib; Curios|—|both|ядро|Не дублирует Iron's Spells: другой принцип (сборка заклинаний)|baileyholl/Ars-Nouveau
+Botania|C|Природная магия (мана-цветы), уникальная философия|Patchouli; Curios|—|both|важный|Отключить автоматизацию в конфиге для баланса|VazkiiMods/Botania
+Goety|C|Некромантия, призыв нежити, ритуалы|GeckoLib|—|both|важный|Единственная некромантия в паке|—
+Malum|C|Духовная магия, ритуалы, души|GeckoLib; Curios|—|both|важный|—|—
+Hexerei|C|Ведьмовство/друидизм, хижины, ритуалы|GeckoLib|—|both|важный|—|—
+Occultism|C|Ритуальный призыв духов-помощников|GeckoLib; Curios|—|both|важный|—|—
+Eidolon Repraised|C|Тёмные ритуалы, алтари, жертвы|⚠ проверить 1.20.1|—|both|опциональный|⚠ Порт неофициальный — проверить дату обновления|—
+Wizards (RPG Series)|C|Класс мага: мантии, жезлы, скиллы|Spell Power Attributes|Iron's Spells|both|важный|—|—
+Traveloptics|C|Аддон к Iron's Spells: новые школы/посохи|Iron's Spells; Spell Power Attributes|—|both|опциональный|Аддон, не отдельная система|—
+Enigmatic Legacy|D|Артефакты/реликвии с уникальными эффектами|Curios|—|both|важный|Артефакты — часть эндгейм-лута|—
+Artifacts|D|40+ аксессуаров-артефактов в сундуках|Curios|—|both|важный|Редкость настроена в конфиге|—
+Jewelry (RPG Series)|D|Кольца/амулеты/браслеты с атрибутами|Curios|—|both|важный|—|—
+Immersive Armors|D|Атмосферные наборы брони (не мультяшные)|—|—|both|важный|—|—
+Tetra|D|Модульное оружие/инструменты, верстаки, апгрейды|Mutil|—|both|важный|Конфликт с Better Combat по мувсетам — решается патчем|mickelus/tetra
+Sophisticated Backpacks|D|Рюкзаки с апгрейдами|Sophisticated Core|—|both|важный|—|—
+Sophisticated Core|D|Библиотека Sophisticated|—|—|both|ядро|—|—
+Travelers Backpack|D|Рюкзак с крафт-слотами и инструментами|—|—|both|важный|Не ставить оба рюкзака одновременно без нужды — оставить Sophisticated|—
+Inventory Sorter|D|Сортировка инвентаря/сундуков|—|—|client|важный|Client-only|—
+Mouse Tweaks|D|Перетаскивание стаками|—|—|client|важный|Client-only|—
+Enchantment Descriptions|D|Описания зачарований в подсказках|Bookshelf|—|client|важный|—|—
+Bookshelf|D|Библиотека данных/утилит|—|—|both|ядро|—|Darkhax/Bookshelf
+Corail Tombstone|D|Могилы, сохранение вещей, штраф за смерть|—|—|both|ядро|Настроить «честную» смерть: 0 потери слотов|—
+Curios API|D|Слоты аксессуаров (база для артефактов/колец)|—|—|both|ядро|Единственная система слотов|TheIllusiveC4/Curios
+FTB Quests|J|Квестовый движок (главы, команды, награды, гейтинг)|FTB Teams; FTB Library|FTB Ranks|both|ядро|Единственный квестовый движок — Bountiful только как доска баунти|—
+FTB Teams|J|Партии/команды для квестов|FTB Library|—|both|ядро|—|—
+FTB Library|J|Библиотека FTB|—|—|both|ядро|—|—
+Bountiful|J|Доска баунти от NPC с наградами|—|FTB Quests|both|важный|Дополняет FTB Quests, не заменяет|—
+Easy NPC|J|Кастомные NPC с диалогами и ветками|—|FTB Quests|both|ядро|Носитель диалогов фракций и выдачи квестов|—
+Guard Villagers|J|Стражники деревень, защита от рейдов|—|—|both|важный|Нужен для квестов «защита деревни»|—
+Villager Names|J|Имена жителей (нужны для «личных» квестов)|—|—|both|важный|Client+server|—
+Reputation Core (KubeJS)|J|Собственная система репутации на KubeJS+scoreboard|KubeJS|FTB Quests|both|ядро|Не мод, а скрипт+датапак пака; см. config/reputation-system.md|—
+Recruits|G|Наёмники-компаньоны с приказами|—|—|both|важный|Связка с репутацией фракции стражников|—
+Terralith|E|150+ биомов + рельеф (datapack-mod)|—|Tectonic|both|ядро|НЕ ставить вместе с Biomes O' Plenty / BWG — конфликт biome source|Terralith/Terralith
+Tectonic|E|Крупные горы, каньоны, океаны (модификатор шума)|Terralith|—|both|ядро|Проверить совместимость с CTOV (посадка деревень)|—
+ChoiceTheorem's Overhauled Village|E|Кастомные деревни по биомам (стили, профессии)|—|Guard Villagers|both|ядро|Деревни = центры квестов и репутации|—
+Towns and Towers|E|Города/крепости и башни в мире|—|CTOV|both|важный|Проверить пересечение структур с CTOV|—
+YUNG's Better Mineshafts|E|Переработка шахт|YUNG's API|—|both|важный|—|YUNG-GANG/YUNGs-Better-Mineshafts
+YUNG's Better Dungeons|E|Переработка подземелий|YUNG's API|—|both|важный|—|YUNG-GANG/YUNGs-Better-Dungeons
+YUNG's Better Strongholds|E|Переработка крепостей|YUNG's API|—|both|важный|—|YUNG-GANG/YUNGs-Better-Strongholds
+YUNG's Better Desert Temples|E|Храмы пустыни|YUNG's API|—|both|опциональный|—|YUNG-GANG/YUNGs-Better-Desert-Temples
+YUNG's Better Witch Huts|E|Хижины ведьм|YUNG's API|—|both|опциональный|—|YUNG-GANG/YUNGs-Better-Witch-Huts
+YUNG's Better Ocean Monuments|E|Океанские монументы|YUNG's API|—|both|опциональный|—|YUNG-GANG/YUNGs-Better-Ocean-Monuments
+YUNG's API|E|Библиотека YUNG|—|—|both|ядро|—|YUNG-GANG/YUNGs-API
+When Dungeons Arise|E|70+ процедурных данжей/арен|—|—|both|ядро|Частоту снизить в конфиге до 1 структуры на 400 блоков|—
+When Dungeons Arise: Seven Seas|E|Морские данжи/корабли|—|—|both|опциональный|—|—
+Dungeons and Taverns|E|Таверны/аванпосты/мини-данжи|—|CTOV|both|важный|—|—
+Incendium|E|Переработка Нижнего мира (структуры/биомы)|—|—|both|важный|Датапак-мод|—
+Nullscape|E|Переработка Энда|—|—|both|опциональный|—|—
+Deeper and Darker|E|Глубинный биом, скалк, новая угроза|—|—|both|важный|Связка с «опасной ночью»|—
+Alex's Caves|E|6 огромных подземных биомов с механиками|Citadel|—|both|важный|Тяжёлая генерация — прогреть чанки Chunky|AlexModGuy/AlexsCaves
+Citadel|E|Библиотека AlexModGuy|—|—|both|ядро|Нужна Alex's Mobs/Caves|AlexModGuy/Citadel
+Serene Seasons|E|Сезоны: посев/сбор, температура, цвет листвы|—|Serene Seasons Plus|both|ядро|Сезон = гейт для фермерства (см. liveskills)|—
+Serene Seasons Plus|E|Аддон: больше растений по сезонам|Serene Seasons|—|both|опциональный|—|—
+Sound Physics Remastered|E|Реверберация/окклюзия звука в пещерах|—|—|client|важный|Client-only|—
+AmbientSounds|E|Эмбиент-звуки окружения|CreativeCore|—|client|важный|Client-only, отдельные треки в ресурспаке|—
+CreativeCore|E|Библиотека CreativeMD|—|—|both|ядро|—|—
+Falling Leaves|E|Падающие листья (атмосфера)|—|—|client|опциональный|Client-only|—
+Visuality Reforged|E|Мелкие частицы (кровь, искры)|—|—|client|опциональный|Может снижать FPS на слабых GPU|—
+Immersive Weathering|E|Окисление, мох, эрозия, пыль|Moonlight Lib|—|both|опциональный|⚠ проверить ветку 1.20.1|—
+Moonlight Lib|E|Библиотека (нужна Immersive Weathering/Supplementaries)|—|—|both|ядро|—|MehVahdJukaar/Moonlight
+Enhanced Celestials|E|Кровавые луны/урожайные луны — событийная опасность|—|—|both|опциональный|Связать с событиями «ночь орд»|—
+Dynamic Lights|E|Динамический свет от предметов|—|—|client|опциональный|⚠ альтернатива Lucent — выбрать одну|—
+L_Ender's Cataclysm|F|Данжи + 8 боссов с фазами и аренами|Citadel|—|both|ядро|Не дублирует When Dungeons Arise: рукотворные арены|—
+Mowzie's Mobs|F|5+ боссов с уникальными механиками|GeckoLib|—|both|ядро|—|—
+Bosses of Mass Destruction|F|4 босса + структуры|GeckoLib|—|both|ядро|—|—
+Aquamirae|F|Морские боссы/ данж «Корабль»|GeckoLib|—|both|важный|—|—
+The Graveyard|F|Кладбища, нежить, мини-босс|GeckoLib|—|both|важный|—|—
+Mutant Monsters|F|Мутанты-мини-боссы|—|—|both|опциональный|—|—
+Twilight Forest|F|Целая прогрессия-измерение с 5 боссами|—|—|both|ядро|Тир-3 контент|—
+The Aether|F|Измерение с боссом и прогрессией|Nitrogen|—|both|важный|Тир-2 контент|—
+Progressive Bosses|F|Скейлинг ванильных боссов по числу убийств|—|—|both|опциональный|—|—
+Dungeon Crawl|F|Рогалик-уровни (случайные комнаты) ⚠|—|—|both|опциональный|⚠ проверить наличие под 1.20.1 Forge; иначе заменить на «Roguelike Dungeons»|—
+YUNG's Better Nether Fortresses|F|Крепости Нижнего мира|YUNG's API|—|both|опциональный|—|YUNG-GANG/YUNGs-Better-Nether-Fortresses
+Stalwart Dungeons|F|Данжи с мини-боссами|—|—|both|опциональный|—|—
+Alex's Mobs|G|90+ мобов, уникальные механики, дроп|Citadel|—|both|ядро|Основа бестиария|AlexModGuy/AlexsMobs
+Naturalist|G|Реалистичная фауна (медведи, слоны, змеи)|—|—|both|важный|Проверить дубли с Alex's Mobs (разные виды)|—
+Creatures and Beasts|G|30+ атмосферных мобов|GeckoLib|—|both|опциональный|—|—
+Ice and Fire|G|Драконы, маунты, опасные виды|Citadel|—|both|ядро|Драконы = эндгейм-маунты|AlexModGuy/Ice-and-Fire
+Domestication Innovation|G|Приручение/питомцы, новые механики|—|—|both|важный|—|—
+Doggy Talents Next|G|Прокачка собак-компаньонов|—|—|both|опциональный|—|—
+Better Animals Plus|G|Новые виды животных (олени, медведи и др.)|—|—|both|опциональный|—|—
+Saddled Companions|G|Маунты/упряжь|—|—|both|опциональный|⚠ проверить|—
+Immersive Aircraft|G|Летающие маунты (дирижабли/планеры)|—|—|both|опциональный|—|—
+Small Ships|G|Корабли-маунты для рек/морей|—|—|both|важный|Связка с рыбалкой/торговлей|—
+First Aid|H|Травмы по частям тела (переломы, кровотечение)|—|—|both|важный|Совместим с Apotheosis HP-атрибутами|—
+Tough As Nails|H|Жажда, температура, сезоны|GlitchfiendLib|Serene Seasons|both|важный|Себестоимость: не ставить Cold Sweat (дубль)|—
+Cold Sweat|H|Глубокая система температуры|—|—|both|опциональный|Альтернатива TAN — выбрать одну|—
+Legendary Survival Overhaul|H|Холод/жара/жажда/травмы в одном пакете|—|—|both|опциональный|⚠ дубль с TAN+First Aid — несовместимо, оставить как альтернативу|—
+Diet|H|Нутриенты: белки/овощи/сахар → баффы|—|Farmer's Delight|both|важный|Связка с кулинарией|—
+Farmer's Delight|I|Кулинария: ножи, разделка, кастрюля, котёл|—|Diet|both|ядро|Основа навыка «Готовка»|—
+Farmer's Delight: Nether's Delight|I|Кулинария Нижнего мира|Farmer's Delight|—|both|опциональный|—|—
+Farmer's Delight: Cultural Delights|I|Блюда разных культур|Farmer's Delight|—|both|опциональный|—|—
+Cuisine Delight / End's Delight|I|Дополнительные блюда|Farmer's Delight|—|both|опциональный|—|—
+Croptopia|I|60+ культур и еда|—|Farmer's Delight|both|важный|Генерация семян — настроить редкость|—
+Serene Seasons|E|(см. E)|—|—|both|ядро|—|—
+Farmer's Respite|I|Чай/кофе, напитки|Farmer's Delight|—|both|опциональный|—|—
+Brewin' and Chewin'|I|Сыры/выдержка/ферментация|Farmer's Delight|—|both|важный|Закрывает «сыры с выдержкой»|—
+Aquaculture 2|I|Рыбалка: удилища, 30+ рыб, снасти|—|—|both|ядро|Основа навыка «Рыбалка»|—
+Fish of Thieves|I|Редкие рыбы/трофеи|—|Aquaculture 2|both|опциональный|—|—
+Catch and Release / Tide ⚠|I|Альтернатива рыбалки|—|—|both|опциональный|⚠ выбрать один движок рыбалки|—
+Pam's HarvestCraft 2 ⚠|I|Огромный набор культур ⚠|—|—|both|опциональный|⚠ проверить 1.20.1; иначе Croptopia|—
+Animal Feeding Trough|I|Автокормление животных|—|—|both|опциональный|—|—
+Productive Animals? ⚠|I|Селекция/генетика животных|—|—|both|опциональный|⚠ проверить; генетика реализуется скриптом KubeJS + NBT|—
+Domestication Innovation|G|(см. G)|—|—|both|важный|—|—
+Just Enough Breeding|I|Показывает разведение/корм|—|JEI|client|важный|—|—
+Just Enough Resources|M|Лут мобов/структур в JEI|—|JEI|client|важный|—|—
+Patchouli|LIB|Книги-гайды в игре|—|—|both|ядро|Основа стартового гайда|VazkiiMods/Patchouli
+GeckoLib|LIB|Анимации сущностей|—|—|both|ядро|—|bernie-g/geckolib
+Architectury API|LIB|Кроссплатформенный API|—|—|both|ядро|—|architectury/architectury-api
+Cloth Config API|LIB|Конфиг-UI|—|—|both|ядро|—|shedaniel/cloth-config
+Rhino|LIB|JS-движок для KubeJS|—|—|both|ядро|—|KubeJS-Mods/Rhino
+Mutil|LIB|Библиотека Tetra|—|—|both|ядро|—|mickelus/mutil
+GlitchfiendLib|LIB|Библиотека TAN/Seasons|—|—|both|ядро|—|—
+Nitrogen|LIB|Библиотека The Aether|—|—|both|ядро|—|—
+Puzzles Lib|LIB|Библиотека Fuzs|—|—|both|ядро|—|Fuzss/Puzzles-Lib
+Balm|LIB|Кроссплатформенная библиотека (Waystones и др.)|—|—|both|ядро|—|blay09/Balm
+Cupboard|LIB|Утилиты SBM|—|—|both|опциональный|—|—
+Catalog / Configured ⚠|LIB|Каталог модов/конфигов в меню|—|—|client|опциональный|—|—
+Iceberg|LIB|Библиотека (Better Third Person и др.)|—|—|both|ядро|—|—
+Prism|LIB|Библиотека цветов/рендера|—|—|both|опциональный|—|—
+Fzzy Config|LIB|Конфиг-UI|—|—|both|опциональный|—|—
+Kotlin for Forge|LIB|Kotlin-рантайм|—|—|both|ядро|Нужен ряду портов|—
+Sinytra Connector ⚠|LIB|Запуск Fabric-модов на Forge|—|—|both|опциональный|⚠ НЕ включать в v1.0: источник нестабильности с 200+ Forge-модов|—
+Waystones|L|Телепорт-камни между деревнями|Balm|—|both|важный|Экономика: платный телепорт|blay09/Waystones
+Supplementaries|L|Декоративные/функциональные блоки (богатый быт)|Moonlight Lib|—|both|важный|—|MehVahdJukaar/Supplementaries
+Macaw's Bridges|L|Мосты|—|—|both|опциональный|—|—
+Macaw's Roofs|L|Крыши|—|—|both|опциональный|—|—
+Macaw's Fences and Walls|L|Заборы/стены|—|—|both|опциональный|—|—
+Handcrafted|L|Мебель и декор|—|—|both|важный|—|—
+Chipped|L|5000+ вариаций блоков|—|—|both|опциональный|Увеличивает вес ресурспака|—
+Framework|L|Библиотека для декоративных модов|—|—|both|опциональный|—|—
+Farmer's Delight (см. I)|I|—|—|—|both|—|—|—
+Storage Drawers|L|Компактное хранение|—|—|both|опциональный|Лёгкая автоматизация без техно|—
+Simple Storage Network|L|Единая сеть хранения|—|—|both|опциональный|Не индустриальный, простой|—
+Waystones → см. выше
+Numismatic Overhaul|L|Монеты/экономика/торговля|—|—|both|важный|Валюта для репутации и лавок|—
+Trade Cycles / Villager Trade Rebalance ⚠|L|Переработка торговли|—|—|both|опциональный|⚠ выбрать один|—
+Easy Villagers|L|Удобная работа с жителями|—|—|both|опциональный|Может ломать баланс — конфиг|—
+Auction House ⚠|L|Аукцион между игроками (мультиплеер)|—|—|both|опциональный|⚠ проверить 1.20.1; альтернатива — KubeJS+SQL или ChestShop|—
+ChestShop ⚠|L|Игровые лавки-таблички|—|—|both|опциональный|—|—
+JourneyMap|M|Миникарта + карта мира + вейпоинты|—|—|client|ядро|Client-only|—
+Xaero's Minimap|M|Альтернатива карте|—|—|client|опциональный|НЕ ставить вместе с JourneyMap|—
+Xaero's World Map|M|Альтернатива карте мира|—|—|client|опциональный|—|—
+JEI|M|Просмотр рецептов|—|—|client|ядро|EMI не ставим (дубль)|mezz/JustEnoughItems
+Jade|M|WAILA-тултипы (что за блок/моб)|—|—|both|важный|Показывает HP мобов и стадии|—
+Torchmaster / Mob HP bars ⚠|M|Полоски здоровья мобов|—|—|client|важный|⚠ выбрать: «Neat»|—
+Neat|M|Полоски HP мобов|—|—|client|важный|Client-only|VazkiiMods/Neat
+AppleSkin|M|Сытость/насыщение/HUD еды|—|Diet|both|важный|—|squeek502/AppleSkin
+Better Advancements|M|Улучшенный экран достижений|—|—|client|опциональный|—|—
+Controlling|M|Поиск по клавишам|—|—|client|ядро|Критично при 200+ модах|Jaredlll08/Controlling
+Searchables|M|Поиск по конфигам|—|—|client|важный|—|Jaredlll08/Searchables
+Inventory HUD+|M|Инвентарь/броня на HUD|—|—|client|опциональный|—|—
+Better Third Person|M|Улучшенная камера 3-го лица|Iceberg|—|client|важный|Client-only|—
+Shoulder Surfing Reloaded|M|Камера через плечо|—|—|client|опциональный|Конфликт с Better Third Person по кнопке|—
+First Person Model|M|Модель тела от 1-го лица|—|—|client|опциональный|Совместим с Better Combat? ⚠ проверить|—
+Not Enough Animations|M|Анимации в 3-м лице|—|—|client|опциональный|—|—
+Item Highlighter|M|Подсветка новых предметов|—|—|client|опциональный|—|—
+Toast Control|M|Отключение надоедливых тостов|—|—|client|важный|—|—
+Better F1 / Hide Hands? ⚠|M|—|—|—|client|опциональный|—|—
+Default Options|M|Сохранение настроек в файл|—|—|client|опциональный|—|—
+FancyMenu|M|Кастомное главное меню/лоадинг пака|Konkrete|—|client|важный|Брендинг пака|Keksuccino/FancyMenu
+Konkrete|M|Библиотека FancyMenu|—|—|client|ядро|—|Keksuccino/Konkrete
+Drippy Loading Screen|M|Кастомный экран загрузки|FancyMenu|—|client|важный|—|—
+Puzzle / Modern UI? ⚠|M|—|—|—|client|опциональный|—|—
+Advancement Plaques|M|Красивые плашки достижений|Iceberg|—|client|опциональный|—|—
+Legendary Tooltips|M|Рамки/тултипы по редкости|Iceberg; Prism|—|client|важный|Синергия с Apotheosis редкостями|—
+Equipment Compare|M|Сравнение экипировки|Iceberg|—|client|опциональный|—|—
+Embeddium|N|Рендерер (форк Sodium для Forge)|—|Oculus|both|ядро|НЕ ставить вместе с OptiFine/Rubidium|—
+Oculus|N|Шейдеры (Iris-порт)|Embeddium|—|client|ядро|OptiFine несовместим — исключён|—
+FerriteCore|N|Снижение памяти (модели/дубликаты)|—|—|both|ядро|—|malte0811/FerriteCore
+ModernFix|N|Ускорение загрузки, патчи памяти|—|—|both|ядро|Может конфликтовать с другими миксин-патчами — проверять стектрейс|embeddedt/ModernFix
+Canary|N|Литий-порт (ИИ, тики)|—|—|both|ядро|Не ставить вместе с Radium (дубль)|—
+MemoryLeakFix|N|Утечки памяти|—|—|both|важный|—|—
+EntityCulling|N|Не рендерить невидимое|—|—|client|ядро|—|tr7zw/EntityCulling
+ImmediatelyFast|N|Ускорение immediate-рендера/текста|—|—|client|важный|—|RaphiMC/ImmediatelyFast
+Clumps|N|Склеивание XP-орбов|—|—|both|важный|—|Jaredlll08/Clumps
+FastLoad / Smooth Boot ⚠|N|Ускорение загрузки|—|—|client|опциональный|⚠ Smooth Boot может ломать ModernFix|—
+Chunky|N|Предгенерация мира|—|—|both|ядро|Обязательно перед открытием сервера|pop4959/Chunky
+spark|N|Профайлер CPU/памяти|—|—|both|важный|Диагностика TPS|—
+Observable|N|Поиск лаг-источников|—|—|both|опциональный|—|—
+AI Improvements ⚠|N|Оптимизация ИИ мобов|—|—|both|optional|⚠ дубль с Canary — выбрать Canary|—
+Oculus + Embeddium (см.)|N|—|—|—|client|—|—|—
+Fix GPU memory leak / Nvidium ⚠|N|—|—|—|client|опциональный|Nvidium только NVIDIA+Fabric — исключён|—
+Cull Less Leaves / Leaves Culling|N|Оптимизация листвы|—|—|client|опциональный|—|—
+Particle Core / Particle Fix ⚠|N|Ограничение частиц|—|—|client|опциональный|—|—
+BadOptimizations|N|Микро-оптимизации|—|—|client|опциональный|—|—
+Nothirium / Sodium Extra ⚠|N|—|—|—|client|опциональный|⚠ Sodium Extra требует Sodium — не для Forge|—
+Better Fps Dist / FPS Reducer|N|Снижение FPS в фоне|—|—|client|опциональный|—|—
+Dynamic FPS|N|FPS в свёрнутом окне|—|—|client|опциональный|—|—
+Starlight? ⚠|N|Освещение чанков|—|—|both|опциональный|⚠ под 1.20.1 Forge нет стабильной ветки — не включать|—
+Corgilib / Citadel (см. LIB)|LIB|—|—|—|both|—|—|—
+MCreator's Lib ⚠|LIB|—|—|—|both|—|—|—

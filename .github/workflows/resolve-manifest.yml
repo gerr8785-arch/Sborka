@@ -1,0 +1,63 @@
+name: resolve-manifest
+
+# Ручной запуск: подтягивает реальные ID файлов из Modrinth (и CurseForge, если задан секрет CF_API_KEY)
+# и сохраняет артефакт manifest.lock.json + modrinth.lock.json. Коммит не делает —
+# скачай артефакт и закоммить сам (или включи "commit: true").
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: "Закоммитить обновлённые manifest.json/modrinth.json в ветку"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Resolve Modrinth (versionId, downloads, hashes)
+        run: python3 scripts/hydrate_manifest.py --modrinth --mc 1.20.1 --loader forge || true
+
+      - name: Resolve CurseForge (projectID/fileID)
+        if: ${{ secrets.CF_API_KEY != '' }}
+        env:
+          CF: ${{ secrets.CF_API_KEY }}
+        run: python3 scripts/hydrate_manifest.py --curseforge --key "$CF" --mc 1.20.1 || true
+
+      - name: Отчёт «что не нашлось»
+        run: |
+          python3 - <<'PY'
+          import json
+          mr=json.load(open("modrinth.json",encoding="utf-8"))
+          unresolved=[f["_name"] for f in mr["files"] if not f.get("downloads")]
+          print(f"без download URL: {len(unresolved)}")
+          for n in unresolved: print("  -", n)
+          open("unresolved.txt","w",encoding="utf-8").write("\n".join(unresolved))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: manifest-lock
+          path: |
+            manifest.json
+            modrinth.json
+            unresolved.txt
+
+      - name: Commit (если запрошено)
+        if: ${{ inputs.commit }}
+        run: |
+          git config user.name  "aetherfall-ci"
+          git config user.email "ci@users.noreply.github.com"
+          git add manifest.json modrinth.json
+          git commit -m "chore: resolve manifest ids via API" || echo "нечего коммитить"
+          git push

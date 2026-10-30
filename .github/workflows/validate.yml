@@ -1,0 +1,94 @@
+name: validate
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  structure:
+    name: Структура репозитория и JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Обязательные файлы
+        run: |
+          set -e
+          for f in README.md SPECIFICATION.md manifest.json modrinth.json \
+                   config/checklist.md config/conflicts.md config/install-order.md \
+                   config/balance.md config/quest-tree.md config/liveskills.md \
+                   config/reputation-system.md config/launch-args.txt \
+                   scripts/download_mods.sh scripts/validate_dependencies.sh \
+                   scripts/generate_instance.sh scripts/hydrate_manifest.py \
+                   resources/texturepacks.txt resources/shaders.txt \
+                   docs/MODLIST.md; do
+            test -f "$f" || { echo "::error file=$f::отсутствует обязательный файл"; exit 1; }
+          done
+          echo "Все обязательные файлы на месте."
+
+      - name: Валидность JSON
+        run: |
+          python3 - <<'PY'
+          import json
+          for f in ("manifest.json","modrinth.json"):
+              d=json.load(open(f,encoding="utf-8"))
+              files=d["files"]
+              assert files, f"{f}: пустой список files"
+              ids=[x.get("modName") or x.get("_name") for x in files]
+              dup=[i for i in set(ids) if ids.count(i)>1]
+              assert not dup, f"{f}: дубли модов {dup}"
+              print(f"{f}: {len(files)} записей, дублей нет")
+          m=json.load(open("manifest.json",encoding="utf-8"))
+          assert m["minecraft"]["version"]=="1.20.1", "версия MC должна быть 1.20.1"
+          print("manifest.json: MC 1.20.1 ✓")
+          PY
+
+      - name: Целостность таблицы модов (218 контентных + 20 библиотек)
+        run: |
+          python3 - <<'PY'
+          import json
+          m=json.load(open("manifest.json",encoding="utf-8"))
+          libs=[f for f in m["files"] if f["category"]=="LIB"]
+          content=[f for f in m["files"] if f["category"]!="LIB"]
+          print(f"контент: {len(content)}, библиотеки: {len(libs)}")
+          assert len(content) >= 200, f"контентных модов {len(content)} < 200"
+          crit={}
+          for f in m["files"]:
+              crit[f["criticality"]]=crit.get(f["criticality"],0)+1
+          print("критичность:", crit)
+          PY
+
+      - name: Нет битых ссылок в README/SPECIFICATION (локальные)
+        run: |
+          python3 - <<'PY'
+          import re,os,sys
+          bad=[]
+          for doc in ("README.md","SPECIFICATION.md"):
+              text=open(doc,encoding="utf-8").read()
+              for m in re.finditer(r'\]\((?!https?:|#)([^)#]+)', text):
+                  t=m.group(1).strip()
+                  base=os.path.dirname(doc)
+                  p=os.path.normpath(os.path.join(base,t))
+                  if not os.path.exists(p): bad.append(f"{doc} -> {t}")
+          if bad:
+              print("\n".join(bad)); sys.exit(f"битых ссылок: {len(bad)}")
+          print("локальные ссылки валидны")
+          PY
+
+      - name: Скрипты — синтаксис
+        run: |
+          for s in scripts/*.sh; do bash -n "$s" && echo "ok $s"; done
+          python3 -m py_compile scripts/hydrate_manifest.py && echo "ok hydrate_manifest.py"
+
+      - name: Каждый конфиг пака содержит «по умолчанию» и «РЕКОМЕНДУЕТСЯ»
+        run: |
+          n=0; bad=0
+          for f in config/opts/*.conf; do
+            n=$((n+1))
+            grep -q "по умолчанию" "$f" && grep -q "РЕКОМЕНДУЕТСЯ" "$f" || { echo "::error file=$f::неполный конфиг"; bad=$((bad+1)); }
+          done
+          echo "конфигов: $n, неполных: $bad"
+          test $n -ge 50 || { echo "::error::конфигов меньше 50"; exit 1; }
+          test $bad -eq 0

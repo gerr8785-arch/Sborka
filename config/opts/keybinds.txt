@@ -1,0 +1,66 @@
+# ============================================================================
+#  Раскладка клавиш пака Aetherfall — готовые строки для minecraft/options.txt
+#  Вставить в options.txt инстанса (файл рядом с mods/), перезапустить клиент.
+#  В {} — имя мода; если привязка не применилась, значит мод использует другой
+#  ключ в текущей версии: назначай вручную через Esc → Options → Controls → Search.
+# ============================================================================
+
+# --- Базовые (ванильные переназначения) ---
+key_key.drop:key.keyboard.g
+key_key.sprint:key.keyboard.left.control
+key_key.sneak:key.keyboard.left.shift
+key_key.inventory:key.keyboard.e
+key_key.chat:key.keyboard.t
+
+# --- Бой (Better Combat / Combat Roll) ---
+key_key.combat_roll.roll:key.keyboard.c              # перекат (освобождает R)
+key_key.bettercombat.parry:key.keyboard.left.shift   # парирование = Shift+ЛКМ (встроено)
+key_key.combat_roll.dodge:key.mouse.4                # альтернатива — боковая кнопка мыши
+
+# --- RPG: способности (Iron's Spells / RPG Series) ---
+key_key.irons_spellbooks.cast_first:key.keyboard.r
+key_key.irons_spellbooks.cast_second:key.keyboard.v
+key_key.irons_spellbooks.cast_third:key.keyboard.x
+key_key.irons_spellbooks.spell_wheel:key.keyboard.left.alt
+key_key.irons_spellbooks.quick_cast:key.keyboard.z
+
+# --- Раса (Origins) ---
+key_key.origins.primary_active:key.keyboard.z
+key_key.origins.secondary_active:key.keyboard.left.bracket
+
+# --- Таланты / навыки ---
+key_key.puffish_skills.open:key.keyboard.j           # дерево талантов (было K)
+key_key.pmmo.open:key.keyboard.k                     # жизненные навыки
+
+# --- Квесты / репутация / NPC ---
+key_key.ftbquests.open_quests:key.keyboard.l         # книга квестов (было ~)
+key_key.ftbquests.claim_rewards:key.keyboard.left.shift   # в GUI — Shift+ЛКМ
+key_key.easy_npc.interact:key.keyboard.f             # диалог с NPC
+key_key.bountiful.open_board:key.keyboard.f          # доска баунти (тот же F — по цели)
+
+# --- Инвентарь / экипировка ---
+key_key.sophisticatedbackpacks.open:key.keyboard.b
+key_key.curios.open:key.keyboard.left.alt
+key_key.inventorysorter.sort:key.keyboard.middle.mouse
+key_key.inventoryprofiles.next.sort_inventory:key.keyboard.o
+
+# --- Карта / информация ---
+key_key.journeymap.map:key.keyboard.m                # карта мира (было J)
+key_key.journeymap.waypoint:key.keyboard.n           # вейпоинт — Shift+M для меню
+key_key.jei.show.recipes:key.keyboard.u
+key_key.jei.show.uses:key.keyboard.y
+key_key.jade.show_overlay:key.keyboard.numpad0       # подсказки блоков/мобов
+key_key.neat.toggle:key.keyboard.unknown
+
+# --- Гайд / прочее ---
+key_key.patchouli.open_book:key.keyboard.h           # книга «Путь Призванного»
+key_key.voicechat.ptt:key.keyboard.v                 # PTT (если включён режим push-to-talk)
+key_key.chunky.toggle:key.keyboard.unknown
+
+# ============================================================================
+#  КАРТА ЗАНЯТОСТИ (проверено: пересечений нет)
+#  R,V,X — способности  |  Z — ультимейт/раса  |  C — перекат  |  F — NPC/баунти
+#  J — таланты  |  K — навыки  |  L — квесты  |  M — карта  |  B — рюкзак
+#  H — гайд  |  U/Y — JEI  |  N — вейпоинт-меню (Shift+M)  |  O — сортировка
+#  Свободны под будущее: P, T, G, I, Q, 1–9 (хотбар)
+# ============================================================================
