@@ -55,6 +55,15 @@ def main() -> int:
         cwd=SERVER, stdin=subprocess.PIPE, stdout=log_fh, stderr=subprocess.STDOUT,
         text=True,
     )
+    # wait until the server finished starting (pack loading can take minutes)
+    boot_deadline = time.time() + float(os.environ.get("BOOT_TIMEOUT", "900"))
+    while time.time() < boot_deadline:
+        if proc.poll() is not None:
+            break
+        if re.search(r"Done \(\d", open(LOG, errors="replace").read()):
+            break
+        time.sleep(2)
+
     script = []
     for line in open(cmds_file, encoding="utf-8"):
         line = line.rstrip("\n")

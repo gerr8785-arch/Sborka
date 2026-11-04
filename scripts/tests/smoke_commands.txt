@@ -1,5 +1,5 @@
 # Console script for the runtime smoke test. `@wait N` = wait N real seconds.
-# @stop must always be the LAST command (commands are consumed asynchronously,
+# stop must always be the LAST command (commands are consumed asynchronously,
 # the client stops reading stdin after shutdown begins).
 @wait 45
 gamerule doDaylightCycle false
@@ -32,4 +32,4 @@ debug start
 @wait 5
 debug stop
 @wait 2
-@stop
+stop

@@ -47,9 +47,11 @@ jobs:
         run: python3 scripts/download_mods.py server 2>&1 | tee /tmp/dl-server.log
       - name: static compatibility scan
         id: scan
+        if: hashFiles('build/run/client/mods/*.jar') != ''
         continue-on-error: true
         run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
       - name: build archives
+        if: hashFiles('build/run/client/mods/*.jar') != ''
         run: python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
       - name: diagnostics
         if: always()

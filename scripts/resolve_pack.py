@@ -52,6 +52,7 @@ def save_cache():
 def project(slug: str):
     if (e := cache.get(slug)) and e.get("project"):
         return e["project"]
+    # a bare project id is also accepted (some mods have no usable slug)
     p = _get(f"{API}/project/{slug}")
     cache.setdefault(slug, {})["project"] = p
     save_cache()
@@ -153,6 +154,9 @@ def main() -> int:
         selected[slug] = entry
 
     for item in modlist["mods"]:
+        if item.get("id") and not item.get("slug"):
+            project(item["id"])  # prime the cache so the id resolves to a slug
+            item["slug"] = cache[item["id"]]["project"]["slug"]
         add(
             item["slug"],
             item.get("category", "misc"),
