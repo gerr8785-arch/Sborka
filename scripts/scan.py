@@ -17,6 +17,7 @@ exit code 1 when a blocking problem is found.
 """
 from __future__ import annotations
 
+import io
 import json
 import os
 import re
@@ -42,7 +43,11 @@ def parse_ver(text: str):
             nums.append(int(g))
     while len(nums) < 3:
         nums.append(None)
-    return tuple(nums), (m.group(4) or "")
+    pre = m.group(4) or ""
+    if "+" in text:
+        pre = text.split("+", 1)[1] if "-" not in text.split("+", 1)[0] else pre.split("+")[0]
+        pre = "" if pre == text.split("+", 1)[1] else pre
+    return tuple(nums), pre
 
 
 def cmp_key(parsed):
@@ -85,6 +90,9 @@ def satisfies(version: str, predicate: str) -> bool:
     if not predicate or predicate.strip() in ("*", "*.*", "any"):
         return True
     pred = predicate.strip()
+    low = pred.lower()
+    if low.startswith("~") and pred.endswith("-"):
+        return satisfies(version, ">=" + pred[1:-1])
     dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s*-\s*(\d+(?:\.\d+)*)", pred)
     if dash:  # "1.20-1.20.1" style range
         return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
@@ -160,8 +168,33 @@ def scan_jars(mods_dir: str):
                             "breaks": fabric.get("breaks", {}) or {},
                             "conflicts": fabric.get("conflicts", {}) or {},
                             "recommends": fabric.get("recommends", {}) or {},
+                            "provides": [p if isinstance(p, str) else p.get("id") for p in (fabric.get("provides") or [])],
                         }
                     )
+                    # ids shipped inside the jar (JiJ) — they satisfy dependencies at runtime
+                    for sub in fabric.get("jars") or []:
+                        if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
+                            continue
+                        try:
+                            with zipfile.ZipFile(io.BytesIO(z.read(sub["file"]))) as inner:
+                                inner_meta = read_json(inner, "fabric.mod.json")
+                        except Exception:  # noqa: BLE001
+                            continue
+                        if inner_meta and inner_meta.get("id"):
+                            info["mods"].append(
+                                {
+                                    "id": inner_meta.get("id"),
+                                    "version": str(inner_meta.get("version", "?")),
+                                    "name": inner_meta.get("name"),
+                                    "environment": inner_meta.get("environment", "*"),
+                                    "depends": inner_meta.get("depends", {}) or {},
+                                    "breaks": {},
+                                    "conflicts": {},
+                                    "recommends": {},
+                                    "provides": [p if isinstance(p, str) else p.get("id") for p in (inner_meta.get("provides") or [])],
+                                    "bundled": sub["file"],
+                                }
+                            )
                 elif quilt:
                     info["loader"] = "quilt"
                     info["mods"].append(
@@ -233,6 +266,9 @@ def main() -> int:
         for m in j["mods"]:
             if m["id"]:
                 have.setdefault(m["id"], []).append((m["version"], j["file"]))
+            for alias in m.get("provides") or []:
+                if alias and alias not in have:
+                    have.setdefault(alias, []).append((m["version"], j["file"] + " (provides)"))
 
     problems: list[str] = []
     warnings: list[str] = []

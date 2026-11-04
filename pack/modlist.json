@@ -525,6 +525,16 @@
    "slug": "sodium-shadowy-path-blocks",
    "category": "visual",
    "why": "мягкие тени у неполных блоков"
+  },
+  {
+   "slug": "simply-tooltips",
+   "category": "library",
+   "why": "требуется Simply Swords"
+  },
+  {
+   "slug": "kirin",
+   "category": "library",
+   "why": "требуется Presence Footsteps"
   }
  ]
 }
