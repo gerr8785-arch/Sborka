@@ -1,0 +1,28 @@
+name: pack
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "pack/modlist.json"
+      - "pack/candidates.json"
+      - "scripts/resolve_pack.py"
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/326781c7-sborka
+      - name: resolve pack
+        run: python3 scripts/resolve_pack.py || true
+      - name: commit report
+        run: |
+          set -e
+          cp build/report/manifest.txt /tmp/ 2>/dev/null || true
+          mkdir -p report && cp /tmp/manifest.txt report/manifest.txt 2>/dev/null || true
+          git config user.name "ci"; git config user.email "ci@local"
+          git add -A report || true
+          git commit -m "ci: pack resolve report" || echo "nothing"
+          git push origin HEAD:arena/326781c7-sborka || true
