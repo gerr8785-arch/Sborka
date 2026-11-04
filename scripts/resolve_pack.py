@@ -104,7 +104,7 @@ def choose(slug: str, allow_beta: bool = False, exact: str | None = None):
 def main() -> int:
     modlist = json.load(open(os.path.join(ROOT, "pack", "modlist.json"), encoding="utf-8"))
     banned = set(modlist.get("never_auto", []))
-    order = {m["slug"]: i for i, m in enumerate(modlist["mods"])}
+    order = {m.get("slug") or m.get("id"): i for i, m in enumerate(modlist["mods"])}
     limit = modlist.get("limit", 150)
     selected: dict[str, dict] = {}
     errors: list[str] = []
