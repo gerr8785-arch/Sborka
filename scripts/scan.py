@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """Static compatibility audit of a downloaded mod folder.
 
-For every jar it reads metadata/fabric.mod.json (and quilt.mod.json / mods.toml),
-collects mod ids, versions and the dependency predicates, then verifies:
+For every jar it reads fabric.mod.json / quilt.mod.json (including mods bundled
+inside jars, at any depth), then verifies:
 
-  1. every `depends` id is present and its version satisfies the predicate
-  2. every `breaks` (and `conflicts`) target is absent
-  3. no duplicate mod ids (two jars shipping the same id = crash risk)
-  4. minecraft version range of every mod includes the pack MC version
-  5. entrypoint / mixin config sanity (mixin files listed actually exist in the jar)
-  6. curated rule list (pack/compat-rules.json) — e.g. "iris needs sodium",
-     "optifabric must never appear next to sodium"
+  1. every `depends` id is present (top-level jar, JiJ bundle or Fabric API module)
+     and its version satisfies the predicate
+  2. every `breaks` / `conflicts` target is really absent
+  3. no duplicate mod ids among top-level jars (bundled copies of the same id are OK)
+  4. the `minecraft` predicate of every mod includes the pack MC version
+  5. mixin configs referenced by fabric.mod.json exist inside the jar
+  6. every jar is a Fabric/Quilt mod (a Forge jar in a Fabric pack = crash)
+  7. curated rules from pack/compat-rules.json
 
-usage: python3 scripts/scan.py build/run/client/mods [--json out.json]
+usage: python3 scripts/scan.py <mods-dir> [--json out.json]
 exit code 1 when a blocking problem is found.
 """
 from __future__ import annotations
@@ -27,103 +28,137 @@ import zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MC = os.environ.get("MC_VERSION", "1.20.1")
 
-# ---------------------------------------------------------------- semver-ish --
-VER_RE = re.compile(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?(?:[-+](.*))?$")
+# ------------------------------------------------------------------ versions --
+VER_RE = re.compile(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?(?:-([0-9A-Za-z.\-]+))?(?:\+.*)?$")
 
 
 def parse_ver(text: str):
-    m = VER_RE.match(text.strip())
+    """('1.20.1-2.5.7+refabricated') -> ((1,20,1), '2.5.7') ; tolerant parser."""
+    t = text.strip()
+    m = VER_RE.match(t)
     if not m:
-        return None
+        # forms like "refabricated-1.20.1-2.1" or "1.20.1-2.5.7" — take the first dotted triple
+        m3 = re.search(r"(\d+)\.(\d+)(?:\.(\d+))?", t)
+        if not m3:
+            return None
+        return (int(m3.group(1)), int(m3.group(2)), int(m3.group(3) or 0)), ""
     nums = []
     for g in (m.group(1), m.group(2), m.group(3)):
-        if g is None or g in ("x", "*"):
-            nums.append(None)
-        else:
-            nums.append(int(g))
+        nums.append(None if g in (None, "x", "*") else int(g))
     while len(nums) < 3:
         nums.append(None)
-    pre = m.group(4) or ""
-    if "+" in text:
-        pre = text.split("+", 1)[1] if "-" not in text.split("+", 1)[0] else pre.split("+")[0]
-        pre = "" if pre == text.split("+", 1)[1] else pre
-    return tuple(nums), pre
+    return tuple(nums), (m.group(4) or "")
 
 
-def cmp_key(parsed):
+def _key(parsed):
     nums, pre = parsed
     nums = tuple(n if n is not None else -1 for n in nums)
-    # prerelease sorts *before* release
     return nums, (0 if pre else 1), pre
 
 
 def _cmp(a, b):
-    ka, kb = cmp_key(a), cmp_key(b)
+    ka, kb = _key(a), _key(b)
     return (ka > kb) - (ka < kb)
 
 
-def _expand(op: str, ver):
-    """return list of (op, version) terms for ^ / ~ / wildcards"""
-    text = ver
-    wild = re.match(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?$", text)
+def _expand(op: str, ver: str):
+    wild = re.match(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?$", ver)
     if wild is None:
-        return [(op or "=", text)]
+        return [(op or "=", ver)]
     if op in ("^", "~") or (op == "" and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*"))):
-        parts = [int(wild.group(1)) if wild.group(1) else 0]
+        parts = [int(wild.group(1))]
         for g in (wild.group(2), wild.group(3)):
             parts.append(int(g) if g and g not in ("x", "*") else None)
-        if op == "":
-            op = "^"
+        op = op or "^"
         if op == "^":
             major = parts[0]
-            upper = f"{major + 1}.0.0" if major > 0 else (
-                f"0.{ (parts[1] or 0) + 1}.0" if (parts[1] or 0) > 0 else f"0.0.{(parts[2] or 0) + 1}"
-            )
+            if major > 0:
+                upper = f"{major + 1}.0.0"
+            elif (parts[1] or 0) > 0:
+                upper = f"0.{(parts[1] or 0) + 1}.0"
+            else:
+                upper = f"0.0.{(parts[2] or 0) + 1}"
         else:  # ~
-            upper = f"{parts[0] + 1}.0.0" if (parts[1] is None) else f"{parts[0]}.{(parts[1] or 0) + 1}.0"
+            upper = f"{parts[0] + 1}.0.0" if parts[1] is None else f"{parts[0]}.{(parts[1] or 0) + 1}.0"
         base = ".".join(str(p) if p is not None else "0" for p in parts[:3])
         return [(">=", base), ("<", upper)]
-    return [(op or "=", text)]
+    return [(op or "=", ver)]
+
+
+def _single(version_p, op, ver) -> bool:
+    if ver.endswith(".*") or ver.endswith(".x"):
+        prefix = [int(p) for p in ver.rsplit(".", 1)[0].split(".") if p.isdigit()]
+        vnums = tuple((version_p[0] + (None,) * 3)[:3])
+        for i, p in enumerate(prefix):
+            if i >= len(vnums) or vnums[i] is None or vnums[i] != p:
+                return False
+        return True
+    target = parse_ver(ver)
+    if target is None:
+        return True
+    c = _cmp(version_p, target)
+    return {"": c == 0, "=": c == 0, ">=": c >= 0, "<=": c <= 0, ">": c > 0, "<": c < 0}.get(op, True)
 
 
 def satisfies(version: str, predicate: str) -> bool:
-    if not predicate or predicate.strip() in ("*", "*.*", "any"):
+    if not isinstance(predicate, str) or not predicate.strip() or predicate.strip() in ("*", "*.*", "any"):
         return True
-    pred = predicate.strip()
-    low = pred.lower()
-    if low.startswith("~") and pred.endswith("-"):
-        return satisfies(version, ">=" + pred[1:-1])
-    dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s*-\s*(\d+(?:\.\d+)*)", pred)
-    if dash:  # "1.20-1.20.1" style range
-        return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
     vp = parse_ver(version)
     if vp is None:
-        return True  # unparsable version: don't false-positive
-    for raw in predicate.replace(",", " ").split():
+        return True  # unparsable installed version: do not raise false alarms
+    pred = predicate.strip()
+    if pred.startswith("~") and pred.endswith("-"):  # "~1.20-" = 1.20.x
+        pred = "^" + pred[1:-1]
+    dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s*-\s*(\d+(?:\.\d+)*)", pred)
+    if dash:
+        return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
+    # ">=1.20-2.5.0" style: a range glued to the operator
+    m2 = re.fullmatch(r"(>=|<=|>|<|=)\s*(.+)", pred)
+    if m2 and re.fullmatch(r"\d+(?:\.\d+)*\s*-\s*\d+(?:\.\d+)*", m2.group(2).strip()):
+        return satisfies(version, f"{m2.group(1)}{m2.group(2).strip().split('-')[0].strip()}")
+    for raw in pred.replace(",", " ").split():
         m = re.match(r"^(>=|<=|>|<|=|~|\^)?\s*(.+)$", raw)
         if not m:
             continue
         op, ver = m.group(1) or "", m.group(2)
         for o, v in _expand(op, ver):
-            if v.endswith(".*") or v.endswith(".x"):
-                prefix = v.rsplit(".", 1)[0].split(".")
-                vnums = (tuple(int(p) for p in prefix) + (None,) * 3)[:3]
-                if tuple((n if n is not None else -1) for n in vnums) > tuple(
-                    (x if x is not None else -1) for x in (vp[0])
-                ):
-                    return False
-                continue
-            tp = parse_ver(v)
-            if tp is None:
-                continue
-            c = _cmp(vp, tp)
-            ok = {"": c == 0, "=": c == 0, ">=": c >= 0, "<=": c <= 0, ">": c > 0, "<": c < 0}.get(o)
-            if not ok:
+            if not _single(vp, o, v):
                 return False
     return True
 
 
-# ------------------------------------------------------------------- scanning --
+def matches_any(pred, versions) -> bool:
+    if isinstance(pred, list):
+        return any(matches_any(p, versions) for p in pred)
+    if not isinstance(pred, str) or pred in ("*", "", "any"):
+        return True
+    return any(satisfies(v, pred) for v in versions)
+
+
+# -------------------------------------------------------------------- reading --
+FABRIC_API_MODULES = {
+    "fabric-api-base", "fabric-api-lookup-api-v1", "fabric-biome-api-v1", "fabric-block-api-v1",
+    "fabric-blockrenderlayer-v1", "fabric-client-tags-api-v1", "fabric-command-api-v1",
+    "fabric-command-api-v2", "fabric-content-registries-v0", "fabric-convention-tags-v1",
+    "fabric-crash-report-info-v1", "fabric-data-attachment-api-v1", "fabric-data-generation-api-v1",
+    "fabric-dimensions-v1", "fabric-entity-events-v1", "fabric-events-interaction-v0",
+    "fabric-events-lifecycle-v0", "fabric-game-rule-api-v1", "fabric-gametest-api-v1",
+    "fabric-item-api-v1", "fabric-item-group-api-v1", "fabric-key-binding-api-v1",
+    "fabric-lifecycle-events-v1", "fabric-loot-api-v2", "fabric-message-api-v1",
+    "fabric-mining-level-api-v1", "fabric-model-loading-api-v1", "fabric-models-v0",
+    "fabric-networking-api-v1", "fabric-object-builder-api-v1", "fabric-particles-v1",
+    "fabric-recipe-api-v1", "fabric-registry-sync-v0", "fabric-renderer-api-v1",
+    "fabric-renderer-indigo", "fabric-rendering-fluids-v1", "fabric-rendering-v0",
+    "fabric-rendering-v1", "fabric-resource-conditions-api-v1", "fabric-resource-loader-v0",
+    "fabric-screen-api-v1", "fabric-screen-handler-api-v1", "fabric-sound-api-v1",
+    "fabric-transfer-api-v1", "fabric-transitive-access-wideners-v1", "fabric-tag-api-v1",
+    "fabric-loot-tables-v1", "fabric-keybindings-v0", "fabric-biomes-v1",
+    "fabric-rendering-data-attachment-v1", "fabric-rendering-registries-v1",
+    "fabric-client-api-v1", "fabric-object-builder-api", "fabric",
+    "fabric-loader", "minecraft", "java", "fabricloader",
+}
+
+
 def read_json(z: zipfile.ZipFile, name: str):
     try:
         return json.loads(z.read(name).decode("utf-8", "replace"))
@@ -131,151 +166,112 @@ def read_json(z: zipfile.ZipFile, name: str):
         return None
 
 
+def meta_of(meta: dict, bundled: bool, depth: int = 0) -> dict:
+    return {
+        "id": meta.get("id"),
+        "version": str(meta.get("version", "?")),
+        "name": meta.get("name"),
+        "environment": meta.get("environment", "*"),
+        "depends": meta.get("depends", {}) or {},
+        "breaks": meta.get("breaks", {}) or {},
+        "conflicts": meta.get("conflicts", {}) or {},
+        "recommends": meta.get("recommends", {}) or {},
+        "provides": [p if isinstance(p, str) else (p or {}).get("id") for p in (meta.get("provides") or [])],
+        "bundled": bundled,
+        "depth": depth,
+    }
+
+
+def harvest_nested(outer: zipfile.ZipFile, depth: int = 0, max_depth: int = 3):
+    """yield (metadata, depth) for every fabric mod jar nested inside `outer`."""
+    meta = read_json(outer, "fabric.mod.json") or {}
+    for sub in meta.get("jars") or []:
+        if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
+            continue
+        try:
+            with zipfile.ZipFile(io.BytesIO(outer.read(sub["file"]))) as inner:
+                inner_meta = read_json(inner, "fabric.mod.json")
+                if inner_meta and inner_meta.get("id"):
+                    yield inner_meta, depth
+                if depth < max_depth:
+                    yield from harvest_nested(inner, depth + 1, max_depth)
+        except Exception:  # noqa: BLE001
+            continue
+
+
 def scan_jars(mods_dir: str):
     jars = []
     for f in sorted(os.listdir(mods_dir)):
         if not f.endswith(".jar") or f.startswith("."):
             continue
-        path = os.path.join(mods_dir, f)
-        info = {"file": f, "mods": [], "mixins": [], "errors": []}
+        info = {"file": f, "mods": [], "mixins": [], "errors": [], "nested_ids": []}
         try:
-            with zipfile.ZipFile(path) as z:
-                names = z.namelist()
+            with zipfile.ZipFile(os.path.join(mods_dir, f)) as z:
+                names = set(z.namelist())
                 fabric = read_json(z, "fabric.mod.json")
                 quilt = read_json(z, "quilt.mod.json")
                 if fabric:
                     info["loader"] = "fabric"
-                    if isinstance(fabric.get("mixins"), (list, dict)):
-                        mx = fabric["mixins"]
-                        entries = mx.values() if isinstance(mx, dict) else mx
-                        for e in entries:
+                    mx = fabric.get("mixins")
+                    if isinstance(mx, (list, dict)):
+                        for e in (mx.values() if isinstance(mx, dict) else mx):
                             for item in (e if isinstance(e, list) else [e]):
                                 if isinstance(item, str):
                                     info["mixins"].append(item)
-                    if isinstance(fabric.get("jars"), list):
-                        info["nested"] = [
-                            sub["file"] for sub in fabric["jars"] if isinstance(sub, dict) and sub.get("file", "").endswith(".jar")
-                        ]
-                    for mid, mdata in (fabric.get("depends", {}) or {}).items():
-                        pass
-                    info["mods"].append(
-                        {
-                            "id": fabric.get("id"),
-                            "version": str(fabric.get("version", "?")),
-                            "name": fabric.get("name"),
-                            "environment": fabric.get("environment", "*"),
-                            "depends": fabric.get("depends", {}) or {},
-                            "breaks": fabric.get("breaks", {}) or {},
-                            "conflicts": fabric.get("conflicts", {}) or {},
-                            "recommends": fabric.get("recommends", {}) or {},
-                            "provides": [p if isinstance(p, str) else p.get("id") for p in (fabric.get("provides") or [])],
-                        }
-                    )
-                    # ids shipped inside the jar (JiJ) — they satisfy dependencies at runtime
-                    def harvest(outer: zipfile.ZipFile, depth: int = 0):
-                        """metadata of every fabric mod jar nested inside `outer` (any depth)"""
-                        meta = read_json(outer, "fabric.mod.json") or {}
-                        for sub in meta.get("jars") or []:
-                            if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
-                                continue
-                            try:
-                                with zipfile.ZipFile(io.BytesIO(outer.read(sub["file"]))) as inner:
-                                    inner_meta = read_json(inner, "fabric.mod.json")
-                                    if inner_meta:
-                                        yield inner_meta, depth
-                                    if depth < 3:
-                                        yield from harvest(inner, depth + 1)
-                            except Exception:  # noqa: BLE001
-                                continue
-
-                    info["nested_ids"] = []
-                    for inner_meta, depth in harvest(z):
-                        if not inner_meta.get("id"):
-                            continue
+                    info["mods"].append(meta_of(fabric, bundled=False))
+                    for inner_meta, depth in harvest_nested(z):
                         info["nested_ids"].append(f"{inner_meta['id']}@{inner_meta.get('version')}")
-                        # every nested mod (any depth) provides its id at runtime
+                        info["mods"].append(meta_of(inner_meta, bundled=True, depth=depth))
                 elif quilt:
                     info["loader"] = "quilt"
+                    ql = quilt.get("quilt_loader", {}) or {}
+                    deps = ql.get("depends") or {}
+                    if isinstance(deps, list):  # quilt list form
+                        deps = {d.get("id"): d.get("versions") or "*" for d in deps if isinstance(d, dict)}
                     info["mods"].append(
                         {
-                            "id": quilt.get("quilt_loader", {}).get("id"),
-                            "version": str(quilt.get("quilt_loader", {}).get("version", "?")),
-                            "name": quilt.get("quilt_loader", {}).get("metadata", {}).get("name"),
-                            "depends": {
-                                k: (v.get("version", "*") if isinstance(v, dict) else "*")
-                                for k, v in (quilt.get("quilt_loader", {}).get("depends", []) if isinstance(quilt.get("quilt_loader", {}).get("depends"), list) else {}).items()
-                            }
-                            if isinstance(quilt.get("quilt_loader", {}).get("depends"), (list, dict))
-                            else {},
+                            "id": ql.get("id"),
+                            "version": str(ql.get("version", "?")),
+                            "name": (ql.get("metadata") or {}).get("name"),
+                            "environment": "*",
+                            "depends": deps if isinstance(deps, dict) else {},
                             "breaks": {},
                             "conflicts": {},
                             "recommends": {},
-                            "environment": "*",
+                            "provides": [],
+                            "bundled": False,
+                            "depth": 0,
                         }
                     )
                 else:
-                    info["loader"] = "forge/toml?"
+                    info["loader"] = "forge/other"
                     info["errors"].append("no fabric.mod.json (Forge/NeoForge jar? incompatible with Fabric)")
-                # mixin config files referenced but absent
-                for mx in info["mixins"]:
-                    if mx not in names:
-                        info["errors"].append(f"missing mixin config {mx}")
-                # a jar that only has mixins but no fabric.mod.json is opaque
+                for mxc in info["mixins"]:
+                    if mxc not in names:
+                        info["errors"].append(f"missing mixin config {mxc}")
         except zipfile.BadZipFile:
             info["errors"].append("corrupted jar (BadZipFile)")
         jars.append(info)
     return jars
 
 
-def _matches_any(pred, installed_versions) -> bool:
-    """True when at least one installed version falls into the predicate."""
-    if isinstance(pred, list):
-        return any(_matches_any(p, installed_versions) for p in pred)
-    if not isinstance(pred, str) or pred in ("*", "", "any"):
-        return True
-    return any(satisfies(v, pred) for v in installed_versions)
-
-
+# ----------------------------------------------------------------------- main --
 def main() -> int:
     mods_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "build", "run", "client", "mods")
-    out_json = None
-    if "--json" in sys.argv:
-        out_json = sys.argv[sys.argv.index("--json") + 1]
+    out_json = sys.argv[sys.argv.index("--json") + 1] if "--json" in sys.argv else None
 
     jars = scan_jars(mods_dir)
 
-    # ids shipped inside jars (JiJ) and ids provided by Fabric API modules
-    bundled: dict[str, str] = {}
-    for j in jars:
-        for sub in j.get("nested", []):
-            bundled[os.path.basename(sub)[:-4].lower()] = j["file"]
-    provided_by_api = {
-        "fabric-api-base", "fabric-api-lookup-api-v1", "fabric-biome-api-v1", "fabric-block-api-v1",
-        "fabric-blockrenderlayer-v1", "fabric-client-tags-api-v1", "fabric-command-api-v1",
-        "fabric-command-api-v2", "fabric-content-registries-v0", "fabric-convention-tags-v1",
-        "fabric-crash-report-info-v1", "fabric-data-attachment-api-v1", "fabric-data-generation-api-v1",
-        "fabric-dimensions-v1", "fabric-entity-events-v1", "fabric-events-interaction-v0",
-        "fabric-events-lifecycle-v0", "fabric-game-rule-api-v1", "fabric-gametest-api-v1",
-        "fabric-item-api-v1", "fabric-item-group-api-v1", "fabric-key-binding-api-v1",
-        "fabric-lifecycle-events-v1", "fabric-loot-api-v2", "fabric-message-api-v1",
-        "fabric-mining-level-api-v1", "fabric-model-loading-api-v1", "fabric-models-v0",
-        "fabric-networking-api-v1", "fabric-object-builder-api-v1", "fabric-particles-v1",
-        "fabric-recipe-api-v1", "fabric-registry-sync-v0", "fabric-renderer-api-v1",
-        "fabric-renderer-indigo", "fabric-rendering-fluids-v1", "fabric-rendering-v0",
-        "fabric-rendering-v1", "fabric-resource-conditions-api-v1", "fabric-resource-loader-v0",
-        "fabric-screen-api-v1", "fabric-screen-handler-api-v1", "fabric-sound-api-v1",
-        "fabric-transfer-api-v1", "fabric-transitive-access-wideners-v1", "fabric-tag-api-v1",
-        "fabric-loot-tables-v1", "fabric-keybindings-v0", "fabric-biomes-v1", "fabric",
-        "fabric-loader", "minecraft", "java", "fabricloader",
-    }
-    # global id registry
     have: dict[str, list] = {}
+    top_ids: dict[str, list] = {}
     for j in jars:
         for m in j["mods"]:
             if m["id"]:
                 have.setdefault(m["id"], []).append((m["version"], j["file"]))
-            for alias in m.get("provides") or []:
-                if alias and alias not in have:
+                if not m["bundled"]:
+                    top_ids.setdefault(m["id"], []).append(j["file"])
+            for alias in m["provides"]:
+                if alias:
                     have.setdefault(alias, []).append((m["version"], j["file"] + " (provides)"))
 
     problems: list[str] = []
@@ -285,78 +281,63 @@ def main() -> int:
         for e in j["errors"]:
             problems.append(f"{j['file']}: {e}")
         for m in j["mods"]:
-            if m.get("bundled"):
-                continue  # shipped inside another jar: the loader resolves it itself
-            env = m.get("environment", "*")
-            if m["id"] in ("minecraft", "java", "fabricloader"):
-                continue
+            if m["bundled"]:
+                continue  # resolved by the loader together with its host jar
             for dep, pred in m["depends"].items():
-                if dep in ("minecraft", "java", "fabricloader", "fabric"):
-                    continue
-                if dep in provided_by_api:
-                    continue
-                if dep not in have and dep.lower() in bundled:
+                if dep in FABRIC_API_MODULES:
                     continue
                 if dep not in have:
                     problems.append(f"{m['id']}: missing required dependency '{dep}' ({pred}) — needed by {j['file']}")
                     continue
-                pred = pred if isinstance(pred, str) else str(pred)
-                if not any(satisfies(v, pred) for v, _ in have[dep]):
+                versions = [v for v, _ in have[dep]]
+                if isinstance(pred, str) and pred not in ("*", "") and not any(satisfies(v, pred) for v in versions):
+                    # versions coming from JiJ bundles are allowed to be older/newer
                     problems.append(
-                        f"{m['id']}: dependency '{dep}' present but version {have[dep][0][0]} does not satisfy '{pred}' ({j['file']})"
+                        f"{m['id']}: dependency '{dep}' installed as {versions[0]} does not satisfy '{pred}' ({j['file']})"
                     )
             mc_pred = m["depends"].get("minecraft")
             if isinstance(mc_pred, str) and mc_pred and not satisfies(MC, mc_pred):
                 problems.append(f"{m['id']}: minecraft predicate '{mc_pred}' excludes {MC} ({j['file']})")
             for key in ("breaks", "conflicts"):
                 for other, pred in (m[key] or {}).items():
-                    if other in have:
-                        if not _matches_any(pred, [v for v, _ in have[other]]):
-                            warnings.append(
-                                f"{m['id']}: declares {key} with {other} {pred}; installed {have[other][0][0]} is outside that range — ok"
-                            )
-                            continue
-                        problems.append(f"{m['id']}: declares {key.upper()} with '{other}' {pred}, but it is installed ({j['file']})")
-            for other, pred in (m["recommends"] or {}).items():
-                if other not in have:
+                    if other not in have:
+                        continue
+                    if matches_any(pred, [v for v, _ in have[other]]):
+                        problems.append(f"{m['id']}: declares {key.upper()} with '{other}' {pred}, and it is installed ({j['file']})")
+            for other in (m["recommends"] or {}):
+                if other not in have and other not in FABRIC_API_MODULES:
                     warnings.append(f"{m['id']}: recommends '{other}' which is not installed")
 
-    top_ids = {}
-    for j in jars:
-        for m in j["mods"]:
-            if m.get("bundled"):
-                continue
-            if m["id"]:
-                top_ids.setdefault(m["id"], []).append(j["file"])
-    for mid, ent in have.items():
-        if mid in top_ids and len(ent) > 1:
-            problems.append(f"duplicate mod id '{mid}' shipped by: " + ", ".join(f for _, f in ent))
+    for mid, files in top_ids.items():
+        if len(files) > 1:
+            problems.append(f"duplicate mod id '{mid}' shipped by: {', '.join(files)}")
 
-    # curated rules
     rules_path = os.path.join(ROOT, "pack", "compat-rules.json")
     if os.path.exists(rules_path):
         rules = json.load(open(rules_path, encoding="utf-8"))
         for r in rules.get("rules", []):
-            if r["type"] == "mutually_exclusive":
-                present = [i for i in r["ids"] if i in have]
+            kind = r["type"]
+            if kind == "mutually_exclusive":
+                present = [i for i in r["ids"] if i in top_ids]
                 if len(present) > 1:
                     problems.append(f"curated rule: {' + '.join(present)} must not be installed together ({r.get('why','')})")
-            elif r["type"] == "requires":
-                if r["if"] in have and r["then"] not in have:
+            elif kind == "requires":
+                if r["if"] in top_ids and r["then"] not in have:
                     problems.append(f"curated rule: {r['if']} requires {r['then']} ({r.get('why','')})")
-            elif r["type"] == "forbid":
+            elif kind == "forbid":
                 for i in r["ids"]:
-                    if i in have:
-                        problems.append(f"curated rule: {i} is forbidden on {MC} ({r.get('why','')})")
-            elif r["type"] == "warn_if_present":
+                    if i in top_ids:
+                        problems.append(f"curated rule: {i} is forbidden ({r.get('why','')})")
+            elif kind == "warn_if_present":
                 for i in r["ids"]:
-                    if i in have:
+                    if i in top_ids:
                         warnings.append(f"curated rule: {i} installed — {r.get('why','')}")
 
     report = {
         "mc": MC,
         "jar_count": len(jars),
-        "mod_ids": {k: v[0][0] for k, v in sorted(have.items())},
+        "top_level_ids": sorted(top_ids),
+        "all_ids": {k: v[0][0] for k, v in sorted(have.items())},
         "problems": problems,
         "warnings": warnings,
         "jars": jars,
@@ -365,12 +346,12 @@ def main() -> int:
         os.makedirs(os.path.dirname(out_json), exist_ok=True)
         json.dump(report, open(out_json, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
-    print(f"jars: {len(jars)}  mod ids: {len(have)}")
+    print(f"jars: {len(jars)}  top-level mod ids: {len(top_ids)}  ids incl. bundled: {len(have)}")
     print(f"problems: {len(problems)}")
     for p in problems:
         print("  !!", p)
     print(f"warnings: {len(warnings)}")
-    for w in warnings[:25]:
+    for w in warnings:
         print("   ~", w)
     return 1 if problems else 0
 
