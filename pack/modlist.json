@@ -2,8 +2,9 @@
  "_comment": "Curated RPG / cozy-village pack. Fabric 1.20.1. 'limit' counts every jar (mods + libraries). resolve_pack.py adds required libraries automatically and fails if the limit is exceeded or a required dependency is missing.",
  "limit": 150,
  "never_auto": [
+  "bp-lib",
   "farmers-delight-fabric",
-  "bp-lib"
+  "lets-do-bakery"
  ],
  "mods": [
   {
@@ -332,11 +333,6 @@
    "slug": "lets-do-farm-charm",
    "category": "cooking",
    "why": "сыроварня, печь, фермерские мелочи"
-  },
-  {
-   "slug": "lets-do-bakery",
-   "category": "cooking",
-   "why": "пекарня и выпечка"
   },
   {
    "slug": "lets-do-vinery",

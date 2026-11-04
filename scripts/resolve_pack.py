@@ -88,6 +88,9 @@ def choose(slug: str, allow_beta: bool = False, exact: str | None = None):
         for v in vs:
             if exact in (v["version_number"], v["id"]):
                 return v
+        for v in vs:  # prefix match, e.g. "2.13.2" -> "2.13.2+Fabric"
+            if v["version_number"].startswith(exact) or v["version_number"].split("+")[0] == exact:
+                return v
         raise SystemExit(f"!! {slug}: pinned version {exact} not found for {MC}/{LOADER}")
     for v in vs:  # newest first
         if v["version_type"] == "release":
@@ -148,31 +151,36 @@ def main() -> int:
             ],
         }
         selected[slug] = entry
-        # resolve required dependencies
-        for d in entry["deps"]:
-            if d["type"] != "required":
-                continue
-            try:
-                dproj = _get(f"{API}/project/{d['pid']}")
-            except Exception as exc:  # noqa: BLE001
-                errors.append(f"{slug}: cannot resolve dependency {d['pid']} ({exc})")
-                continue
-            dslug = dproj["slug"]
-            d["slug"] = dslug
-            cache.setdefault(dslug, {})["project"] = dproj
-            if dslug not in selected:
-                add(dslug, "library", f"required by {slug}", slug, None, False)
 
     for item in modlist["mods"]:
-        slug = item["slug"]
         add(
-            slug,
+            item["slug"],
             item.get("category", "misc"),
             item.get("why", ""),
             None,
             item.get("pin"),
             item.get("allow_beta", False),
         )
+    # dependency pass (repeat until stable): explicit picks above always win
+    changed = True
+    while changed:
+        changed = False
+        for slug, entry in list(selected.items()):
+            for d in entry["deps"]:
+                if d["type"] != "required":
+                    continue
+                if d["slug"] is None:
+                    try:
+                        dproj = _get(f"{API}/project/{d['pid']}")
+                    except Exception as exc:  # noqa: BLE001
+                        errors.append(f"{slug}: cannot resolve dependency {d['pid']} ({exc})")
+                        continue
+                    d["slug"] = dproj["slug"]
+                    cache.setdefault(d["slug"], {})["project"] = dproj
+                dslug = d["slug"]
+                if dslug not in selected:
+                    add(dslug, "library", f"required by {slug}", slug, None, False)
+                    changed = True
 
     # dependency sanity: every 'required' dep id must be in the pack
     have_ids = {e["project_id"] for e in selected.values()}

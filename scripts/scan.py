@@ -192,7 +192,7 @@ def scan_jars(mods_dir: str):
                                     "conflicts": {},
                                     "recommends": {},
                                     "provides": [p if isinstance(p, str) else p.get("id") for p in (inner_meta.get("provides") or [])],
-                                    "bundled": sub["file"],
+                                    "bundled": True,
                                 }
                             )
                 elif quilt:
@@ -286,6 +286,8 @@ def main() -> int:
         for e in j["errors"]:
             problems.append(f"{j['file']}: {e}")
         for m in j["mods"]:
+            if m.get("bundled"):
+                continue  # shipped inside another jar: the loader resolves it itself
             env = m.get("environment", "*")
             if m["id"] in ("minecraft", "java", "fabricloader"):
                 continue
@@ -320,8 +322,15 @@ def main() -> int:
                 if other not in have:
                     warnings.append(f"{m['id']}: recommends '{other}' which is not installed")
 
+    top_ids = {}
+    for j in jars:
+        for m in j["mods"]:
+            if m.get("bundled"):
+                continue
+            if m["id"]:
+                top_ids.setdefault(m["id"], []).append(j["file"])
     for mid, ent in have.items():
-        if len(ent) > 1:
+        if mid in top_ids and len(ent) > 1:
             problems.append(f"duplicate mod id '{mid}' shipped by: " + ", ".join(f for _, f in ent))
 
     # curated rules
