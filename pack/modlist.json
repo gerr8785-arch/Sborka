@@ -533,6 +533,31 @@
    "category": "travel",
    "pin": "2.13.2",
    "why": "крылья/полёт из Medieval Origins; 2.13.2 — верхняя совместимая версия"
+  },
+  {
+   "slug": "travelersbackpack",
+   "category": "storage",
+   "why": "улучшаемые рюкзаки (альтернатива/дополнение к Inmis)"
+  },
+  {
+   "slug": "explorers-compass",
+   "category": "travel",
+   "why": "компас к структурам: деревни, подземелья, башни"
+  },
+  {
+   "slug": "yungs-better-witch-huts",
+   "category": "structures",
+   "why": "переработанные хижины ведьм"
+  },
+  {
+   "slug": "yungs-better-strongholds",
+   "category": "structures",
+   "why": "переработанные крепости"
+  },
+  {
+   "slug": "farmers-cutting",
+   "category": "cooking",
+   "why": "разделочная доска для совместимости культур разных модов"
   }
  ]
 }
