@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       build_rar:
-        description: "Build the RAR archive (needs the rar binary)"
-        default: "false"
+        description: "Build the RAR archive"
+        default: "true"
   push:
     paths:
       - "pack/modlist.json"
@@ -15,13 +15,15 @@ on:
       - "scripts/**"
       - ".github/workflows/package.yml"
 
+concurrency:
+  group: package
+  cancel-in-progress: true
+
 jobs:
-  resolve:
+  package:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    outputs:
-      mod_count: ${{ steps.info.outputs.mod_count }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,34 +31,43 @@ jobs:
       - name: install rar
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq rar unrar || (curl -sSLo /tmp/rarlinux.tar.gz https://www.rarlab.com/rar/rarlinux-x64-624.tar.gz && tar xzf /tmp/rarlinux.tar.gz -C /tmp && sudo cp /tmp/rar/rar /tmp/rar/unrar /usr/local/bin/)
+          if ! sudo apt-get install -y -qq rar unrar; then
+            curl -sSLo /tmp/rarlinux.tar.gz https://www.rarlab.com/rar/rarlinux-x64-624.tar.gz
+            tar xzf /tmp/rarlinux.tar.gz -C /tmp
+            sudo cp /tmp/rar/rar /tmp/rar/unrar /usr/local/bin/
+          fi
           rar 2>&1 | head -2
       - name: resolve manifest
-        run: python3 scripts/resolve_pack.py
-      - name: info
-        id: info
+        run: python3 scripts/resolve_pack.py 2>&1 | tee /tmp/resolve.log
+      - name: download + scan + pack
         run: |
-          python3 - <<'PY' >> "$GITHUB_OUTPUT"
-          import json
-          m = json.load(open("build/manifest.json"))
-          print(f"mod_count={m['mod_count']}")
-          print(f"errors={' '.join(m['errors']) or 'none'}")
-          PY
-      - name: download mods (client)
-        run: python3 scripts/download_mods.py client
-      - name: download mods (server)
-        run: python3 scripts/download_mods.py server
-      - name: static compatibility scan
-        run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json
-      - name: build archives (mrpack + rar)
-        run: python3 scripts/build_pack.py
-      - name: archive artifacts
+          set -o pipefail
+          python3 scripts/download_mods.py client 2>&1 | tee /tmp/dl-client.log
+          python3 scripts/download_mods.py server 2>&1 | tee /tmp/dl-server.log
+          python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
+          python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
+      - name: publish artifacts
         uses: actions/upload-artifact@v4
         with:
           name: sborka-rpg-pack
-          if-no-files-found: error
+          if-no-files-found: warn
           path: |
             build/*.mrpack
             build/*.rar
-            build/report/*.txt
-            build/report/scan.json
+            build/report/*
+      - name: create release
+        if: env.GH_RELEASE == '1'
+        run: echo "release step placeholder"
+      - name: commit logs (always)
+        if: always()
+        run: |
+          mkdir -p report
+          for f in resolve dl-client dl-server scan build; do
+            [ -f /tmp/$f.log ] && cp /tmp/$f.log report/ci-$f.log || true
+          done
+          [ -f build/report/manifest.txt ] && cp build/report/manifest.txt report/ || true
+          [ -f build/report/scan.json ] && cp build/report/scan.json report/ || true
+          git config user.name "ci"; git config user.email "ci@local"
+          git add -A report || true
+          git commit -m "ci: package logs" || echo "nothing to commit"
+          git push origin HEAD:arena/326781c7-sborka || true

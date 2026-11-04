@@ -69,6 +69,17 @@ def versions(slug: str):
     return v
 
 
+def suggest(slug: str):
+    """Modrinth search for a slug we failed to look up (typos / renames)."""
+    try:
+        facets = json.dumps([["project_type:mod"], [f"versions:{MC}"], [f"categories:{LOADER}"]])
+        q = urllib.parse.urlencode({"query": slug.replace("-", " "), "limit": 3, "facets": facets})
+        hits = _get(f"{API}/search?{q}").get("hits", [])
+        return ", ".join(f"{h['slug']} ({h['title']})" for h in hits) or "no hits"
+    except Exception as exc:  # noqa: BLE001
+        return f"search failed: {exc}"
+
+
 def choose(slug: str, allow_beta: bool = False, exact: str | None = None):
     vs = versions(slug)
     if not vs:
@@ -105,7 +116,7 @@ def main() -> int:
         try:
             proj = project(slug)
         except Exception as exc:  # noqa: BLE001
-            errors.append(f"slug {slug} not found on Modrinth ({exc})")
+            errors.append(f"slug {slug} not found on Modrinth ({exc}) — maybe: {suggest(slug)}")
             return
         v = choose(slug, allow_beta=allow_beta, exact=pin)
         if v is None:
