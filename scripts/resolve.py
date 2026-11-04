@@ -70,8 +70,38 @@ def main() -> int:
     if os.path.exists(cache_path):
         cache = json.load(open(cache_path, encoding="utf-8"))
 
+    # --- phase 1: resolve every "project id" known from the graph (batch endpoint) ---
+    known = {}
+    if os.path.exists(cache_path):
+        for entry in cache.values():
+            pr = entry.get("project", {})
+            if pr.get("id"):
+                known[pr["id"]] = pr.get("slug")
+    # add well-known ids harvested from Modrinth dependency lists
+    seed_ids = candidates.get("seed_ids", {})
+    known.update(seed_ids)
+    pids = sorted(set(known))
+    proj_by_id = {}
+    for i in range(0, len(pids), 40):
+        chunk = pids[i : i + 40]
+        q = urllib.parse.urlencode({"ids": json.dumps(chunk)})
+        try:
+            for pr in get_json(f"{API}/projects?{q}"):
+                proj_by_id[pr["id"]] = pr
+        except Exception as exc:  # noqa: BLE001
+            print("batch ids failed:", exc, file=sys.stderr)
+
+    def project_by_id(pid):
+        if pid in proj_by_id:
+            return proj_by_id[pid]
+        pr = get_json(f"{API}/project/{pid}")
+        proj_by_id[pid] = pr
+        return pr
+
     report = {}
     problems = []
+    graph = {}
+    seed_slugs = {}
     for i, entry in enumerate(candidates["mods"], 1):
         slug = entry["slug"] if isinstance(entry, dict) else entry
         print(f"[{i}/{len(candidates['mods'])}] {slug}", file=sys.stderr, flush=True)
@@ -126,11 +156,39 @@ def main() -> int:
             }
             if not vers:
                 problems.append(f"{slug}: NO {MC}/{LOADER} version")
+            deps = {}
+            for v in vers[:1]:
+                for d in v.get("dependencies", []):
+                    pid = d.get("project_id")
+                    if not pid:
+                        continue
+                    try:
+                        dp = project_by_id(pid)
+                    except Exception as exc:  # noqa: BLE001
+                        deps[pid[:8]] = f"??{exc}"
+                        continue
+                    dslug = dp.get("slug")
+                    seed_slugs[dslug] = pid
+                    has = None
+                    try:
+                        dv = versions_for(pid)
+                        has = bool(dv)
+                        if has:
+                            # keep required libs with their newest 1.20.1 file for the downloader
+                            cache.setdefault(dslug, {"project": dp, "versions": dv})
+                    except Exception:  # noqa: BLE001
+                        has = None
+                    deps[dslug] = f"{d['dependency_type']}{'' if has is None else ('+ok' if has else '+NONE')}"
+                    if d["dependency_type"] == "required" and has is False:
+                        problems.append(f"{slug} REQUIRES {dslug} which has no {MC}/{LOADER} build!")
+            graph[slug] = deps
         except Exception as exc:  # noqa: BLE001
             problems.append(f"{slug}: ERROR {exc}")
             report[slug] = {"error": str(exc)}
 
     json.dump(report, open(os.path.join(out_dir, "candidates.json"), "w", encoding="utf-8"), indent=1)
+    json.dump(graph, open(os.path.join(out_dir, "graph.json"), "w", encoding="utf-8"), indent=1)
+    json.dump(seed_slugs, open(os.path.join(out_dir, "dep-slugs.json"), "w"), indent=1)
 
     # compact human/machine readable summary
     lines = []
@@ -140,6 +198,7 @@ def main() -> int:
             continue
         cs, ss = info["side"]
         lines.append(f"## {slug} | {info['title']} | client={cs} server={ss} | {info['downloads']//1000}k")
+        lines.append("   deps: " + ", ".join(f"{k}:{v}" for k, v in graph.get(slug, {}).items()))
         for v in info["versions"]:
             deps = ",".join(f"{d['pid'][:8]}:{d['type'][:4]}" for d in v["deps"]) or "-"
             f = v["files"][0] if v["files"] else {"name": "?", "size": 0}

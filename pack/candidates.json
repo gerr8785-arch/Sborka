@@ -1,231 +1,896 @@
 {
-  "_comment": "Candidate pool for the RPG pack. resolve.py checks each slug against Modrinth for MC 1.20.1 + Fabric and records dependencies; final selection happens in pack/modlist.json after review.",
-  "mods": [
-    {"slug": "fabric-api", "note": "core"},
-    {"slug": "fabric-language-kotlin", "note": "lib"},
-    {"slug": "sodium", "note": "perf"},
-    {"slug": "sodium-extra", "note": "perf"},
-    {"slug": "reeses-sodium-options", "note": "perf-ui"},
-    {"slug": "indium", "note": "perf-frapi-compat"},
-    {"slug": "iris", "note": "shaders"},
-    {"slug": "lithium", "note": "perf"},
-    {"slug": "ferrite-core", "note": "perf"},
-    {"slug": "krypton", "note": "perf-net"},
-    {"slug": "c2me-fabric", "note": "perf-chunk"},
-    {"slug": "very-many-players-fix", "note": "perf"},
-    {"slug": "memoryleakfix", "note": "perf"},
-    {"slug": "modernfix", "note": "perf"},
-    {"slug": "moreculling", "note": "perf"},
-    {"slug": "immediatelyfast", "note": "perf"},
-    {"slug": "entityculling", "note": "perf"},
-    {"slug": "debugify", "note": "fixes"},
-    {"slug": "clumps", "note": "perf-xp"},
-    {"slug": "fastload", "note": "perf-load"},
-    {"slug": "fastquit", "note": "perf-quit"},
-    {"slug": "lazy-dfu", "note": "perf-load"},
-    {"slug": "threadtweak", "note": "perf-threads"},
-    {"slug": "badoptimizations", "note": "perf"},
-    {"slug": "dynamic-fps", "note": "perf"},
-    {"slug": "enhanced-block-entities", "note": "perf-chest-render"},
-    {"slug": "not-enough-crashes", "note": "diag"},
-    {"slug": "chunky", "note": "pregenerating world, optional"},
-    {"slug": "clothed-craft", "note": "?"},
-
-    {"slug": "cloth-config", "note": "lib"},
-    {"slug": "architectury-api", "note": "lib"},
-    {"slug": "modmenu", "note": "lib-ui"},
-    {"slug": "yacl", "note": "lib"},
-    {"slug": "geckolib", "note": "lib"},
-    {"slug": "trinkets", "note": "lib-rpg"},
-    {"slug": "patchouli", "note": "lib-books"},
-    {"slug": "balm", "note": "lib"},
-    {"slug": "creativecore", "note": "lib"},
-    {"slug": "resourceful-config", "note": "lib"},
-    {"slug": "midnightlib", "note": "lib"},
-    {"slug": "forge-config-api-port", "note": "lib"},
-    {"slug": "smartbrainlib", "note": "lib"},
-    {"slug": "lithostitched", "note": "lib-worldgen"},
-    {"slug": "cardinal-components-api", "note": "lib"},
-    {"slug": "owo-lib", "note": "lib"},
-    {"slug": "fzzy-config", "note": "lib"},
-    {"slug": "puzzles-lib", "note": "lib"},
-    {"slug": "bookshelf-lib", "note": "lib"},
-    {"slug": "collective", "note": "lib"},
-    {"slug": "jamlib", "note": "lib"},
-    {"slug": "moonlight", "note": "lib"},
-    {"slug": "cynic-lib", "note": "lib"},
-
-    {"slug": "origins", "note": "races"},
-    {"slug": "apoli", "note": "races-lib"},
-    {"slug": "calio", "note": "races-lib"},
-    {"slug": "origins-classes", "note": "classes"},
-    {"slug": "medieval-origins-revival", "note": "races-datapack"},
-    {"slug": "origins-plus-plus", "note": "races-extra"},
-    {"slug": "extra-origins", "note": "races-extra"},
-    {"slug": "rpg-origins", "note": "races-extra"},
-    {"slug": "originstweaks", "note": "races-tweaks"},
-
-    {"slug": "wizards", "note": "rpg-series"},
-    {"slug": "jewelry", "note": "rpg-series"},
-    {"slug": "paladins-and-priests", "note": "rpg-series"},
-    {"slug": "archers", "note": "rpg-series"},
-    {"slug": "rogues-and-warriors", "note": "rpg-series"},
-    {"slug": "gazebos", "note": "rpg-series-structures"},
-    {"slug": "more-rpg-library", "note": "rpg-series-lib"},
-    {"slug": "spell-engine", "note": "lib-magic"},
-    {"slug": "spell-power", "note": "lib-magic"},
-    {"slug": "simplyswords", "note": "weapons"},
-    {"slug": "better-combat", "note": "combat"},
-    {"slug": "combat-roll", "note": "combat"},
-    {"slug": "epic-fight-mod", "note": "combat-heavy"},
-    {"slug": "artifacts", "note": "loot-rpg"},
-    {"slug": "raritycore", "note": "?"},
-    {"slug": "rpgdifficulty", "note": "difficulty"},
-    {"slug": "majrusz-library", "note": "?"},
-
-    {"slug": "ftb-quests", "note": "quests"},
-    {"slug": "ftb-teams", "note": "quests-lib"},
-    {"slug": "ftb-library-fabric", "note": "quests-lib"},
-    {"slug": "quests-teams-fixes", "note": "quests-fix"},
-    {"slug": "ftb-quests-freeze-fix", "note": "quests-perf"},
-    {"slug": "odyssey-quests", "note": "quests-alt"},
-    {"slug": "bountiful", "note": "villager-bounties"},
-    {"slug": "custom-villager-trades", "note": "trades"},
-    {"slug": "villagersplus", "note": "villagers"},
-    {"slug": "guard-villagers-fabricquilt", "note": "villagers"},
-    {"slug": "villager-names-serilum", "note": "villagers-cosy"},
-    {"slug": "smarter-farmers-farmers-replant", "note": "villagers"},
-    {"slug": "chefs-delight", "note": "villagers-food"},
-    {"slug": "libertyvillagers", "note": "villagers"},
-    {"slug": "trade-cycling", "note": "villagers-qol"},
-    {"slug": "villager-transportation", "note": "villagers"},
-    {"slug": "easy-villagers", "note": "villagers-alt"},
-    {"slug": "villager-quests", "note": "villagers-quests"},
-
-    {"slug": "aquaculture", "note": "fishing"},
-    {"slug": "tide", "note": "fishing"},
-    {"slug": "fish-of-thieves", "note": "fishing"},
-    {"slug": "fishing-real", "note": "fishing-entities"},
-    {"slug": "random-fishing-crates", "note": "fishing-loot"},
-    {"slug": "fishing-rod-fix", "note": "fishing-fix"},
-    {"slug": "exlines-fishing", "note": "fishing"},
-    {"slug": "enchanted-fishing-line", "note": "fishing-visual"},
-    {"slug": "stardew-fishing", "note": "fishing-minigame"},
-
-    {"slug": "farmers-delight-refabricated", "note": "cooking"},
-    {"slug": "more-delight", "note": "cooking-addon"},
-    {"slug": "cooking-for-blockheads", "note": "cooking"},
-    {"slug": "lets-do-farm-charm", "note": "farming-cosy"},
-    {"slug": "lets-do-bakery", "note": "cooking-cosy"},
-    {"slug": "lets-do-vinery", "note": "cooking-cosy"},
-    {"slug": "lets-do-candlelight", "note": "cooking-cosy"},
-    {"slug": "lets-do-brewery", "note": "cooking-cosy"},
-    {"slug": "overweight-farming", "note": "farming"},
-    {"slug": "farming-for-blockheads", "note": "farming"},
-    {"slug": "croptopia", "note": "farming-big"},
-    {"slug": "apple-trees", "note": "farming-cosy"},
-    {"slug": "ends-delight", "note": "cooking-addon"},
-    {"slug": "nethers-delight", "note": "cooking-addon"},
-    {"slug": "vintagedelight", "note": "cooking-addon"},
-    {"slug": "farmers-knives", "note": "cooking-addon"},
-    {"slug": "right-click-harvest", "note": "farming-qol"},
-    {"slug": "simple-voice-chat", "note": "multiplayer"},
-    {"slug": "seasons", "note": "seasons"},
-    {"slug": "serene-seasons", "note": "seasons"},
-    {"slug": "fabric-seasons", "note": "seasons"},
-
-    {"slug": "terralith", "note": "worldgen"},
-    {"slug": "tectonic", "note": "worldgen"},
-    {"slug": "biomes-o-plenty", "note": "worldgen"},
-    {"slug": "ct-overhaul-village", "note": "villages-big"},
-    {"slug": "better-village", "note": "villages"},
-    {"slug": "villages-and-pillages", "note": "villages"},
-    {"slug": "integrated-villages", "note": "villages"},
-    {"slug": "mmv-moogs-missing-villages", "note": "villages"},
-    {"slug": "qraftys-jungle-villages", "note": "villages"},
-    {"slug": "lios-overhauled-villages", "note": "villages"},
-    {"slug": "structory", "note": "structures"},
-    {"slug": "structory-towers", "note": "structures"},
-    {"slug": "yungs-better-dungeons", "note": "dungeons"},
-    {"slug": "when-dungeons-arise", "note": "dungeons"},
-    {"slug": "towns-and-towers", "note": "structures"},
-    {"slug": "dungeons-and-taverns", "note": "structures"},
-    {"slug": "tidal-towns", "note": "villages"},
-    {"slug": "choice-theorem-s-overhauled-village", "note": "dupe-check"},
-
-    {"slug": "waystones", "note": "travel"},
-    {"slug": "travelers-backpack", "note": "storage"},
-    {"slug": "sophisticated-backpacks", "note": "storage"},
-    {"slug": "inventory-sorter", "note": "qol"},
-    {"slug": "mouse-tweaks", "note": "qol"},
-    {"slug": "controlling", "note": "qol"},
-    {"slug": "appleskin", "note": "qol-hud"},
-    {"slug": "jade", "note": "qol-hud"},
-    {"slug": "roughly-enough-items", "note": "recipes"},
-    {"slug": "emi", "note": "recipes-alt"},
-    {"slug": "betterf3", "note": "qol-hud"},
-    {"slug": "ferritecore", "note": "dupe-check"},
-    {"slug": "xaeros-minimap", "note": "map"},
-    {"slug": "xaeros-world-map", "note": "map"},
-    {"slug": "journeymap", "note": "map-alt"},
-    {"slug": "nature-compass", "note": "qol"},
-    {"slug": "nether-coords", "note": "qol"},
-    {"slug": "wthit", "note": "hud-alt"},
-
-    {"slug": "ambientsounds", "note": "audio"},
-    {"slug": "presence-footsteps", "note": "audio"},
-    {"slug": "sound-physics-remastered", "note": "audio-heavy"},
-    {"slug": "falling-leaves-fabric", "note": "visual-cosy"},
-    {"slug": "visual-workbench", "note": "visual"},
-    {"slug": "not-enough-animations", "note": "visual"},
-    {"slug": "make_bubbles_pop", "note": "visual"},
-    {"slug": "visuality", "note": "visual"},
-    {"slug": "effective", "note": "visual-water"},
-    {"slug": "particle-core", "note": "perf-particles"},
-    {"slug": "sodium-shadowy-path-blocks", "note": "visual-fix"},
-    {"slug": "fabricskyboxes", "note": "visual-sky"},
-
-    {"slug": "critters-and-companions", "note": "animals"},
-    {"slug": "alexs-mobs", "note": "animals-big"},
-    {"slug": "friends-and-foes", "note": "mobs"},
-    {"slug": "naturalist", "note": "animals"},
-    {"slug": "mowzies-mobs", "note": "bosses"},
-    {"slug": "bosses-of-mass-destruction", "note": "bosses"},
-    {"slug": "the-bumblezone", "note": "adventure-dim"},
-    {"slug": "deeperdarker", "note": "adventure-dim"},
-    {"slug": "aether", "note": "adventure-dim"},
-    {"slug": "betternether", "note": "worldgen"},
-    {"slug": "betterend", "note": "worldgen"},
-    {"slug": "doggy-talents", "note": "pets"},
-    {"slug": "wolves-with-armor", "note": "pets"},
-    {"slug": "horse-expert", "note": "pets"},
-    {"slug": "campfire-stories", "note": "cosy"},
-
-    {"slug": "charm", "note": "vanilla-plus"},
-    {"slug": "sawmill", "note": "vanilla-plus"},
-    {"slug": "blockus", "note": "decoration"},
-    {"slug": "twigs", "note": "decoration"},
-    {"slug": "handcrafted", "note": "decoration"},
-    {"slug": "bildcraft", "note": "?"},
-    {"slug": "macaws-furniture", "note": "decoration"},
-    {"slug": "decorative-blocks", "note": "decoration"},
-    {"slug": "another-furniture", "note": "decoration"},
-    {"slug": "xaeros-minimap-fair-play-edition", "note": "dupe-check"},
-    {"slug": "lootr", "note": "loot"},
-    {"slug": "trading-post", "note": "villagers"},
-    {"slug": "incendium", "note": "worldgen-nether"},
-    {"slug": "natures-spirit", "note": "worldgen"},
-    {"slug": "getting-wood", "note": "?"},
-    {"slug": "betterdeserttemples", "note": "?"},
-    {"slug": "yungs-api", "note": "lib-worldgen"},
-    {"slug": "yungs-better-mineshafts", "note": "dungeons"},
-    {"slug": "yungs-better-strongholds", "note": "dungeons"},
-    {"slug": "yungs-better-witch-huts", "note": "dungeons"},
-    {"slug": "yungs-extras", "note": "dungeons"},
-    {"slug": "expanded-ecosphere", "note": "worldgen"},
-    {"slug": "geophilic", "note": "worldgen"},
-    {"slug": "explorations", "note": "worldgen"},
-    {"slug": "towers-of-the-wild-modded", "note": "structures"},
-    {"slug": "legendary-origins", "note": "races"}
-  ]
+ "_comment": "Candidate pool for the RPG pack. resolve.py checks each slug against Modrinth for MC 1.20.1 + Fabric and records dependencies; final selection happens in pack/modlist.json after review.",
+ "mods": [
+  {
+   "slug": "fabric-api",
+   "note": "core"
+  },
+  {
+   "slug": "fabric-language-kotlin",
+   "note": "lib"
+  },
+  {
+   "slug": "sodium",
+   "note": "perf"
+  },
+  {
+   "slug": "sodium-extra",
+   "note": "perf"
+  },
+  {
+   "slug": "reeses-sodium-options",
+   "note": "perf-ui"
+  },
+  {
+   "slug": "indium",
+   "note": "perf-frapi-compat"
+  },
+  {
+   "slug": "iris",
+   "note": "shaders"
+  },
+  {
+   "slug": "lithium",
+   "note": "perf"
+  },
+  {
+   "slug": "ferrite-core",
+   "note": "perf"
+  },
+  {
+   "slug": "krypton",
+   "note": "perf-net"
+  },
+  {
+   "slug": "c2me-fabric",
+   "note": "perf-chunk"
+  },
+  {
+   "slug": "very-many-players-fix",
+   "note": "perf"
+  },
+  {
+   "slug": "memoryleakfix",
+   "note": "perf"
+  },
+  {
+   "slug": "modernfix",
+   "note": "perf"
+  },
+  {
+   "slug": "moreculling",
+   "note": "perf"
+  },
+  {
+   "slug": "immediatelyfast",
+   "note": "perf"
+  },
+  {
+   "slug": "entityculling",
+   "note": "perf"
+  },
+  {
+   "slug": "debugify",
+   "note": "fixes"
+  },
+  {
+   "slug": "clumps",
+   "note": "perf-xp"
+  },
+  {
+   "slug": "fastload",
+   "note": "perf-load"
+  },
+  {
+   "slug": "fastquit",
+   "note": "perf-quit"
+  },
+  {
+   "slug": "lazy-dfu",
+   "note": "perf-load"
+  },
+  {
+   "slug": "threadtweak",
+   "note": "perf-threads"
+  },
+  {
+   "slug": "badoptimizations",
+   "note": "perf"
+  },
+  {
+   "slug": "dynamic-fps",
+   "note": "perf"
+  },
+  {
+   "slug": "enhanced-block-entities",
+   "note": "perf-chest-render"
+  },
+  {
+   "slug": "not-enough-crashes",
+   "note": "diag"
+  },
+  {
+   "slug": "chunky",
+   "note": "pregenerating world, optional"
+  },
+  {
+   "slug": "clothed-craft",
+   "note": "?"
+  },
+  {
+   "slug": "cloth-config",
+   "note": "lib"
+  },
+  {
+   "slug": "architectury-api",
+   "note": "lib"
+  },
+  {
+   "slug": "modmenu",
+   "note": "lib-ui"
+  },
+  {
+   "slug": "yacl",
+   "note": "lib"
+  },
+  {
+   "slug": "geckolib",
+   "note": "lib"
+  },
+  {
+   "slug": "trinkets",
+   "note": "lib-rpg"
+  },
+  {
+   "slug": "patchouli",
+   "note": "lib-books"
+  },
+  {
+   "slug": "balm",
+   "note": "lib"
+  },
+  {
+   "slug": "creativecore",
+   "note": "lib"
+  },
+  {
+   "slug": "resourceful-config",
+   "note": "lib"
+  },
+  {
+   "slug": "midnightlib",
+   "note": "lib"
+  },
+  {
+   "slug": "forge-config-api-port",
+   "note": "lib"
+  },
+  {
+   "slug": "smartbrainlib",
+   "note": "lib"
+  },
+  {
+   "slug": "lithostitched",
+   "note": "lib-worldgen"
+  },
+  {
+   "slug": "cardinal-components-api",
+   "note": "lib"
+  },
+  {
+   "slug": "owo-lib",
+   "note": "lib"
+  },
+  {
+   "slug": "fzzy-config",
+   "note": "lib"
+  },
+  {
+   "slug": "puzzles-lib",
+   "note": "lib"
+  },
+  {
+   "slug": "bookshelf-lib",
+   "note": "lib"
+  },
+  {
+   "slug": "collective",
+   "note": "lib"
+  },
+  {
+   "slug": "jamlib",
+   "note": "lib"
+  },
+  {
+   "slug": "moonlight",
+   "note": "lib"
+  },
+  {
+   "slug": "cynic-lib",
+   "note": "lib"
+  },
+  {
+   "slug": "origins",
+   "note": "races"
+  },
+  {
+   "slug": "apoli",
+   "note": "races-lib"
+  },
+  {
+   "slug": "calio",
+   "note": "races-lib"
+  },
+  {
+   "slug": "origins-classes",
+   "note": "classes"
+  },
+  {
+   "slug": "medieval-origins-revival",
+   "note": "races-datapack"
+  },
+  {
+   "slug": "origins-plus-plus",
+   "note": "races-extra"
+  },
+  {
+   "slug": "extra-origins",
+   "note": "races-extra"
+  },
+  {
+   "slug": "rpg-origins",
+   "note": "races-extra"
+  },
+  {
+   "slug": "originstweaks",
+   "note": "races-tweaks"
+  },
+  {
+   "slug": "wizards",
+   "note": "rpg-series"
+  },
+  {
+   "slug": "jewelry",
+   "note": "rpg-series"
+  },
+  {
+   "slug": "paladins-and-priests",
+   "note": "rpg-series"
+  },
+  {
+   "slug": "archers",
+   "note": "rpg-series"
+  },
+  {
+   "slug": "rogues-and-warriors",
+   "note": "rpg-series"
+  },
+  {
+   "slug": "gazebos",
+   "note": "rpg-series-structures"
+  },
+  {
+   "slug": "more-rpg-library",
+   "note": "rpg-series-lib"
+  },
+  {
+   "slug": "spell-engine",
+   "note": "lib-magic"
+  },
+  {
+   "slug": "spell-power",
+   "note": "lib-magic"
+  },
+  {
+   "slug": "simplyswords",
+   "note": "weapons"
+  },
+  {
+   "slug": "better-combat",
+   "note": "combat"
+  },
+  {
+   "slug": "combat-roll",
+   "note": "combat"
+  },
+  {
+   "slug": "epic-fight-mod",
+   "note": "combat-heavy"
+  },
+  {
+   "slug": "artifacts",
+   "note": "loot-rpg"
+  },
+  {
+   "slug": "raritycore",
+   "note": "?"
+  },
+  {
+   "slug": "rpgdifficulty",
+   "note": "difficulty"
+  },
+  {
+   "slug": "majrusz-library",
+   "note": "?"
+  },
+  {
+   "slug": "ftb-quests",
+   "note": "quests"
+  },
+  {
+   "slug": "ftb-teams",
+   "note": "quests-lib"
+  },
+  {
+   "slug": "ftb-library-fabric",
+   "note": "quests-lib"
+  },
+  {
+   "slug": "quests-teams-fixes",
+   "note": "quests-fix"
+  },
+  {
+   "slug": "ftb-quests-freeze-fix",
+   "note": "quests-perf"
+  },
+  {
+   "slug": "odyssey-quests",
+   "note": "quests-alt"
+  },
+  {
+   "slug": "bountiful",
+   "note": "villager-bounties"
+  },
+  {
+   "slug": "custom-villager-trades",
+   "note": "trades"
+  },
+  {
+   "slug": "villagersplus",
+   "note": "villagers"
+  },
+  {
+   "slug": "guard-villagers-fabricquilt",
+   "note": "villagers"
+  },
+  {
+   "slug": "villager-names-serilum",
+   "note": "villagers-cosy"
+  },
+  {
+   "slug": "smarter-farmers-farmers-replant",
+   "note": "villagers"
+  },
+  {
+   "slug": "chefs-delight",
+   "note": "villagers-food"
+  },
+  {
+   "slug": "libertyvillagers",
+   "note": "villagers"
+  },
+  {
+   "slug": "trade-cycling",
+   "note": "villagers-qol"
+  },
+  {
+   "slug": "villager-transportation",
+   "note": "villagers"
+  },
+  {
+   "slug": "easy-villagers",
+   "note": "villagers-alt"
+  },
+  {
+   "slug": "villager-quests",
+   "note": "villagers-quests"
+  },
+  {
+   "slug": "aquaculture",
+   "note": "fishing"
+  },
+  {
+   "slug": "tide",
+   "note": "fishing"
+  },
+  {
+   "slug": "fish-of-thieves",
+   "note": "fishing"
+  },
+  {
+   "slug": "fishing-real",
+   "note": "fishing-entities"
+  },
+  {
+   "slug": "random-fishing-crates",
+   "note": "fishing-loot"
+  },
+  {
+   "slug": "fishing-rod-fix",
+   "note": "fishing-fix"
+  },
+  {
+   "slug": "exlines-fishing",
+   "note": "fishing"
+  },
+  {
+   "slug": "enchanted-fishing-line",
+   "note": "fishing-visual"
+  },
+  {
+   "slug": "stardew-fishing",
+   "note": "fishing-minigame"
+  },
+  {
+   "slug": "farmers-delight-refabricated",
+   "note": "cooking"
+  },
+  {
+   "slug": "more-delight",
+   "note": "cooking-addon"
+  },
+  {
+   "slug": "cooking-for-blockheads",
+   "note": "cooking"
+  },
+  {
+   "slug": "lets-do-farm-charm",
+   "note": "farming-cosy"
+  },
+  {
+   "slug": "lets-do-bakery",
+   "note": "cooking-cosy"
+  },
+  {
+   "slug": "lets-do-vinery",
+   "note": "cooking-cosy"
+  },
+  {
+   "slug": "lets-do-candlelight",
+   "note": "cooking-cosy"
+  },
+  {
+   "slug": "lets-do-brewery",
+   "note": "cooking-cosy"
+  },
+  {
+   "slug": "overweight-farming",
+   "note": "farming"
+  },
+  {
+   "slug": "farming-for-blockheads",
+   "note": "farming"
+  },
+  {
+   "slug": "croptopia",
+   "note": "farming-big"
+  },
+  {
+   "slug": "apple-trees",
+   "note": "farming-cosy"
+  },
+  {
+   "slug": "ends-delight",
+   "note": "cooking-addon"
+  },
+  {
+   "slug": "nethers-delight",
+   "note": "cooking-addon"
+  },
+  {
+   "slug": "vintagedelight",
+   "note": "cooking-addon"
+  },
+  {
+   "slug": "farmers-knives",
+   "note": "cooking-addon"
+  },
+  {
+   "slug": "right-click-harvest",
+   "note": "farming-qol"
+  },
+  {
+   "slug": "simple-voice-chat",
+   "note": "multiplayer"
+  },
+  {
+   "slug": "seasons",
+   "note": "seasons"
+  },
+  {
+   "slug": "serene-seasons",
+   "note": "seasons"
+  },
+  {
+   "slug": "fabric-seasons",
+   "note": "seasons"
+  },
+  {
+   "slug": "terralith",
+   "note": "worldgen"
+  },
+  {
+   "slug": "tectonic",
+   "note": "worldgen"
+  },
+  {
+   "slug": "biomes-o-plenty",
+   "note": "worldgen"
+  },
+  {
+   "slug": "ct-overhaul-village",
+   "note": "villages-big"
+  },
+  {
+   "slug": "better-village",
+   "note": "villages"
+  },
+  {
+   "slug": "villages-and-pillages",
+   "note": "villages"
+  },
+  {
+   "slug": "integrated-villages",
+   "note": "villages"
+  },
+  {
+   "slug": "mmv-moogs-missing-villages",
+   "note": "villages"
+  },
+  {
+   "slug": "qraftys-jungle-villages",
+   "note": "villages"
+  },
+  {
+   "slug": "lios-overhauled-villages",
+   "note": "villages"
+  },
+  {
+   "slug": "structory",
+   "note": "structures"
+  },
+  {
+   "slug": "structory-towers",
+   "note": "structures"
+  },
+  {
+   "slug": "yungs-better-dungeons",
+   "note": "dungeons"
+  },
+  {
+   "slug": "when-dungeons-arise",
+   "note": "dungeons"
+  },
+  {
+   "slug": "towns-and-towers",
+   "note": "structures"
+  },
+  {
+   "slug": "dungeons-and-taverns",
+   "note": "structures"
+  },
+  {
+   "slug": "tidal-towns",
+   "note": "villages"
+  },
+  {
+   "slug": "choice-theorem-s-overhauled-village",
+   "note": "dupe-check"
+  },
+  {
+   "slug": "waystones",
+   "note": "travel"
+  },
+  {
+   "slug": "travelers-backpack",
+   "note": "storage"
+  },
+  {
+   "slug": "sophisticated-backpacks",
+   "note": "storage"
+  },
+  {
+   "slug": "inventory-sorter",
+   "note": "qol"
+  },
+  {
+   "slug": "mouse-tweaks",
+   "note": "qol"
+  },
+  {
+   "slug": "controlling",
+   "note": "qol"
+  },
+  {
+   "slug": "appleskin",
+   "note": "qol-hud"
+  },
+  {
+   "slug": "jade",
+   "note": "qol-hud"
+  },
+  {
+   "slug": "roughly-enough-items",
+   "note": "recipes"
+  },
+  {
+   "slug": "emi",
+   "note": "recipes-alt"
+  },
+  {
+   "slug": "betterf3",
+   "note": "qol-hud"
+  },
+  {
+   "slug": "ferritecore",
+   "note": "dupe-check"
+  },
+  {
+   "slug": "xaeros-minimap",
+   "note": "map"
+  },
+  {
+   "slug": "xaeros-world-map",
+   "note": "map"
+  },
+  {
+   "slug": "journeymap",
+   "note": "map-alt"
+  },
+  {
+   "slug": "nature-compass",
+   "note": "qol"
+  },
+  {
+   "slug": "nether-coords",
+   "note": "qol"
+  },
+  {
+   "slug": "wthit",
+   "note": "hud-alt"
+  },
+  {
+   "slug": "ambientsounds",
+   "note": "audio"
+  },
+  {
+   "slug": "presence-footsteps",
+   "note": "audio"
+  },
+  {
+   "slug": "sound-physics-remastered",
+   "note": "audio-heavy"
+  },
+  {
+   "slug": "falling-leaves-fabric",
+   "note": "visual-cosy"
+  },
+  {
+   "slug": "visual-workbench",
+   "note": "visual"
+  },
+  {
+   "slug": "not-enough-animations",
+   "note": "visual"
+  },
+  {
+   "slug": "make_bubbles_pop",
+   "note": "visual"
+  },
+  {
+   "slug": "visuality",
+   "note": "visual"
+  },
+  {
+   "slug": "effective",
+   "note": "visual-water"
+  },
+  {
+   "slug": "particle-core",
+   "note": "perf-particles"
+  },
+  {
+   "slug": "sodium-shadowy-path-blocks",
+   "note": "visual-fix"
+  },
+  {
+   "slug": "fabricskyboxes",
+   "note": "visual-sky"
+  },
+  {
+   "slug": "critters-and-companions",
+   "note": "animals"
+  },
+  {
+   "slug": "alexs-mobs",
+   "note": "animals-big"
+  },
+  {
+   "slug": "friends-and-foes",
+   "note": "mobs"
+  },
+  {
+   "slug": "naturalist",
+   "note": "animals"
+  },
+  {
+   "slug": "mowzies-mobs",
+   "note": "bosses"
+  },
+  {
+   "slug": "bosses-of-mass-destruction",
+   "note": "bosses"
+  },
+  {
+   "slug": "the-bumblezone",
+   "note": "adventure-dim"
+  },
+  {
+   "slug": "deeperdarker",
+   "note": "adventure-dim"
+  },
+  {
+   "slug": "aether",
+   "note": "adventure-dim"
+  },
+  {
+   "slug": "betternether",
+   "note": "worldgen"
+  },
+  {
+   "slug": "betterend",
+   "note": "worldgen"
+  },
+  {
+   "slug": "doggy-talents",
+   "note": "pets"
+  },
+  {
+   "slug": "wolves-with-armor",
+   "note": "pets"
+  },
+  {
+   "slug": "horse-expert",
+   "note": "pets"
+  },
+  {
+   "slug": "campfire-stories",
+   "note": "cosy"
+  },
+  {
+   "slug": "charm",
+   "note": "vanilla-plus"
+  },
+  {
+   "slug": "sawmill",
+   "note": "vanilla-plus"
+  },
+  {
+   "slug": "blockus",
+   "note": "decoration"
+  },
+  {
+   "slug": "twigs",
+   "note": "decoration"
+  },
+  {
+   "slug": "handcrafted",
+   "note": "decoration"
+  },
+  {
+   "slug": "bildcraft",
+   "note": "?"
+  },
+  {
+   "slug": "macaws-furniture",
+   "note": "decoration"
+  },
+  {
+   "slug": "decorative-blocks",
+   "note": "decoration"
+  },
+  {
+   "slug": "another-furniture",
+   "note": "decoration"
+  },
+  {
+   "slug": "xaeros-minimap-fair-play-edition",
+   "note": "dupe-check"
+  },
+  {
+   "slug": "lootr",
+   "note": "loot"
+  },
+  {
+   "slug": "trading-post",
+   "note": "villagers"
+  },
+  {
+   "slug": "incendium",
+   "note": "worldgen-nether"
+  },
+  {
+   "slug": "natures-spirit",
+   "note": "worldgen"
+  },
+  {
+   "slug": "getting-wood",
+   "note": "?"
+  },
+  {
+   "slug": "betterdeserttemples",
+   "note": "?"
+  },
+  {
+   "slug": "yungs-api",
+   "note": "lib-worldgen"
+  },
+  {
+   "slug": "yungs-better-mineshafts",
+   "note": "dungeons"
+  },
+  {
+   "slug": "yungs-better-strongholds",
+   "note": "dungeons"
+  },
+  {
+   "slug": "yungs-better-witch-huts",
+   "note": "dungeons"
+  },
+  {
+   "slug": "yungs-extras",
+   "note": "dungeons"
+  },
+  {
+   "slug": "expanded-ecosphere",
+   "note": "worldgen"
+  },
+  {
+   "slug": "geophilic",
+   "note": "worldgen"
+  },
+  {
+   "slug": "explorations",
+   "note": "worldgen"
+  },
+  {
+   "slug": "towers-of-the-wild-modded",
+   "note": "structures"
+  },
+  {
+   "slug": "legendary-origins",
+   "note": "races"
+  }
+ ],
+ "seed_ids": {
+  "YL57xq9U": "sodium-extra-lib?",
+  "P7dR8mSH": "fabric-api",
+  "9s6osm5g": "cloth-config",
+  "K01OU20C": "apoli",
+  "Dw7M6XKW": "calio",
+  "8ooWzSQP": "spell-engine",
+  "XvoWJaA2": "more-rpg-library",
+  "LrYZi08Q": "rune-crafting?",
+  "onz2NN2n": "structure-pool-api?",
+  "y9clIFY4": "paladins-lib?",
+  "5aaWibi9": "trinkets",
+  "AqaIIO6D": "archers-lib?",
+  "pduQXSbl": "spell-power",
+  "lP9Yrr1E": "???",
+  "MBAkmtvl": "balm",
+  "lhGA9TYQ": "architectury-api",
+  "4XJZeZbM": "do-api",
+  "fRiHVvU7": "farmers-delight?",
+  "u6dRKJwZ": "???",
+  "nfn13YXA": "rei",
+  "ohNO6lps": "forge-config-api-port",
+  "Ha28R6CL": "fzzy-config",
+  "1eAoo2KR": "yacl",
+  "BVkoXkly": "???",
+  "CJdDBlFe": "???",
+  "mOgUt4GM": "modmenu",
+  "t5W7Jfwy": "apugli?",
+  "PtjYWJkn": "sodium-options-api",
+  "Bh37bMuy": "???"
+ }
 }

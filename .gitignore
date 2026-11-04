@@ -1,0 +1,6 @@
+build/
+.ci/out/
+*.rar
+*.zip
+!pack/**
+run/
