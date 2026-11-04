@@ -1,303 +1,64 @@
 jars: 127  mod ids: 127
-problems: 294
-  !! BadOptimizations-2.4.1-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar — check for bundled deps
-  !! BetterF3-7.0.2-Fabric-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.106.jar — check for bundled deps
-  !! BetterF3-7.0.2-Fabric-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar — check for bundled deps
-  !! CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/eventbus-6.2.33.jar — check for bundled deps
-  !! Debugify-1.20.1+2.0.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar — check for bundled deps
-  !! debugify: missing required dependency 'fabric-resource-loader-v0' (*) — needed by Debugify-1.20.1+2.0.jar
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-v2.3.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/base-2.3.15+1.20.1.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/config-2.3.15+1.20.1.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/lazy_registration-2.3.15+1.20.1.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/loot-2.3.15+1.20.1.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/networking-2.3.15+1.20.1.jar — check for bundled deps
-  !! FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar — check for bundled deps
-  !! GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps
-  !! GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps
-  !! GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps
-  !! Heracles-fabric-1.20.1-1.1.13.jar: nested jar (Jar-in-Jar): META-INF/jars/hermes-fabric-1.20-1.6.0.jar — check for bundled deps
-  !! Heracles-fabric-1.20.1-1.1.13.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.1.jar — check for bundled deps
-  !! ImmediatelyFast-Fabric-1.5.5+1.20.4.jar: nested jar (Jar-in-Jar): META-INF/jars/Reflect-1.6.2.jar — check for bundled deps
-  !! immediatelyfast: declares BREAKS with 'memoryleakfix' <=1.1.1, but it is installed (ImmediatelyFast-Fabric-1.5.5+1.20.4.jar)
-  !! incendium: missing required dependency 'fabric-api-base' (*) — needed by Incendium_1.20.x_v5.3.5.jar
-  !! Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/apoli-2.9.2+mc.1.20.x.jar — check for bundled deps
-  !! Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/reach-entity-attributes-2.4.0.jar — check for bundled deps
-  !! Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar — check for bundled deps
+problems: 42
   !! origins: missing required dependency 'apoli' (>=2.9.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'cardinal-components-base' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'cardinal-components-entity' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'cloth-config2' (>=5.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! Patchouli-1.20.1-85-FABRIC.jar: nested jar (Jar-in-Jar): META-INF/jars/fiber-0.23.0-2.jar — check for bundled deps
-  !! Pehkui-3.8.3+1.14.4-1.21.jar: nested jar (Jar-in-Jar): META-INF/jars/KanosConfig-0.4.1.jar — check for bundled deps
-  !! pehkui: missing required dependency 'fabric-api-base' (*) — needed by Pehkui-3.8.3+1.14.4-1.21.jar
   !! pehkui: missing required dependency 'kanos_config' (>=0.4.1) — needed by Pehkui-3.8.3+1.14.4-1.21.jar
-  !! PresenceFootsteps-1.10.1+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/kirin-1.15.6+1.20.1.jar — check for bundled deps
   !! presencefootsteps: missing required dependency 'kirin' (>=1.15.6+1.20.1) — needed by PresenceFootsteps-1.10.1+1.20.1.jar
-  !! PuzzlesLib-v8.1.36-1.20.1-Fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar — check for bundled deps
   !! puzzleslib: missing required dependency 'puzzlesaccessapi' (*) — needed by PuzzlesLib-v8.1.36-1.20.1-Fabric.jar
-  !! RoughlyEnoughItems-12.1.785-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/error-notifier-fabric-1.0.9.jar — check for bundled deps
   !! roughlyenoughitems: minecraft predicate '~1.20-' excludes 1.20.1 (RoughlyEnoughItems-12.1.785-fabric.jar)
-  !! SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps
-  !! SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps
-  !! SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps
-  !! structory: missing required dependency 'fabric-api-base' (*) — needed by Structory_1.20.x_v1.3.5.jar
-  !! structory_towers: missing required dependency 'fabric-api-base' (*) — needed by Structory_Towers_1.20.x_v1.0.7.jar
-  !! terralith: missing required dependency 'fabric-api-base' (*) — needed by Terralith_1.20.x_v2.5.4.jar
-  !! TravelersTitles-1.20-Fabric-4.0.2.jar: nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps
   !! travelerstitles: missing required dependency 'cloth-config2' (>=11.0.99) — needed by TravelersTitles-1.20-Fabric-4.0.2.jar
-  !! YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps
-  !! YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps
-  !! YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/javassist-3.29.2-GA.jar — check for bundled deps
-  !! appleskin-fabric-mc1.20.1-2.5.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps
-  !! appleskin: declares BREAKS with 'roughlyenoughitems' <6.0.306-alpha, but it is installed (appleskin-fabric-mc1.20.1-2.5.2.jar)
-  !! archers-fabric-3.1.4+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar — check for bundled deps
   !! archers: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (archers-fabric-3.1.4+1.20.1.jar)
   !! archers: dependency 'ranged_weapon_api' present but version 2.3.4+1.20.1 does not satisfy '>=2.3.4' (archers-fabric-3.1.4+1.20.1.jar)
   !! archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar
   !! architectury: minecraft predicate '~1.20-' excludes 1.20.1 (architectury-9.2.14-fabric.jar)
-  !! armor_model_api: missing required dependency 'fabric-rendering-v1' (*) — needed by armor_model_api-fabric-1.0.0+1.20.1.jar
-  !! armor_model_api: missing required dependency 'fabric-resource-loader-v0' (*) — needed by armor_model_api-fabric-1.0.0+1.20.1.jar
-  !! artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.2.jar — check for bundled deps
-  !! artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.2.jar — check for bundled deps
-  !! artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/expandability-fabric-9.0.4.jar — check for bundled deps
-  !! artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps
-  !! artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/step-height-entity-attribute-v1.2.0.jar — check for bundled deps
-  !! balm-fabric-1.20.1-7.3.44.jar: nested jar (Jar-in-Jar): META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar — check for bundled deps
-  !! bettercombat-fabric-1.9.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-base-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-client-uncapvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-chunkio-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-general-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-notickvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-allocs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunk-access-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-math-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-scheduling-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-general-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunk-serializer-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-server-utils-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-lighting-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-worldgen-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/asyncutil-0.1.0.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.5.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.5.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/threadly-7.0.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/exp4j-0.4.8.jar — check for bundled deps
-  !! c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps
   !! c2me: missing required dependency 'c2me-base' (*) — needed by c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
-  !! cloth-config-11.1.136-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/basic-math-0.6.1.jar — check for bundled deps
-  !! comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.1.jar — check for bundled deps
-  !! comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.1.jar — check for bundled deps
-  !! comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar — check for bundled deps
   !! comforts: missing required dependency 'cardinal-components-base' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
   !! comforts: missing required dependency 'cardinal-components-entity' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
   !! cookingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by cookingforblockheads-fabric-1.20.1-16.0.15.jar
-  !! cristellib-1.1.5-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps
-  !! crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar — check for bundled deps
-  !! crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/core-2.3.16-beta.81+1.20.1.jar — check for bundled deps
-  !! crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar — check for bundled deps
-  !! deeperdarker-fabric-1.20-1.3.3-plus-b.jar: nested jar (Jar-in-Jar): META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar — check for bundled deps
-  !! deeperdarker-fabric-1.20-1.3.3-plus-b.jar: nested jar (Jar-in-Jar): META-INF/jars/owo-sentinel-0.11.2+1.20.jar — check for bundled deps
-  !! mr_dungeons_andtaverns: missing required dependency 'fabric-resource-loader-v0' (*) — needed by dungeons-and-taverns-3.0.3.f.jar
-  !! dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/battery-2.0.0.jar — check for bundled deps
   !! dynamic_fps: missing required dependency 'mixinextras' (>=0.3.2) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-  !! dynamic_fps: missing required dependency 'fabric-resource-loader-v0' (*) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-  !! dynamic_fps: missing required dependency 'fabric-lifecycle-events-v1' (*) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-  !! entityculling-fabric-1.11.3-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps
-  !! entityculling-fabric-1.11.3-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-lookup-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-biome-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-blockrenderlayer-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-client-tags-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v2-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-content-registries-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-convention-tags-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-crash-report-info-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-data-attachment-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-data-generation-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-dimensions-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-entity-events-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-events-interaction-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-game-rule-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-item-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-item-group-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-api-v2-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-message-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-mining-level-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-model-loading-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-object-builder-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-particles-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-recipe-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-registry-sync-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-indigo-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-conditions-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-handler-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-sound-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-tag-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-transfer-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-transitive-access-wideners-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-commands-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-containers-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-events-lifecycle-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-keybindings-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-tables-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-models-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-v0-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar — check for bundled deps
-  !! fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v0-0.92.12.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/atomicfu-jvm-0.33.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-reflect-2.4.21.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-2.4.21.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk7-2.4.21.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk8-2.4.21.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar — check for bundled deps
-  !! fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar — check for bundled deps
   !! farmingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by farmingforblockheads-fabric-1.20.1-14.0.4.jar
-  !! fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-2.5.3.jar — check for bundled deps
-  !! fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinconstraints-1.1.0.jar — check for bundled deps
-  !! fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tomlkt-jvm-0.3.7.jar — check for bundled deps
-  !! fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps
-  !! fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-permissions-api-0.3.1.jar — check for bundled deps
-  !! geckolib-fabric-1.20.1-4.8.4.jar: nested jar (Jar-in-Jar): META-INF/jars/mclib-20.jar — check for bundled deps
-  !! guardvillagers-2.0.9-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps
-  !! immersive_melodies: missing required dependency 'fabric-api-base' (>=0.1.0) — needed by immersive_melodies-0.8.2+1.20.1-fabric.jar
-  !! indium: missing required dependency 'fabric-renderer-api-v1' (>=3.2.0) — needed by indium-1.0.36+mc1.20.1.jar
-  !! indium: missing required dependency 'fabric-resource-loader-v0' (>=0.4.0) — needed by indium-1.0.36+mc1.20.1.jar
-  !! inmis-2.7.2-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/omega-config-base-1.2.3-1.18.1.jar — check for bundled deps
-  !! iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/antlr4-runtime-4.13.1.jar — check for bundled deps
-  !! iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps
-  !! iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar — check for bundled deps
-  !! iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/glsl-transformer-2.0.1.jar — check for bundled deps
-  !! iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/jcpp-1.4.14.jar — check for bundled deps
-  !! jewelry-fabric-2.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps
   !! jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar
-  !! krypton-0.2.3.jar: nested jar (Jar-in-Jar): META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar — check for bundled deps
-  !! letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/terraform-wood-api-v1-7.0.1.jar — check for bundled deps
-  !! letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.1.jar — check for bundled deps
-  !! letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps
   !! doapi: missing required dependency 'terraform-wood-api-v1' (>=7.0.1) — needed by letsdo-API-fabric-1.2.14-fabric.jar
-  !! letsdo-farm_and_charm-fabric-1.0.14.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps
   !! farm_and_charm: declares CONFLICTS with 'bakery' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)
   !! farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)
-  !! letsdo-vinery-fabric-1.4.41.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps
-  !! medievalorigins-fabric-1.20.1-6.7.9.jar: nested jar (Jar-in-Jar): META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar — check for bundled deps
-  !! medievalorigins-fabric-1.20.1-6.7.9.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.5.0.jar — check for bundled deps
   !! medievalorigins: dependency 'origins' present but version 1.10.2+mc.1.20.x does not satisfy '>=1.10.2' (medievalorigins-fabric-1.20.1-6.7.9.jar)
   !! medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)
-  !! modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a77.jar — check for bundled deps
-  !! modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d77.jar — check for bundled deps
-  !! modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar — check for bundled deps
-  !! modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar — check for bundled deps
-  !! modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar — check for bundled deps
-  !! modmenu: missing required dependency 'fabric-resource-loader-v0' (*) — needed by modmenu-7.2.2.jar
-  !! modmenu: missing required dependency 'fabric-screen-api-v1' (>=1.0.4) — needed by modmenu-7.2.2.jar
-  !! modmenu: missing required dependency 'fabric-key-binding-api-v1' (*) — needed by modmenu-7.2.2.jar
-  !! modmenu: missing required dependency 'fabric-lifecycle-events-v1' (*) — needed by modmenu-7.2.2.jar
-  !! moonlight-1.20-2.16.38B-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps
-  !! moonlight-1.20-2.16.38B-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps
-  !! moreculling-1.20.1-0.24.6.jar: nested jar (Jar-in-Jar): META-INF/jars/conditional-mixin-v0.3.2.jar — check for bundled deps
-  !! moreculling-1.20.1-0.24.6.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps
-  !! moreculling: declares CONFLICTS with 'sodium' <=0.4.10, but it is installed (moreculling-1.20.1-0.24.6.jar)
-  !! naturalist-fabric-4.0.3-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-8.2.88.jar — check for bundled deps
-  !! notenoughanimations-fabric-1.12.7-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps
-  !! notenoughanimations-fabric-1.12.7-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps
-  !! ok_zoomer-fabric-5.4.0-beta.9.jar: nested jar (Jar-in-Jar): META-INF/jars/api_fabric-0.8.1.jar — check for bundled deps
-  !! ok_zoomer-fabric-5.4.0-beta.9.jar: nested jar (Jar-in-Jar): META-INF/jars/impl-0.8.1.jar — check for bundled deps
-  !! mr_origins_dietarydelights: missing required dependency 'fabric-resource-loader-v0' (*) — needed by origins-dietary-delights-1.9.8.jar
-  !! overweightfarming-1.20.1-2.0.3-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps
-  !! owo-lib-0.11.2+1.20.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.2.jar — check for bundled deps
-  !! paladins-fabric-3.1.3+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar — check for bundled deps
   !! paladins: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (paladins-fabric-3.1.3+1.20.1.jar)
   !! paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar
-  !! player-animator: missing required dependency 'fabric-resource-loader-v0' (*) — needed by player-animation-lib-fabric-1.0.2-rc1+1.20.jar
-  !! player-animator: declares BREAKS with 'bettercombat' <1.6.0, but it is installed (player-animation-lib-fabric-1.0.2-rc1+1.20.jar)
-  !! mr_random_fishingcrates: missing required dependency 'fabric-resource-loader-v0' (*) — needed by random-fishing-crates-1.3.3.jar
-  !! reeses-sodium-options: declares BREAKS with 'iris' <1.1.4, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)
-  !! reeses-sodium-options: declares BREAKS with 'sodium-extra' <0.5.3, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)
-  !! reeses-sodium-options: declares BREAKS with 'sodium' <0.5.8, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)
-  !! resourcefullib-fabric-1.20.1-2.1.29.jar: nested jar (Jar-in-Jar): META-INF/jars/yabn-1.0.3.jar — check for bundled deps
-  !! resourcefullib-fabric-1.20.1-2.1.29.jar: nested jar (Jar-in-Jar): META-INF/jars/bytecodecs-1.0.2.jar — check for bundled deps
   !! rogues: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (rogues-fabric-3.1.3+1.20.1.jar)
   !! rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar
   !! rpgdifficulty: missing required dependency 'cloth-config2' (>=11.0.99) — needed by rpgdifficulty-1.3.16.jar
-  !! sodium-extra-0.5.9+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/CaffeineConfig-1.3.0+1.17.jar — check for bundled deps
-  !! sodium-extra: declares BREAKS with 'iris' <1.7.0, but it is installed (sodium-extra-0.5.9+mc1.20.1.jar)
-  !! sodium-extra: declares BREAKS with 'reeses-sodium-options' <1.4.2, but it is installed (sodium-extra-0.5.9+mc1.20.1.jar)
-  !! sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps
-  !! sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-1.0.1+1802ada577.jar — check for bundled deps
-  !! sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar — check for bundled deps
-  !! sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar — check for bundled deps
-  !! sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar — check for bundled deps
   !! sodium: missing required dependency 'fabric-rendering-data-attachment-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar
-  !! sodium: missing required dependency 'fabric-rendering-fluids-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar
   !! sodium: declares BREAKS with 'iris' <1.7.6, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
   !! sodium: declares BREAKS with 'indium' <1.0.36, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
-  !! sodium: declares BREAKS with 'reeses-sodium-options' <1.7.1, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
-  !! sodium: declares BREAKS with 'sodium-extra' <0.5.4, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
-  !! sodium: declares BREAKS with 'sspb' <3.2.0, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
-  !! sodium: declares BREAKS with 'supplementaries' <=1.20-2.7.32, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
   !! sspb: declares BREAKS with 'sodium' ['<0.4.3', '>=0.6.0-'], but it is installed (sodium-shadowy-path-blocks-3.4.2.jar)
-  !! spell_engine-fabric-1.10.10+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps
-  !! spell_power-fabric-1.6.1+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps
-  !! spell_power: missing required dependency 'fabric-networking-api-v1' (*) — needed by spell_power-fabric-1.6.1+1.20.1.jar
-  !! supplementaries-1.20-3.1.44-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps
-  !! supplementaries-1.20-3.1.44-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a82.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d82.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b82.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar — check for bundled deps
-  !! trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar — check for bundled deps
-  !! trinkets-3.7.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.0.jar — check for bundled deps
-  !! trinkets-3.7.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.0.jar — check for bundled deps
   !! trinkets: missing required dependency 'cardinal-components-base' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
   !! trinkets: missing required dependency 'cardinal-components-entity' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
   !! wizards: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (wizards-fabric-3.1.3+1.20.1.jar)
   !! wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar
-  !! xaerominimap-fabric-1.20.1-26.6.0.jar: nested jar (Jar-in-Jar): META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar — check for bundled deps
   !! xaerominimap: missing required dependency 'xaerolib' (>=1.0) — needed by xaerominimap-fabric-1.20.1-26.6.0.jar
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-image-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-io-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-lang-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/gson-0.2.1.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-core-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-metadata-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-webp-3.12.0.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/json-0.2.1.jar — check for bundled deps
-  !! yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.4.1.jar — check for bundled deps
   !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
-warnings: 6
+warnings: 19
    ~ debugify: recommends 'yet-another-config-lib' which is not installed
+   ~ immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok
    ~ searchables: recommends 'fabric' which is not installed
+   ~ appleskin: declares breaks with roughlyenoughitems <6.0.306-alpha; installed 12.1.785 is outside that range — ok
    ~ archers: recommends 'bundleapi' which is not installed
+   ~ moreculling: declares conflicts with sodium <=0.4.10; installed 0.5.13+mc1.20.1 is outside that range — ok
    ~ originstweaks: recommends 'morewaterlogging' which is not installed
    ~ paladins: recommends 'runes' which is not installed
+   ~ player-animator: declares breaks with bettercombat <1.6.0; installed 1.9.0+1.20.1 is outside that range — ok
+   ~ reeses-sodium-options: declares breaks with iris <1.1.4; installed 1.7.6+mc1.20.1 is outside that range — ok
+   ~ reeses-sodium-options: declares breaks with sodium-extra <0.5.3; installed 0.5.9+mc1.20.1 is outside that range — ok
+   ~ reeses-sodium-options: declares breaks with sodium <0.5.8; installed 0.5.13+mc1.20.1 is outside that range — ok
+   ~ sodium-extra: declares breaks with iris <1.7.0; installed 1.7.6+mc1.20.1 is outside that range — ok
+   ~ sodium-extra: declares breaks with reeses-sodium-options <1.4.2; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
+   ~ sodium: declares breaks with reeses-sodium-options <1.7.1; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
+   ~ sodium: declares breaks with sodium-extra <0.5.4; installed 0.5.9+mc1.20.1 is outside that range — ok
+   ~ sodium: declares breaks with sspb <3.2.0; installed 3.4.2 is outside that range — ok
+   ~ sodium: declares breaks with supplementaries <=1.20-2.7.32; installed 1.20-3.1.44 is outside that range — ok
    ~ wizards: recommends 'runes' which is not installed

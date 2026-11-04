@@ -1,0 +1,7 @@
+done=False uptime=17s exit=1
+
+PROBLEMS
+dependency resolution failure: Mod resolution failed
+incompatible mods: Incompatible mods found
+
+WARNINGS

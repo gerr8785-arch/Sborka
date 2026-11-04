@@ -1,0 +1,142 @@
+[19:31:30] [main/WARN]: Mod resolution failed
+[19:31:30] [main/INFO]: Immediate reason: [HARD_DEP appleskin 2.5.2+mc1.20.1 {depends fabric-api @ [*]}, HARD_DEP_NO_CANDIDATE fabric-api 0.92.12+1.20.1 {depends fabricloader @ [>=0.16.10]}, ROOT_FORCELOAD_SINGLE appleskin 2.5.2+mc1.20.1]
+[19:31:30] [main/INFO]: Reason: [HARD_DEP fabric-api 0.92.12+1.20.1 {depends fabricloader @ [>=0.16.10]}, HARD_DEP ranged_weapon_api 2.3.4+1.20.1 {depends fabricloader @ [>=0.19.5]}, HARD_DEP crittersandcompanions 2.7.1 {depends fabricloader @ [>=0.19.3]}, HARD_DEP farmersdelight 1.20.1-2.5.7+refabricated {depends fabricloader @ [>=0.18.2]}, HARD_DEP fabric-language-kotlin 1.14.2+kotlin.2.4.21 {depends fabricloader @ [>=0.19.5]}, HARD_DEP friendsandfoes 5.0.4 {depends fabricloader @ [>=0.19.0]}, HARD_DEP icarus 2.14.1 {depends fabricloader @ [>=0.18.6]}, NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP modernfix 5.25.2+mc1.20.1 {depends fabricloader @ [>=0.16.10]}, HARD_DEP moredelight 26.5.7-1.20-fabric {depends fabricloader @ [>=0.19.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}, HARD_DEP porting_lib_base 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_config 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP fabric-object-builder-api-v1 11.1.5+e35120df77 {depends fabricloader @ [>=0.16.10]}, HARD_DEP porting_lib_accessors 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_attributes 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_common 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_core 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_recipe_book_categories 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_networking 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_lazy_registration 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_loot 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_entity 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_extensions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_fluids 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_gametest 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_gui_utils 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_mixin_extensions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_tags 3.0 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_tool_actions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_transfer 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_utility 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}]
+[19:31:30] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+	 - Mod 'Fabric API' (fabric-api) 0.92.12+1.20.1 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'RangedWeaponAPI' (ranged_weapon_api) 2.3.4+1.20.1 requires version 0.19.5 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Critters and Companions' (crittersandcompanions) 2.7.1 requires version 0.19.3 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Farmer's Delight' (farmersdelight) 1.20.1-2.5.7+refabricated requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Fabric Language Kotlin' (fabric-language-kotlin) 1.14.2+kotlin.2.4.21 requires version 0.19.5 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Friends&Foes' (friendsandfoes) 5.0.4 requires version 0.19.0 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Icarus' (icarus) 2.14.1 requires version 0.18.6 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Medieval Origins Revival' (medievalorigins) 6.7.9 is incompatible with version 2.5.0 or earlier or any version after 2.13.2 of mod 'Icarus' (icarus), but a matching version is present: 2.14.1!
+	 - Mod 'ModernFix' (modernfix) 5.25.2+mc1.20.1 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'More Delight' (moredelight) 26.5.7-1.20-fabric requires version 0.19.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Simply Swords' (simplyswords) 1.70.2-1.20.1 requires any version of simplytooltips, which is missing!
+	 - Mod 'Porting Lib Base' (porting_lib_base) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Config' (porting_lib_config) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Fabric Object Builder API (v1)' (fabric-object-builder-api-v1) 11.1.5+e35120df77 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Accessors' (porting_lib_accessors) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Attributes' (porting_lib_attributes) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Common' (porting_lib_common) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Core' (porting_lib_core) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Recipe Book Categories' (porting_lib_recipe_book_categories) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Networking' (porting_lib_networking) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Lazy Register' (porting_lib_lazy_registration) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Loot' (porting_lib_loot) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Entity' (porting_lib_entity) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Extensions' (porting_lib_extensions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Fluids' (porting_lib_fluids) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib GameTest' (porting_lib_gametest) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Gui Utils' (porting_lib_gui_utils) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Mixin Extensions' (porting_lib_mixin_extensions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Tags' (porting_lib_tags) 3.0 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Tool Actions' (porting_lib_tool_actions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Transfer' (porting_lib_transfer) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Utility' (porting_lib_utility) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.9.jar:?]
+
+=== tail ===
+Downloading Minecraft server
+Installing Fabric Loader 0.16.9(1.20.1) on the server
+Downloading required files
+Downloading library org.ow2.asm:asm:9.7.1
+Downloading library org.ow2.asm:asm-analysis:9.7.1
+Downloading library org.ow2.asm:asm-commons:9.7.1
+Downloading library org.ow2.asm:asm-tree:9.7.1
+Downloading library org.ow2.asm:asm-util:9.7.1
+Downloading library net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7
+Downloading library net.fabricmc:intermediary:1.20.1
+Downloading library net.fabricmc:fabric-loader:0.16.9
+Generating server launch JAR
+Unpacking 1.20.1/server-1.20.1.jar (versions:1.20.1) to versions/1.20.1/server-1.20.1.jar
+Unpacking com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar (libraries:com.github.oshi:oshi-core:6.2.2) to libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar
+Unpacking com/google/code/gson/gson/2.10/gson-2.10.jar (libraries:com.google.code.gson:gson:2.10) to libraries/com/google/code/gson/gson/2.10/gson-2.10.jar
+Unpacking com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar (libraries:com.google.guava:failureaccess:1.0.1) to libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+Unpacking com/google/guava/guava/31.1-jre/guava-31.1-jre.jar (libraries:com.google.guava:guava:31.1-jre) to libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
+Unpacking com/mojang/authlib/4.0.43/authlib-4.0.43.jar (libraries:com.mojang:authlib:4.0.43) to libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar
+Unpacking com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar (libraries:com.mojang:brigadier:1.1.8) to libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar
+Unpacking com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar (libraries:com.mojang:datafixerupper:6.0.8) to libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar
+Unpacking com/mojang/logging/1.1.1/logging-1.1.1.jar (libraries:com.mojang:logging:1.1.1) to libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar
+Unpacking commons-io/commons-io/2.11.0/commons-io-2.11.0.jar (libraries:commons-io:commons-io:2.11.0) to libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar
+Unpacking io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar (libraries:io.netty:netty-buffer:4.1.82.Final) to libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar
+Unpacking io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar (libraries:io.netty:netty-codec:4.1.82.Final) to libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar
+Unpacking io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar (libraries:io.netty:netty-common:4.1.82.Final) to libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar
+Unpacking io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar (libraries:io.netty:netty-handler:4.1.82.Final) to libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar
+Unpacking io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar (libraries:io.netty:netty-resolver:4.1.82.Final) to libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar
+Unpacking io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar (libraries:io.netty:netty-transport:4.1.82.Final) to libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar
+Unpacking io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar (libraries:io.netty:netty-transport-classes-epoll:4.1.82.Final) to libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar
+Unpacking io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar (libraries:io.netty:netty-transport-native-epoll:4.1.82.Final:linux-x86_64) to libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar
+Unpacking io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar (libraries:io.netty:netty-transport-native-epoll:4.1.82.Final:linux-aarch_64) to libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar
+Unpacking io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar (libraries:io.netty:netty-transport-native-unix-common:4.1.82.Final) to libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar
+Unpacking it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar (libraries:it.unimi.dsi:fastutil:8.5.9) to libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar
+Unpacking net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar (libraries:net.java.dev.jna:jna:5.12.1) to libraries/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar
+Unpacking net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar (libraries:net.java.dev.jna:jna-platform:5.12.1) to libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar
+Unpacking net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar (libraries:net.sf.jopt-simple:jopt-simple:5.0.4) to libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar
+Unpacking org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (libraries:org.apache.commons:commons-lang3:3.12.0) to libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+Unpacking org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-api:2.19.0) to libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar
+Unpacking org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-core:2.19.0) to libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar
+Unpacking org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0) to libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar
+Unpacking org/joml/joml/1.10.5/joml-1.10.5.jar (libraries:org.joml:joml:1.10.5) to libraries/org/joml/joml/1.10.5/joml-1.10.5.jar
+Unpacking org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar (libraries:org.slf4j:slf4j-api:2.0.1) to libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar
+Starting net.fabricmc.loader.impl.game.minecraft.BundlerClassPathCapture
+[19:31:29] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.16.9
+[19:31:29] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[19:31:29] [ForkJoinPool-1-worker-4/WARN]: Mod ends_delight uses the version refabricated-1.20.1-2.1 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'refabricated'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[19:31:29] [ForkJoinPool-1-worker-1/WARN]: The mod "dungeons_arise" contains invalid entries in its mod json:
+- Unsupported root entry "credits" at line 12 column 12
+[19:31:29] [ForkJoinPool-1-worker-3/WARN]: Mod mr_dungeons_andtaverns uses the version 3.0.3.f which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'f'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[19:31:30] [main/WARN]: Mod resolution failed
+[19:31:30] [main/INFO]: Immediate reason: [HARD_DEP appleskin 2.5.2+mc1.20.1 {depends fabric-api @ [*]}, HARD_DEP_NO_CANDIDATE fabric-api 0.92.12+1.20.1 {depends fabricloader @ [>=0.16.10]}, ROOT_FORCELOAD_SINGLE appleskin 2.5.2+mc1.20.1]
+[19:31:30] [main/INFO]: Reason: [HARD_DEP fabric-api 0.92.12+1.20.1 {depends fabricloader @ [>=0.16.10]}, HARD_DEP ranged_weapon_api 2.3.4+1.20.1 {depends fabricloader @ [>=0.19.5]}, HARD_DEP crittersandcompanions 2.7.1 {depends fabricloader @ [>=0.19.3]}, HARD_DEP farmersdelight 1.20.1-2.5.7+refabricated {depends fabricloader @ [>=0.18.2]}, HARD_DEP fabric-language-kotlin 1.14.2+kotlin.2.4.21 {depends fabricloader @ [>=0.19.5]}, HARD_DEP friendsandfoes 5.0.4 {depends fabricloader @ [>=0.19.0]}, HARD_DEP icarus 2.14.1 {depends fabricloader @ [>=0.18.6]}, NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP modernfix 5.25.2+mc1.20.1 {depends fabricloader @ [>=0.16.10]}, HARD_DEP moredelight 26.5.7-1.20-fabric {depends fabricloader @ [>=0.19.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}, HARD_DEP porting_lib_base 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_config 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP fabric-object-builder-api-v1 11.1.5+e35120df77 {depends fabricloader @ [>=0.16.10]}, HARD_DEP porting_lib_accessors 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_attributes 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_common 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_core 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_recipe_book_categories 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_networking 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_lazy_registration 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_loot 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_entity 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_extensions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_fluids 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_gametest 2.3.16-beta.81+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_gui_utils 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_mixin_extensions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_tags 3.0 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_tool_actions 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_transfer 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}, HARD_DEP porting_lib_utility 2.3.15+1.20.1 {depends fabricloader @ [>=0.18.2]}]
+[19:31:30] [main/INFO]: SERVER environment disabled: [c2me-client-uncapvd, fabric-model-loading-api-v1, fabric-renderer-api-v1, fabric-keybindings-v0, fabric-client-tags-api-v1, fabric-screen-api-v1, fabric-renderer-indigo, fabric-blockrenderlayer-v1, fabric-renderer-registries-v1, fabric-models-v0, fabric-sound-api-v1, fabric-rendering-v0, fabric-key-binding-api-v1, fabric-rendering-v1]
+[19:31:30] [main/INFO]: Fix: add [add:simplytooltips 1 ([(-∞,∞)])], remove [], replace [[fabricloader 0.16.9] -> add:fabricloader 0.19.5 ([[0.19.5,∞)]), [medievalorigins 6.7.9] -> add:medievalorigins 1 ([(-∞,∞)])]
+[19:31:30] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install simplytooltips, any version.
+	 - Replace mod 'Fabric Loader' (fabricloader) 0.16.9 with version 0.19.5 or later.
+	 - Replace mod 'Medieval Origins Revival' (medievalorigins) 6.7.9 with any version that is compatible with:
+		 - fabricloader, version 0.19.5 or later
+		 - icarus 2.14.1
+More details:
+	 - Mod 'Fabric API' (fabric-api) 0.92.12+1.20.1 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'RangedWeaponAPI' (ranged_weapon_api) 2.3.4+1.20.1 requires version 0.19.5 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Critters and Companions' (crittersandcompanions) 2.7.1 requires version 0.19.3 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Farmer's Delight' (farmersdelight) 1.20.1-2.5.7+refabricated requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Fabric Language Kotlin' (fabric-language-kotlin) 1.14.2+kotlin.2.4.21 requires version 0.19.5 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Friends&Foes' (friendsandfoes) 5.0.4 requires version 0.19.0 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Icarus' (icarus) 2.14.1 requires version 0.18.6 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Medieval Origins Revival' (medievalorigins) 6.7.9 is incompatible with version 2.5.0 or earlier or any version after 2.13.2 of mod 'Icarus' (icarus), but a matching version is present: 2.14.1!
+	 - Mod 'ModernFix' (modernfix) 5.25.2+mc1.20.1 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'More Delight' (moredelight) 26.5.7-1.20-fabric requires version 0.19.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Simply Swords' (simplyswords) 1.70.2-1.20.1 requires any version of simplytooltips, which is missing!
+	 - Mod 'Porting Lib Base' (porting_lib_base) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Config' (porting_lib_config) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Fabric Object Builder API (v1)' (fabric-object-builder-api-v1) 11.1.5+e35120df77 requires version 0.16.10 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Accessors' (porting_lib_accessors) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Attributes' (porting_lib_attributes) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Common' (porting_lib_common) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Core' (porting_lib_core) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Recipe Book Categories' (porting_lib_recipe_book_categories) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Networking' (porting_lib_networking) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Lazy Register' (porting_lib_lazy_registration) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Loot' (porting_lib_loot) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Entity' (porting_lib_entity) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Extensions' (porting_lib_extensions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Fluids' (porting_lib_fluids) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib GameTest' (porting_lib_gametest) 2.3.16-beta.81+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Gui Utils' (porting_lib_gui_utils) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Mixin Extensions' (porting_lib_mixin_extensions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Tags' (porting_lib_tags) 3.0 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Tool Actions' (porting_lib_tool_actions) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Transfer' (porting_lib_transfer) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	 - Mod 'Porting Lib Utility' (porting_lib_utility) 2.3.15+1.20.1 requires version 0.18.2 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.16.9!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69) ~[fabric-loader-0.16.9.jar:?]
+	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69) ~[fabric-server-launch.jar:1.0.1]
