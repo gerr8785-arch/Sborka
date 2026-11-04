@@ -1,5 +1,5 @@
 {
-  "_comment": "Curated compatibility rules verified by scripts/scan.py on the real jars.",
+  "_comment": "Curated compatibility rules, verified by scripts/scan.py against the real jars (ids come from fabric.mod.json, not from Modrinth slugs).",
   "rules": [
     {"type": "mutually_exclusive", "ids": ["sodium", "optifabric"], "why": "OptiFabric и Sodium несовместимы"},
     {"type": "mutually_exclusive", "ids": ["sodium", "embeddium"], "why": "два разных рендер-движка"},
@@ -7,11 +7,19 @@
     {"type": "requires", "if": "iris", "then": "sodium", "why": "Iris работает только поверх Sodium"},
     {"type": "requires", "if": "indium", "then": "sodium", "why": "Indium — аддон к Sodium"},
     {"type": "requires", "if": "sodium-extra", "then": "sodium", "why": "Sodium Extra — аддон к Sodium"},
-    {"type": "requires", "if": "medieval-origins-revival", "then": "origins", "why": "Origins-датапак требует мод Origins"},
+    {"type": "requires", "if": "medievalorigins", "then": "origins", "why": "Origins-датапак требует мод Origins"},
     {"type": "requires", "if": "origins-plus-plus", "then": "origins", "why": "Origins-датапак требует мод Origins"},
-    {"type": "requires", "if": "wizards", "then": "spell-engine", "why": "RPG Series работает на Spell Engine"},
+    {"type": "requires", "if": "origins-plus-plus", "then": "extraorigins", "why": "Origins++ использует механики Extra Origins"},
+    {"type": "requires", "if": "wizards", "then": "spell_engine", "why": "RPG Series работает на Spell Engine"},
+    {"type": "requires", "if": "jewelry", "then": "spell_engine", "why": "RPG Series работает на Spell Engine"},
+    {"type": "requires", "if": "paladins", "then": "spell_engine", "why": "RPG Series работает на Spell Engine"},
+    {"type": "requires", "if": "rogues", "then": "bettercombat", "why": "Rogues & Warriors требует Better Combat"},
+    {"type": "requires", "if": "crittersandcompanions", "then": "geckolib", "why": "анимации GeckoLib"},
+    {"type": "requires", "if": "naturalist", "then": "geckolib", "why": "анимации GeckoLib"},
+    {"type": "requires", "if": "tide", "then": "cloth-config", "why": "конфиг Tide на Cloth Config"},
     {"type": "forbid", "ids": ["optifine", "optifabric"], "why": "ломает Sodium/Iris"},
-    {"type": "warn_if_present", "ids": ["c2me-fabric"], "why": "альфа-мод: следите за стабильностью"},
-    {"type": "warn_if_present", "ids": ["serene-seasons"], "why": "бета для 1.20.1"}
+    {"type": "warn_if_present", "ids": ["c2me"], "why": "альфа-мод: следите за стабильностью на слабых ПК"},
+    {"type": "warn_if_present", "ids": ["sereneseasons"], "why": "бета-версия для 1.20.1"},
+    {"type": "warn_if_present", "ids": ["sspb"], "why": "аддон теней для Sodium — при артефактах отключить"}
   ]
 }

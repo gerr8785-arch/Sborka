@@ -1,0 +1,21 @@
+# Oak
+version:3955
+renderDistance:6
+simulationDistance:5
+graphicsMode:0
+ao:true
+entityShadows:false
+particles:2
+maxFps:60
+fancyGraphics:false
+useVbo:true
+guiScale:3
+gamma:0.5
+fov:0.0
+bobView:false
+soundCategory_master:0.8
+soundCategory_music:0.35
+soundCategory_ambient:0.7
+tutorialStep:none
+skipMultiplayerWarning:true
+joinedFirstServer:true

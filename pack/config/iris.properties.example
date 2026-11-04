@@ -1,0 +1,6 @@
+# Пресет «слабый ПК»: шейдеры выключены.
+# Чтобы включить шейдеры, переименуй этот файл в iris.properties и поставь shaderPack=<имя из папки shaderpacks>
+enableShaders=false
+shaderPack=(off)
+colorSpace=SRGB
+disableUpdateMessage=true
