@@ -1,6 +1,6 @@
-done=True uptime=366s exit=143
+done=True uptime=68s exit=0
 
 PROBLEMS
-command/data error: Unknown or incomplete command
+
 
 WARNINGS

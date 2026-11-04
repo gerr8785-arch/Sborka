@@ -1,1 +1,8 @@
-manifest errors: ["slug apoli not found on Modrinth (HTTP Error 404: Not Found) — maybe: opoli (Overgrown's Apoli), origins-apoli-armor-mixin-fix (Origins Apoli Armor Mixin Fix), ra_additions (Robin's Apoli Additions)"]
+Traceback (most recent call last):
+  File "/home/runner/work/Sborka/Sborka/scripts/download_mods.py", line 63, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/runner/work/Sborka/Sborka/scripts/download_mods.py", line 43, in main
+    manifest = json.load(open(os.path.join(BUILD, "manifest.json"), encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/Sborka/Sborka/build/manifest.json'

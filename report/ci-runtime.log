@@ -16,11 +16,10 @@
 >> forceload add ~ ~
 >> debug start
 >> debug stop
->> @stop
+>> stop
 
 ==== runtime result ====
-server reached 'Done': True   uptime: 366s   exit: 143
-problems: 1
-  !! command/data error: Unknown or incomplete command
+server reached 'Done': True   uptime: 68s   exit: 0
+problems: 0
 warnings: 0
 report: /home/runner/work/Sborka/Sborka/build/report/runtime.txt log: /home/runner/work/Sborka/Sborka/build/report/server-run.log

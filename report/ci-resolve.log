@@ -1,40 +1,8 @@
-structures     ct-overhaul-village                    3.4.14                                 release un/re 
-structures     deeperdarker                           1.3.3-plus-b-fabric+1.20               release re/re 
-structures     dungeons-and-taverns                   3.0.3.f+mod                            release op/re 
-structures     structory                              1.3.5                                  release op/re 
-structures     structory-towers                       1.0.7                                  release op/re 
-structures     towns-and-towers                       1.12                                   release op/re 
-structures     villages-and-pillages                  fabric-2.0.0+mc1.20.1                  release un/re 
-structures     when-dungeons-arise                    2.1.57-1.20.1                          release un/re 
-structures     yungs-better-dungeons                  1.20-Fabric-4.0.4                      release un/re 
-structures     yungs-better-mineshafts                1.20-Fabric-4.0.4                      release un/re 
-travel         comforts                               6.4.0+1.20.1                           release re/re 
-travel         icarus                                 2.13.2+Fabric                          release re/re 
-travel         natures-compass                        1.20.1-2.6.0-fabric                    release re/re 
-travel         waystones                              14.1.21+fabric-1.20.1                  release re/re 
-ui             appleskin                              2.5.2+mc1.20.1                         release op/op 
-ui             betterf3                               7.0.2                                  release re/un 
-ui             controlling                            12.0.2                                 release re/un 
-ui             jade                                   11.13.3+fabric                         release op/op 
-ui             modmenu                                7.2.2                                  release re/un 
-ui             mouse-tweaks                           1.20-2.26-fabric                       release re/un 
-ui             ok-zoomer                              5.4.0-beta.9+fabric                    release re/un 
-ui             rei                                    12.1.785+fabric                        release op/op 
-ui             travelers-titles                       1.20-Fabric-4.0.2                      release re/un 
-ui             xaeros-minimap                         fabric-1.20.1-26.6.0                   release re/op 
-villages       guard-villagers-fabricquilt            2.0.9-1.20.1                           release re/re 
-villages       smarter-farmers-farmers-replant        1.20-2.1.2                             release un/re 
-villages       trade-cycling                          fabric-1.20.1-1.0.7                    release re/re 
-villages       villager-names-serilum                 1.20.1-8.9-fabric+forge+neo            release op/re 
-villages       villagersplus                          4.1.1+mc1.20.1-fabric                  release re/re 
-visual         eating-animation                       1.9.61                                 release re/un 
-visual         fallingleaves                          1.15.6+1.20.1                          release re/un 
-visual         not-enough-animations                  1.12.7                                 release re/un 
-visual         sodium-shadowy-path-blocks             3.4.2                                  release re/un 
-visual         visual-workbench                       v8.0.1-1.20.1-Fabric                   release re/re 
-visual         visuality                              0.7.1+1.20                             beta    re/un 
-worldgen       incendium                              5.3.5                                  release op/re 
-worldgen       terralith                              2.5.4                                  release op/re 
-
-ERRORS:
-slug apoli not found on Modrinth (HTTP Error 404: Not Found) — maybe: opoli (Overgrown's Apoli), origins-apoli-armor-mixin-fix (Origins Apoli Armor Mixin Fix), ra_additions (Robin's Apoli Additions)
+Traceback (most recent call last):
+  File "/home/runner/work/Sborka/Sborka/scripts/resolve_pack.py", line 225, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/runner/work/Sborka/Sborka/scripts/resolve_pack.py", line 107, in main
+    order = {m["slug"]: i for i, m in enumerate(modlist["mods"])}
+             ~^^^^^^^^
+KeyError: 'slug'
