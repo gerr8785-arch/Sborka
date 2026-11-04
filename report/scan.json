@@ -1,6 +1,6 @@
 {
  "mc": "1.20.1",
- "jar_count": 127,
+ "jar_count": 135,
  "mod_ids": {
   "additionalentityattributes": "1.7.4+1.20.0",
   "ambientsounds": "6.3.11",
@@ -14,7 +14,9 @@
   "balm": "7.3.44",
   "balm-fabric": "7.3.44",
   "bettercombat": "1.9.0+1.20.1",
+  "betterdungeons": "1.20-Fabric-4.0.4",
   "betterf3": "7.0.2",
+  "bettermineshafts": "1.20-Fabric-4.0.4",
   "blue_endless_jankson": "1.2.3",
   "bountiful": "6.0.4+1.20.1",
   "bundleapi": "1.3.0+1.20.1",
@@ -40,7 +42,6 @@
   "c2me-threading-lighting": "0.2.0+alpha.11.18",
   "c2me-threading-worldgen": "0.2.0+alpha.11.18",
   "caffeineconfig": "1.3.0+1.17",
-  "candlelight": "1.2.13",
   "cardinal-components-base": "5.2.2",
   "cardinal-components-entity": "5.2.2",
   "cloth-basic-math": "0.6.1",
@@ -72,12 +73,14 @@
   "creativecore": "2.12.41",
   "cristellib": "1.1.5",
   "crittersandcompanions": "2.7.1",
+  "ctov": "3.4.14",
   "customportalapi": "0.0.1-beta64-1.20",
   "debugify": "1.20.1+2.0",
   "deeperdarker": "1.3.3-plus-b",
-  "doapi": "1.2.14",
+  "dungeons_arise": "2.1.57",
   "dynamic_fps": "3.11.4",
   "eatinganimationid": "1.20+1.9.61",
+  "enchanted_fishing_line": "1.0.0",
   "ends_delight": "refabricated-1.20.1-2.1",
   "entityculling": "1.11.3",
   "error_notifier": "1.0.9",
@@ -151,6 +154,7 @@
   "forgeconfigapiport": "8.0.3",
   "friendsandfoes": "5.0.4",
   "fzzy_config": "0.7.7+1.20.1",
+  "gazebo": "2.2.0+1.20.1",
   "geckolib": "4.8.4",
   "glitchcore": "0.0.1.1",
   "guardvillagers": "2.0.9-1.20.1",
@@ -173,6 +177,7 @@
   "krypton": "0.2.3",
   "kuma_api": "20.1.12",
   "lithium": "0.11.4",
+  "lithostitched": "1.4.11",
   "medievalorigins": "6.7.9",
   "memoryleakfix": "1.1.5",
   "midnightlib": "1.4.1",
@@ -259,6 +264,7 @@
   "simplenetworking": "2.3.15+1.20.1",
   "simplyswords": "1.70.2-1.20.1",
   "simplytooltips": "0.1.5-1.20.1",
+  "smarterfarmers": "1.20-2.1.2",
   "sodium": "0.5.13+mc1.20.1",
   "sodium-extra": "0.5.9+mc1.20.1",
   "spectrelib": "0.13.15+1.20.1",
@@ -268,9 +274,9 @@
   "step-height-entity-attribute": "1.2.0",
   "structory": "1.3.5",
   "structory_towers": "1.0.7",
+  "structure_pool_api": "1.2.1+1.20.1",
   "supplementaries": "1.20-3.1.44",
   "t_and_t": "1.12",
-  "terraform-wood-api-v1": "7.0.1",
   "terralith": "2.5.4",
   "tide": "2.1.1",
   "tiny_config": "3.1.0",
@@ -283,6 +289,7 @@
   "villagernames": "8.9",
   "villagersplus": "4.1.1+mc1.20.1",
   "villagertradingplus": "1.1.1+mc1.20.1",
+  "villagesandpillages": "2.0.0",
   "vinery": "1.4.41",
   "visuality": "0.7.1+1.20",
   "visualworkbench": "8.0.1",
@@ -298,12 +305,7 @@
  "problems": [
   "origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar",
-  "jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar",
-  "farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
-  "paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar",
-  "rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar",
-  "wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar",
+  "smarterfarmers: dependency 'moonlight' present but version 1.20-2.16.38B does not satisfy '>=1.20-2.5.0' (smarterfarmers-1.20-2.1.2-fabric.jar)",
   "duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar",
   "duplicate mod id 'kirin' shipped by: PresenceFootsteps-1.10.1+1.20.1.jar, kirin-1.15.6+1.20.1.jar",
   "duplicate mod id 'owo' shipped by: deeperdarker-fabric-1.20-1.3.3-plus-b.jar (provides), owo-lib-0.11.2+1.20.jar",
@@ -359,7 +361,8 @@
     "ambientsounds.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "BadOptimizations-2.4.1-1.20.1.jar",
@@ -399,6 +402,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar"
+   ],
+   "nested_ids": [
+    "com_github_llamalad7_mixinextras@0.2.2"
    ]
   },
   {
@@ -460,6 +466,10 @@
    "nested": [
     "META-INF/jars/cloth-config-fabric-11.1.106.jar",
     "META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar"
+   ],
+   "nested_ids": [
+    "cloth-config@11.1.106",
+    "fabric-resource-loader-v0@0.11.8+e3d6ed2577"
    ]
   },
   {
@@ -484,7 +494,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Clumps-fabric-1.20.1-12.0.0.4.jar",
@@ -506,7 +517,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Controlling-fabric-1.20.1-12.0.2.jar",
@@ -531,7 +543,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar",
@@ -572,6 +585,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/eventbus-6.2.33.jar"
+   ],
+   "nested_ids": [
+    "net_minecraftforge_eventbus@6.2.33"
    ]
   },
   {
@@ -618,7 +634,34 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar"
+   ],
+   "nested_ids": [
+    "com_github_llamalad7_mixinextras@0.2.0-beta.8"
    ]
+  },
+  {
+   "file": "DungeonsArise-1.20.1-2.1.57-fabric-release.jar",
+   "mods": [
+    {
+     "id": "dungeons_arise",
+     "version": "2.1.57",
+     "name": "When Dungeons Arise",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.3",
+      "minecraft": ">=1.20",
+      "fabric": ">=0.47.8"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "FarmersDelight-1.20.1-2.5.7+refabricated.jar",
@@ -770,6 +813,15 @@
     "META-INF/jars/loot-2.3.15+1.20.1.jar",
     "META-INF/jars/networking-2.3.15+1.20.1.jar",
     "META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "mm@2.3",
+    "porting_lib_base@2.3.15+1.20.1",
+    "porting_lib_config@2.3.15+1.20.1",
+    "porting_lib_lazy_registration@2.3.15+1.20.1",
+    "porting_lib_loot@2.3.15+1.20.1",
+    "porting_lib_networking@2.3.15+1.20.1",
+    "porting_lib_recipe_book_categories@2.3.15+1.20.1"
    ]
   },
   {
@@ -796,7 +848,8 @@
     "forgeconfigapiport.common.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "GlitchCore-fabric-1.20.1-0.0.1.1.jar",
@@ -864,6 +917,11 @@
     "META-INF/jars/toml-3.6.7.jar",
     "META-INF/jars/core-3.6.7.jar",
     "META-INF/jars/typetools-0.6.3.jar"
+   ],
+   "nested_ids": [
+    "com_electronwill_night-config_toml@3.6.7",
+    "com_electronwill_night-config_core@3.6.7",
+    "net_jodah_typetools@0.6.3"
    ]
   },
   {
@@ -925,6 +983,10 @@
    "nested": [
     "META-INF/jars/hermes-fabric-1.20-1.6.0.jar",
     "META-INF/jars/mixinextras-fabric-0.2.1.jar"
+   ],
+   "nested_ids": [
+    "hermes@1.6.0",
+    "com_github_llamalad7_mixinextras@0.2.1"
    ]
   },
   {
@@ -954,7 +1016,8 @@
     "icarus.fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "ImmediatelyFast-Fabric-1.5.5+1.20.4.jar",
@@ -999,6 +1062,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/Reflect-1.6.2.jar"
+   ],
+   "nested_ids": [
+    "net_lenni0451_reflect@1.6.2"
    ]
   },
   {
@@ -1022,7 +1088,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Jade-1.20-Fabric-11.13.3.jar",
@@ -1047,7 +1114,8 @@
     "jade.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Kambrik-6.1.1+1.20.1-fabric.jar",
@@ -1072,7 +1140,8 @@
     "kambrik.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "MouseTweaks-fabric-mc1.20-2.26.jar",
@@ -1099,7 +1168,8 @@
     "mousetweaks-fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "NaturesCompass-1.20.1-2.6.0-fabric.jar",
@@ -1125,7 +1195,8 @@
     "naturescompass.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Origins-1.10.2+mc.1.20.x.jar",
@@ -1214,6 +1285,11 @@
     "META-INF/jars/apoli-2.9.2+mc.1.20.x.jar",
     "META-INF/jars/reach-entity-attributes-2.4.0.jar",
     "META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar"
+   ],
+   "nested_ids": [
+    "apoli@2.9.2+mc.1.20.x",
+    "reach-entity-attributes@2.4.0",
+    "mixinsquared@0.3.7-beta.1"
    ]
   },
   {
@@ -1241,7 +1317,8 @@
     "origins-classes.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Patchouli-1.20.1-85-FABRIC.jar",
@@ -1282,6 +1359,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/fiber-0.23.0-2.jar"
+   ],
+   "nested_ids": [
+    "fiber@0.23.0-2"
    ]
   },
   {
@@ -1324,6 +1404,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/KanosConfig-0.4.1.jar"
+   ],
+   "nested_ids": [
+    "kanos_config@0.4.1+1.14.4-1.19.4"
    ]
   },
   {
@@ -1371,6 +1454,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/kirin-1.15.6+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "kirin@1.15.6+1.20.1"
    ]
   },
   {
@@ -1419,6 +1505,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar"
+   ],
+   "nested_ids": [
+    "puzzlesaccessapi@20.1.1"
    ]
   },
   {
@@ -1462,6 +1551,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/error-notifier-fabric-1.0.9.jar"
+   ],
+   "nested_ids": [
+    "error_notifier@1.0.9"
    ]
   },
   {
@@ -1487,7 +1579,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "SereneSeasons-fabric-1.20.1-9.1.0.3.jar",
@@ -1556,6 +1649,11 @@
     "META-INF/jars/core-3.6.7.jar",
     "META-INF/jars/toml-3.6.7.jar",
     "META-INF/jars/typetools-0.6.3.jar"
+   ],
+   "nested_ids": [
+    "com_electronwill_night-config_core@3.6.7",
+    "com_electronwill_night-config_toml@3.6.7",
+    "net_jodah_typetools@0.6.3"
    ]
   },
   {
@@ -1584,7 +1682,8 @@
     "simplytooltips.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Structory_1.20.x_v1.3.5.jar",
@@ -1607,7 +1706,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Structory_Towers_1.20.x_v1.0.7.jar",
@@ -1630,7 +1730,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Terralith_1.20.x_v2.5.4.jar",
@@ -1653,7 +1754,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "Towns-and-Towers-1.12-Fabric+Forge.jar",
@@ -1677,7 +1779,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "TravelersTitles-1.20-Fabric-4.0.2.jar",
@@ -1721,6 +1824,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/reflections-0.10.2.jar"
+   ],
+   "nested_ids": [
+    "org_reflections_reflections@0.10.2"
    ]
   },
   {
@@ -1749,7 +1855,8 @@
     "visualworkbench.fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "YungsApi-1.20-Fabric-4.0.6.jar",
@@ -1820,7 +1927,133 @@
     "META-INF/jars/mixinextras-fabric-0.3.5.jar",
     "META-INF/jars/reflections-0.10.2.jar",
     "META-INF/jars/javassist-3.29.2-GA.jar"
+   ],
+   "nested_ids": [
+    "mixinextras@0.3.5",
+    "org_reflections_reflections@0.10.2",
+    "org_javassist_javassist@3.29.2-GA"
    ]
+  },
+  {
+   "file": "YungsBetterDungeons-1.20-Fabric-4.0.4.jar",
+   "mods": [
+    {
+     "id": "betterdungeons",
+     "version": "1.20-Fabric-4.0.4",
+     "name": "YUNG's Better Dungeons",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "cloth-config2": ">=11.0.99",
+      "java": ">=17",
+      "yungsapi": ">=1.20-Fabric-4.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true
+    }
+   ],
+   "mixins": [
+    "betterdungeons.mixins.json",
+    "betterdungeons_fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested": [
+    "META-INF/jars/reflections-0.10.2.jar"
+   ],
+   "nested_ids": [
+    "org_reflections_reflections@0.10.2"
+   ]
+  },
+  {
+   "file": "YungsBetterMineshafts-1.20-Fabric-4.0.4.jar",
+   "mods": [
+    {
+     "id": "bettermineshafts",
+     "version": "1.20-Fabric-4.0.4",
+     "name": "YUNG's Better Mineshafts",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "cloth-config2": ">=11.0.99",
+      "java": ">=17",
+      "yungsapi": ">=1.20-Fabric-4.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true
+    }
+   ],
+   "mixins": [
+    "bettermineshafts.mixins.json",
+    "bettermineshafts_fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested": [
+    "META-INF/jars/reflections-0.10.2.jar"
+   ],
+   "nested_ids": [
+    "org_reflections_reflections@0.10.2"
+   ]
+  },
+  {
+   "file": "[fabric]ctov-3.4.14.jar",
+   "mods": [
+    {
+     "id": "ctov",
+     "version": "3.4.14",
+     "name": "ChoiceTheorem's Overhauled Village",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "lithostitched": ">=1.4"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "ctov.mixins.json",
+    "ctov-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "appleskin-fabric-mc1.20.1-2.5.2.jar",
@@ -1866,6 +2099,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+   ],
+   "nested_ids": [
+    "cloth-config@11.1.136"
    ]
   },
   {
@@ -1917,6 +2153,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "bundleapi@1.3.0+1.20.1"
    ]
   },
   {
@@ -1945,7 +2184,8 @@
     "architectury.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "armor_model_api-fabric-1.0.0+1.20.1.jar",
@@ -1970,7 +2210,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "artifacts-fabric-9.5.17.jar",
@@ -2083,6 +2324,13 @@
     "META-INF/jars/expandability-fabric-9.0.4.jar",
     "META-INF/jars/mixinextras-fabric-0.3.5.jar",
     "META-INF/jars/step-height-entity-attribute-v1.2.0.jar"
+   ],
+   "nested_ids": [
+    "cardinal-components-base@5.2.2",
+    "cardinal-components-entity@5.2.2",
+    "expandability@9.0.4",
+    "mixinextras@0.3.5",
+    "step-height-entity-attribute@1.2.0"
    ]
   },
   {
@@ -2131,6 +2379,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "kuma_api@20.1.12"
    ]
   },
   {
@@ -2176,6 +2427,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/mixinextras-fabric-0.2.0.jar"
+   ],
+   "nested_ids": [
+    "com_github_llamalad7_mixinextras@0.2.0"
    ]
   },
   {
@@ -2638,6 +2892,34 @@
     "META-INF/jars/threadly-7.0.jar",
     "META-INF/jars/exp4j-0.4.8.jar",
     "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+   ],
+   "nested_ids": [
+    "c2me-base@0.2.0+alpha.11.18",
+    "c2me-client-uncapvd@0.2.0+alpha.11.18",
+    "c2me-fixes-chunkio-threading-issues@0.2.0+alpha.11.18",
+    "c2me-fixes-general-threading-issues@0.2.0+alpha.11.18",
+    "c2me-fixes-worldgen-threading-issues@0.2.0+alpha.11.18",
+    "c2me-fixes-worldgen-vanilla-bugs@0.2.0+alpha.11.18",
+    "c2me-notickvd@0.2.0+alpha.11.18",
+    "c2me-opts-allocs@0.2.0+alpha.11.18",
+    "c2me-opts-chunk-access@0.2.0+alpha.11.18",
+    "c2me-opts-chunkio@0.2.0+alpha.11.18",
+    "c2me-opts-math@0.2.0+alpha.11.18",
+    "c2me-opts-scheduling@0.2.0+alpha.11.18",
+    "c2me-opts-worldgen-general@0.2.0+alpha.11.18",
+    "c2me-opts-worldgen-vanilla@0.2.0+alpha.11.18",
+    "c2me-rewrites-chunk-serializer@0.2.0+alpha.11.18",
+    "c2me-rewrites-chunkio@0.2.0+alpha.11.18",
+    "c2me-server-utils@0.2.0+alpha.11.18",
+    "c2me-threading-chunkio@0.2.0+alpha.11.18",
+    "c2me-threading-lighting@0.2.0+alpha.11.18",
+    "c2me-threading-worldgen@0.2.0+alpha.11.18",
+    "com_ibm_async_asyncutil@0.1.0",
+    "com_electronwill_night-config_toml@3.6.5",
+    "com_electronwill_night-config_core@3.6.5",
+    "org_threadly_threadly@7.0",
+    "net_objecthunter_exp4j@0.4.8",
+    "mixinextras@0.3.6"
    ]
   },
   {
@@ -2677,6 +2959,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/basic-math-0.6.1.jar"
+   ],
+   "nested_ids": [
+    "cloth-basic-math@0.6.1"
    ]
   },
   {
@@ -2704,7 +2989,8 @@
     "collective_fabric.crop.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "combatroll-fabric-1.3.3+1.20.1.jar",
@@ -2731,7 +3017,8 @@
     "combatroll.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "comforts-fabric-6.4.0+1.20.1.jar",
@@ -2813,6 +3100,11 @@
     "META-INF/jars/cardinal-components-base-5.2.1.jar",
     "META-INF/jars/cardinal-components-entity-5.2.1.jar",
     "META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "cardinal-components-base@5.2.1",
+    "cardinal-components-entity@5.2.1",
+    "spectrelib@0.13.15+1.20.1"
    ]
   },
   {
@@ -2837,7 +3129,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "cookingforblockheads-fabric-1.20.1-16.0.15.jar",
@@ -2862,7 +3155,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "cristellib-1.1.5-fabric.jar",
@@ -2902,6 +3196,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/jankson-1.2.3.jar"
+   ],
+   "nested_ids": [
+    "blue_endless_jankson@1.2.3"
    ]
   },
   {
@@ -2987,6 +3284,11 @@
     "META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar",
     "META-INF/jars/core-2.3.16-beta.81+1.20.1.jar",
     "META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar"
+   ],
+   "nested_ids": [
+    "porting_lib_attributes@2.3.16-beta.81+1.20.1",
+    "porting_lib_core@2.3.16-beta.81+1.20.1",
+    "porting_lib_gametest@2.3.16-beta.81+1.20.1"
    ]
   },
   {
@@ -3052,6 +3354,10 @@
    "nested": [
     "META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar",
     "META-INF/jars/owo-sentinel-0.11.2+1.20.jar"
+   ],
+   "nested_ids": [
+    "customportalapi@0.0.1-beta64-1.20",
+    "owo-sentinel@0.11.2+1.20"
    ]
   },
   {
@@ -3073,7 +3379,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
@@ -3126,6 +3433,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/battery-2.0.0.jar"
+   ],
+   "nested_ids": [
+    "net_lostluma_battery@2.0.0"
    ]
   },
   {
@@ -3152,7 +3462,35 @@
     "eatinganimation.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
+  },
+  {
+   "file": "enchanted_fishing_line-1.0.0-fabric-1.20.1.jar",
+   "mods": [
+    {
+     "id": "enchanted_fishing_line",
+     "version": "1.0.0",
+     "name": "Enchanted Fishing Line",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.16.10",
+      "minecraft": ">=1.20.1 <1.21",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "enchanted_fishing_line.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "ends_delight-refabricated-1.20.1-2.1.jar",
@@ -3179,7 +3517,8 @@
     "ends_delight.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "entityculling-fabric-1.11.3-mc1.20.1.jar",
@@ -3239,6 +3578,10 @@
    "nested": [
     "META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar",
     "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
+   ],
+   "nested_ids": [
+    "transition@1.0.26",
+    "trender@1.0.17"
    ]
   },
   {
@@ -3267,7 +3610,8 @@
     "extraorigins.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "fabric-api-0.92.12+1.20.1.jar",
@@ -4161,6 +4505,61 @@
     "META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar",
     "META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar",
     "META-INF/jars/fabric-rendering-v0-0.92.12.jar"
+   ],
+   "nested_ids": [
+    "fabric-api-base@0.4.32+1802ada577",
+    "fabric-api-lookup-api-v1@1.6.37+1802ada577",
+    "fabric-biome-api-v1@13.0.15+93aa238b77",
+    "fabric-block-api-v1@1.0.12+1802ada577",
+    "fabric-block-view-api-v2@1.0.3+924f046a77",
+    "fabric-blockrenderlayer-v1@1.1.42+1802ada577",
+    "fabric-client-tags-api-v1@1.2.0+238242b777",
+    "fabric-command-api-v2@2.2.14+1802ada577",
+    "fabric-content-registries-v0@4.0.13+1802ada577",
+    "fabric-convention-tags-v1@1.5.6+1802ada577",
+    "fabric-crash-report-info-v1@0.2.20+1802ada577",
+    "fabric-data-attachment-api-v1@1.0.2+de0fd6d177",
+    "fabric-data-generation-api-v1@12.4.0+238242b777",
+    "fabric-dimensions-v1@2.1.55+1802ada577",
+    "fabric-entity-events-v1@1.6.1+1c78457f77",
+    "fabric-events-interaction-v0@0.6.6+13a40c6677",
+    "fabric-game-rule-api-v1@1.0.41+1802ada577",
+    "fabric-item-api-v1@2.1.29+1802ada577",
+    "fabric-item-group-api-v1@4.0.14+1802ada577",
+    "fabric-key-binding-api-v1@1.0.38+1802ada577",
+    "fabric-lifecycle-events-v1@2.2.23+1802ada577",
+    "fabric-loot-api-v2@1.2.3+1802ada577",
+    "fabric-message-api-v1@5.1.10+1802ada577",
+    "fabric-mining-level-api-v1@2.1.52+1802ada577",
+    "fabric-model-loading-api-v1@1.0.4+1802ada577",
+    "fabric-networking-api-v1@1.3.15+0caff8d077",
+    "fabric-object-builder-api-v1@11.1.5+e35120df77",
+    "fabric-particles-v1@1.1.3+1802ada577",
+    "fabric-recipe-api-v1@1.0.25+1802ada577",
+    "fabric-registry-sync-v0@2.4.1+4c0a70e677",
+    "fabric-renderer-api-v1@3.2.2+1802ada577",
+    "fabric-renderer-indigo@1.5.3+85287f9f77",
+    "fabric-rendering-fluids-v1@3.0.29+1802ada577",
+    "fabric-rendering-v1@3.0.10+54550fb677",
+    "fabric-resource-conditions-api-v1@2.3.9+1802ada577",
+    "fabric-resource-loader-v0@0.11.12+fb82e9d777",
+    "fabric-screen-api-v1@2.0.9+1802ada577",
+    "fabric-screen-handler-api-v1@1.3.34+1802ada577",
+    "fabric-sound-api-v1@1.0.14+1802ada577",
+    "fabric-tag-api-v1@1.3.0+238242b777",
+    "fabric-transfer-api-v1@3.3.6+8dd72ea377",
+    "fabric-transitive-access-wideners-v1@4.3.2+1802ada577",
+    "fabric-command-api-v1@1.2.35+f71b366f77",
+    "fabric-commands-v0@0.2.52+df3654b377",
+    "fabric-containers-v0@0.1.68+df3654b377",
+    "fabric-events-lifecycle-v0@0.2.64+df3654b377",
+    "fabric-keybindings-v0@0.2.36+df3654b377",
+    "fabric-loot-tables-v1@1.1.47+9e7660c677",
+    "fabric-models-v0@0.4.3+9386d8a777",
+    "fabric-networking-v0@0.3.55+df3654b377",
+    "fabric-renderer-registries-v1@3.2.48+df3654b377",
+    "fabric-rendering-data-attachment-v1@0.3.39+92a0d36777",
+    "fabric-rendering-v0@1.1.51+df3654b377"
    ]
   },
   {
@@ -4353,6 +4752,21 @@
     "META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar",
     "META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar",
     "META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar"
+   ],
+   "nested_ids": [
+    "org_jetbrains_kotlinx_atomicfu-jvm@0.33.0",
+    "org_jetbrains_kotlin_kotlin-reflect@2.4.21",
+    "org_jetbrains_kotlin_kotlin-stdlib@2.4.21",
+    "org_jetbrains_kotlin_kotlin-stdlib-jdk7@2.4.21",
+    "org_jetbrains_kotlin_kotlin-stdlib-jdk8@2.4.21",
+    "org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm@1.11.0",
+    "org_jetbrains_kotlinx_kotlinx-coroutines-jdk8@1.11.0",
+    "org_jetbrains_kotlinx_kotlinx-datetime-jvm@0.8.0",
+    "org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm@0.9.1",
+    "org_jetbrains_kotlinx_kotlinx-io-core-jvm@0.9.1",
+    "org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm@1.11.0",
+    "org_jetbrains_kotlinx_kotlinx-serialization-core-jvm@1.11.0",
+    "org_jetbrains_kotlinx_kotlinx-serialization-json-jvm@1.11.0"
    ]
   },
   {
@@ -4380,7 +4794,8 @@
     "fallingleaves.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "farmingforblockheads-fabric-1.20.1-14.0.4.jar",
@@ -4407,7 +4822,8 @@
     "farmingforblockheads.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "ferritecore-6.0.1-fabric.jar",
@@ -4441,7 +4857,8 @@
     "ferritecore.fabric.mixin.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar",
@@ -4498,6 +4915,10 @@
    "nested": [
     "META-INF/jars/Fabric-ASM-2.5.3.jar",
     "META-INF/jars/mixinconstraints-1.1.0.jar"
+   ],
+   "nested_ids": [
+    "mm_kilt@2.5.3",
+    "com_moulberry_mixinconstraints@1.1.0"
    ]
   },
   {
@@ -4525,7 +4946,8 @@
     "fishingreal.fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "friendsandfoes-fabric-5.0.4+mc1.20.1.jar",
@@ -4555,7 +4977,8 @@
     "friendsandfoes-fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "fzzy_config-0.7.7+1.20.1.jar",
@@ -4626,6 +5049,59 @@
     "META-INF/jars/tomlkt-jvm-0.3.7.jar",
     "META-INF/jars/jankson-1.2.3.jar",
     "META-INF/jars/fabric-permissions-api-0.3.1.jar"
+   ],
+   "nested_ids": [
+    "net_peanuuutz_tomlkt_tomlkt-jvm@0.3.7",
+    "blue_endless_jankson@1.2.3",
+    "fabric-permissions-api-v0@0.3.1"
+   ]
+  },
+  {
+   "file": "gazebo-fabric-2.2.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "gazebo",
+     "version": "2.2.0+1.20.1",
+     "name": "Gazebos (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.14.0",
+      "spell_engine": "*",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "tiny_config",
+     "version": "3.1.0",
+     "name": "Tiny Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric",
+   "nested": [
+    "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "tiny_config@3.1.0"
    ]
   },
   {
@@ -4669,6 +5145,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/mclib-20.jar"
+   ],
+   "nested_ids": [
+    "com_eliotlash_mclib_mclib@20"
    ]
   },
   {
@@ -4713,6 +5192,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/midnightlib-1.4.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "midnightlib@1.4.1"
    ]
   },
   {
@@ -4739,7 +5221,8 @@
     "handcrafted.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "immersive_melodies-0.8.2+1.20.1-fabric.jar",
@@ -4764,7 +5247,8 @@
     "immersive_melodies.mixin.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "indium-1.0.36+mc1.20.1.jar",
@@ -4795,7 +5279,8 @@
     "indium.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "inmis-2.7.2-1.20.1.jar",
@@ -4841,6 +5326,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/omega-config-base-1.2.3-1.18.1.jar"
+   ],
+   "nested_ids": [
+    "omega-config@1.2.3-1.18.1"
    ]
   },
   {
@@ -4961,6 +5449,13 @@
     "META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar",
     "META-INF/jars/glsl-transformer-2.0.1.jar",
     "META-INF/jars/jcpp-1.4.14.jar"
+   ],
+   "nested_ids": [
+    "org_antlr_antlr4-runtime@4.13.1",
+    "fabric-api-base@0.4.31+1802ada577",
+    "fabric-key-binding-api-v1@1.0.37+1802ada577",
+    "io_github_douira_glsl-transformer@2.0.1",
+    "org_anarres_jcpp@1.4.14"
    ]
   },
   {
@@ -5010,6 +5505,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "tiny_config@3.1.0"
    ]
   },
   {
@@ -5036,7 +5534,8 @@
     "kirin.mixin.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "krypton-0.2.3.jar",
@@ -5075,110 +5574,10 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar"
+   ],
+   "nested_ids": [
+    "com_velocitypowered_velocity-native@3.2.0-SNAPSHOT"
    ]
-  },
-  {
-   "file": "letsdo-API-fabric-1.2.14-fabric.jar",
-   "mods": [
-    {
-     "id": "doapi",
-     "version": "1.2.14",
-     "name": "[Let's Do] API",
-     "environment": "*",
-     "depends": {
-      "fabric": "*",
-      "minecraft": ">=1.20",
-      "architectury": ">=9.0.8",
-      "terraform-wood-api-v1": ">=7.0.1"
-     },
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": []
-    },
-    {
-     "id": "terraform-wood-api-v1",
-     "version": "7.0.1",
-     "name": "Terraform Wood API (v1)",
-     "environment": "*",
-     "depends": {
-      "fabric-content-registries-v0": "*",
-      "fabric-networking-api-v1": "*",
-      "fabric-object-builder-api-v1": "*",
-      "fabric-registry-sync-v0": "*",
-      "fabric-rendering-v1": "*",
-      "fabric-resource-loader-v0": "*"
-     },
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": [],
-     "bundled": true
-    },
-    {
-     "id": "blue_endless_jankson",
-     "version": "1.2.1",
-     "name": "jankson",
-     "environment": "*",
-     "depends": {},
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": [],
-     "bundled": true
-    },
-    {
-     "id": "mixinextras",
-     "version": "0.3.5",
-     "name": "MixinExtras",
-     "environment": "*",
-     "depends": {
-      "fabricloader": ">=0.14.25"
-     },
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": [
-      "com_github_llamalad7_mixinextras"
-     ],
-     "bundled": true
-    }
-   ],
-   "mixins": [
-    "doapi.mixins.json",
-    "doapi-common.mixins.json"
-   ],
-   "errors": [],
-   "loader": "fabric",
-   "nested": [
-    "META-INF/jars/terraform-wood-api-v1-7.0.1.jar",
-    "META-INF/jars/jankson-1.2.1.jar",
-    "META-INF/jars/mixinextras-fabric-0.3.5.jar"
-   ]
-  },
-  {
-   "file": "letsdo-candlelight-fabric-1.2.13.jar",
-   "mods": [
-    {
-     "id": "candlelight",
-     "version": "1.2.13",
-     "name": "[Let's Do] Candlelight",
-     "environment": "*",
-     "depends": {
-      "fabric": "*",
-      "minecraft": ">=1.20",
-      "architectury": ">=9.0.8",
-      "doapi": ">=1.2.9"
-     },
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": []
-    }
-   ],
-   "mixins": [],
-   "errors": [],
-   "loader": "fabric"
   },
   {
    "file": "letsdo-farm_and_charm-fabric-1.0.14.jar",
@@ -5228,6 +5627,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+   ],
+   "nested_ids": [
+    "cloth-config@11.1.136"
    ]
   },
   {
@@ -5277,6 +5679,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+   ],
+   "nested_ids": [
+    "cloth-config@11.1.136"
    ]
   },
   {
@@ -5303,7 +5708,36 @@
     "lithium.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
+  },
+  {
+   "file": "lithostitched-fabric-1.20.1-1.4.11.jar",
+   "mods": [
+    {
+     "id": "lithostitched",
+     "version": "1.4.11",
+     "name": "Lithostitched",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.86.0",
+      "fabricloader": ">=0.14",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "lithostitched.mixins.json",
+    "lithostitched.fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "medievalorigins-fabric-1.20.1-6.7.9.jar",
@@ -5374,6 +5808,10 @@
    "nested": [
     "META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar",
     "META-INF/jars/mixinextras-fabric-0.5.0.jar"
+   ],
+   "nested_ids": [
+    "additionalentityattributes@1.7.4+1.20.0",
+    "mixinextras@0.5.0"
    ]
   },
   {
@@ -5398,7 +5836,8 @@
     "memoryleakfix-fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "modernfix-fabric-5.25.2+mc1.20.1.jar",
@@ -5425,7 +5864,8 @@
     "modernfix-common.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "modmenu-7.2.2.jar",
@@ -5534,6 +5974,13 @@
     "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar",
     "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar",
     "META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar"
+   ],
+   "nested_ids": [
+    "fabric-api-base@0.4.29+b04edc7a77",
+    "fabric-resource-loader-v0@0.11.7+f7923f6d77",
+    "fabric-screen-api-v1@2.0.6+b3afc78b77",
+    "fabric-key-binding-api-v1@1.0.36+fb8d95da77",
+    "fabric-lifecycle-events-v1@2.2.20+b3afc78b77"
    ]
   },
   {
@@ -5593,6 +6040,10 @@
    "nested": [
     "META-INF/jars/mixinextras-fabric-0.3.6.jar",
     "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+   ],
+   "nested_ids": [
+    "mixinextras@0.3.6",
+    "mixinsquared@0.1.1"
    ]
   },
   {
@@ -5654,6 +6105,10 @@
    "nested": [
     "META-INF/jars/conditional-mixin-v0.3.2.jar",
     "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+   ],
+   "nested_ids": [
+    "conditional-mixin@0.3.2",
+    "mixinsquared@0.1.1"
    ]
   },
   {
@@ -5679,7 +6134,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "naturalist-fabric-4.0.3-1.20.1.jar",
@@ -5724,6 +6180,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/cloth-config-fabric-8.2.88.jar"
+   ],
+   "nested_ids": [
+    "cloth-config@8.2.88"
    ]
   },
   {
@@ -5784,6 +6243,10 @@
    "nested": [
     "META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar",
     "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
+   ],
+   "nested_ids": [
+    "transition@1.0.28",
+    "trender@1.0.17"
    ]
   },
   {
@@ -5842,6 +6305,10 @@
    "nested": [
     "META-INF/jars/api_fabric-0.8.1.jar",
     "META-INF/jars/impl-0.8.1.jar"
+   ],
+   "nested_ids": [
+    "wrench_wrapper@0.8.1",
+    "wrench_wrapper_backend@0.8.1"
    ]
   },
   {
@@ -5863,7 +6330,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "origins-plus-plus-2.4.jar",
@@ -5886,7 +6354,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "originstweaks-1.18.3.jar",
@@ -5914,7 +6383,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "overweightfarming-1.20.1-2.0.3-fabric.jar",
@@ -5958,6 +6428,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/midnightlib-1.4.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "midnightlib@1.4.1"
    ]
   },
   {
@@ -6001,6 +6474,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/jankson-1.2.2.jar"
+   ],
+   "nested_ids": [
+    "blue_endless_jankson@1.2.2"
    ]
   },
   {
@@ -6054,6 +6530,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "shield_api@2.2.0+1.20.1"
    ]
   },
   {
@@ -6080,7 +6559,8 @@
     "playerAnimator-common.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "random-fishing-crates-1.3.3.jar",
@@ -6101,7 +6581,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "ranged_weapon_api-fabric-2.3.4+1.20.1.jar",
@@ -6127,7 +6608,8 @@
     "ranged_weapon_api.fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar",
@@ -6157,7 +6639,8 @@
     "reeses-sodium-options.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "resourcefulconfig-fabric-1.20.1-2.1.3.jar",
@@ -6179,7 +6662,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "resourcefullib-fabric-1.20.1-2.1.29.jar",
@@ -6231,6 +6715,10 @@
    "nested": [
     "META-INF/jars/yabn-1.0.3.jar",
     "META-INF/jars/bytecodecs-1.0.2.jar"
+   ],
+   "nested_ids": [
+    "com_teamresourceful_yabn@1.0.3",
+    "com_teamresourceful_bytecodecs@1.0.2"
    ]
   },
   {
@@ -6260,7 +6748,8 @@
     "rogues.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "rpgdifficulty-1.3.16.jar",
@@ -6287,7 +6776,8 @@
     "rpgdifficulty.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "shield_api-fabric-2.2.0+1.20.1.jar",
@@ -6313,7 +6803,8 @@
     "shield_api-fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "simplyswords-fabric-1.70.2-1.20.1.jar",
@@ -6343,7 +6834,56 @@
     "simplyswords.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
+  },
+  {
+   "file": "smarterfarmers-1.20-2.1.2-fabric.jar",
+   "mods": [
+    {
+     "id": "smarterfarmers",
+     "version": "1.20-2.1.2",
+     "name": "Smarter Farmers",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "moonlight": ">=1.20-2.5.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.6",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": true
+    }
+   ],
+   "mixins": [
+    "smarterfarmers.mixins.json",
+    "smarterfarmers-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested": [
+    "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+   ],
+   "nested_ids": [
+    "mixinextras@0.3.6"
+   ]
   },
   {
    "file": "sodium-extra-0.5.9+mc1.20.1.jar",
@@ -6392,6 +6932,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/CaffeineConfig-1.3.0+1.17.jar"
+   ],
+   "nested_ids": [
+    "caffeineconfig@1.3.0+1.17"
    ]
   },
   {
@@ -6521,6 +7064,13 @@
     "META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar",
     "META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar",
     "META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar"
+   ],
+   "nested_ids": [
+    "fabric-api-base@0.4.31+1802ada577",
+    "fabric-block-view-api-v2@1.0.1+1802ada577",
+    "fabric-rendering-data-attachment-v1@0.3.37+92a0d36777",
+    "fabric-rendering-fluids-v1@3.0.28+1802ada577",
+    "fabric-resource-loader-v0@0.11.11+fb82e9d777"
    ]
   },
   {
@@ -6550,7 +7100,8 @@
     "sspb.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "spell_engine-fabric-1.10.10+1.20.1.jar",
@@ -6602,6 +7153,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "tiny_config@3.1.0"
    ]
   },
   {
@@ -6649,7 +7203,37 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+   ],
+   "nested_ids": [
+    "tiny_config@3.1.0"
    ]
+  },
+  {
+   "file": "structure_pool_api-fabric-1.2.1+1.20.1.jar",
+   "mods": [
+    {
+     "id": "structure_pool_api",
+     "version": "1.2.1+1.20.1",
+     "name": "Structure Pool API",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": "*",
+      "minecraft": "~1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "structure_pool.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "supplementaries-1.20-3.1.44-fabric.jar",
@@ -6712,6 +7296,10 @@
    "nested": [
     "META-INF/jars/mixinextras-fabric-0.3.6.jar",
     "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+   ],
+   "nested_ids": [
+    "mixinextras@0.3.6",
+    "mixinsquared@0.1.1"
    ]
   },
   {
@@ -6734,7 +7322,8 @@
    ],
    "mixins": [],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "trade-cycling-fabric-1.20.1-1.0.7.jar",
@@ -6856,6 +7445,14 @@
     "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar",
     "META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar",
     "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar"
+   ],
+   "nested_ids": [
+    "fabric-api-base@0.4.29+b04edc7a82",
+    "fabric-resource-loader-v0@0.11.7+f7923f6d82",
+    "fabric-lifecycle-events-v1@2.2.20+b3afc78b82",
+    "fabric-key-binding-api-v1@1.0.36+fb8d95da82",
+    "fabric-networking-api-v1@1.3.8+b3afc78b82",
+    "fabric-screen-api-v1@2.0.6+b3afc78b82"
    ]
   },
   {
@@ -6918,6 +7515,10 @@
    "nested": [
     "META-INF/jars/cardinal-components-base-5.2.0.jar",
     "META-INF/jars/cardinal-components-entity-5.2.0.jar"
+   ],
+   "nested_ids": [
+    "cardinal-components-base@5.2.0",
+    "cardinal-components-entity@5.2.0"
    ]
   },
   {
@@ -6944,7 +7545,8 @@
     "twigs.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "villagernames-1.20.1-8.9.jar",
@@ -6971,7 +7573,8 @@
     "villagernames_fabric.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "villagersplus-fabric-mc1.20.1-4.1.1.jar",
@@ -6999,7 +7602,8 @@
     "villagersplus-common.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "villagertradingplus-fabric-mc1.20.1-1.1.1.jar",
@@ -7025,7 +7629,35 @@
     "villagertradingplus-common.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
+  },
+  {
+   "file": "villagesandpillages-fabric-2.0.0+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "villagesandpillages",
+     "version": "2.0.0",
+     "name": "Villages&Pillages",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "minecraft": ">=1.20",
+      "fabricloader": "*",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "villagesandpillages-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "visuality-0.7.1+1.20.jar",
@@ -7052,7 +7684,8 @@
     "visuality.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "waystones-fabric-1.20.1-14.1.21.jar",
@@ -7079,7 +7712,8 @@
     "waystones.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "wizards-fabric-3.1.3+1.20.1.jar",
@@ -7110,7 +7744,8 @@
     "wizards.mixins.json"
    ],
    "errors": [],
-   "loader": "fabric"
+   "loader": "fabric",
+   "nested_ids": []
   },
   {
    "file": "xaerominimap-fabric-1.20.1-26.6.0.jar",
@@ -7161,6 +7796,9 @@
    "loader": "fabric",
    "nested": [
     "META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar"
+   ],
+   "nested_ids": [
+    "xaerolib@1.7.3"
    ]
   },
   {
@@ -7308,6 +7946,17 @@
     "META-INF/jars/imageio-webp-3.12.0.jar",
     "META-INF/jars/json-0.2.1.jar",
     "META-INF/jars/mixinextras-fabric-0.4.1.jar"
+   ],
+   "nested_ids": [
+    "com_twelvemonkeys_common_common-image@3.12.0",
+    "com_twelvemonkeys_common_common-io@3.12.0",
+    "com_twelvemonkeys_common_common-lang@3.12.0",
+    "org_quiltmc_parsers_gson@0.2.1",
+    "com_twelvemonkeys_imageio_imageio-core@3.12.0",
+    "com_twelvemonkeys_imageio_imageio-metadata@3.12.0",
+    "com_twelvemonkeys_imageio_imageio-webp@3.12.0",
+    "org_quiltmc_parsers_json@0.2.1",
+    "mixinextras@0.4.1"
    ]
   }
  ]

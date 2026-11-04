@@ -1,13 +1,8 @@
-jars: 127  mod ids: 292
-problems: 13
+jars: 135  mod ids: 299
+problems: 8
   !! origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar
-  !! jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar
-  !! farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)
-  !! paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar
-  !! rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar
-  !! wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar
+  !! smarterfarmers: dependency 'moonlight' present but version 1.20-2.16.38B does not satisfy '>=1.20-2.5.0' (smarterfarmers-1.20-2.1.2-fabric.jar)
   !! duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar
   !! duplicate mod id 'kirin' shipped by: PresenceFootsteps-1.10.1+1.20.1.jar, kirin-1.15.6+1.20.1.jar
   !! duplicate mod id 'owo' shipped by: deeperdarker-fabric-1.20-1.3.3-plus-b.jar (provides), owo-lib-0.11.2+1.20.jar

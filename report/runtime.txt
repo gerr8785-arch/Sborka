@@ -1,7 +1,7 @@
-done=False uptime=14s exit=1
+done=False uptime=156s exit=143
 
 PROBLEMS
-dependency resolution failure: Mod resolution failed
-incompatible mods: Incompatible mods found
+command/data error: Unknown or incomplete command
+missing registry entry: Unknown item
 
 WARNINGS

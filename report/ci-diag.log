@@ -1,0 +1,39 @@
+manifest entries: 135
+  side-mismatch ambientsounds                    client=required server=unsupported
+  side-mismatch presence-footsteps               client=required server=unsupported
+  side-mismatch kirin                            client=required server=unsupported
+  side-mismatch lithostitched                    client=unsupported server=required
+  side-mismatch searchables                      client=required server=unsupported
+  side-mismatch simply-tooltips                  client=required server=unsupported
+  side-mismatch structure-pool-api               client=unsupported server=required
+  side-mismatch gazebos                          client=unsupported server=required
+  side-mismatch badoptimizations                 client=required server=unsupported
+  side-mismatch dynamic-fps                      client=required server=unsupported
+  side-mismatch entityculling                    client=required server=unsupported
+  side-mismatch immediatelyfast                  client=required server=unsupported
+  side-mismatch indium                           client=required server=unsupported
+  side-mismatch iris                             client=required server=unsupported
+  side-mismatch moreculling                      client=required server=unsupported
+  side-mismatch reeses-sodium-options            client=required server=unsupported
+  side-mismatch sodium                           client=required server=unsupported
+  side-mismatch sodium-extra                     client=required server=unsupported
+  side-mismatch ct-overhaul-village              client=unsupported server=required
+  side-mismatch villages-and-pillages            client=unsupported server=required
+  side-mismatch when-dungeons-arise              client=unsupported server=required
+  side-mismatch yungs-better-dungeons            client=unsupported server=required
+  side-mismatch yungs-better-mineshafts          client=unsupported server=required
+  side-mismatch betterf3                         client=required server=unsupported
+  side-mismatch controlling                      client=required server=unsupported
+  side-mismatch modmenu                          client=required server=unsupported
+  side-mismatch mouse-tweaks                     client=required server=unsupported
+  side-mismatch ok-zoomer                        client=required server=unsupported
+  side-mismatch travelers-titles                 client=required server=unsupported
+  side-mismatch smarter-farmers-farmers-replant  client=unsupported server=required
+  side-mismatch eating-animation                 client=required server=unsupported
+  side-mismatch fallingleaves                    client=required server=unsupported
+  side-mismatch not-enough-animations            client=required server=unsupported
+  side-mismatch sodium-shadowy-path-blocks       client=required server=unsupported
+  side-mismatch visuality                        client=required server=unsupported
+nested: Origins-1.10.2+mc.1.20.x.jar ['apoli@2.9.2+mc.1.20.x', 'reach-entity-attributes@2.4.0', 'mixinsquared@0.3.7-beta.1']
+nested: archers-fabric-3.1.4+1.20.1.jar ['bundleapi@1.3.0+1.20.1']
+nested: medievalorigins-fabric-1.20.1-6.7.9.jar ['additionalentityattributes@1.7.4+1.20.0', 'mixinextras@0.5.0']
