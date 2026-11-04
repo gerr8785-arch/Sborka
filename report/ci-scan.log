@@ -1,11 +1,8 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 390, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 293, in main
-    jars = scan_jars(mods_dir)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 234, in scan_jars
-    for f in sorted(os.listdir(mods_dir)):
-                    ^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'build/run/client/mods'
+jars: 135  top-level mod ids: 135  ids incl. bundled: 312
+problems: 1
+  !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
+warnings: 4
+   ~ debugify: recommends 'yet-another-config-lib' which is not installed
+   ~ originstweaks: recommends 'morewaterlogging' which is not installed
+   ~ paladins: recommends 'runes' which is not installed
+   ~ wizards: recommends 'runes' which is not installed

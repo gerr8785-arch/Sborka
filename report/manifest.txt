@@ -136,4 +136,4 @@ worldgen       incendium                              5.3.5                     
 worldgen       terralith                              2.5.4                                  release op/re 
 
 ERRORS:
-slug apoli not found on Modrinth (HTTP Error 404: Not Found) — maybe: opoli (Overgrown's Apoli), origins-apoli-armor-mixin-fix (Origins Apoli Armor Mixin Fix), ra_additions (Robin's Apoli Additions)
+none
