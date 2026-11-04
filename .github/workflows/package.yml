@@ -1,0 +1,62 @@
+name: package
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_rar:
+        description: "Build the RAR archive (needs the rar binary)"
+        default: "false"
+  push:
+    paths:
+      - "pack/modlist.json"
+      - "pack/config/**"
+      - "pack/docs/**"
+      - "pack/compat-rules.json"
+      - "scripts/**"
+      - ".github/workflows/package.yml"
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      mod_count: ${{ steps.info.outputs.mod_count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/326781c7-sborka
+      - name: install rar
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq rar unrar || (curl -sSLo /tmp/rarlinux.tar.gz https://www.rarlab.com/rar/rarlinux-x64-624.tar.gz && tar xzf /tmp/rarlinux.tar.gz -C /tmp && sudo cp /tmp/rar/rar /tmp/rar/unrar /usr/local/bin/)
+          rar 2>&1 | head -2
+      - name: resolve manifest
+        run: python3 scripts/resolve_pack.py
+      - name: info
+        id: info
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          m = json.load(open("build/manifest.json"))
+          print(f"mod_count={m['mod_count']}")
+          print(f"errors={' '.join(m['errors']) or 'none'}")
+          PY
+      - name: download mods (client)
+        run: python3 scripts/download_mods.py client
+      - name: download mods (server)
+        run: python3 scripts/download_mods.py server
+      - name: static compatibility scan
+        run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json
+      - name: build archives (mrpack + rar)
+        run: python3 scripts/build_pack.py
+      - name: archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sborka-rpg-pack
+          if-no-files-found: error
+          path: |
+            build/*.mrpack
+            build/*.rar
+            build/report/*.txt
+            build/report/scan.json
