@@ -4,5 +4,3 @@ PROBLEMS
 
 
 WARNINGS
-structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
-server lag warning: Can't keep up

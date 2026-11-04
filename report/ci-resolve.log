@@ -1,14 +1,13 @@
-structures     ct-overhaul-village                    3.4.14                                 release un/re 
-structures     deeperdarker                           1.3.3-plus-b-fabric+1.20               release re/re 
-structures     dungeons-and-taverns                   3.0.3.f+mod                            release op/re 
-structures     structory                              1.3.5                                  release op/re 
-structures     structory-towers                       1.0.7                                  release op/re 
+structures     the-bumblezone-fabric                  7.15.2+1.20.1-fabric                   release re/re 
 structures     towns-and-towers                       1.12                                   release op/re 
 structures     villages-and-pillages                  fabric-2.0.0+mc1.20.1                  release un/re 
 structures     when-dungeons-arise                    2.1.57-1.20.1                          release un/re 
 structures     yungs-better-dungeons                  1.20-Fabric-4.0.4                      release un/re 
 structures     yungs-better-mineshafts                1.20-Fabric-4.0.4                      release un/re 
+structures     yungs-better-strongholds               1.20-Fabric-4.0.3                      release un/re 
+structures     yungs-better-witch-huts                1.20-Fabric-3.0.3                      release un/re 
 travel         comforts                               6.4.0+1.20.1                           release re/re 
+travel         explorers-compass                      1.20.1-2.6.0-fabric                    release re/re 
 travel         icarus                                 2.13.2+Fabric                          release re/re 
 travel         natures-compass                        1.20.1-2.6.0-fabric                    release re/re 
 travel         waystones                              14.1.21+fabric-1.20.1                  release re/re 
@@ -19,6 +18,7 @@ ui             jade                                   11.13.3+fabric            
 ui             modmenu                                7.2.2                                  release re/un 
 ui             mouse-tweaks                           1.20-2.26-fabric                       release re/un 
 ui             ok-zoomer                              5.4.0-beta.9+fabric                    release re/un 
+ui             polymorph                              0.49.11+1.20.1                         beta    re/re 
 ui             rei                                    12.1.785+fabric                        release op/op 
 ui             travelers-titles                       1.20-Fabric-4.0.2                      release re/un 
 ui             xaeros-minimap                         fabric-1.20.1-26.6.0                   release re/op 
@@ -37,4 +37,4 @@ worldgen       incendium                              5.3.5                     
 worldgen       terralith                              2.5.4                                  release op/re 
 
 ERRORS:
-none
+slug farmers-cutting not found on Modrinth (HTTP Error 404: Not Found) — maybe: farmers-cutting-biomes-o-plenty (Farmer's Cutting: Biomes O' Plenty), farmers-cutting-oh-the-biomes-weve-gone (Farmer's Cutting: Oh The Biomes We've Gone), farmers-cutting-betternether (Farmer's Cutting: BetterNether)

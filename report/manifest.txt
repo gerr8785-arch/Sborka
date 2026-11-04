@@ -1,4 +1,4 @@
-135 mods, 275.2 MB
+143 mods, 358.1 MB
 animals        critters-and-companions                2.7.1                                  release re/re 
 animals        friends-and-foes                       fabric-5.0.4+mc1.20.1                  release re/re 
 animals        naturalist                             4.0.3                                  release re/re 
@@ -30,6 +30,7 @@ fishing        tide                                   2.1.1                     
 library        architectury-api                       9.2.14+fabric                          release re/re rei
 library        armor-model-api                        1.0.0+1.20.1-fabric                    release re/re wizards
 library        balm                                   7.3.44+fabric-1.20.1                   release op/op cooking-for-blockheads
+library        cardinal-components-api                5.2.3                                  release op/re travelersbackpack
 library        cloth-config                           11.1.136+fabric                        release op/op betterf3
 library        collective                             1.20.1-8.79-fabric+forge+neo           release op/op villager-names-serilum
 library        common-network                         1.0.6-1.20.1                           release re/re icarus
@@ -44,6 +45,7 @@ library        glitchcore                             0.0.1.1                   
 library        kambrik                                6.1.1+1.20.1                           release re/re bountiful
 library        kirin                                  1.15.6+1.20.1                          release re/un 
 library        lithostitched                          1.4.11-fabric-1.20                     release un/re ct-overhaul-village
+library        midnightlib                            1.9.3+1.20.1-fabric                    release op/op the-bumblezone-fabric
 library        moonlight                              1.20-2.16.38B-fabric                   release re/re smarter-farmers-farmers-replant
 library        origins-dietary-delights               1.9.8                                  release op/re originstweaks
 library        owo-lib                                0.11.2+1.20                            release re/re deeperdarker
@@ -97,17 +99,22 @@ races          origins-classes                        1.7.0                     
 races          origins-plus-plus                      2.4                                    release re/re 
 races          originstweaks                          1.18.3                                 release re/re 
 storage        inmis                                  2.7.2+1.20.1                           release re/re 
+storage        travelersbackpack                      1.20.1-9.1.56                          release re/re 
 structures     ct-overhaul-village                    3.4.14                                 release un/re 
 structures     deeperdarker                           1.3.3-plus-b-fabric+1.20               release re/re 
 structures     dungeons-and-taverns                   3.0.3.f+mod                            release op/re 
 structures     structory                              1.3.5                                  release op/re 
 structures     structory-towers                       1.0.7                                  release op/re 
+structures     the-bumblezone-fabric                  7.15.2+1.20.1-fabric                   release re/re 
 structures     towns-and-towers                       1.12                                   release op/re 
 structures     villages-and-pillages                  fabric-2.0.0+mc1.20.1                  release un/re 
 structures     when-dungeons-arise                    2.1.57-1.20.1                          release un/re 
 structures     yungs-better-dungeons                  1.20-Fabric-4.0.4                      release un/re 
 structures     yungs-better-mineshafts                1.20-Fabric-4.0.4                      release un/re 
+structures     yungs-better-strongholds               1.20-Fabric-4.0.3                      release un/re 
+structures     yungs-better-witch-huts                1.20-Fabric-3.0.3                      release un/re 
 travel         comforts                               6.4.0+1.20.1                           release re/re 
+travel         explorers-compass                      1.20.1-2.6.0-fabric                    release re/re 
 travel         icarus                                 2.13.2+Fabric                          release re/re 
 travel         natures-compass                        1.20.1-2.6.0-fabric                    release re/re 
 travel         waystones                              14.1.21+fabric-1.20.1                  release re/re 
@@ -118,6 +125,7 @@ ui             jade                                   11.13.3+fabric            
 ui             modmenu                                7.2.2                                  release re/un 
 ui             mouse-tweaks                           1.20-2.26-fabric                       release re/un 
 ui             ok-zoomer                              5.4.0-beta.9+fabric                    release re/un 
+ui             polymorph                              0.49.11+1.20.1                         beta    re/re 
 ui             rei                                    12.1.785+fabric                        release op/op 
 ui             travelers-titles                       1.20-Fabric-4.0.2                      release re/un 
 ui             xaeros-minimap                         fabric-1.20.1-26.6.0                   release re/op 
@@ -136,4 +144,4 @@ worldgen       incendium                              5.3.5                     
 worldgen       terralith                              2.5.4                                  release op/re 
 
 ERRORS:
-none
+slug farmers-cutting not found on Modrinth (HTTP Error 404: Not Found) — maybe: farmers-cutting-biomes-o-plenty (Farmer's Cutting: Biomes O' Plenty), farmers-cutting-oh-the-biomes-weve-gone (Farmer's Cutting: Oh The Biomes We've Gone), farmers-cutting-betternether (Farmer's Cutting: BetterNether)
