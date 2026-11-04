@@ -11,28 +11,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: arena/326781c7-sborka
-      - name: system info
-        run: |
-          { echo "## sysinfo"; uname -a; nproc; free -m; df -h /; ls -la /dev/kvm 2>&1; java -version 2>&1; python3 -V; } > /tmp/sys.txt
-      - name: pip
-        run: pip install --quiet requests 2>&1 | tail -2; python3 -c "import requests; print('requests ok')"
-      - name: discovery
-        run: python3 scripts/discover.py > /tmp/discover.md 2>/tmp/discover.err; tail -3 /tmp/discover.err
-      - name: rar + qemu availability
-        run: |
-          { echo "## tools"
-            curl -sL -m 60 -o /tmp/rarlinux.tar.gz https://github.com/dryes/rarlinux/archive/refs/heads/master.zip -w "zip:%{http_code}\n"
-            sudo apt-get update -qq 2>&1 | tail -2
-            sudo apt-get install -y -qq qemu-system-x86 qemu-utils 2>&1 | tail -3
-            which qemu-system-x86_64; qemu-system-x86_64 --version | head -2
-            curl -sL -o /tmp/lockfile -w "speedtest_bytes=%{size_download} time=%{time_total}\n" https://speed.cloudflare.com/__down?bytes=50000000
-          } > /tmp/tools.txt 2>&1
+      - name: resolve modrinth candidates
+        run: python3 scripts/resolve.py 2> /tmp/resolve.err; tail -2 /tmp/resolve.err
       - name: commit report
         run: |
           set -e
           mkdir -p .ci/out
-          cp /tmp/sys.txt /tmp/tools.txt /tmp/discover.md .ci/out/ 2>/dev/null || true
-          cp /tmp/discover.err .ci/out/ 2>/dev/null || true
+          cp build/report/candidates.txt build/report/problems.txt .ci/out/ 2>/dev/null || true
+          cp /tmp/resolve.err .ci/out/resolve.err || true
           git config user.name "ci"; git config user.email "ci@local"
-          git add -A .ci && git commit -m "ci: probe report" || echo "nothing to commit"
-          git push origin HEAD:arena/326781c7-sborka
+          git add -A .ci build || true
+          git commit -m "ci: resolve report" || echo "nothing to commit"
+          git push origin HEAD:arena/326781c7-sborka || true
