@@ -1,9 +1,0 @@
-name: net-test
-on: [workflow_dispatch, push]
-jobs:
-  t:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: curl -s -m 20 -o /tmp/s.json -w '%{http_code}\n' 'https://api.modrinth.com/v2/project/sodium/version?game_versions=%5B%221.20.1%22%5D&loaders=%5B%22fabric%22%5D' && head -c 300 /tmp/s.json
-      - run: java -version 2>&1 | head -2 || true
