@@ -1,8 +1,10 @@
 {
  "mc": "1.20.1",
- "jar_count": 127,
+ "jar_count": 128,
  "mod_ids": {
+  "additionalentityattributes": "1.7.4+1.20.0",
   "ambientsounds": "6.3.11",
+  "apoli": "2.9.2+mc.1.20.x",
   "appleskin": "2.5.2+mc1.20.1",
   "archers": "3.1.4+1.20.1",
   "architectury": "9.2.14",
@@ -11,22 +13,67 @@
   "badoptimizations": "2.4.1",
   "bakery": "1.1.15",
   "balm": "7.3.44",
+  "balm-fabric": "7.3.44",
   "bettercombat": "1.9.0+1.20.1",
   "betterf3": "7.0.2",
+  "blue_endless_jankson": "1.2.3",
   "bountiful": "6.0.4+1.20.1",
+  "bundleapi": "1.3.0+1.20.1",
   "c2me": "0.2.0+alpha.11.18",
+  "c2me-base": "0.2.0+alpha.11.18",
+  "c2me-client-uncapvd": "0.2.0+alpha.11.18",
+  "c2me-fixes-chunkio-threading-issues": "0.2.0+alpha.11.18",
+  "c2me-fixes-general-threading-issues": "0.2.0+alpha.11.18",
+  "c2me-fixes-worldgen-threading-issues": "0.2.0+alpha.11.18",
+  "c2me-fixes-worldgen-vanilla-bugs": "0.2.0+alpha.11.18",
+  "c2me-notickvd": "0.2.0+alpha.11.18",
+  "c2me-opts-allocs": "0.2.0+alpha.11.18",
+  "c2me-opts-chunk-access": "0.2.0+alpha.11.18",
+  "c2me-opts-chunkio": "0.2.0+alpha.11.18",
+  "c2me-opts-math": "0.2.0+alpha.11.18",
+  "c2me-opts-scheduling": "0.2.0+alpha.11.18",
+  "c2me-opts-worldgen-general": "0.2.0+alpha.11.18",
+  "c2me-opts-worldgen-vanilla": "0.2.0+alpha.11.18",
+  "c2me-rewrites-chunk-serializer": "0.2.0+alpha.11.18",
+  "c2me-rewrites-chunkio": "0.2.0+alpha.11.18",
+  "c2me-server-utils": "0.2.0+alpha.11.18",
+  "c2me-threading-chunkio": "0.2.0+alpha.11.18",
+  "c2me-threading-lighting": "0.2.0+alpha.11.18",
+  "c2me-threading-worldgen": "0.2.0+alpha.11.18",
+  "caffeineconfig": "1.3.0+1.17",
   "candlelight": "1.2.13",
-  "cloth-config": "11.1.136",
+  "cardinal-components-base": "5.2.2",
+  "cardinal-components-entity": "5.2.2",
+  "cloth-basic-math": "0.6.1",
+  "cloth-config": "11.1.106",
+  "cloth-config2": "11.1.106",
   "clumps": "12.0.0.4",
   "collective": "8.79",
+  "com_electronwill_night-config_core": "3.6.7",
+  "com_electronwill_night-config_toml": "3.6.7",
+  "com_eliotlash_mclib_mclib": "20",
+  "com_github_llamalad7_mixinextras": "0.2.2",
+  "com_ibm_async_asyncutil": "0.1.0",
+  "com_moulberry_mixinconstraints": "1.1.0",
+  "com_teamresourceful_bytecodecs": "1.0.2",
+  "com_teamresourceful_yabn": "1.0.3",
+  "com_twelvemonkeys_common_common-image": "3.12.0",
+  "com_twelvemonkeys_common_common-io": "3.12.0",
+  "com_twelvemonkeys_common_common-lang": "3.12.0",
+  "com_twelvemonkeys_imageio_imageio-core": "3.12.0",
+  "com_twelvemonkeys_imageio_imageio-metadata": "3.12.0",
+  "com_twelvemonkeys_imageio_imageio-webp": "3.12.0",
+  "com_velocitypowered_velocity-native": "3.2.0-SNAPSHOT",
   "combatroll": "1.3.3+1.20.1",
   "comforts": "6.4.0+1.20.1",
   "commonnetworking": "1.0.6-1.20.1",
+  "conditional-mixin": "0.3.2",
   "controlling": "12.0.2",
   "cookingforblockheads": "16.0.15",
   "creativecore": "2.12.41",
   "cristellib": "1.1.5",
   "crittersandcompanions": "2.7.1",
+  "customportalapi": "0.0.1-beta64-1.20",
   "debugify": "1.20.1+2.0",
   "deeperdarker": "1.3.3-plus-b",
   "doapi": "1.2.14",
@@ -34,14 +81,72 @@
   "eatinganimationid": "1.20+1.9.61",
   "ends_delight": "refabricated-1.20.1-2.1",
   "entityculling": "1.11.3",
+  "error_notifier": "1.0.9",
+  "expandability": "9.0.4",
   "extraorigins": "1.20-8",
+  "fabric": "0.92.12+1.20.1",
   "fabric-api": "0.92.12+1.20.1",
+  "fabric-api-base": "0.4.32+1802ada577",
+  "fabric-api-lookup-api-v1": "1.6.37+1802ada577",
+  "fabric-biome-api-v1": "13.0.15+93aa238b77",
+  "fabric-block-api-v1": "1.0.12+1802ada577",
+  "fabric-block-view-api-v2": "1.0.3+924f046a77",
+  "fabric-blockrenderlayer-v1": "1.1.42+1802ada577",
+  "fabric-client-tags-api-v1": "1.2.0+238242b777",
+  "fabric-command-api-v1": "1.2.35+f71b366f77",
+  "fabric-command-api-v2": "2.2.14+1802ada577",
+  "fabric-commands-v0": "0.2.52+df3654b377",
+  "fabric-containers-v0": "0.1.68+df3654b377",
+  "fabric-content-registries-v0": "4.0.13+1802ada577",
+  "fabric-convention-tags-v1": "1.5.6+1802ada577",
+  "fabric-crash-report-info-v1": "0.2.20+1802ada577",
+  "fabric-data-attachment-api-v1": "1.0.2+de0fd6d177",
+  "fabric-data-generation-api-v1": "12.4.0+238242b777",
+  "fabric-dimensions-v1": "2.1.55+1802ada577",
+  "fabric-entity-events-v1": "1.6.1+1c78457f77",
+  "fabric-events-interaction-v0": "0.6.6+13a40c6677",
+  "fabric-events-lifecycle-v0": "0.2.64+df3654b377",
+  "fabric-game-rule-api-v1": "1.0.41+1802ada577",
+  "fabric-item-api-v1": "2.1.29+1802ada577",
+  "fabric-item-group-api-v1": "4.0.14+1802ada577",
+  "fabric-key-binding-api-v1": "1.0.38+1802ada577",
+  "fabric-keybindings-v0": "0.2.36+df3654b377",
   "fabric-language-kotlin": "1.14.2+kotlin.2.4.21",
+  "fabric-lifecycle-events-v1": "2.2.23+1802ada577",
+  "fabric-loot-api-v2": "1.2.3+1802ada577",
+  "fabric-loot-tables-v1": "1.1.47+9e7660c677",
+  "fabric-message-api-v1": "5.1.10+1802ada577",
+  "fabric-mining-level-api-v1": "2.1.52+1802ada577",
+  "fabric-model-loading-api-v1": "1.0.4+1802ada577",
+  "fabric-models-v0": "0.4.3+9386d8a777",
+  "fabric-networking-api-v1": "1.3.15+0caff8d077",
+  "fabric-networking-v0": "0.3.55+df3654b377",
+  "fabric-object-builder-api-v1": "11.1.5+e35120df77",
+  "fabric-particles-v1": "1.1.3+1802ada577",
+  "fabric-permissions-api-v0": "0.3.1",
+  "fabric-recipe-api-v1": "1.0.25+1802ada577",
+  "fabric-registry-sync-v0": "2.4.1+4c0a70e677",
+  "fabric-renderer-api-v1": "3.2.2+1802ada577",
+  "fabric-renderer-indigo": "1.5.3+85287f9f77",
+  "fabric-renderer-registries-v1": "3.2.48+df3654b377",
+  "fabric-rendering-data-attachment-v1": "0.3.39+92a0d36777",
+  "fabric-rendering-fluids-v1": "3.0.29+1802ada577",
+  "fabric-rendering-v0": "1.1.51+df3654b377",
+  "fabric-rendering-v1": "3.0.10+54550fb677",
+  "fabric-resource-conditions-api-v1": "2.3.9+1802ada577",
+  "fabric-resource-loader-v0": "0.11.8+e3d6ed2577",
+  "fabric-screen-api-v1": "2.0.9+1802ada577",
+  "fabric-screen-handler-api-v1": "1.3.34+1802ada577",
+  "fabric-sound-api-v1": "1.0.14+1802ada577",
+  "fabric-tag-api-v1": "1.3.0+238242b777",
+  "fabric-transfer-api-v1": "3.3.6+8dd72ea377",
+  "fabric-transitive-access-wideners-v1": "4.3.2+1802ada577",
   "fallingleaves": "1.15.6",
   "farm_and_charm": "1.0.14",
   "farmersdelight": "1.20.1-2.5.7+refabricated",
   "farmingforblockheads": "14.0.4",
   "ferritecore": "6.0.1",
+  "fiber": "0.23.0-2",
   "fishingreal": "1.9.1-backport",
   "fishofthieves": "3.4.0",
   "forgeconfigapiport": "8.0.3",
@@ -52,20 +157,30 @@
   "guardvillagers": "2.0.9-1.20.1",
   "handcrafted": "3.0.6",
   "heracles": "1.1.13",
+  "hermes": "1.6.0",
   "icarus": "2.14.1",
   "immediatelyfast": "1.5.5+1.20.4",
   "immersive_melodies": "0.8.2+1.20.1",
   "incendium": "5.3.5",
   "indium": "1.0.36+mc1.20.1",
   "inmis": "2.7.2-1.20.1",
+  "io_github_douira_glsl-transformer": "2.0.1",
   "iris": "1.7.6+mc1.20.1",
   "jade": "11.13.3+fabric",
   "jewelry": "2.4.0+1.20.1",
   "kambrik": "6.1.1+1.20.1",
+  "kanos_config": "0.4.1+1.14.4-1.19.4",
+  "kirin": "1.15.6+1.20.1",
   "krypton": "0.2.3",
+  "kuma_api": "20.1.12",
   "lithium": "0.11.4",
   "medievalorigins": "6.7.9",
   "memoryleakfix": "1.1.5",
+  "midnightlib": "1.4.1",
+  "mixinextras": "0.3.5",
+  "mixinsquared": "0.3.7-beta.1",
+  "mm": "2.3",
+  "mm_kilt": "2.5.3",
   "modernfix": "5.25.2+mc1.20.1",
   "modmenu": "7.2.2",
   "moonlight": "1.20-2.16.38B",
@@ -77,21 +192,62 @@
   "mr_random_fishingcrates": "1.3.3",
   "naturalist": "4.0.3",
   "naturescompass": "1.20.1-2.6.0-fabric",
+  "net_jodah_typetools": "0.6.3",
+  "net_lenni0451_reflect": "1.6.2",
+  "net_lostluma_battery": "2.0.0",
+  "net_minecraftforge_eventbus": "6.2.33",
+  "net_objecthunter_exp4j": "0.4.8",
+  "net_peanuuutz_tomlkt_tomlkt-jvm": "0.3.7",
   "notenoughanimations": "1.12.7",
   "ok_zoomer": "5.4.0-beta.9",
+  "omega-config": "1.2.3-1.18.1",
+  "org_anarres_jcpp": "1.4.14",
+  "org_antlr_antlr4-runtime": "4.13.1",
+  "org_javassist_javassist": "3.29.2-GA",
+  "org_jetbrains_kotlin_kotlin-reflect": "2.4.21",
+  "org_jetbrains_kotlin_kotlin-stdlib": "2.4.21",
+  "org_jetbrains_kotlin_kotlin-stdlib-jdk7": "2.4.21",
+  "org_jetbrains_kotlin_kotlin-stdlib-jdk8": "2.4.21",
+  "org_jetbrains_kotlinx_atomicfu-jvm": "0.33.0",
+  "org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm": "1.11.0",
+  "org_jetbrains_kotlinx_kotlinx-coroutines-jdk8": "1.11.0",
+  "org_jetbrains_kotlinx_kotlinx-datetime-jvm": "0.8.0",
+  "org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm": "0.9.1",
+  "org_jetbrains_kotlinx_kotlinx-io-core-jvm": "0.9.1",
+  "org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm": "1.11.0",
+  "org_jetbrains_kotlinx_kotlinx-serialization-core-jvm": "1.11.0",
+  "org_jetbrains_kotlinx_kotlinx-serialization-json-jvm": "1.11.0",
+  "org_quiltmc_parsers_gson": "0.2.1",
+  "org_quiltmc_parsers_json": "0.2.1",
+  "org_reflections_reflections": "0.10.2",
+  "org_threadly_threadly": "7.0",
   "origins": "1.10.2+mc.1.20.x",
   "origins-classes": "1.7.0",
   "origins-plus-plus": "2.4",
   "originstweaks": "1.18.3",
   "overweight_farming": "1.20.1-2.0.3-fabric",
   "owo": "0.11.2+1.20",
+  "owo-impl": "0.11.2+1.20",
+  "owo-lib": "0.11.2+1.20",
+  "owo-sentinel": "0.11.2+1.20",
   "paladins": "3.1.3+1.20.1",
   "patchouli": "1.20.1-85-FABRIC",
   "pehkui": "3.8.3+1.14.4-1.21",
   "player-animator": "1.0.2-rc1+1.20",
+  "porting_lib_attributes": "2.3.16-beta.81+1.20.1",
+  "porting_lib_base": "2.3.15+1.20.1",
+  "porting_lib_config": "2.3.15+1.20.1",
+  "porting_lib_core": "2.3.16-beta.81+1.20.1",
+  "porting_lib_gametest": "2.3.16-beta.81+1.20.1",
+  "porting_lib_lazy_registration": "2.3.15+1.20.1",
+  "porting_lib_loot": "2.3.15+1.20.1",
+  "porting_lib_networking": "2.3.15+1.20.1",
+  "porting_lib_recipe_book_categories": "2.3.15+1.20.1",
   "presencefootsteps": "1.10.1+1.20.1",
+  "puzzlesaccessapi": "20.1.1",
   "puzzleslib": "8.1.36",
   "ranged_weapon_api": "2.3.4+1.20.1",
+  "reach-entity-attributes": "2.4.0",
   "reeses-sodium-options": "1.7.2+mc1.20.1-build.101",
   "resourcefulconfig": "2.1.3",
   "resourcefullib": "2.1.29",
@@ -101,21 +257,28 @@
   "searchables": "1.0.3",
   "sereneseasons": "9.1.0.3",
   "shield_api": "2.2.0+1.20.1",
+  "simplenetworking": "2.3.15+1.20.1",
   "simplyswords": "1.70.2-1.20.1",
   "simplytooltips": "0.1.5-1.20.1",
   "sodium": "0.5.13+mc1.20.1",
   "sodium-extra": "0.5.9+mc1.20.1",
+  "spectrelib": "0.13.15+1.20.1",
   "spell_engine": "1.10.10+1.20.1",
   "spell_power": "1.6.1+1.20.1",
   "sspb": "3.4.2",
+  "step-height-entity-attribute": "1.2.0",
   "structory": "1.3.5",
   "structory_towers": "1.0.7",
   "supplementaries": "1.20-3.1.44",
   "t_and_t": "1.12",
+  "terraform-wood-api-v1": "7.0.1",
   "terralith": "2.5.4",
   "tide": "2.1.1",
+  "tiny_config": "3.1.0",
   "trade_cycling": "1.20.1-1.0.7",
+  "transition": "1.0.26",
   "travelerstitles": "1.20-Fabric-4.0.2",
+  "trender": "1.0.17",
   "trinkets": "3.7.2",
   "twigs": "3.1.0",
   "villagernames": "8.9",
@@ -126,60 +289,60 @@
   "visualworkbench": "8.0.1",
   "waystones": "14.1.21",
   "wizards": "3.1.3+1.20.1",
+  "wrench_wrapper": "0.8.1",
+  "wrench_wrapper_backend": "0.8.1",
+  "xaerolib": "1.7.3",
   "xaerominimap": "26.6.0",
   "yet_another_config_lib_v3": "3.6.6+1.20.1-fabric",
   "yungsapi": "1.20-Fabric-4.0.6"
  },
  "problems": [
-  "origins: missing required dependency 'apoli' (>=2.9.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "origins: missing required dependency 'cardinal-components-base' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "origins: missing required dependency 'cardinal-components-entity' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "origins: missing required dependency 'cloth-config2' (>=5.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "pehkui: missing required dependency 'kanos_config' (>=0.4.1) — needed by Pehkui-3.8.3+1.14.4-1.21.jar",
-  "presencefootsteps: missing required dependency 'kirin' (>=1.15.6+1.20.1) — needed by PresenceFootsteps-1.10.1+1.20.1.jar",
-  "puzzleslib: missing required dependency 'puzzlesaccessapi' (*) — needed by PuzzlesLib-v8.1.36-1.20.1-Fabric.jar",
-  "roughlyenoughitems: minecraft predicate '~1.20-' excludes 1.20.1 (RoughlyEnoughItems-12.1.785-fabric.jar)",
-  "travelerstitles: missing required dependency 'cloth-config2' (>=11.0.99) — needed by TravelersTitles-1.20-Fabric-4.0.2.jar",
-  "archers: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (archers-fabric-3.1.4+1.20.1.jar)",
-  "archers: dependency 'ranged_weapon_api' present but version 2.3.4+1.20.1 does not satisfy '>=2.3.4' (archers-fabric-3.1.4+1.20.1.jar)",
+  "apoli: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar",
-  "architectury: minecraft predicate '~1.20-' excludes 1.20.1 (architectury-9.2.14-fabric.jar)",
-  "c2me: missing required dependency 'c2me-base' (*) — needed by c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
-  "comforts: missing required dependency 'cardinal-components-base' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar",
-  "comforts: missing required dependency 'cardinal-components-entity' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar",
-  "cookingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by cookingforblockheads-fabric-1.20.1-16.0.15.jar",
-  "dynamic_fps: missing required dependency 'mixinextras' (>=0.3.2) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
-  "farmingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by farmingforblockheads-fabric-1.20.1-14.0.4.jar",
   "jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar",
-  "doapi: missing required dependency 'terraform-wood-api-v1' (>=7.0.1) — needed by letsdo-API-fabric-1.2.14-fabric.jar",
   "farm_and_charm: declares CONFLICTS with 'bakery' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
   "farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
-  "medievalorigins: dependency 'origins' present but version 1.10.2+mc.1.20.x does not satisfy '>=1.10.2' (medievalorigins-fabric-1.20.1-6.7.9.jar)",
   "medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)",
-  "paladins: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (paladins-fabric-3.1.3+1.20.1.jar)",
   "paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar",
-  "rogues: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (rogues-fabric-3.1.3+1.20.1.jar)",
   "rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar",
-  "rpgdifficulty: missing required dependency 'cloth-config2' (>=11.0.99) — needed by rpgdifficulty-1.3.16.jar",
-  "sodium: missing required dependency 'fabric-rendering-data-attachment-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar",
-  "sodium: declares BREAKS with 'iris' <1.7.6, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
-  "sodium: declares BREAKS with 'indium' <1.0.36, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
   "sspb: declares BREAKS with 'sodium' ['<0.4.3', '>=0.6.0-'], but it is installed (sodium-shadowy-path-blocks-3.4.2.jar)",
-  "trinkets: missing required dependency 'cardinal-components-base' (>=3.0.0-0) — needed by trinkets-3.7.2.jar",
-  "trinkets: missing required dependency 'cardinal-components-entity' (>=3.0.0-0) — needed by trinkets-3.7.2.jar",
-  "wizards: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (wizards-fabric-3.1.3+1.20.1.jar)",
   "wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar",
-  "xaerominimap: missing required dependency 'xaerolib' (>=1.0) — needed by xaerominimap-fabric-1.20.1-26.6.0.jar",
+  "duplicate mod id 'com_github_llamalad7_mixinextras' shipped by: BadOptimizations-2.4.1-1.20.1.jar, Debugify-1.20.1+2.0.jar, Heracles-fabric-1.20.1-1.1.13.jar, bettercombat-fabric-1.9.0+1.20.1.jar",
+  "duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar",
+  "duplicate mod id 'fabric-resource-loader-v0' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'com_electronwill_night-config_toml' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
+  "duplicate mod id 'com_electronwill_night-config_core' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
+  "duplicate mod id 'net_jodah_typetools' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar",
+  "duplicate mod id 'mixinsquared' shipped by: Origins-1.10.2+mc.1.20.x.jar, moonlight-1.20-2.16.38B-fabric.jar, moreculling-1.20.1-0.24.6.jar, supplementaries-1.20-3.1.44-fabric.jar",
+  "duplicate mod id 'kirin' shipped by: PresenceFootsteps-1.10.1+1.20.1.jar, kirin-1.15.6+1.20.1.jar",
+  "duplicate mod id 'org_reflections_reflections' shipped by: TravelersTitles-1.20-Fabric-4.0.2.jar, YungsApi-1.20-Fabric-4.0.6.jar",
+  "duplicate mod id 'mixinextras' shipped by: YungsApi-1.20-Fabric-4.0.6.jar, artifacts-fabric-9.5.17.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar, letsdo-API-fabric-1.2.14-fabric.jar, medievalorigins-fabric-1.20.1-6.7.9.jar, moonlight-1.20-2.16.38B-fabric.jar, supplementaries-1.20-3.1.44-fabric.jar, yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
+  "duplicate mod id 'cardinal-components-base' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar",
+  "duplicate mod id 'cardinal-components-entity' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar",
+  "duplicate mod id 'blue_endless_jankson' shipped by: cristellib-1.1.5-fabric.jar, fzzy_config-0.7.7+1.20.1.jar, letsdo-API-fabric-1.2.14-fabric.jar, owo-lib-0.11.2+1.20.jar",
+  "duplicate mod id 'owo' shipped by: deeperdarker-fabric-1.20-1.3.3-plus-b.jar (provides), owo-lib-0.11.2+1.20.jar",
+  "duplicate mod id 'transition' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar",
+  "duplicate mod id 'trender' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar",
+  "duplicate mod id 'fabric-api-base' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'fabric-block-view-api-v2' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
+  "duplicate mod id 'fabric-key-binding-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'fabric-lifecycle-events-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'fabric-networking-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'fabric-rendering-fluids-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
+  "duplicate mod id 'fabric-screen-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
+  "duplicate mod id 'fabric-rendering-data-attachment-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
+  "duplicate mod id 'midnightlib' shipped by: guardvillagers-2.0.9-1.20.1.jar, overweightfarming-1.20.1-2.0.3-fabric.jar",
+  "duplicate mod id 'tiny_config' shipped by: jewelry-fabric-2.4.0+1.20.1.jar, spell_engine-fabric-1.10.10+1.20.1.jar, spell_power-fabric-1.6.1+1.20.1.jar",
+  "duplicate mod id 'shield_api' shipped by: paladins-fabric-3.1.3+1.20.1.jar, shield_api-fabric-2.2.0+1.20.1.jar",
   "curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)"
  ],
  "warnings": [
   "debugify: recommends 'yet-another-config-lib' which is not installed",
   "immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok",
-  "searchables: recommends 'fabric' which is not installed",
+  "roughlyenoughitems: declares breaks with cloth-config2 <6.2-; installed 11.1.106 is outside that range — ok",
   "appleskin: declares breaks with roughlyenoughitems <6.0.306-alpha; installed 12.1.785 is outside that range — ok",
-  "archers: recommends 'bundleapi' which is not installed",
   "moreculling: declares conflicts with sodium <=0.4.10; installed 0.5.13+mc1.20.1 is outside that range — ok",
   "originstweaks: recommends 'morewaterlogging' which is not installed",
   "paladins: recommends 'runes' which is not installed",
@@ -189,6 +352,8 @@
   "reeses-sodium-options: declares breaks with sodium <0.5.8; installed 0.5.13+mc1.20.1 is outside that range — ok",
   "sodium-extra: declares breaks with iris <1.7.0; installed 1.7.6+mc1.20.1 is outside that range — ok",
   "sodium-extra: declares breaks with reeses-sodium-options <1.4.2; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok",
+  "sodium: declares breaks with iris <1.7.6; installed 1.7.6+mc1.20.1 is outside that range — ok",
+  "sodium: declares breaks with indium <1.0.36; installed 1.0.36+mc1.20.1 is outside that range — ok",
   "sodium: declares breaks with reeses-sodium-options <1.7.1; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok",
   "sodium: declares breaks with sodium-extra <0.5.4; installed 0.5.9+mc1.20.1 is outside that range — ok",
   "sodium: declares breaks with sspb <3.2.0; installed 3.4.2 is outside that range — ok",
@@ -212,7 +377,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -234,7 +400,22 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_github_llamalad7_mixinextras",
+     "version": "0.2.2",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar"
     }
    ],
    "mixins": [
@@ -262,7 +443,39 @@
      "conflicts": {},
      "recommends": {
       "modmenu": ">=7.0.0"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "cloth-config",
+     "version": "11.1.106",
+     "name": "Cloth Config v11",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ],
+     "bundled": "META-INF/jars/cloth-config-fabric-11.1.106.jar"
+    },
+    {
+     "id": "fabric-resource-loader-v0",
+     "version": "0.11.8+e3d6ed2577",
+     "name": "Fabric Resource Loader (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar"
     }
    ],
    "mixins": [
@@ -291,7 +504,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -312,7 +526,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -336,7 +551,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -358,7 +574,20 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "net_minecraftforge_eventbus",
+     "version": "6.2.33",
+     "name": "eventbus",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/eventbus-6.2.33.jar"
     }
    ],
    "mixins": [
@@ -390,7 +619,22 @@
      "recommends": {
       "yet-another-config-lib": "3.x.x",
       "modmenu": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "com_github_llamalad7_mixinextras",
+     "version": "0.2.0-beta.8",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar"
     }
    ],
    "mixins": [
@@ -417,7 +661,126 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mm",
+     "version": "2.3",
+     "name": "Manningham Mills",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.7.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/Fabric-ASM-v2.3.jar"
+    },
+    {
+     "id": "porting_lib_base",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/base-2.3.15+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_config",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/config-2.3.15+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_lazy_registration",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Lazy Register",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/lazy_registration-2.3.15+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_loot",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Loot",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/loot-2.3.15+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_networking",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Networking",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "simplenetworking"
+     ],
+     "bundled": "META-INF/jars/networking-2.3.15+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_recipe_book_categories",
+     "version": "2.3.15+1.20.1",
+     "name": "Porting Lib Recipe Book Categories",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -451,7 +814,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -476,7 +840,44 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_electronwill_night-config_toml",
+     "version": "3.6.7",
+     "name": "toml",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/toml-3.6.7.jar"
+    },
+    {
+     "id": "com_electronwill_night-config_core",
+     "version": "3.6.7",
+     "name": "core",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/core-3.6.7.jar"
+    },
+    {
+     "id": "net_jodah_typetools",
+     "version": "0.6.3",
+     "name": "typetools",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/typetools-0.6.3.jar"
     }
    ],
    "mixins": [
@@ -508,7 +909,37 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "hermes",
+     "version": "1.6.0",
+     "name": "Hermes",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/hermes-fabric-1.20-1.6.0.jar"
+    },
+    {
+     "id": "com_github_llamalad7_mixinextras",
+     "version": "0.2.1",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.2.1.jar"
     }
    ],
    "mixins": [
@@ -540,7 +971,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -569,7 +1001,20 @@
       "memoryleakfix": "<=1.1.1"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "net_lenni0451_reflect",
+     "version": "1.6.2",
+     "name": "Reflect",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/Reflect-1.6.2.jar"
     }
    ],
    "mixins": [
@@ -597,7 +1042,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -619,7 +1065,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -643,7 +1090,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -668,7 +1116,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -694,7 +1143,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -728,7 +1178,57 @@
       "identity": "<1.14.2-beta"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "apoli",
+     "version": "2.9.2+mc.1.20.x",
+     "name": "Apoli",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "fabricloader": ">=0.13.3",
+      "fabric": ">=0.83.0",
+      "minecraft": "1.20.1",
+      "calio": ">=1.11.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/apoli-2.9.2+mc.1.20.x.jar"
+    },
+    {
+     "id": "reach-entity-attributes",
+     "version": "2.4.0",
+     "name": "Reach Entity Attributes",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20",
+      "fabricloader": ">=0.14.21",
+      "fabric-registry-sync-v0": ">=2.1.3",
+      "fabric-resource-loader-v0": ">=0.11.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/reach-entity-attributes-2.4.0.jar"
+    },
+    {
+     "id": "mixinsquared",
+     "version": "0.3.7-beta.1",
+     "name": "MixinSquared",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar"
     }
    ],
    "mixins": [
@@ -759,7 +1259,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -783,7 +1284,20 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "fiber",
+     "version": "0.23.0-2",
+     "name": "fiber",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fiber-0.23.0-2.jar"
     }
    ],
    "mixins": [
@@ -811,7 +1325,22 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "kanos_config",
+     "version": "0.4.1+1.14.4-1.19.4",
+     "name": "Kanos Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/KanosConfig-0.4.1.jar"
     }
    ],
    "mixins": [
@@ -840,7 +1369,25 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "kirin",
+     "version": "1.15.6+1.20.1",
+     "name": "Kirin UI",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.0",
+      "java": ">=17",
+      "fabric-api-base": ">=0.1.0",
+      "fabric-lifecycle-events-v1": ">=0.1.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kirin-1.15.6+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -870,7 +1417,24 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "puzzlesaccessapi",
+     "version": "20.1.1",
+     "name": "Puzzles Access Api",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar"
     }
    ],
    "mixins": [
@@ -898,7 +1462,23 @@
       "cloth-config2": "<6.2-"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "error_notifier",
+     "version": "1.0.9",
+     "name": "Error Notifier",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "fabricloader": ">=0.13"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/error-notifier-fabric-1.0.9.jar"
     }
    ],
    "mixins": [
@@ -927,7 +1507,8 @@
      "conflicts": {},
      "recommends": {
       "fabric": "*"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [],
@@ -951,7 +1532,44 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_electronwill_night-config_core",
+     "version": "3.6.7",
+     "name": "core",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/core-3.6.7.jar"
+    },
+    {
+     "id": "com_electronwill_night-config_toml",
+     "version": "3.6.7",
+     "name": "toml",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/toml-3.6.7.jar"
+    },
+    {
+     "id": "net_jodah_typetools",
+     "version": "0.6.3",
+     "name": "typetools",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/typetools-0.6.3.jar"
     }
    ],
    "mixins": [
@@ -984,7 +1602,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1008,7 +1627,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1030,7 +1650,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1052,7 +1673,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1075,7 +1697,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1100,7 +1723,20 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/reflections-0.10.2.jar"
     }
    ],
    "mixins": [
@@ -1130,7 +1766,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1155,7 +1792,48 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.5",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/reflections-0.10.2.jar"
+    },
+    {
+     "id": "org_javassist_javassist",
+     "version": "3.29.2-GA",
+     "name": "javassist",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/javassist-3.29.2-GA.jar"
     }
    ],
    "mixins": [
@@ -1186,7 +1864,25 @@
       "roughlyenoughitems": "<6.0.306-alpha"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cloth-config",
+     "version": "11.1.136",
+     "name": "Cloth Config v11",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ],
+     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
     }
    ],
    "mixins": [
@@ -1220,7 +1916,24 @@
      "conflicts": {},
      "recommends": {
       "bundleapi": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "bundleapi",
+     "version": "1.3.0+1.20.1",
+     "name": "Bundle API",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.14.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -1249,7 +1962,8 @@
       "optifabric": "<1.13.0"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1276,7 +1990,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1300,7 +2015,86 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.2",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-base-5.2.2.jar"
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.2",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-entity-5.2.2.jar"
+    },
+    {
+     "id": "expandability",
+     "version": "9.0.4",
+     "name": "ExpandAbility",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/expandability-fabric-9.0.4.jar"
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.5",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
+    },
+    {
+     "id": "step-height-entity-attribute",
+     "version": "1.2.0",
+     "name": "Step Height Entity Attribute",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11",
+      "minecraft": ">=1.19.3",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/step-height-entity-attribute-v1.2.0.jar"
     }
    ],
    "mixins": [
@@ -1333,7 +2127,27 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": [
+      "balm-fabric"
+     ]
+    },
+    {
+     "id": "kuma_api",
+     "version": "20.1.12",
+     "name": "KumaAPI",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -1362,7 +2176,22 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_github_llamalad7_mixinextras",
+     "version": "0.2.0",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.2.0.jar"
     }
    ],
    "mixins": [
@@ -1397,7 +2226,412 @@
       "dynview": "*",
       "betterchunkloading": "*"
      },
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "c2me-base",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-base-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-client-uncapvd",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Client/Uncap View Distance)",
+     "environment": "client",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-client-uncapvd-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-fixes-chunkio-threading-issues",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-fixes-chunkio-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-fixes-general-threading-issues",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Fixes/General/Threading Issues)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-fixes-general-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-fixes-worldgen-threading-issues",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*",
+      "c2me-fixes-general-threading-issues": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-fixes-worldgen-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-fixes-worldgen-vanilla-bugs",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-notickvd",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (No Tick View Distance)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-notickvd-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-allocs",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Memory Allocations)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-allocs-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-chunk-access",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Chunk Access)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-chunk-access-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-chunkio",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Chunk IO)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-math",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Math)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-math-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-scheduling",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Scheduling)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-scheduling-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-worldgen-general",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/General WorldGen)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-worldgen-general-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-opts-worldgen-vanilla",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*",
+      "c2me-opts-worldgen-general": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-rewrites-chunk-serializer",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Rewrites/Chunk Serializer)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-rewrites-chunk-serializer-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-rewrites-chunkio",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Rewrites/Chunk IO)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-rewrites-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-server-utils",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Server Utils)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-server-utils-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-threading-chunkio",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Threading/WorldGen)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*",
+      "c2me-fixes-general-threading-issues": "*",
+      "c2me-fixes-worldgen-threading-issues": "*",
+      "c2me-fixes-worldgen-vanilla-bugs": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-threading-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-threading-lighting",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Threading/Lighting)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*",
+      "c2me-fixes-general-threading-issues": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-threading-lighting-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "c2me-threading-worldgen",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine (Threading/WorldGen)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "*",
+      "fabricloader": "*",
+      "c2me-base": "*",
+      "c2me-fixes-general-threading-issues": "*",
+      "c2me-fixes-worldgen-threading-issues": "*",
+      "c2me-fixes-worldgen-vanilla-bugs": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/c2me-threading-worldgen-mc1.20.1-0.2.0+alpha.11.18.jar"
+    },
+    {
+     "id": "com_ibm_async_asyncutil",
+     "version": "0.1.0",
+     "name": "asyncutil",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/asyncutil-0.1.0.jar"
+    },
+    {
+     "id": "com_electronwill_night-config_toml",
+     "version": "3.6.5",
+     "name": "toml",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/toml-3.6.5.jar"
+    },
+    {
+     "id": "com_electronwill_night-config_core",
+     "version": "3.6.5",
+     "name": "core",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/core-3.6.5.jar"
+    },
+    {
+     "id": "org_threadly_threadly",
+     "version": "7.0",
+     "name": "threadly",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/threadly-7.0.jar"
+    },
+    {
+     "id": "net_objecthunter_exp4j",
+     "version": "0.4.8",
+     "name": "exp4j",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/exp4j-0.4.8.jar"
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.6",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
     }
    ],
    "mixins": [],
@@ -1446,7 +2680,22 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ]
+    },
+    {
+     "id": "cloth-basic-math",
+     "version": "0.6.1",
+     "name": null,
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/basic-math-0.6.1.jar"
     }
    ],
    "mixins": [],
@@ -1472,7 +2721,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1499,7 +2749,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1526,7 +2777,56 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-base-5.2.1.jar"
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-entity-5.2.1.jar"
+    },
+    {
+     "id": "spectrelib",
+     "version": "0.13.15+1.20.1",
+     "name": "SpectreLib",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -1557,7 +2857,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1581,7 +2882,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1602,7 +2904,20 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "blue_endless_jankson",
+     "version": "1.2.3",
+     "name": "jankson",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/jankson-1.2.3.jar"
     }
    ],
    "mixins": [
@@ -1634,7 +2949,59 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "porting_lib_attributes",
+     "version": "2.3.16-beta.81+1.20.1",
+     "name": "Porting Lib Attributes",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_core",
+     "version": "2.3.16-beta.81+1.20.1",
+     "name": "Porting Lib Core",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/core-2.3.16-beta.81+1.20.1.jar"
+    },
+    {
+     "id": "porting_lib_gametest",
+     "version": "2.3.16-beta.81+1.20.1",
+     "name": "Porting Lib GameTest",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "minecraft": "=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar"
     }
    ],
    "mixins": [
@@ -1665,7 +3032,42 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "customportalapi",
+     "version": "0.0.1-beta64-1.20",
+     "name": "Custom Portal Api",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.5",
+      "fabric": "*",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar"
+    },
+    {
+     "id": "owo-sentinel",
+     "version": "0.11.2+1.20",
+     "name": "oωo-sentinel",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.18"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "owo",
+      "owo-lib"
+     ],
+     "bundled": "META-INF/jars/owo-sentinel-0.11.2+1.20.jar"
     }
    ],
    "mixins": [
@@ -1691,7 +3093,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -1724,7 +3127,20 @@
      "recommends": {
       "modmenu": "*",
       "cloth-config": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "net_lostluma_battery",
+     "version": "2.0.0",
+     "name": "battery",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/battery-2.0.0.jar"
     }
    ],
    "mixins": [
@@ -1754,7 +3170,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1780,7 +3197,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1805,7 +3223,38 @@
       "tlskincape": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "transition",
+     "version": "1.0.26",
+     "name": "TRansition",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar"
+    },
+    {
+     "id": "trender",
+     "version": "1.0.17",
+     "name": "TRender",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
     }
    ],
    "mixins": [
@@ -1836,7 +3285,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -1860,7 +3310,824 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": [
+      "fabric"
+     ]
+    },
+    {
+     "id": "fabric-api-base",
+     "version": "0.4.32+1802ada577",
+     "name": "Fabric API Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-base-0.92.12.jar"
+    },
+    {
+     "id": "fabric-api-lookup-api-v1",
+     "version": "1.6.37+1802ada577",
+     "name": "Fabric API Lookup API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.9.2",
+      "fabric-api-base": "*",
+      "fabric-lifecycle-events-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-lookup-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-biome-api-v1",
+     "version": "13.0.15+93aa238b77",
+     "name": "Fabric Biome API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.9.2",
+      "minecraft": ">=1.16.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-biome-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-block-api-v1",
+     "version": "1.0.12+1802ada577",
+     "name": "Fabric Block API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.9"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-block-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-block-view-api-v2",
+     "version": "1.0.3+924f046a77",
+     "name": "Fabric BlockView API (v2)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-block-view-api-v2-0.92.12.jar"
+    },
+    {
+     "id": "fabric-blockrenderlayer-v1",
+     "version": "1.1.42+1802ada577",
+     "name": "Fabric BlockRenderLayer Registration (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.6.2",
+      "minecraft": ">=1.15-alpha.19.38.b",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-blockrenderlayer-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-client-tags-api-v1",
+     "version": "1.2.0+238242b777",
+     "name": "Fabric Client Tags",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.6"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-client-tags-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-command-api-v2",
+     "version": "2.2.14+1802ada577",
+     "name": "Fabric Command API (v2)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.10.5",
+      "fabric-api-base": "*",
+      "minecraft": ">1.19-alpha.22.11.a"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-command-api-v2-0.92.12.jar"
+    },
+    {
+     "id": "fabric-content-registries-v0",
+     "version": "4.0.13+1802ada577",
+     "name": "Fabric Content Registries (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.0",
+      "fabric-api-base": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-content-registries-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-convention-tags-v1",
+     "version": "1.5.6+1802ada577",
+     "name": "Fabric Convention Tags",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "minecraft": ">=1.18.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-convention-tags-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-crash-report-info-v1",
+     "version": "0.2.20+1802ada577",
+     "name": "Fabric Crash Report Info (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-crash-report-info-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-data-attachment-api-v1",
+     "version": "1.0.2+de0fd6d177",
+     "name": "Fabric Data Attachment API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.1",
+      "fabric-entity-events-v1": "*",
+      "fabric-object-builder-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-data-attachment-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-data-generation-api-v1",
+     "version": "12.4.0+238242b777",
+     "name": "Fabric Data Generation API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.10"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-data-generation-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-dimensions-v1",
+     "version": "2.1.55+1802ada577",
+     "name": "Fabric Dimensions API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.0",
+      "minecraft": ">=1.16-rc.3",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-dimensions-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-entity-events-v1",
+     "version": "1.6.1+1c78457f77",
+     "name": "Fabric Entity Events (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.6"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-entity-events-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-events-interaction-v0",
+     "version": "0.6.6+13a40c6677",
+     "name": "Fabric Events Interaction (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-networking-api-v1": "*",
+      "minecraft": ">=1.15-alpha.19.37.a"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-events-interaction-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-game-rule-api-v1",
+     "version": "1.0.41+1802ada577",
+     "name": "Fabric Game Rule API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.8.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-game-rule-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-item-api-v1",
+     "version": "2.1.29+1802ada577",
+     "name": "Fabric Item API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-item-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-item-group-api-v1",
+     "version": "4.0.14+1802ada577",
+     "name": "Fabric Item Group API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.9",
+      "fabric-api-base": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-item-group-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-key-binding-api-v1",
+     "version": "1.0.38+1802ada577",
+     "name": "Fabric Key Binding API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-key-binding-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-lifecycle-events-v1",
+     "version": "2.2.23+1802ada577",
+     "name": "Fabric Lifecycle Events (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-loot-api-v2",
+     "version": "1.2.3+1802ada577",
+     "name": "Fabric Loot API (v2)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-loot-api-v2-0.92.12.jar"
+    },
+    {
+     "id": "fabric-message-api-v1",
+     "version": "5.1.10+1802ada577",
+     "name": "Fabric Message API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.10.5",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-message-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-mining-level-api-v1",
+     "version": "2.1.52+1802ada577",
+     "name": "Fabric Mining Level API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-mining-level-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-model-loading-api-v1",
+     "version": "1.0.4+1802ada577",
+     "name": "Fabric Model Loading API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-model-loading-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-networking-api-v1",
+     "version": "1.3.15+0caff8d077",
+     "name": "Fabric Networking API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-networking-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-object-builder-api-v1",
+     "version": "11.1.5+e35120df77",
+     "name": "Fabric Object Builder API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.10",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-object-builder-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-particles-v1",
+     "version": "1.1.3+1802ada577",
+     "name": "Fabric Particles (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-particles-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-recipe-api-v1",
+     "version": "1.0.25+1802ada577",
+     "name": "Fabric Recipe API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.10",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-recipe-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-registry-sync-v0",
+     "version": "2.4.1+4c0a70e677",
+     "name": "Fabric Registry Sync (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.2",
+      "fabric-api-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-registry-sync-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-renderer-api-v1",
+     "version": "3.2.2+1802ada577",
+     "name": "Fabric Renderer API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.6.2",
+      "minecraft": ">=1.15-alpha.19.39.a",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-renderer-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-renderer-indigo",
+     "version": "1.5.3+85287f9f77",
+     "name": "Fabric Renderer - Indigo",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.6.2",
+      "minecraft": ">=1.15-alpha.19.39.a",
+      "fabric-api-base": "*",
+      "fabric-renderer-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-renderer-indigo-0.92.12.jar"
+    },
+    {
+     "id": "fabric-rendering-fluids-v1",
+     "version": "3.0.29+1802ada577",
+     "name": "Fabric Rendering Fluids (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-fluids-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-rendering-v1",
+     "version": "3.0.10+54550fb677",
+     "name": "Fabric Rendering (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-resource-conditions-api-v1",
+     "version": "2.3.9+1802ada577",
+     "name": "Fabric Resource Conditions API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.9.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-conditions-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-resource-loader-v0",
+     "version": "0.11.12+fb82e9d777",
+     "name": "Fabric Resource Loader (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-screen-api-v1",
+     "version": "2.0.9+1802ada577",
+     "name": "Fabric Screen API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.8.2",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-screen-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-screen-handler-api-v1",
+     "version": "1.3.34+1802ada577",
+     "name": "Fabric Screen Handler API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.8.0",
+      "fabric-api-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-screen-handler-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-sound-api-v1",
+     "version": "1.0.14+1802ada577",
+     "name": "Fabric Sound API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.9",
+      "minecraft": ">=1.19.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-sound-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-tag-api-v1",
+     "version": "1.3.0+238242b777",
+     "name": "Fabric Tag API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api-base": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-tag-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-transfer-api-v1",
+     "version": "3.3.6+8dd72ea377",
+     "name": "Fabric Transfer API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.9.2",
+      "fabric-api-lookup-api-v1": "*",
+      "fabric-rendering-fluids-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-transfer-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-transitive-access-wideners-v1",
+     "version": "4.3.2+1802ada577",
+     "name": "Fabric Transitive Access Wideners (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.12"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-transitive-access-wideners-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-command-api-v1",
+     "version": "1.2.35+f71b366f77",
+     "name": "Fabric Command API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.10.5",
+      "fabric-api-base": "*",
+      "fabric-command-api-v2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-command-api-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-commands-v0",
+     "version": "0.2.52+df3654b377",
+     "name": "Fabric Commands (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-command-api-v2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-commands-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-containers-v0",
+     "version": "0.1.68+df3654b377",
+     "name": "Fabric Containers (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-containers-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-events-lifecycle-v0",
+     "version": "0.2.64+df3654b377",
+     "name": "Fabric Events Lifecycle (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-item-api-v1": "*",
+      "fabric-lifecycle-events-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-events-lifecycle-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-keybindings-v0",
+     "version": "0.2.36+df3654b377",
+     "name": "Fabric Key Bindings (v0)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-key-binding-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-keybindings-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-loot-tables-v1",
+     "version": "1.1.47+9e7660c677",
+     "name": "Fabric Loot Tables (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-loot-api-v2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-loot-tables-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-models-v0",
+     "version": "0.4.3+9386d8a777",
+     "name": "Fabric Models (v0)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-model-loading-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-models-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-networking-v0",
+     "version": "0.3.55+df3654b377",
+     "name": "Fabric Networking (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-networking-v0-0.92.12.jar"
+    },
+    {
+     "id": "fabric-renderer-registries-v1",
+     "version": "3.2.48+df3654b377",
+     "name": "Fabric Renderer Registries (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "minecraft": ">=1.15-alpha.19.39.a",
+      "fabric-api-base": "*",
+      "fabric-rendering-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-rendering-data-attachment-v1",
+     "version": "0.3.39+92a0d36777",
+     "name": "Fabric Rendering Data Attachment (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-block-view-api-v2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar"
+    },
+    {
+     "id": "fabric-rendering-v0",
+     "version": "1.1.51+df3654b377",
+     "name": "Fabric Rendering (v0)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "minecraft": ">=1.15-alpha.19.39.a",
+      "fabric-api-base": "*",
+      "fabric-rendering-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-v0-0.92.12.jar"
     }
    ],
    "mixins": [],
@@ -1935,7 +4202,164 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "org_jetbrains_kotlinx_atomicfu-jvm",
+     "version": "0.33.0",
+     "name": "atomicfu-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/atomicfu-jvm-0.33.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlin_kotlin-reflect",
+     "version": "2.4.21",
+     "name": "kotlin-reflect",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlin-reflect-2.4.21.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlin_kotlin-stdlib",
+     "version": "2.4.21",
+     "name": "kotlin-stdlib",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlin-stdlib-2.4.21.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlin_kotlin-stdlib-jdk7",
+     "version": "2.4.21",
+     "name": "kotlin-stdlib-jdk7",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlin-stdlib-jdk7-2.4.21.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlin_kotlin-stdlib-jdk8",
+     "version": "2.4.21",
+     "name": "kotlin-stdlib-jdk8",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlin-stdlib-jdk8-2.4.21.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm",
+     "version": "1.11.0",
+     "name": "kotlinx-coroutines-core-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-coroutines-jdk8",
+     "version": "1.11.0",
+     "name": "kotlinx-coroutines-jdk8",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-datetime-jvm",
+     "version": "0.8.0",
+     "name": "kotlinx-datetime-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm",
+     "version": "0.9.1",
+     "name": "kotlinx-io-bytestring-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-io-core-jvm",
+     "version": "0.9.1",
+     "name": "kotlinx-io-core-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm",
+     "version": "1.11.0",
+     "name": "kotlinx-serialization-cbor-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-serialization-core-jvm",
+     "version": "1.11.0",
+     "name": "kotlinx-serialization-core-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar"
+    },
+    {
+     "id": "org_jetbrains_kotlinx_kotlinx-serialization-json-jvm",
+     "version": "1.11.0",
+     "name": "kotlinx-serialization-json-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar"
     }
    ],
    "mixins": [],
@@ -1974,7 +4398,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2000,7 +4425,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2025,7 +4451,8 @@
       "hydrogen": "<=0.3"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2058,7 +4485,34 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mm_kilt",
+     "version": "2.5.3",
+     "name": "Manningham Mills - Kilt Edition",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.10.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/Fabric-ASM-2.5.3.jar"
+    },
+    {
+     "id": "com_moulberry_mixinconstraints",
+     "version": "1.1.0",
+     "name": "mixinconstraints",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinconstraints-1.1.0.jar"
     }
    ],
    "mixins": [
@@ -2089,7 +4543,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2117,7 +4572,8 @@
      "recommends": {
       "yet_another_config_lib_v3": "*",
       "modmenu": "*"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [
@@ -2144,7 +4600,47 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "net_peanuuutz_tomlkt_tomlkt-jvm",
+     "version": "0.3.7",
+     "name": "tomlkt-jvm",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/tomlkt-jvm-0.3.7.jar"
+    },
+    {
+     "id": "blue_endless_jankson",
+     "version": "1.2.3",
+     "name": "jankson",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/jankson-1.2.3.jar"
+    },
+    {
+     "id": "fabric-permissions-api-v0",
+     "version": "0.3.1",
+     "name": "fabric-permissions-api",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.9.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-permissions-api-0.3.1.jar"
     }
    ],
    "mixins": [
@@ -2176,7 +4672,20 @@
       "geckoanimfix": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_eliotlash_mclib_mclib",
+     "version": "20",
+     "name": "mclib",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mclib-20.jar"
     }
    ],
    "mixins": [
@@ -2204,7 +4713,23 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "midnightlib",
+     "version": "1.4.1",
+     "name": "MidnightLib",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*",
+      "minecraft": ">=1.20-beta.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/midnightlib-1.4.1-fabric.jar"
     }
    ],
    "mixins": [
@@ -2231,7 +4756,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2256,7 +4782,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2286,7 +4813,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2311,7 +4839,24 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "omega-config",
+     "version": "1.2.3-1.18.1",
+     "name": "OmegaConfig",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/omega-config-base-1.2.3-1.18.1.jar"
     }
    ],
    "mixins": [
@@ -2355,7 +4900,72 @@
       "immersive_portals": "<=1.4.2"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "org_antlr_antlr4-runtime",
+     "version": "4.13.1",
+     "name": "antlr4-runtime",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/antlr4-runtime-4.13.1.jar"
+    },
+    {
+     "id": "fabric-api-base",
+     "version": "0.4.31+1802ada577",
+     "name": "Fabric API Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar"
+    },
+    {
+     "id": "fabric-key-binding-api-v1",
+     "version": "1.0.37+1802ada577",
+     "name": "Fabric Key Binding API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar"
+    },
+    {
+     "id": "io_github_douira_glsl-transformer",
+     "version": "2.0.1",
+     "name": "glsl-transformer",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/glsl-transformer-2.0.1.jar"
+    },
+    {
+     "id": "org_anarres_jcpp",
+     "version": "1.4.14",
+     "name": "jcpp",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/jcpp-1.4.14.jar"
     }
    ],
    "mixins": [
@@ -2400,7 +5010,25 @@
      "recommends": {
       "trinkets": "*",
       "ranged_weapon_api": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "tiny_config",
+     "version": "3.1.0",
+     "name": "Tiny Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
     }
    ],
    "mixins": [],
@@ -2409,6 +5037,32 @@
    "nested": [
     "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
    ]
+  },
+  {
+   "file": "kirin-1.15.6+1.20.1.jar",
+   "mods": [
+    {
+     "id": "kirin",
+     "version": "1.15.6+1.20.1",
+     "name": "Kirin UI",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.0",
+      "java": ">=17",
+      "fabric-api-base": ">=0.1.0",
+      "fabric-lifecycle-events-v1": ">=0.1.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": []
+    }
+   ],
+   "mixins": [
+    "kirin.mixin.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
   },
   {
    "file": "krypton-0.2.3.jar",
@@ -2424,7 +5078,20 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_velocitypowered_velocity-native",
+     "version": "3.2.0-SNAPSHOT",
+     "name": "velocity-native",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar"
     }
    ],
    "mixins": [
@@ -2452,7 +5119,55 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "terraform-wood-api-v1",
+     "version": "7.0.1",
+     "name": "Terraform Wood API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabric-content-registries-v0": "*",
+      "fabric-networking-api-v1": "*",
+      "fabric-object-builder-api-v1": "*",
+      "fabric-registry-sync-v0": "*",
+      "fabric-rendering-v1": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/terraform-wood-api-v1-7.0.1.jar"
+    },
+    {
+     "id": "blue_endless_jankson",
+     "version": "1.2.1",
+     "name": "jankson",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/jankson-1.2.1.jar"
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.5",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
     }
    ],
    "mixins": [
@@ -2483,7 +5198,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2506,7 +5222,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2532,7 +5249,25 @@
       "brewery": "<2.0.0",
       "candlelight": "<2.0.0"
      },
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cloth-config",
+     "version": "11.1.136",
+     "name": "Cloth Config v11",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ],
+     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
     }
    ],
    "mixins": [
@@ -2563,7 +5298,25 @@
       "copperative": "*",
       "nethervinery": "<1.2.14"
      },
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cloth-config",
+     "version": "11.1.136",
+     "name": "Cloth Config v11",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ],
+     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
     }
    ],
    "mixins": [
@@ -2592,7 +5345,8 @@
       "optifabric": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2625,7 +5379,40 @@
       ]
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "additionalentityattributes",
+     "version": "1.7.4+1.20.0",
+     "name": "Additional Entity Attributes",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric-api": "*",
+      "minecraft": ">=1.20.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar"
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.5.0",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.5.0.jar"
     }
    ],
    "mixins": [
@@ -2652,7 +5439,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2678,7 +5466,8 @@
       "dashloader": "<5.0.0-beta.1"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -2708,7 +5497,80 @@
       "better_mod_button": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "fabric-api-base",
+     "version": "0.4.29+b04edc7a77",
+     "name": "Fabric API Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-base-0.4.29+b04edc7a77.jar"
+    },
+    {
+     "id": "fabric-resource-loader-v0",
+     "version": "0.11.7+f7923f6d77",
+     "name": "Fabric Resource Loader (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d77.jar"
+    },
+    {
+     "id": "fabric-screen-api-v1",
+     "version": "2.0.6+b3afc78b77",
+     "name": "Fabric Screen API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.8.2",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar"
+    },
+    {
+     "id": "fabric-key-binding-api-v1",
+     "version": "1.0.36+fb8d95da77",
+     "name": "Fabric Key Binding API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar"
+    },
+    {
+     "id": "fabric-lifecycle-events-v1",
+     "version": "2.2.20+b3afc78b77",
+     "name": "Fabric Lifecycle Events (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar"
     }
    ],
    "mixins": [
@@ -2738,7 +5600,38 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.6",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+    },
+    {
+     "id": "mixinsquared",
+     "version": "0.1.1",
+     "name": "MixinSquared",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
     }
    ],
    "mixins": [
@@ -2771,7 +5664,36 @@
       "cull-less-leaves": "*",
       "sodium": "<=0.4.10"
      },
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "conditional-mixin",
+     "version": "0.3.2",
+     "name": "conditional mixin",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.10.4"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/conditional-mixin-v0.3.2.jar"
+    },
+    {
+     "id": "mixinsquared",
+     "version": "0.1.1",
+     "name": "MixinSquared",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
     }
    ],
    "mixins": [
@@ -2801,7 +5723,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2823,7 +5746,24 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cloth-config",
+     "version": "8.2.88",
+     "name": "Cloth Config v8",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "cloth-config2"
+     ],
+     "bundled": "META-INF/jars/cloth-config-fabric-8.2.88.jar"
     }
    ],
    "mixins": [
@@ -2852,7 +5792,38 @@
       "tlskincape": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "transition",
+     "version": "1.0.28",
+     "name": "TRansition",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar"
+    },
+    {
+     "id": "trender",
+     "version": "1.0.17",
+     "name": "TRender",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
     }
    ],
    "mixins": [
@@ -2880,7 +5851,36 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "wrench_wrapper",
+     "version": "0.8.1",
+     "name": "Wrench Wrapper",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/api_fabric-0.8.1.jar"
+    },
+    {
+     "id": "wrench_wrapper_backend",
+     "version": "0.8.1",
+     "name": "Wrench Wrapper (Backend)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/impl-0.8.1.jar"
     }
    ],
    "mixins": [
@@ -2907,7 +5907,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2929,7 +5930,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2956,7 +5958,8 @@
      "recommends": {
       "modmenu": "*",
       "morewaterlogging": "*"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [],
@@ -2979,7 +5982,23 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "midnightlib",
+     "version": "1.4.1",
+     "name": "MidnightLib",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*",
+      "minecraft": ">=1.20-beta.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/midnightlib-1.4.1-fabric.jar"
     }
    ],
    "mixins": [
@@ -3006,7 +6025,23 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": [
+      "owo-impl",
+      "owo-lib"
+     ]
+    },
+    {
+     "id": "blue_endless_jankson",
+     "version": "1.2.2",
+     "name": "jankson",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/jankson-1.2.2.jar"
     }
    ],
    "mixins": [
@@ -3041,7 +6076,24 @@
      "conflicts": {},
      "recommends": {
       "runes": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "shield_api",
+     "version": "2.2.0+1.20.1",
+     "name": "Shield API",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "fabricloader": ">=0.15.0",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar"
     }
    ],
    "mixins": [
@@ -3070,7 +6122,8 @@
       "bettercombat": "<1.6.0"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3092,7 +6145,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -3114,7 +6168,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3144,7 +6199,8 @@
      "conflicts": {},
      "recommends": {
       "sodium-extra": ">=0.4.2"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [
@@ -3167,7 +6223,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -3188,7 +6245,32 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_teamresourceful_yabn",
+     "version": "1.0.3",
+     "name": "yabn",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/yabn-1.0.3.jar"
+    },
+    {
+     "id": "com_teamresourceful_bytecodecs",
+     "version": "1.0.2",
+     "name": "bytecodecs",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/bytecodecs-1.0.2.jar"
     }
    ],
    "mixins": [
@@ -3220,7 +6302,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3246,7 +6329,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3270,7 +6354,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3299,7 +6384,8 @@
      "conflicts": {},
      "recommends": {
       "bettercombat": ">=1.7.2"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [
@@ -3330,7 +6416,23 @@
      "conflicts": {},
      "recommends": {
       "reeses-sodium-options": ">=1.4.2"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "caffeineconfig",
+     "version": "1.3.0+1.17",
+     "name": "CaffeineConfig",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.11.3",
+      "java": ">=16"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/CaffeineConfig-1.3.0+1.17.jar"
     }
    ],
    "mixins": [
@@ -3382,7 +6484,80 @@
       "supplementaries": "<=1.20-2.7.32"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "fabric-api-base",
+     "version": "0.4.31+1802ada577",
+     "name": "Fabric API Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar"
+    },
+    {
+     "id": "fabric-block-view-api-v2",
+     "version": "1.0.1+1802ada577",
+     "name": "Fabric BlockView API (v2)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-block-view-api-v2-1.0.1+1802ada577.jar"
+    },
+    {
+     "id": "fabric-rendering-data-attachment-v1",
+     "version": "0.3.37+92a0d36777",
+     "name": "Fabric Rendering Data Attachment (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-block-view-api-v2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar"
+    },
+    {
+     "id": "fabric-rendering-fluids-v1",
+     "version": "3.0.28+1802ada577",
+     "name": "Fabric Rendering Fluids (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar"
+    },
+    {
+     "id": "fabric-resource-loader-v0",
+     "version": "0.11.11+fb82e9d777",
+     "name": "Fabric Resource Loader (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar"
     }
    ],
    "mixins": [
@@ -3417,7 +6592,8 @@
       ]
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3447,7 +6623,25 @@
      "conflicts": {},
      "recommends": {
       "trinkets": "*"
-     }
+     },
+     "provides": []
+    },
+    {
+     "id": "tiny_config",
+     "version": "3.1.0",
+     "name": "Tiny Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
     }
    ],
    "mixins": [
@@ -3476,7 +6670,25 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "tiny_config",
+     "version": "3.1.0",
+     "name": "Tiny Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
     }
    ],
    "mixins": [
@@ -3507,7 +6719,38 @@
       "psychedelicraft": "<=1.7.5+1.20.1"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.3.6",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+    },
+    {
+     "id": "mixinsquared",
+     "version": "0.1.1",
+     "name": "MixinSquared",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.11"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
     }
    ],
    "mixins": [
@@ -3535,7 +6778,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [],
@@ -3559,7 +6803,95 @@
       "easy_villagers": "*"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "fabric-api-base",
+     "version": "0.4.29+b04edc7a82",
+     "name": "Fabric API Base",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-api-base-0.4.29+b04edc7a82.jar"
+    },
+    {
+     "id": "fabric-resource-loader-v0",
+     "version": "0.11.7+f7923f6d82",
+     "name": "Fabric Resource Loader (v0)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d82.jar"
+    },
+    {
+     "id": "fabric-lifecycle-events-v1",
+     "version": "2.2.20+b3afc78b82",
+     "name": "Fabric Lifecycle Events (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b82.jar"
+    },
+    {
+     "id": "fabric-key-binding-api-v1",
+     "version": "1.0.36+fb8d95da82",
+     "name": "Fabric Key Binding API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar"
+    },
+    {
+     "id": "fabric-networking-api-v1",
+     "version": "1.3.8+b3afc78b82",
+     "name": "Fabric Networking API (v1)",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar"
+    },
+    {
+     "id": "fabric-screen-api-v1",
+     "version": "2.0.6+b3afc78b82",
+     "name": "Fabric Screen API (v1)",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.8.2",
+      "fabric-api-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar"
     }
    ],
    "mixins": [
@@ -3593,7 +6925,39 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.0",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-base-5.2.0.jar"
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.0",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/cardinal-components-entity-5.2.0.jar"
     }
    ],
    "mixins": [
@@ -3622,7 +6986,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3648,7 +7013,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3674,7 +7040,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3700,7 +7067,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3726,7 +7094,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3752,7 +7121,8 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
     }
    ],
    "mixins": [
@@ -3782,7 +7152,8 @@
      "conflicts": {},
      "recommends": {
       "runes": "*"
-     }
+     },
+     "provides": []
     }
    ],
    "mixins": [
@@ -3810,7 +7181,24 @@
       "xaeroworldmap": "<1.44.0"
      },
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "xaerolib",
+     "version": "1.7.3",
+     "name": "XaeroLib",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": ">=1.20 <=1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar"
     }
    ],
    "mixins": [
@@ -3841,7 +7229,120 @@
      },
      "breaks": {},
      "conflicts": {},
-     "recommends": {}
+     "recommends": {},
+     "provides": []
+    },
+    {
+     "id": "com_twelvemonkeys_common_common-image",
+     "version": "3.12.0",
+     "name": "common-image",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/common-image-3.12.0.jar"
+    },
+    {
+     "id": "com_twelvemonkeys_common_common-io",
+     "version": "3.12.0",
+     "name": "common-io",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/common-io-3.12.0.jar"
+    },
+    {
+     "id": "com_twelvemonkeys_common_common-lang",
+     "version": "3.12.0",
+     "name": "common-lang",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/common-lang-3.12.0.jar"
+    },
+    {
+     "id": "org_quiltmc_parsers_gson",
+     "version": "0.2.1",
+     "name": "gson",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/gson-0.2.1.jar"
+    },
+    {
+     "id": "com_twelvemonkeys_imageio_imageio-core",
+     "version": "3.12.0",
+     "name": "imageio-core",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/imageio-core-3.12.0.jar"
+    },
+    {
+     "id": "com_twelvemonkeys_imageio_imageio-metadata",
+     "version": "3.12.0",
+     "name": "imageio-metadata",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/imageio-metadata-3.12.0.jar"
+    },
+    {
+     "id": "com_twelvemonkeys_imageio_imageio-webp",
+     "version": "3.12.0",
+     "name": "imageio-webp",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/imageio-webp-3.12.0.jar"
+    },
+    {
+     "id": "org_quiltmc_parsers_json",
+     "version": "0.2.1",
+     "name": "json",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": "META-INF/jars/json-0.2.1.jar"
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.4.1",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": "META-INF/jars/mixinextras-fabric-0.4.1.jar"
     }
    ],
    "mixins": [],

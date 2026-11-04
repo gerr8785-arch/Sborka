@@ -1,53 +1,50 @@
-jars: 127  mod ids: 127
-problems: 42
-  !! origins: missing required dependency 'apoli' (>=2.9.0) — needed by Origins-1.10.2+mc.1.20.x.jar
+jars: 128  mod ids: 293
+problems: 40
   !! origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'cardinal-components-base' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'cardinal-components-entity' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'cloth-config2' (>=5.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! pehkui: missing required dependency 'kanos_config' (>=0.4.1) — needed by Pehkui-3.8.3+1.14.4-1.21.jar
-  !! presencefootsteps: missing required dependency 'kirin' (>=1.15.6+1.20.1) — needed by PresenceFootsteps-1.10.1+1.20.1.jar
-  !! puzzleslib: missing required dependency 'puzzlesaccessapi' (*) — needed by PuzzlesLib-v8.1.36-1.20.1-Fabric.jar
-  !! roughlyenoughitems: minecraft predicate '~1.20-' excludes 1.20.1 (RoughlyEnoughItems-12.1.785-fabric.jar)
-  !! travelerstitles: missing required dependency 'cloth-config2' (>=11.0.99) — needed by TravelersTitles-1.20-Fabric-4.0.2.jar
-  !! archers: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (archers-fabric-3.1.4+1.20.1.jar)
-  !! archers: dependency 'ranged_weapon_api' present but version 2.3.4+1.20.1 does not satisfy '>=2.3.4' (archers-fabric-3.1.4+1.20.1.jar)
+  !! apoli: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar
-  !! architectury: minecraft predicate '~1.20-' excludes 1.20.1 (architectury-9.2.14-fabric.jar)
-  !! c2me: missing required dependency 'c2me-base' (*) — needed by c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
-  !! comforts: missing required dependency 'cardinal-components-base' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
-  !! comforts: missing required dependency 'cardinal-components-entity' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
-  !! cookingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by cookingforblockheads-fabric-1.20.1-16.0.15.jar
-  !! dynamic_fps: missing required dependency 'mixinextras' (>=0.3.2) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-  !! farmingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by farmingforblockheads-fabric-1.20.1-14.0.4.jar
   !! jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar
-  !! doapi: missing required dependency 'terraform-wood-api-v1' (>=7.0.1) — needed by letsdo-API-fabric-1.2.14-fabric.jar
   !! farm_and_charm: declares CONFLICTS with 'bakery' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)
   !! farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)
-  !! medievalorigins: dependency 'origins' present but version 1.10.2+mc.1.20.x does not satisfy '>=1.10.2' (medievalorigins-fabric-1.20.1-6.7.9.jar)
   !! medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)
-  !! paladins: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (paladins-fabric-3.1.3+1.20.1.jar)
   !! paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar
-  !! rogues: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (rogues-fabric-3.1.3+1.20.1.jar)
   !! rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar
-  !! rpgdifficulty: missing required dependency 'cloth-config2' (>=11.0.99) — needed by rpgdifficulty-1.3.16.jar
-  !! sodium: missing required dependency 'fabric-rendering-data-attachment-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar
-  !! sodium: declares BREAKS with 'iris' <1.7.6, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
-  !! sodium: declares BREAKS with 'indium' <1.0.36, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)
   !! sspb: declares BREAKS with 'sodium' ['<0.4.3', '>=0.6.0-'], but it is installed (sodium-shadowy-path-blocks-3.4.2.jar)
-  !! trinkets: missing required dependency 'cardinal-components-base' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
-  !! trinkets: missing required dependency 'cardinal-components-entity' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
-  !! wizards: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (wizards-fabric-3.1.3+1.20.1.jar)
   !! wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar
-  !! xaerominimap: missing required dependency 'xaerolib' (>=1.0) — needed by xaerominimap-fabric-1.20.1-26.6.0.jar
+  !! duplicate mod id 'com_github_llamalad7_mixinextras' shipped by: BadOptimizations-2.4.1-1.20.1.jar, Debugify-1.20.1+2.0.jar, Heracles-fabric-1.20.1-1.1.13.jar, bettercombat-fabric-1.9.0+1.20.1.jar
+  !! duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar
+  !! duplicate mod id 'fabric-resource-loader-v0' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'com_electronwill_night-config_toml' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
+  !! duplicate mod id 'com_electronwill_night-config_core' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
+  !! duplicate mod id 'net_jodah_typetools' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar
+  !! duplicate mod id 'mixinsquared' shipped by: Origins-1.10.2+mc.1.20.x.jar, moonlight-1.20-2.16.38B-fabric.jar, moreculling-1.20.1-0.24.6.jar, supplementaries-1.20-3.1.44-fabric.jar
+  !! duplicate mod id 'kirin' shipped by: PresenceFootsteps-1.10.1+1.20.1.jar, kirin-1.15.6+1.20.1.jar
+  !! duplicate mod id 'org_reflections_reflections' shipped by: TravelersTitles-1.20-Fabric-4.0.2.jar, YungsApi-1.20-Fabric-4.0.6.jar
+  !! duplicate mod id 'mixinextras' shipped by: YungsApi-1.20-Fabric-4.0.6.jar, artifacts-fabric-9.5.17.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar, letsdo-API-fabric-1.2.14-fabric.jar, medievalorigins-fabric-1.20.1-6.7.9.jar, moonlight-1.20-2.16.38B-fabric.jar, supplementaries-1.20-3.1.44-fabric.jar, yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar
+  !! duplicate mod id 'cardinal-components-base' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar
+  !! duplicate mod id 'cardinal-components-entity' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar
+  !! duplicate mod id 'blue_endless_jankson' shipped by: cristellib-1.1.5-fabric.jar, fzzy_config-0.7.7+1.20.1.jar, letsdo-API-fabric-1.2.14-fabric.jar, owo-lib-0.11.2+1.20.jar
+  !! duplicate mod id 'owo' shipped by: deeperdarker-fabric-1.20-1.3.3-plus-b.jar (provides), owo-lib-0.11.2+1.20.jar
+  !! duplicate mod id 'transition' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar
+  !! duplicate mod id 'trender' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar
+  !! duplicate mod id 'fabric-api-base' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'fabric-block-view-api-v2' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar
+  !! duplicate mod id 'fabric-key-binding-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'fabric-lifecycle-events-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'fabric-networking-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'fabric-rendering-fluids-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar
+  !! duplicate mod id 'fabric-screen-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar
+  !! duplicate mod id 'fabric-rendering-data-attachment-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar
+  !! duplicate mod id 'midnightlib' shipped by: guardvillagers-2.0.9-1.20.1.jar, overweightfarming-1.20.1-2.0.3-fabric.jar
+  !! duplicate mod id 'tiny_config' shipped by: jewelry-fabric-2.4.0+1.20.1.jar, spell_engine-fabric-1.10.10+1.20.1.jar, spell_power-fabric-1.6.1+1.20.1.jar
+  !! duplicate mod id 'shield_api' shipped by: paladins-fabric-3.1.3+1.20.1.jar, shield_api-fabric-2.2.0+1.20.1.jar
   !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
-warnings: 19
+warnings: 20
    ~ debugify: recommends 'yet-another-config-lib' which is not installed
    ~ immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok
-   ~ searchables: recommends 'fabric' which is not installed
+   ~ roughlyenoughitems: declares breaks with cloth-config2 <6.2-; installed 11.1.106 is outside that range — ok
    ~ appleskin: declares breaks with roughlyenoughitems <6.0.306-alpha; installed 12.1.785 is outside that range — ok
-   ~ archers: recommends 'bundleapi' which is not installed
    ~ moreculling: declares conflicts with sodium <=0.4.10; installed 0.5.13+mc1.20.1 is outside that range — ok
    ~ originstweaks: recommends 'morewaterlogging' which is not installed
    ~ paladins: recommends 'runes' which is not installed
@@ -57,6 +54,8 @@ warnings: 19
    ~ reeses-sodium-options: declares breaks with sodium <0.5.8; installed 0.5.13+mc1.20.1 is outside that range — ok
    ~ sodium-extra: declares breaks with iris <1.7.0; installed 1.7.6+mc1.20.1 is outside that range — ok
    ~ sodium-extra: declares breaks with reeses-sodium-options <1.4.2; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
+   ~ sodium: declares breaks with iris <1.7.6; installed 1.7.6+mc1.20.1 is outside that range — ok
+   ~ sodium: declares breaks with indium <1.0.36; installed 1.0.36+mc1.20.1 is outside that range — ok
    ~ sodium: declares breaks with reeses-sodium-options <1.7.1; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
    ~ sodium: declares breaks with sodium-extra <0.5.4; installed 0.5.9+mc1.20.1 is outside that range — ok
    ~ sodium: declares breaks with sspb <3.2.0; installed 3.4.2 is outside that range — ok

@@ -1,4 +1,4 @@
-137 mods, 280.7 MB
+138 mods, 280.8 MB
 animals        critters-and-companions                2.7.1                                  release re/re 
 animals        friends-and-foes                       fabric-5.0.4+mc1.20.1                  release re/re 
 animals        naturalist                             4.0.3                                  release re/re 
@@ -46,6 +46,7 @@ library        geckolib                               4.8.4                     
 library        glitchcore                             0.0.1.1                                beta    re/re serene-seasons
 library        icarus                                 2.14.1+Fabric                          release re/re medieval-origins-revival
 library        kambrik                                6.1.1+1.20.1                           release re/re bountiful
+library        kirin                                  1.15.6+1.20.1                          release re/un 
 library        lithostitched                          1.4.11-fabric-1.20                     release un/re ct-overhaul-village
 library        moonlight                              1.20-2.16.38B-fabric                   release re/re smarter-farmers-farmers-replant
 library        origins-dietary-delights               1.9.8                                  release op/re originstweaks
