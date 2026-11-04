@@ -34,6 +34,6 @@ manifest entries: 135
   side-mismatch not-enough-animations            client=required server=unsupported
   side-mismatch sodium-shadowy-path-blocks       client=required server=unsupported
   side-mismatch visuality                        client=required server=unsupported
-nested: Origins-1.10.2+mc.1.20.x.jar ['apoli@2.9.2+mc.1.20.x', 'reach-entity-attributes@2.4.0', 'mixinsquared@0.3.7-beta.1']
+nested: Origins-1.10.2+mc.1.20.x.jar ['apoli@2.9.2+mc.1.20.x', 'cardinal-components-base@5.2.1', 'cardinal-components-entity@5.2.1', 'playerabilitylib@1.8.0', 'calio@1.11.2+mc.1.20.x', 'cloth-config@11.0.99', 'cloth-basic-math@0.6.1', 'additionalentityattributes@1.7.4+1.20.0', 'com_github_llamalad7_mixinextras@0.2.0-beta.6', 'reach-entity-attributes@2.4.0', 'mixinsquared@0.3.7-beta.1']
 nested: archers-fabric-3.1.4+1.20.1.jar ['bundleapi@1.3.0+1.20.1']
-nested: medievalorigins-fabric-1.20.1-6.7.9.jar ['additionalentityattributes@1.7.4+1.20.0', 'mixinextras@0.5.0']
+nested: medievalorigins-fabric-1.20.1-6.7.9.jar ['additionalentityattributes@1.7.4+1.20.0', 'com_github_llamalad7_mixinextras@0.2.0-beta.6', 'mixinextras@0.5.0']

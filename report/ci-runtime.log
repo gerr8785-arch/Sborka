@@ -3,43 +3,26 @@
 >> gamerule randomTickSpeed 3
 >> time set day
 >> difficulty peaceful
->> datapack list
->> locate structure minecraft:village_plains
->> locate structure ctov:village_plains
->> locate structure towns_and_towers:village_plains
->> locate structure dungeons_and_taverns:tavern
->> locate structure yungsbetterdungeons:skeleton_dungeon
->> locate structure structory:tower
->> summon minecraft:cow ~ ~ ~2
->> summon naturalist:bear ~ ~ ~3
->> summon crittersandcompanions:otter ~ ~ ~4
->> summon friendsandfoes:copper_golem ~ ~ ~5
->> summon tide:fish ~ ~ ~6
+>> dataPack list
+>> locate structure ctov:large/village_plains_fortified
+>> locate structure towns_and_towers:village_ocean
 >> setblock ~2 ~ ~ minecraft:furnace
->> give @a farmersdelight:cooking_pot
->> give @a farmersdelight:skillet
->> give @a farm_and_charm:pot_cooker
->> give @a bakery:bread_oven
->> give @a vinery:grape
->> give @a farm_and_charm:onion
->> give @a croptopia:tomato
->> give @a tide:fishing_rod
->> give @a aquaculture:fishing_rod
->> bounties reload
->> origin get @a
->> execute as @a at @s run summon minecraft:cow ~ ~ ~ {NoAI:1b,PersistenceRequired:1b}
->> summon minecraft:zombie ~1 ~ ~ {NoAI:1b,PersistenceRequired:1b}
+>> setblock ~4 ~ ~ farmersdelight:cooking_pot
+>> setblock ~6 ~ ~ farm_and_charm:crafting_bowl
+>> setblock ~8 ~ ~ vinery:fermentation_barrel
+>> give @a minecraft:stick
+>> summon minecraft:cow ~ ~ ~2
+>> summon minecraft:cow ~ ~ ~4
 >> forceload add ~ ~
->> forge tps
->> tps
 >> debug start
 >> debug stop
 >> @stop
 
 ==== runtime result ====
-server reached 'Done': False   uptime: 156s   exit: 143
-problems: 10
+server reached 'Done': False   uptime: 363s   exit: 143
+problems: 2
   !! command/data error: Unknown or incomplete command
-  !! missing registry entry: Unknown item
-warnings: 0
+warnings: 19
+   ~ structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
+   ~ server lag warning: Can't keep up
 report: /home/runner/work/Sborka/Sborka/build/report/runtime.txt log: /home/runner/work/Sborka/Sborka/build/report/server-run.log
