@@ -76,6 +76,30 @@ def main() -> int:
             if os.path.exists(p):
                 shutil.copy2(p, os.path.join(tree, extra))
 
+    # ---- MultiMC / Prism instance metadata (so client/ can be imported directly) ----
+    client_tree = os.path.join(RUN, "client")
+    loader_ver = os.environ.get("FABRIC_LOADER", "0.20.1")
+    with open(os.path.join(client_tree, "mmc-pack.json"), "w", encoding="utf-8") as fh:
+        json.dump(
+            {
+                "formatVersion": 1,
+                "components": [
+                    {"uid": "net.minecraft", "version": manifest["minecraft"], "important": True},
+                    {"uid": "net.fabricmc.fabric-loader", "version": loader_ver},
+                ],
+            },
+            fh,
+            indent=2,
+        )
+    with open(os.path.join(client_tree, "instance.cfg"), "w", encoding="utf-8") as fh:
+        fh.write(
+            "InstanceType=OneSix\n"
+            f"name={PACK_NAME} {PACK_VERSION}\n"
+            "MaxMemAlloc=3072\nMinMemAlloc=1024\n"
+            "OverrideMemory=true\nOverrideJavaArgs=true\n"
+            "JvmArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200\n"
+        )
+
     # ---- Modrinth pack (.mrpack): lets Prism/ATLauncher download everything themselves ----
     index = {
         "formatVersion": 1,
@@ -107,7 +131,10 @@ def main() -> int:
                 for f in files:
                     full = os.path.join(dirpath, f)
                     z.write(full, os.path.relpath(full, cfg_root))
-        z.write(os.path.join(ROOT, "pack", "docs", "README_УСТАНОВКА.txt"), "README_УСТАНОВКА.txt")
+        for doc in ("README_УСТАНОВКА.txt", "README_INSTALL_EN.txt"):
+            src = os.path.join(ROOT, "pack", "docs", doc)
+            if os.path.exists(src):
+                z.write(src, doc)
     print("mrpack:", mrpack, round(os.path.getsize(mrpack) / 1048576, 1), "MB")
 
     if "--no-rar" in args:
@@ -119,11 +146,23 @@ def main() -> int:
         os.remove(rar)
     cmd = [
         "rar", "a", "-m5", "-md256m", "-ep1", "-idq", "-r", rar,
+        "-x*.log", "-xlogs", "-xworld", "-xworld_nether", "-xworld_the_end",
         "client", "server",
     ]
     subprocess.run(cmd, cwd=RUN, check=True)
     print("rar:", rar, round(os.path.getsize(rar) / 1048576, 1), "MB")
     subprocess.run(["unrar", "t", rar], check=True)
+
+    # ---- checksums + build summary ----
+    lines = [f"{PACK_NAME} {PACK_VERSION}  ({manifest['minecraft']}, fabric {loader_ver})",
+             f"mods: {manifest['mod_count']}  download: {manifest['total_size_mb']} MB", ""]
+    for path in sorted([p for p in (mrpack, rar) if os.path.exists(p)]):
+        lines.append(f"{sha1_file(path)}  {os.path.getsize(path):>12,}  {os.path.basename(path)}")
+    lines += ["", "per-mod sha1 (mods/):"]
+    lines += [f"{m['sha1']}  {m['filename']}" for m in manifest["mods"]]
+    with open(os.path.join(BUILD, "SHA1SUMS.txt"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
+    print("checksums written")
     return 0
 
 
