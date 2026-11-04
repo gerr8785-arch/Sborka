@@ -29,22 +29,38 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MC = os.environ.get("MC_VERSION", "1.20.1")
 
 # ------------------------------------------------------------------ versions --
-VER_RE = re.compile(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?(?:-([0-9A-Za-z.\-]+))?(?:\+.*)?$")
+VER_RE = re.compile(
+    r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?(?:-([0-9A-Za-z][0-9A-Za-z.\-]*))?(?:\+.*)?$"
+)
+_CHUNK = re.compile(r"\d+(?:\.\d+)*[A-Za-z]*")
 
 
 def parse_ver(text: str):
-    """('1.20.1-2.5.7+refabricated') -> ((1,20,1), '2.5.7') ; tolerant parser."""
+    """Parse a mod / minecraft version into ((major, minor, patch), prerelease).
+
+    Mods use many conventions; the important ones:
+      "1.20.1"                 -> (1,20,1)
+      "1.20.1-2.5.7+fabric"    -> (2,5,7)      (mod version follows the MC version)
+      "1.20-2.16.38B"          -> (2,16,38)
+      "0.3.7-beta.1"           -> (0,3,7,"beta.1")  prerelease sorts before the release
+      "refabricated-1.20.1-2.1"-> (2,1,0)
+    """
     t = text.strip()
-    m = VER_RE.match(t)
+    head = t.split("+", 1)[0]
+    if "-" in head:
+        left, right = head.split("-", 1)
+        if re.match(r"\d", right.strip()):  # "1.20.1-2.5.7": the real version is on the right
+            head = right.strip()
+    m = VER_RE.match(head)
     if not m:
-        # forms like "refabricated-1.20.1-2.1" or "1.20.1-2.5.7" — take the first dotted triple
-        m3 = re.search(r"(\d+)\.(\d+)(?:\.(\d+))?", t)
-        if not m3:
+        chunks = _CHUNK.findall(head)
+        if not chunks:
             return None
-        return (int(m3.group(1)), int(m3.group(2)), int(m3.group(3) or 0)), ""
-    nums = []
-    for g in (m.group(1), m.group(2), m.group(3)):
-        nums.append(None if g in (None, "x", "*") else int(g))
+        head = chunks[-1]
+        m = VER_RE.match(head)
+        if not m:
+            return None
+    nums = [None if g in (None, "x", "*") else int(g) for g in (m.group(1), m.group(2), m.group(3))]
     while len(nums) < 3:
         nums.append(None)
     return tuple(nums), (m.group(4) or "")
@@ -65,7 +81,19 @@ def _expand(op: str, ver: str):
     wild = re.match(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?$", ver)
     if wild is None:
         return [(op or "=", ver)]
-    if op in ("^", "~") or (op == "" and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*"))):
+    if op == "" and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*")):
+        # "1.20.x" / "1.20.*" -> >=1.20.0 <1.21.0
+        nums = [int(wild.group(1))]
+        for g in (wild.group(2), wild.group(3)):
+            if g in (None, "x", "*"):
+                break
+            nums.append(int(g))
+        lower = ".".join(str(n) for n in nums + [0] * (3 - len(nums)))
+        idx = len(nums) - 1
+        upper_nums = nums[:idx] + [nums[idx] + 1]
+        upper = ".".join(str(n) for n in upper_nums + [0] * (3 - len(upper_nums)))
+        return [(">=", lower), ("<", upper)]
+    if op in ("^", "~"):
         parts = [int(wild.group(1))]
         for g in (wild.group(2), wild.group(3)):
             parts.append(int(g) if g and g not in ("x", "*") else None)
@@ -78,7 +106,7 @@ def _expand(op: str, ver: str):
                 upper = f"0.{(parts[1] or 0) + 1}.0"
             else:
                 upper = f"0.0.{(parts[2] or 0) + 1}"
-        else:  # ~
+        else:  # ~ : patch level wildcard ("~1.20.1" -> >=1.20.1 <1.21.0), semver tilde
             upper = f"{parts[0] + 1}.0.0" if parts[1] is None else f"{parts[0]}.{(parts[1] or 0) + 1}.0"
         base = ".".join(str(p) if p is not None else "0" for p in parts[:3])
         return [(">=", base), ("<", upper)]
@@ -86,7 +114,7 @@ def _expand(op: str, ver: str):
 
 
 def _single(version_p, op, ver) -> bool:
-    if ver.endswith(".*") or ver.endswith(".x"):
+    if ver.endswith("*") or ver.endswith(".x"):
         prefix = [int(p) for p in ver.rsplit(".", 1)[0].split(".") if p.isdigit()]
         vnums = tuple((version_p[0] + (None,) * 3)[:3])
         for i, p in enumerate(prefix):
@@ -108,19 +136,21 @@ def satisfies(version: str, predicate: str) -> bool:
         return True  # unparsable installed version: do not raise false alarms
     pred = predicate.strip()
     if pred.startswith("~") and pred.endswith("-"):  # "~1.20-" = 1.20.x
-        pred = "^" + pred[1:-1]
-    dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s*-\s*(\d+(?:\.\d+)*)", pred)
+        pred = pred[1:-1] + ".*"
+    dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s+-\s+(\d+(?:\.\d+)*)", pred)
     if dash:
         return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
     # ">=1.20-2.5.0" style: a range glued to the operator
     m2 = re.fullmatch(r"(>=|<=|>|<|=)\s*(.+)", pred)
     if m2 and re.fullmatch(r"\d+(?:\.\d+)*\s*-\s*\d+(?:\.\d+)*", m2.group(2).strip()):
-        return satisfies(version, f"{m2.group(1)}{m2.group(2).strip().split('-')[0].strip()}")
+        # ">=1.20-2.5.0" -> ">=2.5.0" (same convention as parse_ver)
+        return satisfies(version, f"{m2.group(1)}{m2.group(2).strip().split('-')[-1].strip()}")
     for raw in pred.replace(",", " ").split():
         m = re.match(r"^(>=|<=|>|<|=|~|\^)?\s*(.+)$", raw)
         if not m:
             continue
         op, ver = m.group(1) or "", m.group(2)
+        ver = ver[:-1] if ver.endswith("*") else (ver[:-2] + "x" if ver.endswith(".x") else ver)
         for o, v in _expand(op, ver):
             if not _single(vp, o, v):
                 return False
