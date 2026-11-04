@@ -49,6 +49,25 @@ jobs:
         run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
       - name: build archives
         run: python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
+      - name: diagnostics (jar ids / sides)
+        if: always()
+        run: |
+          python3 - <<'PY' 2>&1 | tee /tmp/diag.log
+          import json, collections
+          man = json.load(open("build/manifest.json"))
+          print("manifest entries:", len(man["mods"]))
+          for m in man["mods"]:
+              if m["client_side"] == "unsupported" or m["server_side"] == "unsupported":
+                  print(f"  side-mismatch {m['slug']:<32} client={m['client_side']} server={m['server_side']}")
+          try:
+              sc = json.load(open("build/report/scan.json"))
+              for j in sc["jars"]:
+                  nid = j.get("nested_ids") or []
+                  if nid and any(k in j["file"].lower() for k in ("origins", "apoli", "wizard", "archers")):
+                      print("nested:", j["file"], nid)
+          except Exception as exc:
+              print("scan unavailable:", exc)
+          PY
       - name: setup server + runtime smoke test
         id: runtime
         continue-on-error: true
@@ -73,7 +92,7 @@ jobs:
         if: always()
         run: |
           mkdir -p report
-          for f in resolve dl-client dl-server scan build install runtime; do
+          for f in resolve dl-client dl-server scan build install runtime diag; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log report/ci-$f.log || true
           done
           [ -f build/report/manifest.txt ] && cp build/report/manifest.txt report/ || true

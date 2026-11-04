@@ -44,10 +44,11 @@ def main() -> int:
     if manifest.get("errors"):
         print("manifest errors:", manifest["errors"])
         return 1
-    if side == "server":
-        items = [m for m in manifest["mods"] if m["server_side"] in ("required", "optional")]
-    else:
-        items = [m for m in manifest["mods"] if m["client_side"] in ("required", "optional")]
+    # Both trees get every jar: Fabric disables client-only mods on a dedicated
+    # server by itself ("SERVER environment disabled"), while keeping their ids
+    # available for mods that hard-depend on them. This prevents the classic
+    # "Simply Swords requires simplytooltips" failure on servers.
+    items = list(manifest["mods"])
     dest_dir = os.path.join(BUILD, "run", side, "mods")
     os.makedirs(dest_dir, exist_ok=True)
     stats = {"cached": 0, "downloaded": 0}

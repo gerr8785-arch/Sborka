@@ -172,15 +172,26 @@ def scan_jars(mods_dir: str):
                         }
                     )
                     # ids shipped inside the jar (JiJ) — they satisfy dependencies at runtime
-                    for sub in fabric.get("jars") or []:
-                        if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
-                            continue
-                        try:
-                            with zipfile.ZipFile(io.BytesIO(z.read(sub["file"]))) as inner:
-                                inner_meta = read_json(inner, "fabric.mod.json")
-                        except Exception:  # noqa: BLE001
-                            continue
+                    def harvest(outer: zipfile.ZipFile, depth: int = 0):
+                        """yield metadata of every quilt/fabric mod jar nested inside `outer`"""
+                        meta = read_json(outer, "fabric.mod.json") or {}
+                        for sub in meta.get("jars") or []:
+                            if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
+                                continue
+                            try:
+                                with zipfile.ZipFile(io.BytesIO(outer.read(sub["file"]))) as inner:
+                                    inner_meta = read_json(inner, "fabric.mod.json")
+                                    if inner_meta and depth == 0:
+                                        yield inner_meta
+                                    if depth < 1:
+                                        yield from harvest(inner, depth + 1)
+                            except Exception:  # noqa: BLE001
+                                continue
+
+                    info["nested_ids"] = []
+                    for inner_meta in harvest(z):
                         if inner_meta and inner_meta.get("id"):
+                            info["nested_ids"].append(f"{inner_meta['id']}@{inner_meta.get('version')}")
                             info["mods"].append(
                                 {
                                     "id": inner_meta.get("id"),

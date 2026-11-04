@@ -4,7 +4,8 @@
  "never_auto": [
   "bp-lib",
   "farmers-delight-fabric",
-  "lets-do-bakery"
+  "lets-do-bakery",
+  "lets-do-candlelight"
  ],
  "mods": [
   {
@@ -338,11 +339,6 @@
    "slug": "lets-do-vinery",
    "category": "cooking",
    "why": "виноград и вино"
-  },
-  {
-   "slug": "lets-do-candlelight",
-   "category": "cooking",
-   "why": "кухня, свечи, уют"
   },
   {
    "slug": "overweight-farming",
