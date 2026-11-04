@@ -1,6 +1,6 @@
 {
  "mc": "1.20.1",
- "jar_count": 128,
+ "jar_count": 127,
  "mod_ids": {
   "additionalentityattributes": "1.7.4+1.20.0",
   "ambientsounds": "6.3.11",
@@ -11,7 +11,6 @@
   "armor_model_api": "1.0.0+1.20.1",
   "artifacts": "9.5.17",
   "badoptimizations": "2.4.1",
-  "bakery": "1.1.15",
   "balm": "7.3.44",
   "balm-fabric": "7.3.44",
   "bettercombat": "1.9.0+1.20.1",
@@ -158,7 +157,7 @@
   "handcrafted": "3.0.6",
   "heracles": "1.1.13",
   "hermes": "1.6.0",
-  "icarus": "2.14.1",
+  "icarus": "2.13.2",
   "immediatelyfast": "1.5.5+1.20.4",
   "immersive_melodies": "0.8.2+1.20.1",
   "incendium": "5.3.5",
@@ -299,41 +298,15 @@
  "problems": [
   "origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
-  "apoli: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
   "archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar",
   "jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar",
-  "farm_and_charm: declares CONFLICTS with 'bakery' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
   "farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
-  "medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)",
   "paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar",
   "rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar",
   "wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar",
-  "duplicate mod id 'com_github_llamalad7_mixinextras' shipped by: BadOptimizations-2.4.1-1.20.1.jar, Debugify-1.20.1+2.0.jar, Heracles-fabric-1.20.1-1.1.13.jar, bettercombat-fabric-1.9.0+1.20.1.jar",
   "duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar",
-  "duplicate mod id 'fabric-resource-loader-v0' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'com_electronwill_night-config_toml' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
-  "duplicate mod id 'com_electronwill_night-config_core' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
-  "duplicate mod id 'net_jodah_typetools' shipped by: GlitchCore-fabric-1.20.1-0.0.1.1.jar, SereneSeasons-fabric-1.20.1-9.1.0.3.jar",
-  "duplicate mod id 'mixinsquared' shipped by: Origins-1.10.2+mc.1.20.x.jar, moonlight-1.20-2.16.38B-fabric.jar, moreculling-1.20.1-0.24.6.jar, supplementaries-1.20-3.1.44-fabric.jar",
   "duplicate mod id 'kirin' shipped by: PresenceFootsteps-1.10.1+1.20.1.jar, kirin-1.15.6+1.20.1.jar",
-  "duplicate mod id 'org_reflections_reflections' shipped by: TravelersTitles-1.20-Fabric-4.0.2.jar, YungsApi-1.20-Fabric-4.0.6.jar",
-  "duplicate mod id 'mixinextras' shipped by: YungsApi-1.20-Fabric-4.0.6.jar, artifacts-fabric-9.5.17.jar, c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar, letsdo-API-fabric-1.2.14-fabric.jar, medievalorigins-fabric-1.20.1-6.7.9.jar, moonlight-1.20-2.16.38B-fabric.jar, supplementaries-1.20-3.1.44-fabric.jar, yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
-  "duplicate mod id 'cardinal-components-base' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar",
-  "duplicate mod id 'cardinal-components-entity' shipped by: artifacts-fabric-9.5.17.jar, comforts-fabric-6.4.0+1.20.1.jar, trinkets-3.7.2.jar",
-  "duplicate mod id 'blue_endless_jankson' shipped by: cristellib-1.1.5-fabric.jar, fzzy_config-0.7.7+1.20.1.jar, letsdo-API-fabric-1.2.14-fabric.jar, owo-lib-0.11.2+1.20.jar",
   "duplicate mod id 'owo' shipped by: deeperdarker-fabric-1.20-1.3.3-plus-b.jar (provides), owo-lib-0.11.2+1.20.jar",
-  "duplicate mod id 'transition' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar",
-  "duplicate mod id 'trender' shipped by: entityculling-fabric-1.11.3-mc1.20.1.jar, notenoughanimations-fabric-1.12.7-mc1.20.1.jar",
-  "duplicate mod id 'fabric-api-base' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, sodium-fabric-0.5.13+mc1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'fabric-block-view-api-v2' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
-  "duplicate mod id 'fabric-key-binding-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, iris-1.7.6+mc1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'fabric-lifecycle-events-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'fabric-networking-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'fabric-rendering-fluids-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
-  "duplicate mod id 'fabric-screen-api-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, modmenu-7.2.2.jar, trade-cycling-fabric-1.20.1-1.0.7.jar",
-  "duplicate mod id 'fabric-rendering-data-attachment-v1' shipped by: fabric-api-0.92.12+1.20.1.jar, sodium-fabric-0.5.13+mc1.20.1.jar",
-  "duplicate mod id 'midnightlib' shipped by: guardvillagers-2.0.9-1.20.1.jar, overweightfarming-1.20.1-2.0.3-fabric.jar",
-  "duplicate mod id 'tiny_config' shipped by: jewelry-fabric-2.4.0+1.20.1.jar, spell_engine-fabric-1.10.10+1.20.1.jar, spell_power-fabric-1.6.1+1.20.1.jar",
   "duplicate mod id 'shield_api' shipped by: paladins-fabric-3.1.3+1.20.1.jar, shield_api-fabric-2.2.0+1.20.1.jar",
   "curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)"
  ],
@@ -342,6 +315,7 @@
   "immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok",
   "roughlyenoughitems: declares breaks with cloth-config2 <6.2-; installed 11.1.106 is outside that range — ok",
   "appleskin: declares breaks with roughlyenoughitems <6.0.306-alpha; installed 12.1.785 is outside that range — ok",
+  "medievalorigins: declares breaks with icarus ['<=2.5.0', '>2.13.2']; installed 2.13.2 is outside that range — ok",
   "moreculling: declares conflicts with sodium <=0.4.10; installed 0.5.13+mc1.20.1 is outside that range — ok",
   "originstweaks: recommends 'morewaterlogging' which is not installed",
   "paladins: recommends 'runes' which is not installed",
@@ -415,7 +389,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -461,7 +435,7 @@
      "provides": [
       "cloth-config2"
      ],
-     "bundled": "META-INF/jars/cloth-config-fabric-11.1.106.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-loader-v0",
@@ -475,7 +449,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -587,7 +561,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/eventbus-6.2.33.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -634,7 +608,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -676,7 +650,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/Fabric-ASM-v2.3.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_base",
@@ -693,7 +667,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/base-2.3.15+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_config",
@@ -710,7 +684,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/config-2.3.15+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_lazy_registration",
@@ -727,7 +701,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/lazy_registration-2.3.15+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_loot",
@@ -744,7 +718,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/loot-2.3.15+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_networking",
@@ -763,7 +737,7 @@
      "provides": [
       "simplenetworking"
      ],
-     "bundled": "META-INF/jars/networking-2.3.15+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_recipe_book_categories",
@@ -780,7 +754,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -853,7 +827,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/toml-3.6.7.jar"
+     "bundled": true
     },
     {
      "id": "com_electronwill_night-config_core",
@@ -865,7 +839,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/core-3.6.7.jar"
+     "bundled": true
     },
     {
      "id": "net_jodah_typetools",
@@ -877,7 +851,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/typetools-0.6.3.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -925,7 +899,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/hermes-fabric-1.20-1.6.0.jar"
+     "bundled": true
     },
     {
      "id": "com_github_llamalad7_mixinextras",
@@ -939,7 +913,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.2.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -954,11 +928,11 @@
    ]
   },
   {
-   "file": "Icarus-Fabric-2.14.1.jar",
+   "file": "Icarus-Fabric-2.13.2.jar",
    "mods": [
     {
      "id": "icarus",
-     "version": "2.14.1",
+     "version": "2.13.2",
      "name": "Icarus",
      "environment": "*",
      "depends": {
@@ -1014,7 +988,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/Reflect-1.6.2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1197,7 +1171,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/apoli-2.9.2+mc.1.20.x.jar"
+     "bundled": true
     },
     {
      "id": "reach-entity-attributes",
@@ -1214,7 +1188,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/reach-entity-attributes-2.4.0.jar"
+     "bundled": true
     },
     {
      "id": "mixinsquared",
@@ -1228,7 +1202,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1297,7 +1271,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fiber-0.23.0-2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1340,7 +1314,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/KanosConfig-0.4.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1387,7 +1361,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kirin-1.15.6+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1434,7 +1408,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1478,7 +1452,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/error-notifier-fabric-1.0.9.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1545,7 +1519,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/core-3.6.7.jar"
+     "bundled": true
     },
     {
      "id": "com_electronwill_night-config_toml",
@@ -1557,7 +1531,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/toml-3.6.7.jar"
+     "bundled": true
     },
     {
      "id": "net_jodah_typetools",
@@ -1569,7 +1543,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/typetools-0.6.3.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1736,7 +1710,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/reflections-0.10.2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1809,7 +1783,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
+     "bundled": true
     },
     {
      "id": "org_reflections_reflections",
@@ -1821,7 +1795,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/reflections-0.10.2.jar"
+     "bundled": true
     },
     {
      "id": "org_javassist_javassist",
@@ -1833,7 +1807,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/javassist-3.29.2-GA.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1882,7 +1856,7 @@
      "provides": [
       "cloth-config2"
      ],
-     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -1933,7 +1907,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2031,7 +2005,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-base-5.2.2.jar"
+     "bundled": true
     },
     {
      "id": "cardinal-components-entity",
@@ -2047,7 +2021,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-entity-5.2.2.jar"
+     "bundled": true
     },
     {
      "id": "expandability",
@@ -2062,7 +2036,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/expandability-fabric-9.0.4.jar"
+     "bundled": true
     },
     {
      "id": "mixinextras",
@@ -2078,7 +2052,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
+     "bundled": true
     },
     {
      "id": "step-height-entity-attribute",
@@ -2094,7 +2068,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/step-height-entity-attribute-v1.2.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2147,7 +2121,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2191,7 +2165,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.2.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2242,7 +2216,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-base-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-client-uncapvd",
@@ -2258,7 +2232,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-client-uncapvd-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-fixes-chunkio-threading-issues",
@@ -2274,7 +2248,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-fixes-chunkio-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-fixes-general-threading-issues",
@@ -2290,7 +2264,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-fixes-general-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-fixes-worldgen-threading-issues",
@@ -2307,7 +2281,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-fixes-worldgen-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-fixes-worldgen-vanilla-bugs",
@@ -2323,7 +2297,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-notickvd",
@@ -2339,7 +2313,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-notickvd-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-allocs",
@@ -2355,7 +2329,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-allocs-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-chunk-access",
@@ -2371,7 +2345,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-chunk-access-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-chunkio",
@@ -2387,7 +2361,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-math",
@@ -2403,7 +2377,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-math-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-scheduling",
@@ -2419,7 +2393,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-scheduling-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-worldgen-general",
@@ -2435,7 +2409,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-worldgen-general-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-opts-worldgen-vanilla",
@@ -2452,7 +2426,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-rewrites-chunk-serializer",
@@ -2468,7 +2442,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-rewrites-chunk-serializer-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-rewrites-chunkio",
@@ -2484,7 +2458,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-rewrites-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-server-utils",
@@ -2500,7 +2474,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-server-utils-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-threading-chunkio",
@@ -2519,7 +2493,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-threading-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-threading-lighting",
@@ -2536,7 +2510,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-threading-lighting-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "c2me-threading-worldgen",
@@ -2555,7 +2529,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/c2me-threading-worldgen-mc1.20.1-0.2.0+alpha.11.18.jar"
+     "bundled": true
     },
     {
      "id": "com_ibm_async_asyncutil",
@@ -2567,7 +2541,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/asyncutil-0.1.0.jar"
+     "bundled": true
     },
     {
      "id": "com_electronwill_night-config_toml",
@@ -2579,7 +2553,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/toml-3.6.5.jar"
+     "bundled": true
     },
     {
      "id": "com_electronwill_night-config_core",
@@ -2591,7 +2565,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/core-3.6.5.jar"
+     "bundled": true
     },
     {
      "id": "org_threadly_threadly",
@@ -2603,7 +2577,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/threadly-7.0.jar"
+     "bundled": true
     },
     {
      "id": "net_objecthunter_exp4j",
@@ -2615,7 +2589,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/exp4j-0.4.8.jar"
+     "bundled": true
     },
     {
      "id": "mixinextras",
@@ -2631,7 +2605,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
@@ -2695,7 +2669,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/basic-math-0.6.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
@@ -2793,7 +2767,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-base-5.2.1.jar"
+     "bundled": true
     },
     {
      "id": "cardinal-components-entity",
@@ -2809,7 +2783,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-entity-5.2.1.jar"
+     "bundled": true
     },
     {
      "id": "spectrelib",
@@ -2826,7 +2800,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2917,7 +2891,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/jankson-1.2.3.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -2967,7 +2941,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_core",
@@ -2984,7 +2958,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/core-2.3.16-beta.81+1.20.1.jar"
+     "bundled": true
     },
     {
      "id": "porting_lib_gametest",
@@ -3001,7 +2975,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -3049,7 +3023,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar"
+     "bundled": true
     },
     {
      "id": "owo-sentinel",
@@ -3067,7 +3041,7 @@
       "owo",
       "owo-lib"
      ],
-     "bundled": "META-INF/jars/owo-sentinel-0.11.2+1.20.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -3140,7 +3114,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/battery-2.0.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -3239,7 +3213,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar"
+     "bundled": true
     },
     {
      "id": "trender",
@@ -3254,7 +3228,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -3327,7 +3301,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-base-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-api-lookup-api-v1",
@@ -3343,7 +3317,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-lookup-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-biome-api-v1",
@@ -3358,7 +3332,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-biome-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-block-api-v1",
@@ -3372,7 +3346,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-block-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-block-view-api-v2",
@@ -3386,7 +3360,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-block-view-api-v2-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-blockrenderlayer-v1",
@@ -3402,7 +3376,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-blockrenderlayer-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-client-tags-api-v1",
@@ -3416,7 +3390,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-client-tags-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-command-api-v2",
@@ -3432,7 +3406,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-command-api-v2-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-content-registries-v0",
@@ -3449,7 +3423,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-content-registries-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-convention-tags-v1",
@@ -3464,7 +3438,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-convention-tags-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-crash-report-info-v1",
@@ -3478,7 +3452,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-crash-report-info-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-data-attachment-api-v1",
@@ -3494,7 +3468,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-data-attachment-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-data-generation-api-v1",
@@ -3508,7 +3482,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-data-generation-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-dimensions-v1",
@@ -3524,7 +3498,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-dimensions-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-entity-events-v1",
@@ -3538,7 +3512,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-entity-events-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-events-interaction-v0",
@@ -3555,7 +3529,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-events-interaction-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-game-rule-api-v1",
@@ -3569,7 +3543,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-game-rule-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-item-api-v1",
@@ -3584,7 +3558,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-item-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-item-group-api-v1",
@@ -3600,7 +3574,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-item-group-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-key-binding-api-v1",
@@ -3614,7 +3588,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-key-binding-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-lifecycle-events-v1",
@@ -3629,7 +3603,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-loot-api-v2",
@@ -3645,7 +3619,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-loot-api-v2-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-message-api-v1",
@@ -3660,7 +3634,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-message-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-mining-level-api-v1",
@@ -3677,7 +3651,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-mining-level-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-model-loading-api-v1",
@@ -3692,7 +3666,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-model-loading-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-networking-api-v1",
@@ -3707,7 +3681,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-networking-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-object-builder-api-v1",
@@ -3722,7 +3696,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-object-builder-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-particles-v1",
@@ -3736,7 +3710,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-particles-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-recipe-api-v1",
@@ -3751,7 +3725,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-recipe-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-registry-sync-v0",
@@ -3767,7 +3741,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-registry-sync-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-renderer-api-v1",
@@ -3783,7 +3757,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-renderer-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-renderer-indigo",
@@ -3800,7 +3774,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-renderer-indigo-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-fluids-v1",
@@ -3815,7 +3789,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-fluids-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-v1",
@@ -3830,7 +3804,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-conditions-api-v1",
@@ -3844,7 +3818,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-conditions-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-loader-v0",
@@ -3858,7 +3832,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-screen-api-v1",
@@ -3873,7 +3847,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-screen-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-screen-handler-api-v1",
@@ -3889,7 +3863,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-screen-handler-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-sound-api-v1",
@@ -3904,7 +3878,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-sound-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-tag-api-v1",
@@ -3920,7 +3894,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-tag-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-transfer-api-v1",
@@ -3936,7 +3910,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-transfer-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-transitive-access-wideners-v1",
@@ -3950,7 +3924,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-transitive-access-wideners-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-command-api-v1",
@@ -3966,7 +3940,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-command-api-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-commands-v0",
@@ -3982,7 +3956,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-commands-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-containers-v0",
@@ -3998,7 +3972,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-containers-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-events-lifecycle-v0",
@@ -4015,7 +3989,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-events-lifecycle-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-keybindings-v0",
@@ -4030,7 +4004,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-keybindings-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-loot-tables-v1",
@@ -4046,7 +4020,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-loot-tables-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-models-v0",
@@ -4062,7 +4036,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-models-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-networking-v0",
@@ -4078,7 +4052,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-networking-v0-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-renderer-registries-v1",
@@ -4095,7 +4069,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-data-attachment-v1",
@@ -4110,7 +4084,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-v0",
@@ -4127,7 +4101,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-v0-0.92.12.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
@@ -4215,7 +4189,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/atomicfu-jvm-0.33.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlin_kotlin-reflect",
@@ -4227,7 +4201,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlin-reflect-2.4.21.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlin_kotlin-stdlib",
@@ -4239,7 +4213,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlin-stdlib-2.4.21.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlin_kotlin-stdlib-jdk7",
@@ -4251,7 +4225,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlin-stdlib-jdk7-2.4.21.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlin_kotlin-stdlib-jdk8",
@@ -4263,7 +4237,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlin-stdlib-jdk8-2.4.21.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm",
@@ -4275,7 +4249,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-coroutines-jdk8",
@@ -4287,7 +4261,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-datetime-jvm",
@@ -4299,7 +4273,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm",
@@ -4311,7 +4285,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-io-core-jvm",
@@ -4323,7 +4297,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm",
@@ -4335,7 +4309,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-serialization-core-jvm",
@@ -4347,7 +4321,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar"
+     "bundled": true
     },
     {
      "id": "org_jetbrains_kotlinx_kotlinx-serialization-json-jvm",
@@ -4359,7 +4333,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
@@ -4500,7 +4474,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/Fabric-ASM-2.5.3.jar"
+     "bundled": true
     },
     {
      "id": "com_moulberry_mixinconstraints",
@@ -4512,7 +4486,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinconstraints-1.1.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -4613,7 +4587,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/tomlkt-jvm-0.3.7.jar"
+     "bundled": true
     },
     {
      "id": "blue_endless_jankson",
@@ -4625,7 +4599,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/jankson-1.2.3.jar"
+     "bundled": true
     },
     {
      "id": "fabric-permissions-api-v0",
@@ -4640,7 +4614,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-permissions-api-0.3.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -4685,7 +4659,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mclib-20.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -4729,7 +4703,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/midnightlib-1.4.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -4856,7 +4830,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/omega-config-base-1.2.3-1.18.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -4913,7 +4887,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/antlr4-runtime-4.13.1.jar"
+     "bundled": true
     },
     {
      "id": "fabric-api-base",
@@ -4927,7 +4901,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar"
+     "bundled": true
     },
     {
      "id": "fabric-key-binding-api-v1",
@@ -4941,7 +4915,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar"
+     "bundled": true
     },
     {
      "id": "io_github_douira_glsl-transformer",
@@ -4953,7 +4927,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/glsl-transformer-2.0.1.jar"
+     "bundled": true
     },
     {
      "id": "org_anarres_jcpp",
@@ -4965,7 +4939,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/jcpp-1.4.14.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5028,7 +5002,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
@@ -5091,7 +5065,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5139,7 +5113,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/terraform-wood-api-v1-7.0.1.jar"
+     "bundled": true
     },
     {
      "id": "blue_endless_jankson",
@@ -5151,7 +5125,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/jankson-1.2.1.jar"
+     "bundled": true
     },
     {
      "id": "mixinextras",
@@ -5167,7 +5141,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.5.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5181,30 +5155,6 @@
     "META-INF/jars/jankson-1.2.1.jar",
     "META-INF/jars/mixinextras-fabric-0.3.5.jar"
    ]
-  },
-  {
-   "file": "letsdo-bakery-fabric-1.1.15.jar",
-   "mods": [
-    {
-     "id": "bakery",
-     "version": "1.1.15",
-     "name": "[Let's Do] Bakery",
-     "environment": "*",
-     "depends": {
-      "fabric": "*",
-      "minecraft": ">=1.20",
-      "architectury": ">=9.0.8",
-      "doapi": ">=1.2.10"
-     },
-     "breaks": {},
-     "conflicts": {},
-     "recommends": {},
-     "provides": []
-    }
-   ],
-   "mixins": [],
-   "errors": [],
-   "loader": "fabric"
   },
   {
    "file": "letsdo-candlelight-fabric-1.2.13.jar",
@@ -5267,7 +5217,7 @@
      "provides": [
       "cloth-config2"
      ],
-     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5316,7 +5266,7 @@
      "provides": [
       "cloth-config2"
      ],
-     "bundled": "META-INF/jars/cloth-config-fabric-11.1.136.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5396,7 +5346,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar"
+     "bundled": true
     },
     {
      "id": "mixinextras",
@@ -5412,7 +5362,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.5.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5512,7 +5462,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-base-0.4.29+b04edc7a77.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-loader-v0",
@@ -5526,7 +5476,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d77.jar"
+     "bundled": true
     },
     {
      "id": "fabric-screen-api-v1",
@@ -5541,7 +5491,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar"
+     "bundled": true
     },
     {
      "id": "fabric-key-binding-api-v1",
@@ -5555,7 +5505,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar"
+     "bundled": true
     },
     {
      "id": "fabric-lifecycle-events-v1",
@@ -5570,7 +5520,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5617,7 +5567,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+     "bundled": true
     },
     {
      "id": "mixinsquared",
@@ -5631,7 +5581,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5679,7 +5629,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/conditional-mixin-v0.3.2.jar"
+     "bundled": true
     },
     {
      "id": "mixinsquared",
@@ -5693,7 +5643,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5763,7 +5713,7 @@
      "provides": [
       "cloth-config2"
      ],
-     "bundled": "META-INF/jars/cloth-config-fabric-8.2.88.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5808,7 +5758,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar"
+     "bundled": true
     },
     {
      "id": "trender",
@@ -5823,7 +5773,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5866,7 +5816,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/api_fabric-0.8.1.jar"
+     "bundled": true
     },
     {
      "id": "wrench_wrapper_backend",
@@ -5880,7 +5830,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/impl-0.8.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -5998,7 +5948,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/midnightlib-1.4.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6041,7 +5991,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/jankson-1.2.2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6093,7 +6043,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6258,7 +6208,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/yabn-1.0.3.jar"
+     "bundled": true
     },
     {
      "id": "com_teamresourceful_bytecodecs",
@@ -6270,7 +6220,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/bytecodecs-1.0.2.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6432,7 +6382,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/CaffeineConfig-1.3.0+1.17.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6499,7 +6449,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar"
+     "bundled": true
     },
     {
      "id": "fabric-block-view-api-v2",
@@ -6513,7 +6463,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-block-view-api-v2-1.0.1+1802ada577.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-data-attachment-v1",
@@ -6528,7 +6478,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar"
+     "bundled": true
     },
     {
      "id": "fabric-rendering-fluids-v1",
@@ -6543,7 +6493,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-loader-v0",
@@ -6557,7 +6507,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6641,7 +6591,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6688,7 +6638,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6736,7 +6686,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+     "bundled": true
     },
     {
      "id": "mixinsquared",
@@ -6750,7 +6700,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6818,7 +6768,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-api-base-0.4.29+b04edc7a82.jar"
+     "bundled": true
     },
     {
      "id": "fabric-resource-loader-v0",
@@ -6832,7 +6782,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d82.jar"
+     "bundled": true
     },
     {
      "id": "fabric-lifecycle-events-v1",
@@ -6847,7 +6797,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b82.jar"
+     "bundled": true
     },
     {
      "id": "fabric-key-binding-api-v1",
@@ -6861,7 +6811,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar"
+     "bundled": true
     },
     {
      "id": "fabric-networking-api-v1",
@@ -6876,7 +6826,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar"
+     "bundled": true
     },
     {
      "id": "fabric-screen-api-v1",
@@ -6891,7 +6841,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -6941,7 +6891,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-base-5.2.0.jar"
+     "bundled": true
     },
     {
      "id": "cardinal-components-entity",
@@ -6957,7 +6907,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/cardinal-components-entity-5.2.0.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -7198,7 +7148,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar"
+     "bundled": true
     }
    ],
    "mixins": [
@@ -7242,7 +7192,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/common-image-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "com_twelvemonkeys_common_common-io",
@@ -7254,7 +7204,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/common-io-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "com_twelvemonkeys_common_common-lang",
@@ -7266,7 +7216,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/common-lang-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "org_quiltmc_parsers_gson",
@@ -7278,7 +7228,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/gson-0.2.1.jar"
+     "bundled": true
     },
     {
      "id": "com_twelvemonkeys_imageio_imageio-core",
@@ -7290,7 +7240,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/imageio-core-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "com_twelvemonkeys_imageio_imageio-metadata",
@@ -7302,7 +7252,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/imageio-metadata-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "com_twelvemonkeys_imageio_imageio-webp",
@@ -7314,7 +7264,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/imageio-webp-3.12.0.jar"
+     "bundled": true
     },
     {
      "id": "org_quiltmc_parsers_json",
@@ -7326,7 +7276,7 @@
      "conflicts": {},
      "recommends": {},
      "provides": [],
-     "bundled": "META-INF/jars/json-0.2.1.jar"
+     "bundled": true
     },
     {
      "id": "mixinextras",
@@ -7342,7 +7292,7 @@
      "provides": [
       "com_github_llamalad7_mixinextras"
      ],
-     "bundled": "META-INF/jars/mixinextras-fabric-0.4.1.jar"
+     "bundled": true
     }
    ],
    "mixins": [],
