@@ -183,8 +183,12 @@ def main() -> int:
                     cache.setdefault(d["slug"], {})["project"] = dproj
                 dslug = d["slug"]
                 if dslug not in selected:
+                    before = len(selected)
                     add(dslug, "library", f"required by {slug}", slug, None, False)
-                    changed = True
+                    if len(selected) > before:
+                        changed = True
+                    else:
+                        d["unresolved"] = True
 
     # dependency sanity: every 'required' dep id must be in the pack
     have_ids = {e["project_id"] for e in selected.values()}
