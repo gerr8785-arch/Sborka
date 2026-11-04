@@ -1,0 +1,10 @@
+>> downloading fabric installer 1.0.1
+>> server tree: /home/runner/work/Sborka/Sborka/build/run/server
+total 392
+drwxr-xr-x 3 runner runner   4096 Nov  4 19:26 .
+drwxr-xr-x 4 runner runner   4096 Nov  4 19:26 ..
+-rw-r--r-- 1 runner runner     10 Nov  4 19:26 eula.txt
+-rw-r--r-- 1 runner runner 197876 Nov  4 19:26 fabric-installer.jar
+-rw-r--r-- 1 runner runner 168435 Nov  4 19:26 fabric-server-launch.jar
+drwxr-xr-x 2 runner runner  12288 Nov  4 19:26 mods
+-rw-r--r-- 1 runner runner    189 Nov  4 19:26 server.properties

@@ -1,0 +1,4039 @@
+{
+ "mc": "1.20.1",
+ "jar_count": 127,
+ "mod_ids": {
+  "ambientsounds": "6.3.11",
+  "appleskin": "2.5.2+mc1.20.1",
+  "archers": "3.1.4+1.20.1",
+  "architectury": "9.2.14",
+  "armor_model_api": "1.0.0+1.20.1",
+  "artifacts": "9.5.17",
+  "badoptimizations": "2.4.1",
+  "bakery": "1.1.15",
+  "balm": "7.3.44",
+  "bettercombat": "1.9.0+1.20.1",
+  "betterf3": "7.0.2",
+  "bountiful": "6.0.4+1.20.1",
+  "c2me": "0.2.0+alpha.11.18",
+  "candlelight": "1.2.13",
+  "cloth-config": "11.1.136",
+  "clumps": "12.0.0.4",
+  "collective": "8.79",
+  "combatroll": "1.3.3+1.20.1",
+  "comforts": "6.4.0+1.20.1",
+  "commonnetworking": "1.0.6-1.20.1",
+  "controlling": "12.0.2",
+  "cookingforblockheads": "16.0.15",
+  "creativecore": "2.12.41",
+  "cristellib": "1.1.5",
+  "crittersandcompanions": "2.7.1",
+  "debugify": "1.20.1+2.0",
+  "deeperdarker": "1.3.3-plus-b",
+  "doapi": "1.2.14",
+  "dynamic_fps": "3.11.4",
+  "eatinganimationid": "1.20+1.9.61",
+  "ends_delight": "refabricated-1.20.1-2.1",
+  "entityculling": "1.11.3",
+  "extraorigins": "1.20-8",
+  "fabric-api": "0.92.12+1.20.1",
+  "fabric-language-kotlin": "1.14.2+kotlin.2.4.21",
+  "fallingleaves": "1.15.6",
+  "farm_and_charm": "1.0.14",
+  "farmersdelight": "1.20.1-2.5.7+refabricated",
+  "farmingforblockheads": "14.0.4",
+  "ferritecore": "6.0.1",
+  "fishingreal": "1.9.1-backport",
+  "fishofthieves": "3.4.0",
+  "forgeconfigapiport": "8.0.3",
+  "friendsandfoes": "5.0.4",
+  "fzzy_config": "0.7.7+1.20.1",
+  "geckolib": "4.8.4",
+  "glitchcore": "0.0.1.1",
+  "guardvillagers": "2.0.9-1.20.1",
+  "handcrafted": "3.0.6",
+  "heracles": "1.1.13",
+  "icarus": "2.14.1",
+  "immediatelyfast": "1.5.5+1.20.4",
+  "immersive_melodies": "0.8.2+1.20.1",
+  "incendium": "5.3.5",
+  "indium": "1.0.36+mc1.20.1",
+  "inmis": "2.7.2-1.20.1",
+  "iris": "1.7.6+mc1.20.1",
+  "jade": "11.13.3+fabric",
+  "jewelry": "2.4.0+1.20.1",
+  "kambrik": "6.1.1+1.20.1",
+  "krypton": "0.2.3",
+  "lithium": "0.11.4",
+  "medievalorigins": "6.7.9",
+  "memoryleakfix": "1.1.5",
+  "modernfix": "5.25.2+mc1.20.1",
+  "modmenu": "7.2.2",
+  "moonlight": "1.20-2.16.38B",
+  "moreculling": "1.20.1-0.24.6",
+  "moredelight": "26.05.07-1.20-fabric",
+  "mousetweaks": "2.26",
+  "mr_dungeons_andtaverns": "3.0.3.f",
+  "mr_origins_dietarydelights": "1.9.8",
+  "mr_random_fishingcrates": "1.3.3",
+  "naturalist": "4.0.3",
+  "naturescompass": "1.20.1-2.6.0-fabric",
+  "notenoughanimations": "1.12.7",
+  "ok_zoomer": "5.4.0-beta.9",
+  "origins": "1.10.2+mc.1.20.x",
+  "origins-classes": "1.7.0",
+  "origins-plus-plus": "2.4",
+  "originstweaks": "1.18.3",
+  "overweight_farming": "1.20.1-2.0.3-fabric",
+  "owo": "0.11.2+1.20",
+  "paladins": "3.1.3+1.20.1",
+  "patchouli": "1.20.1-85-FABRIC",
+  "pehkui": "3.8.3+1.14.4-1.21",
+  "player-animator": "1.0.2-rc1+1.20",
+  "presencefootsteps": "1.10.1+1.20.1",
+  "puzzleslib": "8.1.36",
+  "ranged_weapon_api": "2.3.4+1.20.1",
+  "reeses-sodium-options": "1.7.2+mc1.20.1-build.101",
+  "resourcefulconfig": "2.1.3",
+  "resourcefullib": "2.1.29",
+  "rogues": "3.1.3+1.20.1",
+  "roughlyenoughitems": "12.1.785",
+  "rpgdifficulty": "1.3.16",
+  "searchables": "1.0.3",
+  "sereneseasons": "9.1.0.3",
+  "shield_api": "2.2.0+1.20.1",
+  "simplyswords": "1.70.2-1.20.1",
+  "simplytooltips": "0.1.5-1.20.1",
+  "sodium": "0.5.13+mc1.20.1",
+  "sodium-extra": "0.5.9+mc1.20.1",
+  "spell_engine": "1.10.10+1.20.1",
+  "spell_power": "1.6.1+1.20.1",
+  "sspb": "3.4.2",
+  "structory": "1.3.5",
+  "structory_towers": "1.0.7",
+  "supplementaries": "1.20-3.1.44",
+  "t_and_t": "1.12",
+  "terralith": "2.5.4",
+  "tide": "2.1.1",
+  "trade_cycling": "1.20.1-1.0.7",
+  "travelerstitles": "1.20-Fabric-4.0.2",
+  "trinkets": "3.7.2",
+  "twigs": "3.1.0",
+  "villagernames": "8.9",
+  "villagersplus": "4.1.1+mc1.20.1",
+  "villagertradingplus": "1.1.1+mc1.20.1",
+  "vinery": "1.4.41",
+  "visuality": "0.7.1+1.20",
+  "visualworkbench": "8.0.1",
+  "waystones": "14.1.21",
+  "wizards": "3.1.3+1.20.1",
+  "xaerominimap": "26.6.0",
+  "yet_another_config_lib_v3": "3.6.6+1.20.1-fabric",
+  "yungsapi": "1.20-Fabric-4.0.6"
+ },
+ "problems": [
+  "BadOptimizations-2.4.1-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar — check for bundled deps",
+  "BetterF3-7.0.2-Fabric-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.106.jar — check for bundled deps",
+  "BetterF3-7.0.2-Fabric-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar — check for bundled deps",
+  "CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/eventbus-6.2.33.jar — check for bundled deps",
+  "Debugify-1.20.1+2.0.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar — check for bundled deps",
+  "debugify: missing required dependency 'fabric-resource-loader-v0' (*) — needed by Debugify-1.20.1+2.0.jar",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-v2.3.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/base-2.3.15+1.20.1.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/config-2.3.15+1.20.1.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/lazy_registration-2.3.15+1.20.1.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/loot-2.3.15+1.20.1.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/networking-2.3.15+1.20.1.jar — check for bundled deps",
+  "FarmersDelight-1.20.1-2.5.7+refabricated.jar: nested jar (Jar-in-Jar): META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar — check for bundled deps",
+  "GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps",
+  "GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps",
+  "GlitchCore-fabric-1.20.1-0.0.1.1.jar: nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps",
+  "Heracles-fabric-1.20.1-1.1.13.jar: nested jar (Jar-in-Jar): META-INF/jars/hermes-fabric-1.20-1.6.0.jar — check for bundled deps",
+  "Heracles-fabric-1.20.1-1.1.13.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.1.jar — check for bundled deps",
+  "ImmediatelyFast-Fabric-1.5.5+1.20.4.jar: nested jar (Jar-in-Jar): META-INF/jars/Reflect-1.6.2.jar — check for bundled deps",
+  "immediatelyfast: declares BREAKS with 'memoryleakfix' <=1.1.1, but it is installed (ImmediatelyFast-Fabric-1.5.5+1.20.4.jar)",
+  "incendium: missing required dependency 'fabric-api-base' (*) — needed by Incendium_1.20.x_v5.3.5.jar",
+  "Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/apoli-2.9.2+mc.1.20.x.jar — check for bundled deps",
+  "Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/reach-entity-attributes-2.4.0.jar — check for bundled deps",
+  "Origins-1.10.2+mc.1.20.x.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar — check for bundled deps",
+  "origins: missing required dependency 'apoli' (>=2.9.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "origins: missing required dependency 'cardinal-components-base' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "origins: missing required dependency 'cardinal-components-entity' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "origins: missing required dependency 'cloth-config2' (>=5.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar",
+  "Patchouli-1.20.1-85-FABRIC.jar: nested jar (Jar-in-Jar): META-INF/jars/fiber-0.23.0-2.jar — check for bundled deps",
+  "Pehkui-3.8.3+1.14.4-1.21.jar: nested jar (Jar-in-Jar): META-INF/jars/KanosConfig-0.4.1.jar — check for bundled deps",
+  "pehkui: missing required dependency 'fabric-api-base' (*) — needed by Pehkui-3.8.3+1.14.4-1.21.jar",
+  "pehkui: missing required dependency 'kanos_config' (>=0.4.1) — needed by Pehkui-3.8.3+1.14.4-1.21.jar",
+  "PresenceFootsteps-1.10.1+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/kirin-1.15.6+1.20.1.jar — check for bundled deps",
+  "presencefootsteps: missing required dependency 'kirin' (>=1.15.6+1.20.1) — needed by PresenceFootsteps-1.10.1+1.20.1.jar",
+  "PuzzlesLib-v8.1.36-1.20.1-Fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar — check for bundled deps",
+  "puzzleslib: missing required dependency 'puzzlesaccessapi' (*) — needed by PuzzlesLib-v8.1.36-1.20.1-Fabric.jar",
+  "RoughlyEnoughItems-12.1.785-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/error-notifier-fabric-1.0.9.jar — check for bundled deps",
+  "roughlyenoughitems: minecraft predicate '~1.20-' excludes 1.20.1 (RoughlyEnoughItems-12.1.785-fabric.jar)",
+  "SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps",
+  "SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps",
+  "SereneSeasons-fabric-1.20.1-9.1.0.3.jar: nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps",
+  "structory: missing required dependency 'fabric-api-base' (*) — needed by Structory_1.20.x_v1.3.5.jar",
+  "structory_towers: missing required dependency 'fabric-api-base' (*) — needed by Structory_Towers_1.20.x_v1.0.7.jar",
+  "terralith: missing required dependency 'fabric-api-base' (*) — needed by Terralith_1.20.x_v2.5.4.jar",
+  "TravelersTitles-1.20-Fabric-4.0.2.jar: nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps",
+  "travelerstitles: missing required dependency 'cloth-config2' (>=11.0.99) — needed by TravelersTitles-1.20-Fabric-4.0.2.jar",
+  "YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps",
+  "YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps",
+  "YungsApi-1.20-Fabric-4.0.6.jar: nested jar (Jar-in-Jar): META-INF/jars/javassist-3.29.2-GA.jar — check for bundled deps",
+  "appleskin-fabric-mc1.20.1-2.5.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps",
+  "appleskin: declares BREAKS with 'roughlyenoughitems' <6.0.306-alpha, but it is installed (appleskin-fabric-mc1.20.1-2.5.2.jar)",
+  "archers-fabric-3.1.4+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar — check for bundled deps",
+  "archers: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (archers-fabric-3.1.4+1.20.1.jar)",
+  "archers: dependency 'ranged_weapon_api' present but version 2.3.4+1.20.1 does not satisfy '>=2.3.4' (archers-fabric-3.1.4+1.20.1.jar)",
+  "archers: missing required dependency 'structure_pool_api' (*) — needed by archers-fabric-3.1.4+1.20.1.jar",
+  "architectury: minecraft predicate '~1.20-' excludes 1.20.1 (architectury-9.2.14-fabric.jar)",
+  "armor_model_api: missing required dependency 'fabric-rendering-v1' (*) — needed by armor_model_api-fabric-1.0.0+1.20.1.jar",
+  "armor_model_api: missing required dependency 'fabric-resource-loader-v0' (*) — needed by armor_model_api-fabric-1.0.0+1.20.1.jar",
+  "artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.2.jar — check for bundled deps",
+  "artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.2.jar — check for bundled deps",
+  "artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/expandability-fabric-9.0.4.jar — check for bundled deps",
+  "artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps",
+  "artifacts-fabric-9.5.17.jar: nested jar (Jar-in-Jar): META-INF/jars/step-height-entity-attribute-v1.2.0.jar — check for bundled deps",
+  "balm-fabric-1.20.1-7.3.44.jar: nested jar (Jar-in-Jar): META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar — check for bundled deps",
+  "bettercombat-fabric-1.9.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-base-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-client-uncapvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-chunkio-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-general-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-notickvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-allocs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunk-access-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-math-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-scheduling-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-general-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunk-serializer-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-server-utils-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-lighting-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-worldgen-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/asyncutil-0.1.0.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.5.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/core-3.6.5.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/threadly-7.0.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/exp4j-0.4.8.jar — check for bundled deps",
+  "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps",
+  "c2me: missing required dependency 'c2me-base' (*) — needed by c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
+  "cloth-config-11.1.136-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/basic-math-0.6.1.jar — check for bundled deps",
+  "comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.1.jar — check for bundled deps",
+  "comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.1.jar — check for bundled deps",
+  "comforts-fabric-6.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar — check for bundled deps",
+  "comforts: missing required dependency 'cardinal-components-base' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar",
+  "comforts: missing required dependency 'cardinal-components-entity' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar",
+  "cookingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by cookingforblockheads-fabric-1.20.1-16.0.15.jar",
+  "cristellib-1.1.5-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps",
+  "crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar — check for bundled deps",
+  "crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/core-2.3.16-beta.81+1.20.1.jar — check for bundled deps",
+  "crittersandcompanions-fabric-1.20.1-2.7.1.jar: nested jar (Jar-in-Jar): META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar — check for bundled deps",
+  "deeperdarker-fabric-1.20-1.3.3-plus-b.jar: nested jar (Jar-in-Jar): META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar — check for bundled deps",
+  "deeperdarker-fabric-1.20-1.3.3-plus-b.jar: nested jar (Jar-in-Jar): META-INF/jars/owo-sentinel-0.11.2+1.20.jar — check for bundled deps",
+  "mr_dungeons_andtaverns: missing required dependency 'fabric-resource-loader-v0' (*) — needed by dungeons-and-taverns-3.0.3.f.jar",
+  "dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/battery-2.0.0.jar — check for bundled deps",
+  "dynamic_fps: missing required dependency 'mixinextras' (>=0.3.2) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
+  "dynamic_fps: missing required dependency 'fabric-resource-loader-v0' (*) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
+  "dynamic_fps: missing required dependency 'fabric-lifecycle-events-v1' (*) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
+  "entityculling-fabric-1.11.3-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+  "entityculling-fabric-1.11.3-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-lookup-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-biome-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-blockrenderlayer-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-client-tags-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v2-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-content-registries-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-convention-tags-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-crash-report-info-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-data-attachment-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-data-generation-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-dimensions-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-entity-events-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-events-interaction-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-game-rule-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-item-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-item-group-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-api-v2-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-message-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-mining-level-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-model-loading-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-object-builder-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-particles-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-recipe-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-registry-sync-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-indigo-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-conditions-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-handler-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-sound-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-tag-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-transfer-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-transitive-access-wideners-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-commands-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-containers-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-events-lifecycle-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-keybindings-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-tables-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-models-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-v0-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar — check for bundled deps",
+  "fabric-api-0.92.12+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v0-0.92.12.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/atomicfu-jvm-0.33.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-reflect-2.4.21.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-2.4.21.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk7-2.4.21.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk8-2.4.21.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar — check for bundled deps",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar: nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar — check for bundled deps",
+  "farmingforblockheads: missing required dependency 'balm-fabric' (>=7.0.0) — needed by farmingforblockheads-fabric-1.20.1-14.0.4.jar",
+  "fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-2.5.3.jar — check for bundled deps",
+  "fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinconstraints-1.1.0.jar — check for bundled deps",
+  "fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tomlkt-jvm-0.3.7.jar — check for bundled deps",
+  "fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps",
+  "fzzy_config-0.7.7+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-permissions-api-0.3.1.jar — check for bundled deps",
+  "geckolib-fabric-1.20.1-4.8.4.jar: nested jar (Jar-in-Jar): META-INF/jars/mclib-20.jar — check for bundled deps",
+  "guardvillagers-2.0.9-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps",
+  "immersive_melodies: missing required dependency 'fabric-api-base' (>=0.1.0) — needed by immersive_melodies-0.8.2+1.20.1-fabric.jar",
+  "indium: missing required dependency 'fabric-renderer-api-v1' (>=3.2.0) — needed by indium-1.0.36+mc1.20.1.jar",
+  "indium: missing required dependency 'fabric-resource-loader-v0' (>=0.4.0) — needed by indium-1.0.36+mc1.20.1.jar",
+  "inmis-2.7.2-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/omega-config-base-1.2.3-1.18.1.jar — check for bundled deps",
+  "iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/antlr4-runtime-4.13.1.jar — check for bundled deps",
+  "iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps",
+  "iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar — check for bundled deps",
+  "iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/glsl-transformer-2.0.1.jar — check for bundled deps",
+  "iris-1.7.6+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/jcpp-1.4.14.jar — check for bundled deps",
+  "jewelry-fabric-2.4.0+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps",
+  "jewelry: missing required dependency 'structure_pool_api' (*) — needed by jewelry-fabric-2.4.0+1.20.1.jar",
+  "krypton-0.2.3.jar: nested jar (Jar-in-Jar): META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar — check for bundled deps",
+  "letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/terraform-wood-api-v1-7.0.1.jar — check for bundled deps",
+  "letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.1.jar — check for bundled deps",
+  "letsdo-API-fabric-1.2.14-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps",
+  "doapi: missing required dependency 'terraform-wood-api-v1' (>=7.0.1) — needed by letsdo-API-fabric-1.2.14-fabric.jar",
+  "letsdo-farm_and_charm-fabric-1.0.14.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps",
+  "farm_and_charm: declares CONFLICTS with 'bakery' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
+  "farm_and_charm: declares CONFLICTS with 'candlelight' <2.0.0, but it is installed (letsdo-farm_and_charm-fabric-1.0.14.jar)",
+  "letsdo-vinery-fabric-1.4.41.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps",
+  "medievalorigins-fabric-1.20.1-6.7.9.jar: nested jar (Jar-in-Jar): META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar — check for bundled deps",
+  "medievalorigins-fabric-1.20.1-6.7.9.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.5.0.jar — check for bundled deps",
+  "medievalorigins: dependency 'origins' present but version 1.10.2+mc.1.20.x does not satisfy '>=1.10.2' (medievalorigins-fabric-1.20.1-6.7.9.jar)",
+  "medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)",
+  "modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a77.jar — check for bundled deps",
+  "modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d77.jar — check for bundled deps",
+  "modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar — check for bundled deps",
+  "modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar — check for bundled deps",
+  "modmenu-7.2.2.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar — check for bundled deps",
+  "modmenu: missing required dependency 'fabric-resource-loader-v0' (*) — needed by modmenu-7.2.2.jar",
+  "modmenu: missing required dependency 'fabric-screen-api-v1' (>=1.0.4) — needed by modmenu-7.2.2.jar",
+  "modmenu: missing required dependency 'fabric-key-binding-api-v1' (*) — needed by modmenu-7.2.2.jar",
+  "modmenu: missing required dependency 'fabric-lifecycle-events-v1' (*) — needed by modmenu-7.2.2.jar",
+  "moonlight-1.20-2.16.38B-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps",
+  "moonlight-1.20-2.16.38B-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps",
+  "moreculling-1.20.1-0.24.6.jar: nested jar (Jar-in-Jar): META-INF/jars/conditional-mixin-v0.3.2.jar — check for bundled deps",
+  "moreculling-1.20.1-0.24.6.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps",
+  "moreculling: declares CONFLICTS with 'sodium' <=0.4.10, but it is installed (moreculling-1.20.1-0.24.6.jar)",
+  "naturalist-fabric-4.0.3-1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-8.2.88.jar — check for bundled deps",
+  "notenoughanimations-fabric-1.12.7-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+  "notenoughanimations-fabric-1.12.7-mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+  "ok_zoomer-fabric-5.4.0-beta.9.jar: nested jar (Jar-in-Jar): META-INF/jars/api_fabric-0.8.1.jar — check for bundled deps",
+  "ok_zoomer-fabric-5.4.0-beta.9.jar: nested jar (Jar-in-Jar): META-INF/jars/impl-0.8.1.jar — check for bundled deps",
+  "mr_origins_dietarydelights: missing required dependency 'fabric-resource-loader-v0' (*) — needed by origins-dietary-delights-1.9.8.jar",
+  "overweightfarming-1.20.1-2.0.3-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps",
+  "owo-lib-0.11.2+1.20.jar: nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.2.jar — check for bundled deps",
+  "paladins-fabric-3.1.3+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar — check for bundled deps",
+  "paladins: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (paladins-fabric-3.1.3+1.20.1.jar)",
+  "paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar",
+  "player-animator: missing required dependency 'fabric-resource-loader-v0' (*) — needed by player-animation-lib-fabric-1.0.2-rc1+1.20.jar",
+  "player-animator: declares BREAKS with 'bettercombat' <1.6.0, but it is installed (player-animation-lib-fabric-1.0.2-rc1+1.20.jar)",
+  "mr_random_fishingcrates: missing required dependency 'fabric-resource-loader-v0' (*) — needed by random-fishing-crates-1.3.3.jar",
+  "reeses-sodium-options: declares BREAKS with 'iris' <1.1.4, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)",
+  "reeses-sodium-options: declares BREAKS with 'sodium-extra' <0.5.3, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)",
+  "reeses-sodium-options: declares BREAKS with 'sodium' <0.5.8, but it is installed (reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar)",
+  "resourcefullib-fabric-1.20.1-2.1.29.jar: nested jar (Jar-in-Jar): META-INF/jars/yabn-1.0.3.jar — check for bundled deps",
+  "resourcefullib-fabric-1.20.1-2.1.29.jar: nested jar (Jar-in-Jar): META-INF/jars/bytecodecs-1.0.2.jar — check for bundled deps",
+  "rogues: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (rogues-fabric-3.1.3+1.20.1.jar)",
+  "rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar",
+  "rpgdifficulty: missing required dependency 'cloth-config2' (>=11.0.99) — needed by rpgdifficulty-1.3.16.jar",
+  "sodium-extra-0.5.9+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/CaffeineConfig-1.3.0+1.17.jar — check for bundled deps",
+  "sodium-extra: declares BREAKS with 'iris' <1.7.0, but it is installed (sodium-extra-0.5.9+mc1.20.1.jar)",
+  "sodium-extra: declares BREAKS with 'reeses-sodium-options' <1.4.2, but it is installed (sodium-extra-0.5.9+mc1.20.1.jar)",
+  "sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps",
+  "sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-1.0.1+1802ada577.jar — check for bundled deps",
+  "sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar — check for bundled deps",
+  "sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar — check for bundled deps",
+  "sodium-fabric-0.5.13+mc1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar — check for bundled deps",
+  "sodium: missing required dependency 'fabric-rendering-data-attachment-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar",
+  "sodium: missing required dependency 'fabric-rendering-fluids-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar",
+  "sodium: declares BREAKS with 'iris' <1.7.6, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sodium: declares BREAKS with 'indium' <1.0.36, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sodium: declares BREAKS with 'reeses-sodium-options' <1.7.1, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sodium: declares BREAKS with 'sodium-extra' <0.5.4, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sodium: declares BREAKS with 'sspb' <3.2.0, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sodium: declares BREAKS with 'supplementaries' <=1.20-2.7.32, but it is installed (sodium-fabric-0.5.13+mc1.20.1.jar)",
+  "sspb: declares BREAKS with 'sodium' ['<0.4.3', '>=0.6.0-'], but it is installed (sodium-shadowy-path-blocks-3.4.2.jar)",
+  "spell_engine-fabric-1.10.10+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps",
+  "spell_power-fabric-1.6.1+1.20.1.jar: nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps",
+  "spell_power: missing required dependency 'fabric-networking-api-v1' (*) — needed by spell_power-fabric-1.6.1+1.20.1.jar",
+  "supplementaries-1.20-3.1.44-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps",
+  "supplementaries-1.20-3.1.44-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a82.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d82.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b82.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar — check for bundled deps",
+  "trade-cycling-fabric-1.20.1-1.0.7.jar: nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar — check for bundled deps",
+  "trinkets-3.7.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.0.jar — check for bundled deps",
+  "trinkets-3.7.2.jar: nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.0.jar — check for bundled deps",
+  "trinkets: missing required dependency 'cardinal-components-base' (>=3.0.0-0) — needed by trinkets-3.7.2.jar",
+  "trinkets: missing required dependency 'cardinal-components-entity' (>=3.0.0-0) — needed by trinkets-3.7.2.jar",
+  "wizards: dependency 'armor_model_api' present but version 1.0.0+1.20.1 does not satisfy '>=1.0.0' (wizards-fabric-3.1.3+1.20.1.jar)",
+  "wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar",
+  "xaerominimap-fabric-1.20.1-26.6.0.jar: nested jar (Jar-in-Jar): META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar — check for bundled deps",
+  "xaerominimap: missing required dependency 'xaerolib' (>=1.0) — needed by xaerominimap-fabric-1.20.1-26.6.0.jar",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-image-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-io-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/common-lang-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/gson-0.2.1.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-core-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-metadata-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/imageio-webp-3.12.0.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/json-0.2.1.jar — check for bundled deps",
+  "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar: nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.4.1.jar — check for bundled deps",
+  "curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)"
+ ],
+ "warnings": [
+  "debugify: recommends 'yet-another-config-lib' which is not installed",
+  "searchables: recommends 'fabric' which is not installed",
+  "archers: recommends 'bundleapi' which is not installed",
+  "originstweaks: recommends 'morewaterlogging' which is not installed",
+  "paladins: recommends 'runes' which is not installed",
+  "wizards: recommends 'runes' which is not installed"
+ ],
+ "jars": [
+  {
+   "file": "AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "ambientsounds",
+     "version": "6.3.11",
+     "name": "AmbientSounds",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "creativecore": ">=2.12.36"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "ambientsounds.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "BadOptimizations-2.4.1-1.20.1.jar",
+   "mods": [
+    {
+     "id": "badoptimizations",
+     "version": "2.4.1",
+     "name": "BadOptimizations",
+     "environment": "client",
+     "depends": {
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "fabric-badoptimizations.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "BetterF3-7.0.2-Fabric-1.20.1.jar",
+   "mods": [
+    {
+     "id": "betterf3",
+     "version": "7.0.2",
+     "name": "BetterF3",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.9",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "modmenu": ">=7.0.0"
+     }
+    }
+   ],
+   "mixins": [
+    "betterf3.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.106.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.8+e3d6ed2577.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Bountiful-6.0.4+1.20.1-fabric.jar",
+   "mods": [
+    {
+     "id": "bountiful",
+     "version": "6.0.4+1.20.1",
+     "name": "Bountiful",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": "*",
+      "minecraft": "1.20.1",
+      "kambrik": ">=6.1.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Clumps-fabric-1.20.1-12.0.0.4.jar",
+   "mods": [
+    {
+     "id": "clumps",
+     "version": "12.0.0.4",
+     "name": "Clumps",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Controlling-fabric-1.20.1-12.0.2.jar",
+   "mods": [
+    {
+     "id": "controlling",
+     "version": "12.0.2",
+     "name": "Controlling For Fabric",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "java": ">=17",
+      "minecraft": "1.20.1",
+      "searchables": "1.0.x",
+      "fabric": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "creativecore",
+     "version": "2.12.41",
+     "name": "CreativeCore",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric-api": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "creativecore.mixins.json",
+    "creativecore.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/eventbus-6.2.33.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Debugify-1.20.1+2.0.jar",
+   "mods": [
+    {
+     "id": "debugify",
+     "version": "1.20.1+2.0",
+     "name": "Debugify",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.10",
+      "minecraft": "1.20.1",
+      "java": ">=17",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "yet-another-config-lib": "3.x.x",
+      "modmenu": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "debugify.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0-beta.8.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "FarmersDelight-1.20.1-2.5.7+refabricated.jar",
+   "mods": [
+    {
+     "id": "farmersdelight",
+     "version": "1.20.1-2.5.7+refabricated",
+     "name": "Farmer's Delight",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.2",
+      "fabric-api": ">=0.92.8",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "farmersdelight.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-v2.3.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/base-2.3.15+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/config-2.3.15+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/lazy_registration-2.3.15+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/loot-2.3.15+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/networking-2.3.15+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/recipe_book_categories-2.3.15+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar",
+   "mods": [
+    {
+     "id": "forgeconfigapiport",
+     "version": "8.0.3",
+     "name": "Forge Config API Port",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": ">=0.83.0",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "forgeconfigapiport.common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "GlitchCore-fabric-1.20.1-0.0.1.1.jar",
+   "mods": [
+    {
+     "id": "glitchcore",
+     "version": "0.0.1.1",
+     "name": "GlitchCore",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "glitchcore.mixins.json",
+    "glitchcore.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Heracles-fabric-1.20.1-1.1.13.jar",
+   "mods": [
+    {
+     "id": "heracles",
+     "version": "1.1.13",
+     "name": "Heracles",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.14.19",
+      "fabric-api": "*",
+      "minecraft": ">=1.20-",
+      "resourcefullib": ">=2.1.17",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "heracles.mixins.json",
+    "heracles-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/hermes-fabric-1.20-1.6.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Icarus-Fabric-2.14.1.jar",
+   "mods": [
+    {
+     "id": "icarus",
+     "version": "2.14.1",
+     "name": "Icarus",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.18.6",
+      "fabric-api": "*",
+      "minecraft": "=1.20.1",
+      "trinkets": "*",
+      "resourcefulconfig": "*",
+      "commonnetworking": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "icarus.mixins.json",
+    "icarus.fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "ImmediatelyFast-Fabric-1.5.5+1.20.4.jar",
+   "mods": [
+    {
+     "id": "immediatelyfast",
+     "version": "1.5.5+1.20.4",
+     "name": "ImmediatelyFast",
+     "environment": "client",
+     "depends": {
+      "java": ">=17",
+      "minecraft": ">=1.20 <=1.20.4",
+      "fabricloader": ">=0.15.0"
+     },
+     "breaks": {
+      "optifabric": "*",
+      "vulkanmod": "*",
+      "memoryleakfix": "<=1.1.1"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "immediatelyfast-common.mixins.json",
+    "immediatelyfast-fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/Reflect-1.6.2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Incendium_1.20.x_v5.3.5.jar",
+   "mods": [
+    {
+     "id": "incendium",
+     "version": "5.3.5",
+     "name": "Incendium",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.7",
+      "fabric-api-base": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Jade-1.20-Fabric-11.13.3.jar",
+   "mods": [
+    {
+     "id": "jade",
+     "version": "11.13.3+fabric",
+     "name": "Jade",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "minecraft": ">=1.20-",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "jade.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Kambrik-6.1.1+1.20.1-fabric.jar",
+   "mods": [
+    {
+     "id": "kambrik",
+     "version": "6.1.1+1.20.1",
+     "name": "Kambrik",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.83.0",
+      "minecraft": "1.20.1",
+      "fabric-language-kotlin": ">=1.8.21"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "kambrik.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "MouseTweaks-fabric-mc1.20-2.26.jar",
+   "mods": [
+    {
+     "id": "mousetweaks",
+     "version": "2.26",
+     "name": "Mouse Tweaks",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": "~1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "mousetweaks.mixins.json",
+    "mousetweaks-fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "NaturesCompass-1.20.1-2.6.0-fabric.jar",
+   "mods": [
+    {
+     "id": "naturescompass",
+     "version": "1.20.1-2.6.0-fabric",
+     "name": "Nature's Compass",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": "*",
+      "minecraft": "~1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "naturescompass.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Origins-1.10.2+mc.1.20.x.jar",
+   "mods": [
+    {
+     "id": "origins",
+     "version": "1.10.2+mc.1.20.x",
+     "name": "Origins",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "fabricloader": ">=0.12.3",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "apoli": ">=2.9.0",
+      "calio": ">=1.11.0",
+      "playerabilitylib": ">=1.3.0",
+      "cardinal-components-base": ">=3.0.0",
+      "cardinal-components-entity": ">=3.0.0",
+      "cloth-config2": ">=5.0.0"
+     },
+     "breaks": {
+      "optifabric": "<=1.11.18",
+      "identity": "<1.14.2-beta"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "origins.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/apoli-2.9.2+mc.1.20.x.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/reach-entity-attributes-2.4.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Origins-Classes-1.20-1.7.0.jar",
+   "mods": [
+    {
+     "id": "origins-classes",
+     "version": "1.7.0",
+     "name": "Origins: Classes",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "origins": ">=1.10.0",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "origins-classes.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Patchouli-1.20.1-85-FABRIC.jar",
+   "mods": [
+    {
+     "id": "patchouli",
+     "version": "1.20.1-85-FABRIC",
+     "name": "Patchouli",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.87.0",
+      "minecraft": ">=1.20.1 <1.21"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "patchouli_xplat.mixins.json",
+    "patchouli_fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fiber-0.23.0-2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Pehkui-3.8.3+1.14.4-1.21.jar",
+   "mods": [
+    {
+     "id": "pehkui",
+     "version": "3.8.3+1.14.4-1.21",
+     "name": "Pehkui",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api-base": "*",
+      "kanos_config": ">=0.4.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "pehkui.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/KanosConfig-0.4.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "PresenceFootsteps-1.10.1+1.20.1.jar",
+   "mods": [
+    {
+     "id": "presencefootsteps",
+     "version": "1.10.1+1.20.1",
+     "name": "Presence Footsteps",
+     "environment": "client",
+     "depends": {
+      "minecraft": ">=1.20.0",
+      "fabricloader": ">=0.15.3",
+      "java": ">=17",
+      "fabric-api": ">=0.91.0+1.20.1",
+      "kirin": ">=1.15.6+1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "presencefootsteps.mixin.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/kirin-1.15.6+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "PuzzlesLib-v8.1.36-1.20.1-Fabric.jar",
+   "mods": [
+    {
+     "id": "puzzleslib",
+     "version": "8.1.36",
+     "name": "Puzzles Lib",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": ">=0.92.0",
+      "forgeconfigapiport": "*",
+      "puzzlesaccessapi": "*",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "puzzleslib.common.mixins.json",
+    "puzzleslib.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/puzzlesaccessapi-fabric-20.1.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "RoughlyEnoughItems-12.1.785-fabric.jar",
+   "mods": [
+    {
+     "id": "roughlyenoughitems",
+     "version": "12.1.785",
+     "name": "Roughly Enough Items",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20-"
+     },
+     "breaks": {
+      "cloth-config2": "<6.2-"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "rei.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/error-notifier-fabric-1.0.9.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "Searchables-fabric-1.20.1-1.0.3.jar",
+   "mods": [
+    {
+     "id": "searchables",
+     "version": "1.0.3",
+     "name": "Searchables",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "java": ">=17",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "fabric": "*"
+     }
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "SereneSeasons-fabric-1.20.1-9.1.0.3.jar",
+   "mods": [
+    {
+     "id": "sereneseasons",
+     "version": "9.1.0.3",
+     "name": "SereneSeasons",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "1.20.1",
+      "java": ">=17",
+      "glitchcore": ">=0.0.1.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "sereneseasons.mixins.json",
+    "sereneseasons.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/core-3.6.7.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.7.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/typetools-0.6.3.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "SimplyTooltips-fabric-0.1.5-1.20.1.jar",
+   "mods": [
+    {
+     "id": "simplytooltips",
+     "version": "0.1.5-1.20.1",
+     "name": "Simply Tooltips",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.10",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "architectury": ">=9.0.8",
+      "fzzy_config": ">=0.6.6",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "simplytooltips.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Structory_1.20.x_v1.3.5.jar",
+   "mods": [
+    {
+     "id": "structory",
+     "version": "1.3.5",
+     "name": "Structory",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.7",
+      "fabric-api-base": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Structory_Towers_1.20.x_v1.0.7.jar",
+   "mods": [
+    {
+     "id": "structory_towers",
+     "version": "1.0.7",
+     "name": "Structory: Towers",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.7",
+      "fabric-api-base": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Terralith_1.20.x_v2.5.4.jar",
+   "mods": [
+    {
+     "id": "terralith",
+     "version": "2.5.4",
+     "name": "Terralith",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.7",
+      "fabric-api-base": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "Towns-and-Towers-1.12-Fabric+Forge.jar",
+   "mods": [
+    {
+     "id": "t_and_t",
+     "version": "1.12",
+     "name": "Towns and Towers",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.0",
+      "fabric": "*",
+      "minecraft": ">=1.19.3",
+      "cristellib": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "TravelersTitles-1.20-Fabric-4.0.2.jar",
+   "mods": [
+    {
+     "id": "travelerstitles",
+     "version": "1.20-Fabric-4.0.2",
+     "name": "Traveler's Titles",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "cloth-config2": ">=11.0.99",
+      "java": ">=17",
+      "yungsapi": ">=1.20-Fabric-4.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "travelerstitles.mixins.json",
+    "travelerstitles_fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "VisualWorkbench-v8.0.1-1.20.1-Fabric.jar",
+   "mods": [
+    {
+     "id": "visualworkbench",
+     "version": "8.0.1",
+     "name": "Visual Workbench",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": ">=0.83.0",
+      "puzzleslib": ">=8.0.0",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "visualworkbench.common.mixins.json",
+    "visualworkbench.fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "YungsApi-1.20-Fabric-4.0.6.jar",
+   "mods": [
+    {
+     "id": "yungsapi",
+     "version": "1.20-Fabric-4.0.6",
+     "name": "YUNG's API",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.7",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "yungsapi.mixins.json",
+    "yungsapi_fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/reflections-0.10.2.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/javassist-3.29.2-GA.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "appleskin-fabric-mc1.20.1-2.5.2.jar",
+   "mods": [
+    {
+     "id": "appleskin",
+     "version": "2.5.2+mc1.20.1",
+     "name": "AppleSkin",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*"
+     },
+     "breaks": {
+      "roughlyenoughitems": "<6.0.306-alpha"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "appleskin.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "archers-fabric-3.1.4+1.20.1.jar",
+   "mods": [
+    {
+     "id": "archers",
+     "version": "3.1.4+1.20.1",
+     "name": "Archers (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.92.0",
+      "armor_model_api": ">=1.0.0",
+      "spell_engine": ">=1.10.5",
+      "ranged_weapon_api": ">=2.3.4",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "bundleapi": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "archers.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/bundle-api-fabric-1.3.0+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "architectury-9.2.14-fabric.jar",
+   "mods": [
+    {
+     "id": "architectury",
+     "version": "9.2.14",
+     "name": "Architectury",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20-",
+      "fabricloader": ">=0.14.0",
+      "fabric-api": ">=0.66.0"
+     },
+     "breaks": {
+      "optifabric": "<1.13.0"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "architectury-common.mixins.json",
+    "architectury.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "armor_model_api-fabric-1.0.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "armor_model_api",
+     "version": "1.0.0+1.20.1",
+     "name": "Armor Model API",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-rendering-v1": "*",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "artifacts-fabric-9.5.17.jar",
+   "mods": [
+    {
+     "id": "artifacts",
+     "version": "9.5.17",
+     "name": "Artifacts",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": "1.20.1",
+      "architectury": "*",
+      "trinkets": "*",
+      "cloth-config": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "mixins.artifacts.common.json",
+    "mixins.artifacts.fabric.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.2.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.2.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/expandability-fabric-9.0.4.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/step-height-entity-attribute-v1.2.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "balm-fabric-1.20.1-7.3.44.jar",
+   "mods": [
+    {
+     "id": "balm",
+     "version": "7.3.44",
+     "name": "Balm",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "balm.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/kuma-api-fabric-20.1.12+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "bettercombat-fabric-1.9.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "bettercombat",
+     "version": "1.9.0+1.20.1",
+     "name": "Better Combat",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20.0",
+      "fabricloader": ">=0.14.0",
+      "fabric-api": "*",
+      "cloth-config": ">=11.0.0",
+      "player-animator": ">=1.0.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "bettercombat.mixins.json",
+    "bettercombat-fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.2.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar",
+   "mods": [
+    {
+     "id": "c2me",
+     "version": "0.2.0+alpha.11.18",
+     "name": "Concurrent Chunk Management Engine",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25",
+      "java": ">=17",
+      "minecraft": ">=1.20-rc.1",
+      "c2me-base": "*"
+     },
+     "breaks": {
+      "tic_tacs": "*",
+      "optifabric": "*"
+     },
+     "conflicts": {
+      "dynview": "*",
+      "betterchunkloading": "*"
+     },
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-base-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-client-uncapvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-chunkio-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-general-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-threading-issues-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-fixes-worldgen-vanilla-bugs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-notickvd-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-allocs-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunk-access-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-math-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-scheduling-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-general-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-opts-worldgen-vanilla-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunk-serializer-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-rewrites-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-server-utils-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-chunkio-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-lighting-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/c2me-threading-worldgen-mc1.20.1-0.2.0+alpha.11.18.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/asyncutil-0.1.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/toml-3.6.5.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/core-3.6.5.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/threadly-7.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/exp4j-0.4.8.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "cloth-config-11.1.136-fabric.jar",
+   "mods": [
+    {
+     "id": "cloth-config",
+     "version": "11.1.136",
+     "name": "Cloth Config v11",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.20-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/basic-math-0.6.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "collective-1.20.1-8.79.jar",
+   "mods": [
+    {
+     "id": "collective",
+     "version": "8.79",
+     "name": "Collective",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.6",
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "collective_fabric.mixins.json",
+    "collective_fabric.crop.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "combatroll-fabric-1.3.3+1.20.1.jar",
+   "mods": [
+    {
+     "id": "combatroll",
+     "version": "1.3.3+1.20.1",
+     "name": "Combat Roll",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20",
+      "fabricloader": ">=0.14.0",
+      "fabric-api": "*",
+      "cloth-config": ">=11.0.0",
+      "player-animator": ">=1.0.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "combatroll.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "comforts-fabric-6.4.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "comforts",
+     "version": "6.4.0+1.20.1",
+     "name": "Comforts",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "fabric-api": "*",
+      "minecraft": "1.20.x",
+      "java": ">=17",
+      "cardinal-components-base": "*",
+      "cardinal-components-entity": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "comforts.mixins.json",
+    "comforts.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/spectrelib-fabric-0.13.15+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "common-networking-fabric-1.0.6-1.20.1.jar",
+   "mods": [
+    {
+     "id": "commonnetworking",
+     "version": "1.0.6-1.20.1",
+     "name": "Common Network",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": ">=1.19.4",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "cookingforblockheads-fabric-1.20.1-16.0.15.jar",
+   "mods": [
+    {
+     "id": "cookingforblockheads",
+     "version": "16.0.15",
+     "name": "Cooking for Blockheads",
+     "environment": "*",
+     "depends": {
+      "balm-fabric": ">=7.0.0",
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "cristellib-1.1.5-fabric.jar",
+   "mods": [
+    {
+     "id": "cristellib",
+     "version": "1.1.5",
+     "name": "Cristel Lib",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.81.0+1.19.4",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "cristellib.mixins.json",
+    "cristellib-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "crittersandcompanions-fabric-1.20.1-2.7.1.jar",
+   "mods": [
+    {
+     "id": "crittersandcompanions",
+     "version": "2.7.1",
+     "name": "Critters and Companions",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.19.3",
+      "minecraft": "=1.20.1",
+      "java": ">=17",
+      "architectury": ">=9.2.14",
+      "fabric-api": "*",
+      "geckolib": ">=4.2.3",
+      "yet_another_config_lib_v3": ">=3.6.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "crittersandcompanions.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/attributes-2.3.16-beta.81+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/core-2.3.16-beta.81+1.20.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/gametest-2.3.16-beta.81+1.20.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "deeperdarker-fabric-1.20-1.3.3-plus-b.jar",
+   "mods": [
+    {
+     "id": "deeperdarker",
+     "version": "1.3.3-plus-b",
+     "name": "Deeper and Darker",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": ">=1.20 <=1.20.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "owo": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "deeperdarker.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/customportalapi-0.0.1-beta64-1.20.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/owo-sentinel-0.11.2+1.20.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "dungeons-and-taverns-3.0.3.f.jar",
+   "mods": [
+    {
+     "id": "mr_dungeons_andtaverns",
+     "version": "3.0.3.f",
+     "name": "Dungeons and Taverns",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar",
+   "mods": [
+    {
+     "id": "dynamic_fps",
+     "version": "3.11.4",
+     "name": "Dynamic FPS",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.15.10",
+      "minecraft": [
+       "1.20.0",
+       "1.20.1"
+      ],
+      "mixinextras": ">=0.3.2",
+      "fabric-resource-loader-v0": "*",
+      "fabric-lifecycle-events-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {
+      "optifabric": "*",
+      "smoothmenu": "*"
+     },
+     "recommends": {
+      "modmenu": "*",
+      "cloth-config": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "dynamic_fps.mixins.json",
+    "dynamic_fps-common.mixins.json",
+    "dynamic_fps-textile.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/battery-2.0.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "eating-animation-1.20+1.9.61.jar",
+   "mods": [
+    {
+     "id": "eatinganimationid",
+     "version": "1.20+1.9.61",
+     "name": "Eating Animation",
+     "environment": "client",
+     "depends": {
+      "fabricloader": "*",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "eatinganimation.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "ends_delight-refabricated-1.20.1-2.1.jar",
+   "mods": [
+    {
+     "id": "ends_delight",
+     "version": "refabricated-1.20.1-2.1",
+     "name": "End's Delight",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "farmersdelight": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "ends_delight.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "entityculling-fabric-1.11.3-mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "entityculling",
+     "version": "1.11.3",
+     "name": "EntityCulling",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {
+      "tlskincape": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "entityculling.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.26-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "extraorigins-1.20-8.jar",
+   "mods": [
+    {
+     "id": "extraorigins",
+     "version": "1.20-8",
+     "name": "Extra Origins",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "minecraft": "1.20.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "origins": "*",
+      "pehkui": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "extraorigins.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "fabric-api-0.92.12+1.20.1.jar",
+   "mods": [
+    {
+     "id": "fabric-api",
+     "version": "0.92.12+1.20.1",
+     "name": "Fabric API",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.10",
+      "java": ">=17",
+      "minecraft": ">=1.20 <1.20.2-"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-lookup-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-biome-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-block-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-blockrenderlayer-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-client-tags-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v2-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-content-registries-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-convention-tags-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-crash-report-info-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-data-attachment-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-data-generation-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-dimensions-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-entity-events-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-events-interaction-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-game-rule-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-item-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-item-group-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-api-v2-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-message-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-mining-level-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-model-loading-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-object-builder-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-particles-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-recipe-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-registry-sync-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-indigo-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-conditions-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-handler-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-sound-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-tag-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-transfer-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-transitive-access-wideners-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-command-api-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-commands-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-containers-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-events-lifecycle-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-keybindings-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-loot-tables-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-models-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-v0-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-renderer-registries-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.92.12.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-v0-0.92.12.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar",
+   "mods": [
+    {
+     "id": "fabric-language-kotlin",
+     "version": "1.14.2+kotlin.2.4.21",
+     "name": "Fabric Language Kotlin",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.19.5"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/atomicfu-jvm-0.33.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlin-reflect-2.4.21.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-2.4.21.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk7-2.4.21.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlin-stdlib-jdk8-2.4.21.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "fallingleaves-1.15.6+1.20.1.jar",
+   "mods": [
+    {
+     "id": "fallingleaves",
+     "version": "1.15.6",
+     "name": "Falling Leaves",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.15",
+      "fabric-api": "*",
+      "minecraft": ">=1.19.4",
+      "cloth-config": ">=10.0.0",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "fallingleaves.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "farmingforblockheads-fabric-1.20.1-14.0.4.jar",
+   "mods": [
+    {
+     "id": "farmingforblockheads",
+     "version": "14.0.4",
+     "name": "Farming for Blockheads",
+     "environment": "*",
+     "depends": {
+      "balm-fabric": ">=7.0.0",
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "farmingforblockheads.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "ferritecore-6.0.1-fabric.jar",
+   "mods": [
+    {
+     "id": "ferritecore",
+     "version": "6.0.1",
+     "name": "FerriteCore",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": ">=1.20 <1.21"
+     },
+     "breaks": {
+      "hydrogen": "<=0.3"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "ferritecore.blockstatecache.mixin.json",
+    "ferritecore.dedupmultipart.mixin.json",
+    "ferritecore.fastmap.mixin.json",
+    "ferritecore.mrl.mixin.json",
+    "ferritecore.predicates.mixin.json",
+    "ferritecore.dedupbakedquad.mixin.json",
+    "ferritecore.threaddetec.mixin.json",
+    "ferritecore.modelsides.mixin.json",
+    "ferritecore.fabric.mixin.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar",
+   "mods": [
+    {
+     "id": "fishofthieves",
+     "version": "3.4.0",
+     "name": "Fish of Thieves",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16",
+      "fabric": ">=0.83",
+      "yet_another_config_lib_v3": ">=3.6",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "mixins.fish_of_thieves.json",
+    "mixins.fish_of_thieves_fabric.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/Fabric-ASM-2.5.3.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinconstraints-1.1.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "fishingreal-fabric-1.20.1-1.9.1-backport.jar",
+   "mods": [
+    {
+     "id": "fishingreal",
+     "version": "1.9.1-backport",
+     "name": "FishingReal",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.16.9",
+      "fabric-api": "*",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "forgeconfigapiport": "^8.0.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "fishingreal.fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "friendsandfoes-fabric-5.0.4+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "friendsandfoes",
+     "version": "5.0.4",
+     "name": "Friends&Foes",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20",
+      "fabricloader": ">=0.19.0",
+      "fabric-api": "*",
+      "resourcefullib": ">=2.1.29"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "yet_another_config_lib_v3": "*",
+      "modmenu": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "friendsandfoes-common.mixins.json",
+    "friendsandfoes-fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "fzzy_config-0.7.7+1.20.1.jar",
+   "mods": [
+    {
+     "id": "fzzy_config",
+     "version": "0.7.7+1.20.1",
+     "name": "Fzzy Config",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.7",
+      "fabric": "*",
+      "fabric-language-kotlin": ">=1.10.18+kotlin.1.9.22",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "fzzy_config.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/tomlkt-jvm-0.3.7.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.3.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-permissions-api-0.3.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "geckolib-fabric-1.20.1-4.8.4.jar",
+   "mods": [
+    {
+     "id": "geckolib",
+     "version": "4.8.4",
+     "name": "GeckoLib 4",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15",
+      "fabric-api": ">=0.92.0+1.20.1",
+      "java": ">=17",
+      "minecraft": ">=1.20.1"
+     },
+     "breaks": {
+      "geckoanimfix": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "geckolib.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mclib-20.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "guardvillagers-2.0.9-1.20.1.jar",
+   "mods": [
+    {
+     "id": "guardvillagers",
+     "version": "2.0.9-1.20.1",
+     "name": "GuardVillagers",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "guardvillagers.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "handcrafted-fabric-1.20.1-3.0.6.jar",
+   "mods": [
+    {
+     "id": "handcrafted",
+     "version": "3.0.6",
+     "name": "Handcrafted",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "resourcefullib": ">=2.1.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "handcrafted-common.mixins.json",
+    "handcrafted.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "immersive_melodies-0.8.2+1.20.1-fabric.jar",
+   "mods": [
+    {
+     "id": "immersive_melodies",
+     "version": "0.8.2+1.20.1",
+     "name": "Immersive Melodies",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.11.3",
+      "java": ">=8",
+      "fabric-api-base": ">=0.1.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "immersive_melodies.mixin.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "indium-1.0.36+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "indium",
+     "version": "1.0.36+mc1.20.1",
+     "name": "Indium",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.8.0",
+      "minecraft": [
+       "1.20.1",
+       "1.20.5",
+       "1.20.6"
+      ],
+      "sodium": "~0.5.11",
+      "fabric-renderer-api-v1": ">=3.2.0",
+      "fabric-resource-loader-v0": ">=0.4.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "indium.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "inmis-2.7.2-1.20.1.jar",
+   "mods": [
+    {
+     "id": "inmis",
+     "version": "2.7.2-1.20.1",
+     "name": "Inmis",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "minecraft": ">=1.20.1",
+      "fabric-api": ">=0.88.1+1.20.1",
+      "fabricloader": ">=0.14.22"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "inmis.mixins.json",
+    "inmis.trinkets.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/omega-config-base-1.2.3-1.18.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "iris-1.7.6+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "iris",
+     "version": "1.7.6+mc1.20.1",
+     "name": "Iris",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.12.3",
+      "minecraft": [
+       "1.20.1"
+      ],
+      "sodium": [
+       "0.5.x"
+      ]
+     },
+     "breaks": {
+      "iris-explorer": "*",
+      "originsenhanced": "<=1.3.2",
+      "colormatic": "<=3.0.0",
+      "bedrockwaters": "<=1.6.0",
+      "batchedentityrendering": "*",
+      "canvas": "*",
+      "optifabric": "*",
+      "worldeditcui": "<1.18.1",
+      "physicsmod": "<=3.0.13",
+      "distanthorizons": "<=2.0.1",
+      "immersive_portals": "<=1.4.2"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "mixins.iris.json",
+    "iris-batched-entity-rendering.mixins.json",
+    "mixins.iris.fantastic.json",
+    "mixins.iris.vertexformat.json",
+    "mixins.iris.bettermipmaps.json",
+    "mixins.iris.compat.indigo.json",
+    "mixins.iris.compat.sodium.json",
+    "mixins.iris.compat.indium.json",
+    "mixins.iris.fixes.maxfpscrash.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/antlr4-runtime-4.13.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.37+1802ada577.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/glsl-transformer-2.0.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/jcpp-1.4.14.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "jewelry-fabric-2.4.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "jewelry",
+     "version": "2.4.0+1.20.1",
+     "name": "Jewelry (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.14.0",
+      "fabric-api": ">=0.92.0",
+      "spell_power": "*",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "trinkets": "*",
+      "ranged_weapon_api": "*"
+     }
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "krypton-0.2.3.jar",
+   "mods": [
+    {
+     "id": "krypton",
+     "version": "0.2.3",
+     "name": "Krypton",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.11.3",
+      "minecraft": "1.20.x"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "krypton.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/velocity-native-3.2.0-SNAPSHOT.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "letsdo-API-fabric-1.2.14-fabric.jar",
+   "mods": [
+    {
+     "id": "doapi",
+     "version": "1.2.14",
+     "name": "[Let's Do] API",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "architectury": ">=9.0.8",
+      "terraform-wood-api-v1": ">=7.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "doapi.mixins.json",
+    "doapi-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/terraform-wood-api-v1-7.0.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.5.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "letsdo-bakery-fabric-1.1.15.jar",
+   "mods": [
+    {
+     "id": "bakery",
+     "version": "1.1.15",
+     "name": "[Let's Do] Bakery",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "architectury": ">=9.0.8",
+      "doapi": ">=1.2.10"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "letsdo-candlelight-fabric-1.2.13.jar",
+   "mods": [
+    {
+     "id": "candlelight",
+     "version": "1.2.13",
+     "name": "[Let's Do] Candlelight",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "architectury": ">=9.0.8",
+      "doapi": ">=1.2.9"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "letsdo-farm_and_charm-fabric-1.0.14.jar",
+   "mods": [
+    {
+     "id": "farm_and_charm",
+     "version": "1.0.14",
+     "name": "[Let's Do] Farm & Charm",
+     "environment": "*",
+     "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "architectury": ">=9.0.8"
+     },
+     "breaks": {},
+     "conflicts": {
+      "bakery": "<2.0.0",
+      "brewery": "<2.0.0",
+      "candlelight": "<2.0.0"
+     },
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "FarmAndCharm.mixins.json",
+    "FarmAndCharm-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "letsdo-vinery-fabric-1.4.41.jar",
+   "mods": [
+    {
+     "id": "vinery",
+     "version": "1.4.41",
+     "name": "[Let's Do] Vinery",
+     "environment": "*",
+     "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "architectury": ">=9.0.8"
+     },
+     "breaks": {},
+     "conflicts": {
+      "copperative": "*",
+      "nethervinery": "<1.2.14"
+     },
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "vinery.mixins.json",
+    "vinery-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-11.1.136.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "lithium-fabric-mc1.20.1-0.11.4.jar",
+   "mods": [
+    {
+     "id": "lithium",
+     "version": "0.11.4",
+     "name": "Lithium",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.11",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {
+      "optifabric": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "lithium.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "medievalorigins-fabric-1.20.1-6.7.9.jar",
+   "mods": [
+    {
+     "id": "medievalorigins",
+     "version": "6.7.9",
+     "name": "Medieval Origins Revival",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": "*",
+      "minecraft": "~1.20",
+      "java": ">=17",
+      "origins": ">=1.10.2",
+      "pehkui": ">=3.0",
+      "spell_power": "*"
+     },
+     "breaks": {
+      "icarus": [
+       "<=2.5.0",
+       ">2.13.2"
+      ]
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "medievalorigins.mixins.json",
+    "medievalorigins.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/AdditionalEntityAttributes-1.7.4+1.20.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.5.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "memoryleakfix-fabric-1.17+-1.1.5.jar",
+   "mods": [
+    {
+     "id": "memoryleakfix",
+     "version": "1.1.5",
+     "name": "Memory Leak Fix",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "memoryleakfix.mixins.json",
+    "memoryleakfix-fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "modernfix-fabric-5.25.2+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "modernfix",
+     "version": "5.25.2+mc1.20.1",
+     "name": "ModernFix",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.16.2",
+      "fabricloader": ">=0.16.10"
+     },
+     "breaks": {
+      "dashloader": "<5.0.0-beta.1"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "modernfix-fabric.mixins.json",
+    "modernfix-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "modmenu-7.2.2.jar",
+   "mods": [
+    {
+     "id": "modmenu",
+     "version": "7.2.2",
+     "name": "Mod Menu",
+     "environment": "client",
+     "depends": {
+      "fabric-resource-loader-v0": "*",
+      "fabric-screen-api-v1": ">=1.0.4",
+      "fabric-key-binding-api-v1": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabricloader": ">=0.12.13",
+      "minecraft": ">=1.19.4-"
+     },
+     "breaks": {
+      "better_mod_button": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "mixins.modmenu.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a77.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d77.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b77.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b77.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "moonlight-1.20-2.16.38B-fabric.jar",
+   "mods": [
+    {
+     "id": "moonlight",
+     "version": "1.20-2.16.38B",
+     "name": "Moonlight",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.86.0",
+      "minecraft": "1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "moonlight.mixins.json",
+    "moonlight-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "moreculling-1.20.1-0.24.6.jar",
+   "mods": [
+    {
+     "id": "moreculling",
+     "version": "1.20.1-0.24.6",
+     "name": "More Culling",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.20.1",
+      "java": ">=17",
+      "cloth-config": ">=11.0.99"
+     },
+     "breaks": {},
+     "conflicts": {
+      "cull-less-leaves": "*",
+      "sodium": "<=0.4.10"
+     },
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "moreculling.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/conditional-mixin-v0.3.2.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "moredelight-26.05.07-1.20-fabric.jar",
+   "mods": [
+    {
+     "id": "moredelight",
+     "version": "26.05.07-1.20-fabric",
+     "name": "More Delight",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.19.2",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "farmersdelight": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "naturalist-fabric-4.0.3-1.20.1.jar",
+   "mods": [
+    {
+     "id": "naturalist",
+     "version": "4.0.3",
+     "name": "Naturalist",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20.1",
+      "geckolib": ">=4.0.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "naturalist.mixins.json",
+    "naturalist-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cloth-config-fabric-8.2.88.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "notenoughanimations-fabric-1.12.7-mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "notenoughanimations",
+     "version": "1.12.7",
+     "name": "NotEnoughAnimations",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabric-api": "*"
+     },
+     "breaks": {
+      "tlskincape": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "notenoughanimations.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/TRansition-1.0.28-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/TRender-1.0.17-1.20.1-fabric-SNAPSHOT.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "ok_zoomer-fabric-5.4.0-beta.9.jar",
+   "mods": [
+    {
+     "id": "ok_zoomer",
+     "version": "5.4.0-beta.9",
+     "name": "Ok Zoomer",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.16.9",
+      "minecraft": "=1.20.1",
+      "fabric-api": ">=0.92.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "ok_zoomer.mixins.json",
+    "ok_zoomer_fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/api_fabric-0.8.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/impl-0.8.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "origins-dietary-delights-1.9.8.jar",
+   "mods": [
+    {
+     "id": "mr_origins_dietarydelights",
+     "version": "1.9.8",
+     "name": "Overgrown's Origins: Dietary Delights",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "origins-plus-plus-2.4.jar",
+   "mods": [
+    {
+     "id": "origins-plus-plus",
+     "version": "2.4",
+     "name": "Origins++",
+     "environment": "*",
+     "depends": {
+      "minecraft": "<=1.20.4",
+      "origins": "<1.13.0-alpha.4+mc.1.20.4",
+      "pehkui": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "originstweaks-1.18.3.jar",
+   "mods": [
+    {
+     "id": "originstweaks",
+     "version": "1.18.3",
+     "name": "OriginsTweaks",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20.1 <=1.20.4",
+      "origins": ">=1.10.0 <=1.13.0-alpha.4",
+      "fabric-api": "*",
+      "pehkui": "*",
+      "mr_origins_dietarydelights": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "modmenu": "*",
+      "morewaterlogging": "*"
+     }
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "overweightfarming-1.20.1-2.0.3-fabric.jar",
+   "mods": [
+    {
+     "id": "overweight_farming",
+     "version": "1.20.1-2.0.3-fabric",
+     "name": "Overweight Farming",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.3",
+      "fabric": "*",
+      "minecraft": ">=1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "overweightfarming.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/midnightlib-1.4.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "owo-lib-0.11.2+1.20.jar",
+   "mods": [
+    {
+     "id": "owo",
+     "version": "0.11.2+1.20",
+     "name": "oωo",
+     "environment": "*",
+     "depends": {
+      "fabricloader": "*",
+      "fabric": ">=0.76",
+      "minecraft": ">=1.19"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "owo.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/jankson-1.2.2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "paladins-fabric-3.1.3+1.20.1.jar",
+   "mods": [
+    {
+     "id": "paladins",
+     "version": "3.1.3+1.20.1",
+     "name": "Paladins & Priests (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.92.0",
+      "armor_model_api": ">=1.0.0",
+      "spell_engine": ">=1.10.5",
+      "spell_power": "*",
+      "shield_api": ">1.1.0",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "runes": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "paladins.mixins.json",
+    "paladins.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/shield-api-2.2.0+1.20.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "player-animation-lib-fabric-1.0.2-rc1+1.20.jar",
+   "mods": [
+    {
+     "id": "player-animator",
+     "version": "1.0.2-rc1+1.20",
+     "name": "Player Animator",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20",
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {
+      "bettercombat": "<1.6.0"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "playerAnimator-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "random-fishing-crates-1.3.3.jar",
+   "mods": [
+    {
+     "id": "mr_random_fishingcrates",
+     "version": "1.3.3",
+     "name": "Random Fishing Crates",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "ranged_weapon_api-fabric-2.3.4+1.20.1.jar",
+   "mods": [
+    {
+     "id": "ranged_weapon_api",
+     "version": "2.3.4+1.20.1",
+     "name": "RangedWeaponAPI",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.19.5",
+      "minecraft": "~1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "ranged_weapon_api.mixins.json",
+    "ranged_weapon_api.fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar",
+   "mods": [
+    {
+     "id": "reeses-sodium-options",
+     "version": "1.7.2+mc1.20.1-build.101",
+     "name": "Reese's Sodium Options",
+     "environment": "client",
+     "depends": {
+      "minecraft": ">=1.20.1",
+      "sodium": "*"
+     },
+     "breaks": {
+      "iris": "<1.1.4",
+      "sodium-extra": "<0.5.3",
+      "sodium": "<0.5.8"
+     },
+     "conflicts": {},
+     "recommends": {
+      "sodium-extra": ">=0.4.2"
+     }
+    }
+   ],
+   "mixins": [
+    "reeses-sodium-options.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "resourcefulconfig-fabric-1.20.1-2.1.3.jar",
+   "mods": [
+    {
+     "id": "resourcefulconfig",
+     "version": "2.1.3",
+     "name": "Resourcefulconfig",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "resourcefullib-fabric-1.20.1-2.1.29.jar",
+   "mods": [
+    {
+     "id": "resourcefullib",
+     "version": "2.1.29",
+     "name": "Resourceful Lib",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "resourcefullib.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/yabn-1.0.3.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/bytecodecs-1.0.2.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "rogues-fabric-3.1.3+1.20.1.jar",
+   "mods": [
+    {
+     "id": "rogues",
+     "version": "3.1.3+1.20.1",
+     "name": "Rogues & Warriors (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.92.0",
+      "armor_model_api": ">=1.0.0",
+      "spell_engine": ">=1.10.5",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "rogues.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "rpgdifficulty-1.3.16.jar",
+   "mods": [
+    {
+     "id": "rpgdifficulty",
+     "version": "1.3.16",
+     "name": "RpgDifficulty",
+     "environment": "*",
+     "depends": {
+      "java": ">=17",
+      "minecraft": ">=1.20.1",
+      "fabric-api": ">=0.92.2+1.20.1",
+      "fabricloader": ">=0.15.11",
+      "cloth-config2": ">=11.0.99"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "rpgdifficulty.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "shield_api-fabric-2.2.0+1.20.1.jar",
+   "mods": [
+    {
+     "id": "shield_api",
+     "version": "2.2.0+1.20.1",
+     "name": "Shield API",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "fabricloader": ">=0.15.0",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "shield_api.mixins.json",
+    "shield_api-fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "simplyswords-fabric-1.70.2-1.20.1.jar",
+   "mods": [
+    {
+     "id": "simplyswords",
+     "version": "1.70.2-1.20.1",
+     "name": "Simply Swords",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20.1 <=1.20.1",
+      "architectury": ">=9.2.14",
+      "fzzy_config": ">=0.6.6",
+      "simplytooltips": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "bettercombat": ">=1.7.2"
+     }
+    }
+   ],
+   "mixins": [
+    "simplyswords-common.mixins.json",
+    "simplyswords.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "sodium-extra-0.5.9+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "sodium-extra",
+     "version": "0.5.9+mc1.20.1",
+     "name": "Sodium Extra",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.16",
+      "fabric-api": "*",
+      "sodium": ">=0.5.6",
+      "minecraft": ">=1.20.1"
+     },
+     "breaks": {
+      "iris": "<1.7.0",
+      "reeses-sodium-options": "<1.4.2"
+     },
+     "conflicts": {},
+     "recommends": {
+      "reeses-sodium-options": ">=1.4.2"
+     }
+    }
+   ],
+   "mixins": [
+    "sodium-extra.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/CaffeineConfig-1.3.0+1.17.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "sodium-fabric-0.5.13+mc1.20.1.jar",
+   "mods": [
+    {
+     "id": "sodium",
+     "version": "0.5.13+mc1.20.1",
+     "name": "Sodium",
+     "environment": "client",
+     "depends": {
+      "minecraft": "1.20.1",
+      "fabricloader": ">=0.12.0",
+      "fabric-rendering-data-attachment-v1": ">=0.1",
+      "fabric-rendering-fluids-v1": ">=0.1"
+     },
+     "breaks": {
+      "optifabric": "*",
+      "canvas": "*",
+      "sodium-blendingregistry": "*",
+      "ocrenderfix_sodium": "*",
+      "betterfpsdist": "<1.20.1-3.8",
+      "bobby": "<5.0.1",
+      "cauldron_dyeing": "<1.0.11",
+      "cullleaves": "<=3.1.0",
+      "custom_hud": "<=3.1.0+1.20",
+      "dashloader": "<5.0.0-beta.2",
+      "farsight": "<1.20.1-4.0",
+      "fluidvoidfading": "<1.1.2",
+      "iceberg": "<1.1.14",
+      "iris": "<1.7.6",
+      "immersive_portals": "<=5.1.3",
+      "indium": "<1.0.36",
+      "notenoughcrashes": "<4.4.6",
+      "noxesium": "<1.0.2",
+      "rayon": "<=1.7.2+1.20.1",
+      "reeses-sodium-options": "<1.7.1",
+      "sodium-extra": "<0.5.4",
+      "sspb": "<3.2.0",
+      "supplementaries": "<=1.20-2.7.32"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "sodium.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.31+1802ada577.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-block-view-api-v2-1.0.1+1802ada577.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-data-attachment-v1-0.3.37+92a0d36777.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-rendering-fluids-v1-3.0.28+1802ada577.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.11+fb82e9d777.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "sodium-shadowy-path-blocks-3.4.2.jar",
+   "mods": [
+    {
+     "id": "sspb",
+     "version": "3.4.2",
+     "name": "Sodium Shadowy Path Blocks",
+     "environment": "client",
+     "depends": {
+      "fabricloader": ">=0.12.10",
+      "java": ">=17"
+     },
+     "breaks": {
+      "sodium": [
+       "<0.4.3",
+       ">=0.6.0-"
+      ]
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "sspb.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "spell_engine-fabric-1.10.10+1.20.1.jar",
+   "mods": [
+    {
+     "id": "spell_engine",
+     "version": "1.10.10+1.20.1",
+     "name": "Spell Engine",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.92.0",
+      "cloth-config": ">=11.1.106",
+      "player-animator": "*",
+      "spell_power": ">=1.6.0"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "trinkets": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "spell_engine.mixins.json",
+    "spell_engine-fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "spell_power-fabric-1.6.1+1.20.1.jar",
+   "mods": [
+    {
+     "id": "spell_power",
+     "version": "1.6.1+1.20.1",
+     "name": "Spell Power Attribute",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.14.0",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "spell_power.mixins.json",
+    "spell_power.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/tiny-config-3.1.0+1.20.1-fabric.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "supplementaries-1.20-3.1.44-fabric.jar",
+   "mods": [
+    {
+     "id": "supplementaries",
+     "version": "1.20-3.1.44",
+     "name": "Supplementaries",
+     "environment": "*",
+     "depends": {
+      "fabric": ">=0.92.0+1.20.1",
+      "minecraft": ">=1.20.1 <1.20.2",
+      "moonlight": ">=1.20-2.16.26"
+     },
+     "breaks": {
+      "particular": "<=1.1.1",
+      "psychedelicraft": "<=1.7.5+1.20.1"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "supplementaries.mixins.json",
+    "supplementaries-common.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.3.6.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinsquared-fabric-0.1.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "tide-fabric-1.20.1-2.1.1.jar",
+   "mods": [
+    {
+     "id": "tide",
+     "version": "2.1.1",
+     "name": "Tide",
+     "environment": "*",
+     "depends": {
+      "minecraft": "1.20.1",
+      "cloth-config": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "trade-cycling-fabric-1.20.1-1.0.7.jar",
+   "mods": [
+    {
+     "id": "trade_cycling",
+     "version": "1.20.1-1.0.7",
+     "name": "Trade Cycling",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": "1.20.1",
+      "java": ">=17"
+     },
+     "breaks": {
+      "easy_villagers": "*"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "trade_cycling.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-api-base-0.4.29+b04edc7a82.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-resource-loader-v0-0.11.7+f7923f6d82.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-lifecycle-events-v1-2.2.20+b3afc78b82.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-key-binding-api-v1-1.0.36+fb8d95da82.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-networking-api-v1-1.3.8+b3afc78b82.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/fabric-screen-api-v1-2.0.6+b3afc78b82.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "trinkets-3.7.2.jar",
+   "mods": [
+    {
+     "id": "trinkets",
+     "version": "3.7.2",
+     "name": "Trinkets",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">1.18",
+      "fabricloader": ">=0.7.0",
+      "cardinal-components-base": ">=3.0.0-0",
+      "cardinal-components-entity": ">=3.0.0-0",
+      "fabric": ">=0.51.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "trinkets.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-base-5.2.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/cardinal-components-entity-5.2.0.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "twigs-3.1.0-fabric.jar",
+   "mods": [
+    {
+     "id": "twigs",
+     "version": "3.1.0",
+     "name": "Twigs",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": "~1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "twigs.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "villagernames-1.20.1-8.9.jar",
+   "mods": [
+    {
+     "id": "villagernames",
+     "version": "8.9",
+     "name": "Villager Names",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.12.5",
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17",
+      "collective": ">=8.60"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "villagernames_fabric.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "villagersplus-fabric-mc1.20.1-4.1.1.jar",
+   "mods": [
+    {
+     "id": "villagersplus",
+     "version": "4.1.1+mc1.20.1",
+     "name": "VillagersPlus",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": ">=0.83.0",
+      "villagertradingplus": ">=1.1.0 <2",
+      "minecraft": ">=1.20 <1.20.2-",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "villagersplus-fabric.mixins.json",
+    "villagersplus-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "villagertradingplus-fabric-mc1.20.1-1.1.1.jar",
+   "mods": [
+    {
+     "id": "villagertradingplus",
+     "version": "1.1.1+mc1.20.1",
+     "name": "VillagersTradingPlus",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric-api": ">=0.83.0",
+      "minecraft": ">=1.20 <1.20.2-",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "villagertradingplus-common.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "visuality-0.7.1+1.20.jar",
+   "mods": [
+    {
+     "id": "visuality",
+     "version": "0.7.1+1.20",
+     "name": "Visuality",
+     "environment": "client",
+     "depends": {
+      "fabricloader": "*",
+      "fabric-api": "*",
+      "cloth-config": "*",
+      "minecraft": ">=1.20-beta.4 <1.21",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "visuality.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "waystones-fabric-1.20.1-14.1.21.jar",
+   "mods": [
+    {
+     "id": "waystones",
+     "version": "14.1.21",
+     "name": "Waystones",
+     "environment": "*",
+     "depends": {
+      "balm": ">=7.0.0",
+      "fabricloader": ">=0.14.21",
+      "fabric-api": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "waystones.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "wizards-fabric-3.1.3+1.20.1.jar",
+   "mods": [
+    {
+     "id": "wizards",
+     "version": "3.1.3+1.20.1",
+     "name": "Wizards (RPG Series)",
+     "environment": "*",
+     "depends": {
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.92.0",
+      "armor_model_api": ">=1.0.0",
+      "spell_engine": ">=1.10.5",
+      "structure_pool_api": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "runes": "*"
+     }
+    }
+   ],
+   "mixins": [
+    "wizards.mixins.json"
+   ],
+   "errors": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "xaerominimap-fabric-1.20.1-26.6.0.jar",
+   "mods": [
+    {
+     "id": "xaerominimap",
+     "version": "26.6.0",
+     "name": "Xaero's Minimap",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": ">=1.20 <=1.20.1",
+      "xaerolib": ">=1.0"
+     },
+     "breaks": {
+      "openpartiesandclaims": "<0.32.4",
+      "xaeroworldmap": "<1.44.0"
+     },
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [
+    "xaerohud.mixins.json",
+    "xaerohud.fabric.mixins.json",
+    "xaerominimap.mixins.json",
+    "xaerominimap.fabric.mixins.json"
+   ],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/xaerolib-fabric-1.20.1-1.7.3.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
+   "mods": [
+    {
+     "id": "yet_another_config_lib_v3",
+     "version": "3.6.6+1.20.1-fabric",
+     "name": "YetAnotherConfigLib",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": "1.20.1",
+      "java": ">=17",
+      "fabric-api": ">=0.92.0+1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {}
+    }
+   ],
+   "mixins": [],
+   "errors": [
+    "nested jar (Jar-in-Jar): META-INF/jars/common-image-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/common-io-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/common-lang-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/gson-0.2.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/imageio-core-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/imageio-metadata-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/imageio-webp-3.12.0.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/json-0.2.1.jar — check for bundled deps",
+    "nested jar (Jar-in-Jar): META-INF/jars/mixinextras-fabric-0.4.1.jar — check for bundled deps"
+   ],
+   "loader": "fabric"
+  }
+ ]
+}

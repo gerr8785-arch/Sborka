@@ -1,0 +1,13 @@
+>> starting server (heap 3G)
+>> gamerule doDaylightCycle false
+>> gamerule randomTickSpeed 3
+>> time set day
+>> difficulty peaceful
+
+==== runtime result ====
+server reached 'Done': False   uptime: 14s   exit: 1
+problems: 2
+  !! dependency resolution failure: Mod resolution failed
+  !! incompatible mods: Incompatible mods found
+warnings: 0
+report: /home/runner/work/Sborka/Sborka/build/report/runtime.txt log: /home/runner/work/Sborka/Sborka/build/report/server-run.log
