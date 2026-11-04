@@ -533,6 +533,12 @@
    "category": "travel",
    "pin": "2.13.2",
    "why": "крылья/полёт из Medieval Origins; 2.13.2 — верхняя совместимая версия"
+  },
+  {
+   "slug": "apoli",
+   "category": "library",
+   "pin": "2.9.2",
+   "why": "Origins 1.10.2 требует Apoli (в метаданных Modrinth помечен как embedded)"
   }
  ]
 }

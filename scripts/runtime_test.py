@@ -18,6 +18,7 @@ SERVER = os.path.join(ROOT, "build", "run", "server")
 LOG = os.path.join(ROOT, "build", "report", "server-run.log")
 
 FAIL_PATTERNS = [
+    (re.compile(r"Unable to summon entity"), "entity summon failed"),
     (re.compile(r"Failed to load mod"), "mod load failure"),
     (re.compile(r"Mod resolution failed"), "dependency resolution failure"),
     (re.compile(r"Incompatible mods found"), "incompatible mods"),
@@ -99,7 +100,7 @@ def main() -> int:
     text = open(LOG, errors="replace").read()
     problems = [f"{label}: {m.group(0)}" for pat, label in FAIL_PATTERNS for m in pat.finditer(text)]
     warnings = [f"{label}: {m.group(0)}" for pat, label in WARN_PATTERNS for m in pat.finditer(text)]
-    done = "\"Done (" in text and "For help, type" in text
+    done = bool(re.search(r"Done \(\d", text)) and "For help, type" in text
     uptime = round(time.time() - start)
     print("\n==== runtime result ====")
     print(f"server reached 'Done': {done}   uptime: {uptime}s   exit: {proc.returncode}")

@@ -1,14 +1,14 @@
 # Console script for the runtime smoke test. `@wait N` = wait N real seconds.
 # @stop must always be the LAST command (commands are consumed asynchronously,
 # the client stops reading stdin after shutdown begins).
-@wait 40
+@wait 45
 gamerule doDaylightCycle false
 gamerule randomTickSpeed 3
 time set day
 difficulty peaceful
 @wait 2
 # registries of the content mods
-dataPack list
+datapack list
 @wait 2
 # village / worldgen structure sets actually generated
 locate structure ctov:large/village_plains_fortified

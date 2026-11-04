@@ -68,7 +68,7 @@ def parse_ver(text: str):
 
 def _key(parsed):
     nums, pre = parsed
-    nums = tuple(n if n is not None else -1 for n in nums)
+    nums = tuple(n if n is not None else 0 for n in nums)
     return nums, (0 if pre else 1), pre
 
 
@@ -78,49 +78,50 @@ def _cmp(a, b):
 
 
 def _expand(op: str, ver: str):
-    wild = re.match(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?$", ver)
-    if wild is None:
+    """Expand ^ / ~ / wildcard predicates into inclusive bounds.
+
+    "~1.20.1" -> >=1.20.1 <1.21.0     "~1.20" -> >=1.20.0 <1.21.0
+    "~1"      -> >=1.0.0  <2.0.0      "^1.20" -> >=1.20.0 <2.0.0
+    "1.20.x"  -> >=1.20.0 <1.21.0     "1.x"   -> >=1.0.0  <2.0.0
+    anything else is a plain comparison.
+    """
+    m = re.fullmatch(r"[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?", ver.strip())
+    if m is None:
         return [(op or "=", ver)]
-    if op == "" and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*")):
-        # "1.20.x" / "1.20.*" -> >=1.20.0 <1.21.0
-        nums = [int(wild.group(1))]
-        for g in (wild.group(2), wild.group(3)):
-            if g in (None, "x", "*"):
-                break
-            nums.append(int(g))
-        lower = ".".join(str(n) for n in nums + [0] * (3 - len(nums)))
-        idx = len(nums) - 1
+    parts = [int(m.group(1))]
+    wildcard_at = None
+    for idx, g in enumerate((m.group(2), m.group(3)), start=1):
+        if g in (None, "x", "*"):
+            wildcard_at = idx
+            break
+        parts.append(int(g))
+    if wildcard_at is None:
+        wildcard_at = 2 if len(parts) == 3 else None
+
+    if op in ("", "=") and wildcard_at is not None:
+        idx = wildcard_at - 1  # index of the first wildcard component
+        nums = parts + [0] * (3 - len(parts))
+        lower = ".".join(str(n) for n in nums)
         upper_nums = nums[:idx] + [nums[idx] + 1]
         upper = ".".join(str(n) for n in upper_nums + [0] * (3 - len(upper_nums)))
         return [(">=", lower), ("<", upper)]
-    if op in ("^", "~"):
-        parts = [int(wild.group(1))]
-        for g in (wild.group(2), wild.group(3)):
-            parts.append(int(g) if g and g not in ("x", "*") else None)
-        op = op or "^"
-        if op == "^":
-            major = parts[0]
-            if major > 0:
-                upper = f"{major + 1}.0.0"
-            elif (parts[1] or 0) > 0:
-                upper = f"0.{(parts[1] or 0) + 1}.0"
-            else:
-                upper = f"0.0.{(parts[2] or 0) + 1}"
-        else:  # ~ : patch level wildcard ("~1.20.1" -> >=1.20.1 <1.21.0), semver tilde
-            upper = f"{parts[0] + 1}.0.0" if parts[1] is None else f"{parts[0]}.{(parts[1] or 0) + 1}.0"
-        base = ".".join(str(p) if p is not None else "0" for p in parts[:3])
-        return [(">=", base), ("<", upper)]
+    if op == "^":
+        nums = parts + [0] * (3 - len(parts))
+        if nums[0] > 0:
+            upper = f"{nums[0] + 1}.0.0"
+        elif nums[1] > 0:
+            upper = f"0.{nums[1] + 1}.0"
+        else:
+            upper = f"0.0.{nums[2] + 1}"
+        return [(">=", ".".join(map(str, nums))), ("<", upper)]
+    if op == "~":
+        nums = parts + [0] * (3 - len(parts))
+        upper = f"{nums[0]}.{nums[1] + 1}.0" if len(parts) >= 2 else f"{nums[0] + 1}.0.0"
+        return [(">=", ".".join(map(str, nums))), ("<", upper)]
     return [(op or "=", ver)]
 
 
 def _single(version_p, op, ver) -> bool:
-    if ver.endswith("*") or ver.endswith(".x"):
-        prefix = [int(p) for p in ver.rsplit(".", 1)[0].split(".") if p.isdigit()]
-        vnums = tuple((version_p[0] + (None,) * 3)[:3])
-        for i, p in enumerate(prefix):
-            if i >= len(vnums) or vnums[i] is None or vnums[i] != p:
-                return False
-        return True
     target = parse_ver(ver)
     if target is None:
         return True
@@ -136,7 +137,7 @@ def satisfies(version: str, predicate: str) -> bool:
         return True  # unparsable installed version: do not raise false alarms
     pred = predicate.strip()
     if pred.startswith("~") and pred.endswith("-"):  # "~1.20-" = 1.20.x
-        pred = pred[1:-1] + "x"
+        pred = pred[1:-1] + ".x"
     dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s+-\s+(\d+(?:\.\d+)*)", pred)
     if dash:
         return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
@@ -150,7 +151,6 @@ def satisfies(version: str, predicate: str) -> bool:
         if not m:
             continue
         op, ver = m.group(1) or "", m.group(2)
-        ver = ver[:-1] if ver.endswith("*") else (ver[:-2] + "x" if ver.endswith(".x") else ver)
         for o, v in _expand(op, ver):
             if not _single(vp, o, v):
                 return False
