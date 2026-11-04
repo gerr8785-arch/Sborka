@@ -1,1 +1,1 @@
-server: 135 jars -> /home/runner/work/Sborka/Sborka/build/run/server/mods  {'cached': 0, 'downloaded': 135}
+manifest errors: ["slug apoli not found on Modrinth (HTTP Error 404: Not Found) — maybe: opoli (Overgrown's Apoli), origins-apoli-armor-mixin-fix (Origins Apoli Armor Mixin Fix), ra_additions (Robin's Apoli Additions)"]

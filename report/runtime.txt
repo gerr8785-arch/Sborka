@@ -1,8 +1,6 @@
-done=False uptime=363s exit=143
+done=True uptime=366s exit=143
 
 PROBLEMS
 command/data error: Unknown or incomplete command
 
 WARNINGS
-structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
-server lag warning: Can't keep up

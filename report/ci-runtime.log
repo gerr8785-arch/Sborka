@@ -3,7 +3,7 @@
 >> gamerule randomTickSpeed 3
 >> time set day
 >> difficulty peaceful
->> dataPack list
+>> datapack list
 >> locate structure ctov:large/village_plains_fortified
 >> locate structure towns_and_towers:village_ocean
 >> setblock ~2 ~ ~ minecraft:furnace
@@ -19,10 +19,8 @@
 >> @stop
 
 ==== runtime result ====
-server reached 'Done': False   uptime: 363s   exit: 143
-problems: 2
+server reached 'Done': True   uptime: 366s   exit: 143
+problems: 1
   !! command/data error: Unknown or incomplete command
-warnings: 19
-   ~ structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
-   ~ server lag warning: Can't keep up
+warnings: 0
 report: /home/runner/work/Sborka/Sborka/build/report/runtime.txt log: /home/runner/work/Sborka/Sborka/build/report/server-run.log

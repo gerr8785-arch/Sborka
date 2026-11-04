@@ -1,43 +1,11 @@
-jars: 135  mod ids: 140
-problems: 17
-  !! origins: missing required dependency 'apoli' (>=2.9.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'cardinal-components-base' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! origins: missing required dependency 'cardinal-components-entity' (>=3.0.0) — needed by Origins-1.10.2+mc.1.20.x.jar
-  !! pehkui: missing required dependency 'kanos_config' (>=0.4.1) — needed by Pehkui-3.8.3+1.14.4-1.21.jar
-  !! puzzleslib: missing required dependency 'puzzlesaccessapi' (*) — needed by PuzzlesLib-v8.1.36-1.20.1-Fabric.jar
-  !! c2me: missing required dependency 'c2me-base' (*) — needed by c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
-  !! comforts: missing required dependency 'cardinal-components-base' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
-  !! comforts: missing required dependency 'cardinal-components-entity' (*) — needed by comforts-fabric-6.4.0+1.20.1.jar
-  !! dynamic_fps: missing required dependency 'mixinextras' (>=0.3.2) — needed by dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-  !! smarterfarmers: dependency 'moonlight' present but version 1.20-2.16.38B does not satisfy '>=1.20-2.5.0' (smarterfarmers-1.20-2.1.2-fabric.jar)
-  !! sodium: missing required dependency 'fabric-rendering-data-attachment-v1' (>=0.1) — needed by sodium-fabric-0.5.13+mc1.20.1.jar
-  !! trinkets: missing required dependency 'cardinal-components-base' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
-  !! trinkets: missing required dependency 'cardinal-components-entity' (>=3.0.0-0) — needed by trinkets-3.7.2.jar
-  !! xaerominimap: missing required dependency 'xaerolib' (>=1.0) — needed by xaerominimap-fabric-1.20.1-26.6.0.jar
-  !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
-warnings: 23
-   ~ debugify: recommends 'yet-another-config-lib' which is not installed
-   ~ immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok
-   ~ roughlyenoughitems: declares breaks with cloth-config2 <6.2-; installed 11.1.136 is outside that range — ok
-   ~ appleskin: declares breaks with roughlyenoughitems <6.0.306-alpha; installed 12.1.785 is outside that range — ok
-   ~ archers: recommends 'bundleapi' which is not installed
-   ~ medievalorigins: declares breaks with icarus ['<=2.5.0', '>2.13.2']; installed 2.13.2 is outside that range — ok
-   ~ moreculling: declares conflicts with sodium <=0.4.10; installed 0.5.13+mc1.20.1 is outside that range — ok
-   ~ originstweaks: recommends 'morewaterlogging' which is not installed
-   ~ paladins: recommends 'runes' which is not installed
-   ~ player-animator: declares breaks with bettercombat <1.6.0; installed 1.9.0+1.20.1 is outside that range — ok
-   ~ reeses-sodium-options: declares breaks with iris <1.1.4; installed 1.7.6+mc1.20.1 is outside that range — ok
-   ~ reeses-sodium-options: declares breaks with sodium-extra <0.5.3; installed 0.5.9+mc1.20.1 is outside that range — ok
-   ~ reeses-sodium-options: declares breaks with sodium <0.5.8; installed 0.5.13+mc1.20.1 is outside that range — ok
-   ~ sodium-extra: declares breaks with iris <1.7.0; installed 1.7.6+mc1.20.1 is outside that range — ok
-   ~ sodium-extra: declares breaks with reeses-sodium-options <1.4.2; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
-   ~ sodium: declares breaks with iris <1.7.6; installed 1.7.6+mc1.20.1 is outside that range — ok
-   ~ sodium: declares breaks with indium <1.0.36; installed 1.0.36+mc1.20.1 is outside that range — ok
-   ~ sodium: declares breaks with reeses-sodium-options <1.7.1; installed 1.7.2+mc1.20.1-build.101 is outside that range — ok
-   ~ sodium: declares breaks with sodium-extra <0.5.4; installed 0.5.9+mc1.20.1 is outside that range — ok
-   ~ sodium: declares breaks with sspb <3.2.0; installed 3.4.2 is outside that range — ok
-   ~ sodium: declares breaks with supplementaries <=1.20-2.7.32; installed 1.20-3.1.44 is outside that range — ok
-   ~ sspb: declares breaks with sodium ['<0.4.3', '>=0.6.0-']; installed 0.5.13+mc1.20.1 is outside that range — ok
-   ~ wizards: recommends 'runes' which is not installed
+Traceback (most recent call last):
+  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 390, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 293, in main
+    jars = scan_jars(mods_dir)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Sborka/Sborka/scripts/scan.py", line 234, in scan_jars
+    for f in sorted(os.listdir(mods_dir)):
+                    ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'build/run/client/mods'
