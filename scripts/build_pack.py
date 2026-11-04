@@ -71,10 +71,11 @@ def main() -> int:
         opts = os.path.join(ROOT, "pack", "client", "options.txt")
         if side == "client" and os.path.exists(opts):
             shutil.copy2(opts, os.path.join(tree, "options.txt"))
-        for extra in ("README_УСТАНОВКА.txt", "README_INSTALL_EN.txt"):
-            p = os.path.join(ROOT, "pack", "docs", extra)
-            if os.path.exists(p):
-                shutil.copy2(p, os.path.join(tree, extra))
+        docs_src = os.path.join(ROOT, "pack", "docs")
+        if os.path.isdir(docs_src):
+            for doc in os.listdir(docs_src):
+                if doc.lower().startswith("readme"):
+                    shutil.copy2(os.path.join(docs_src, doc), os.path.join(tree, doc))
 
     # ---- MultiMC / Prism instance metadata (so client/ can be imported directly) ----
     client_tree = os.path.join(RUN, "client")
@@ -135,6 +136,10 @@ def main() -> int:
             src = os.path.join(ROOT, "pack", "docs", doc)
             if os.path.exists(src):
                 z.write(src, doc)
+            else:  # non-UTF8 checkouts may store the Cyrillic name differently
+                for cand in os.listdir(os.path.join(ROOT, "pack", "docs")):
+                    if "УСТАНОВ" in cand or "INSTALL" in cand:
+                        z.write(os.path.join(ROOT, "pack", "docs", cand), cand)
     print("mrpack:", mrpack, round(os.path.getsize(mrpack) / 1048576, 1), "MB")
 
     if "--no-rar" in args:
