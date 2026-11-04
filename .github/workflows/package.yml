@@ -94,6 +94,7 @@ jobs:
         if: always()
         run: |
           mkdir -p report
+          rm -f report/ci-*.log report/server-latest.log report/manifest.txt report/scan.json report/runtime.txt
           for f in resolve dl-client dl-server scan build install runtime diag; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log report/ci-$f.log || true
           done
