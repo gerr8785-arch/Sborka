@@ -11,6 +11,7 @@ spec.loader.exec_module(scan)
 
 CASES = [
     # (installed version, predicate, expected)
+    # NOTE: "~1.20-" (a few older Fabric mods) is treated as ">=1.20.0 <1.21.0"
     ("1.20.1", "~1.20-", True),
     ("1.21", "~1.20-", False),
     ("1.20.1", "1.20-1.20.1", True),

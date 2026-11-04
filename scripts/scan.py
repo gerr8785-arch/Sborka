@@ -136,7 +136,7 @@ def satisfies(version: str, predicate: str) -> bool:
         return True  # unparsable installed version: do not raise false alarms
     pred = predicate.strip()
     if pred.startswith("~") and pred.endswith("-"):  # "~1.20-" = 1.20.x
-        pred = pred[1:-1] + ".*"
+        pred = pred[1:-1] + "x"
     dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s+-\s+(\d+(?:\.\d+)*)", pred)
     if dash:
         return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
