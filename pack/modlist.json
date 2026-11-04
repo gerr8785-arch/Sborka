@@ -535,6 +535,12 @@
    "slug": "kirin",
    "category": "library",
    "why": "требуется Presence Footsteps"
+  },
+  {
+   "slug": "icarus",
+   "category": "travel",
+   "pin": "2.13.2",
+   "why": "крылья/полёт из Medieval Origins; 2.13.2 — верхняя совместимая версия"
   }
  ]
 }
