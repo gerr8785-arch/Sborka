@@ -1,8 +1,10 @@
 jars: 135  top-level mod ids: 135  ids incl. bundled: 312
-problems: 1
-  !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
-warnings: 4
+problems: 0
+warnings: 7
    ~ debugify: recommends 'yet-another-config-lib' which is not installed
    ~ originstweaks: recommends 'morewaterlogging' which is not installed
    ~ paladins: recommends 'runes' which is not installed
    ~ wizards: recommends 'runes' which is not installed
+   ~ curated rule: c2me installed — альфа-мод: следите за стабильностью на слабых ПК
+   ~ curated rule: sereneseasons installed — бета-версия для 1.20.1
+   ~ curated rule: sspb installed — аддон теней для Sodium — при артефактах отключить

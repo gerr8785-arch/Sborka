@@ -19,9 +19,9 @@
 >> stop
 
 ==== runtime result ====
-server reached 'Done': True   uptime: 81s   exit: 0
+server reached 'Done': True   uptime: 68s   exit: 0
 problems: 0
-warnings: 7
+warnings: 5
    ~ structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
    ~ server lag warning: Can't keep up
 report: /home/runner/work/Sborka/Sborka/build/report/runtime.txt log: /home/runner/work/Sborka/Sborka/build/report/server-run.log

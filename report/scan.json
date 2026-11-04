@@ -452,14 +452,15 @@
   "yet_another_config_lib_v3": "3.6.6+1.20.1-fabric",
   "yungsapi": "1.20-Fabric-4.0.6"
  },
- "problems": [
-  "curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)"
- ],
+ "problems": [],
  "warnings": [
   "debugify: recommends 'yet-another-config-lib' which is not installed",
   "originstweaks: recommends 'morewaterlogging' which is not installed",
   "paladins: recommends 'runes' which is not installed",
-  "wizards: recommends 'runes' which is not installed"
+  "wizards: recommends 'runes' which is not installed",
+  "curated rule: c2me installed — альфа-мод: следите за стабильностью на слабых ПК",
+  "curated rule: sereneseasons installed — бета-версия для 1.20.1",
+  "curated rule: sspb installed — аддон теней для Sodium — при артефактах отключить"
  ],
  "jars": [
   {
