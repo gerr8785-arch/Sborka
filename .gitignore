@@ -1,6 +1,10 @@
-build/
+# build artifacts (keep compact reports in git, ignore bulky caches)
+build/report/api-cache.json
+build/report/candidates.json
+build/report/deps.json
 .ci/out/
+run/
 *.rar
 *.zip
-!pack/**
-run/
+*.jar
+!pack/**/*.jar

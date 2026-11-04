@@ -18,8 +18,8 @@ jobs:
           set -e
           mkdir -p .ci/out
           cp build/report/candidates.txt build/report/problems.txt .ci/out/ 2>/dev/null || true
-          cp /tmp/resolve.err .ci/out/resolve.err || true
+          cp /tmp/resolve.err .ci/out/resolve.err || true; true
           git config user.name "ci"; git config user.email "ci@local"
-          git add -A .ci build || true
+          git add -A build/report/*.txt || true
           git commit -m "ci: resolve report" || echo "nothing to commit"
           git push origin HEAD:arena/326781c7-sborka || true
