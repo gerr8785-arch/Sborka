@@ -28,6 +28,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: arena/326781c7-sborka
+      - name: version engine unit tests
+        run: python3 scripts/tests/test_versions.py
       - name: install rar
         run: |
           sudo apt-get update -qq
@@ -49,32 +51,34 @@ jobs:
         run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
       - name: build archives
         run: python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
-      - name: diagnostics (jar ids / sides)
+      - name: diagnostics
         if: always()
         run: |
           python3 - <<'PY' 2>&1 | tee /tmp/diag.log
-          import json, collections
-          man = json.load(open("build/manifest.json"))
-          print("manifest entries:", len(man["mods"]))
-          for m in man["mods"]:
-              if m["client_side"] == "unsupported" or m["server_side"] == "unsupported":
-                  print(f"  side-mismatch {m['slug']:<32} client={m['client_side']} server={m['server_side']}")
+          import json
+          try:
+              man = json.load(open("build/manifest.json"))
+              print("manifest entries:", len(man["mods"]), "size MB:", man["total_size_mb"])
+              for m in man["mods"]:
+                  if "unsupported" in (m["client_side"], m["server_side"]):
+                      print(f"  side {m['slug']:<34} client={m['client_side']} server={m['server_side']}")
+          except Exception as exc:
+              print("no manifest:", exc)
           try:
               sc = json.load(open("build/report/scan.json"))
               for j in sc["jars"]:
-                  nid = j.get("nested_ids") or []
-                  if nid and any(k in j["file"].lower() for k in ("origins", "apoli", "wizard", "archers")):
-                      print("nested:", j["file"], nid)
+                  if j.get("nested_ids"):
+                      print("JiJ", j["file"], "->", ", ".join(j["nested_ids"]))
           except Exception as exc:
-              print("scan unavailable:", exc)
+              print("no scan:", exc)
           PY
-      - name: setup server + runtime smoke test
+      - name: setup server
+        run: bash scripts/install_server.sh 2>&1 | tee /tmp/install.log
+      - name: runtime smoke test
         id: runtime
         continue-on-error: true
         timeout-minutes: 25
-        run: |
-          bash scripts/install_server.sh 2>&1 | tee /tmp/install.log
-          python3 scripts/runtime_test.py 2>&1 | tee /tmp/runtime.log
+        run: python3 scripts/runtime_test.py 2>&1 | tee /tmp/runtime.log
       - name: publish artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -84,22 +88,19 @@ jobs:
             build/*.mrpack
             build/*.rar
             build/report/*
-            build/run/server/logs/*
-      - name: create release
-        if: env.GH_RELEASE == '1'
-        run: echo "release step placeholder"
-      - name: commit logs (always)
+      - name: commit logs
         if: always()
         run: |
           mkdir -p report
           for f in resolve dl-client dl-server scan build install runtime diag; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log report/ci-$f.log || true
           done
-          [ -f build/report/manifest.txt ] && cp build/report/manifest.txt report/ || true
-          [ -f build/report/scan.json ] && cp build/report/scan.json report/ || true
-          [ -f build/report/runtime.txt ] && cp build/report/runtime.txt report/ || true
-          [ -f build/report/server-errors.log ] && cp build/report/server-errors.log report/ || true
-          [ -f build/run/server/logs/latest.log ] && tail -c 400000 build/run/server/logs/latest.log > report/server-latest.log || true
+          for f in manifest.txt scan.json runtime.txt server-errors.log; do
+            [ -f build/report/$f ] && cp build/report/$f report/ || true
+          done
+          if [ -f build/run/server/logs/latest.log ]; then
+            tail -c 700000 build/run/server/logs/latest.log > report/server-latest.log || true
+          fi
           git config user.name "ci"; git config user.email "ci@local"
           git add -A report || true
           git commit -m "ci: package logs" || echo "nothing to commit"
