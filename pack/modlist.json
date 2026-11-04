@@ -558,6 +558,16 @@
    "slug": "farmers-cutting",
    "category": "cooking",
    "why": "разделочная доска для совместимости культур разных модов"
+  },
+  {
+   "slug": "polymorph",
+   "category": "ui",
+   "why": "выбор результата при конфликте рецептов (много модовых рецептов)"
+  },
+  {
+   "slug": "the-bumblezone-fabric",
+   "category": "structures",
+   "why": "пчелиное измерение — уютное приключение"
   }
  ]
 }

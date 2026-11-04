@@ -142,6 +142,38 @@ def main() -> int:
                         z.write(os.path.join(ROOT, "pack", "docs", cand), cand)
     print("mrpack:", mrpack, round(os.path.getsize(mrpack) / 1048576, 1), "MB")
 
+    # ---- CurseForge-style pack metadata (works for "import instance" in many launchers) ----
+    cf_minecraft = {
+        "minecraft": {
+            "version": manifest["minecraft"],
+            "modLoaders": [{"id": f"fabric-{loader_ver}", "primary": True}],
+        }
+    }
+    with open(os.path.join(BUILD, "minecraftinstance.json"), "w", encoding="utf-8") as fh:
+        json.dump(
+            {
+                "name": PACK_NAME,
+                "version": PACK_VERSION,
+                "baseModLoader": {"name": f"fabric-{loader_ver}", "fabricLoaderVersion": loader_ver},
+                "minecraft": cf_minecraft,
+            },
+            fh,
+            indent=2,
+        )
+    with open(os.path.join(RUN, "client", "manifest.json"), "w", encoding="utf-8") as fh:
+        json.dump(
+            {
+                "manifestType": "minecraftModpack",
+                "manifestVersion": 1,
+                "name": PACK_NAME,
+                "version": PACK_VERSION,
+                "minecraft": cf_minecraft,
+                "files": [],
+            },
+            fh,
+            indent=2,
+        )
+
     if "--no-rar" in args:
         return 0
 
