@@ -173,7 +173,7 @@ def scan_jars(mods_dir: str):
                     )
                     # ids shipped inside the jar (JiJ) — they satisfy dependencies at runtime
                     def harvest(outer: zipfile.ZipFile, depth: int = 0):
-                        """yield metadata of every quilt/fabric mod jar nested inside `outer`"""
+                        """metadata of every fabric mod jar nested inside `outer` (any depth)"""
                         meta = read_json(outer, "fabric.mod.json") or {}
                         for sub in meta.get("jars") or []:
                             if not (isinstance(sub, dict) and str(sub.get("file", "")).endswith(".jar")):
@@ -181,31 +181,19 @@ def scan_jars(mods_dir: str):
                             try:
                                 with zipfile.ZipFile(io.BytesIO(outer.read(sub["file"]))) as inner:
                                     inner_meta = read_json(inner, "fabric.mod.json")
-                                    if inner_meta and depth == 0:
-                                        yield inner_meta
-                                    if depth < 1:
+                                    if inner_meta:
+                                        yield inner_meta, depth
+                                    if depth < 3:
                                         yield from harvest(inner, depth + 1)
                             except Exception:  # noqa: BLE001
                                 continue
 
                     info["nested_ids"] = []
-                    for inner_meta in harvest(z):
-                        if inner_meta and inner_meta.get("id"):
-                            info["nested_ids"].append(f"{inner_meta['id']}@{inner_meta.get('version')}")
-                            info["mods"].append(
-                                {
-                                    "id": inner_meta.get("id"),
-                                    "version": str(inner_meta.get("version", "?")),
-                                    "name": inner_meta.get("name"),
-                                    "environment": inner_meta.get("environment", "*"),
-                                    "depends": inner_meta.get("depends", {}) or {},
-                                    "breaks": {},
-                                    "conflicts": {},
-                                    "recommends": {},
-                                    "provides": [p if isinstance(p, str) else p.get("id") for p in (inner_meta.get("provides") or [])],
-                                    "bundled": True,
-                                }
-                            )
+                    for inner_meta, depth in harvest(z):
+                        if not inner_meta.get("id"):
+                            continue
+                        info["nested_ids"].append(f"{inner_meta['id']}@{inner_meta.get('version')}")
+                        # every nested mod (any depth) provides its id at runtime
                 elif quilt:
                     info["loader"] = "quilt"
                     info["mods"].append(

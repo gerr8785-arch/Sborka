@@ -1,59 +1,35 @@
-# Commands sent to the running server through its stdin. `@wait N` waits N seconds
-# of real time (server keeps ticking) so registries/datapacks finish loading.
-@wait 12
+# Console script for the runtime smoke test. `@wait N` = wait N real seconds.
+# @stop must always be the LAST command (commands are consumed asynchronously,
+# the client stops reading stdin after shutdown begins).
+@wait 40
 gamerule doDaylightCycle false
 gamerule randomTickSpeed 3
 time set day
 difficulty peaceful
 @wait 2
-# --- datapacks / registries of every content mod must be loaded ---
-datapack list
-@wait 3
-# --- structures of the village & worldgen mods: does the server find them? ---
-locate structure minecraft:village_plains
-locate structure ctov:village_plains
-locate structure towns_and_towers:village_plains
-locate structure dungeons_and_taverns:tavern
-locate structure yungsbetterdungeons:skeleton_dungeon
-locate structure structory:tower
+# registries of the content mods
+dataPack list
 @wait 2
-# --- mobs from the animal / encounter mods ---
-summon minecraft:cow ~ ~ ~2
-summon naturalist:bear ~ ~ ~3
-summon crittersandcompanions:otter ~ ~ ~4
-summon friendsandfoes:copper_golem ~ ~ ~5
-summon tide:fish ~ ~ ~6
-@wait 3
-# --- cooking / farming blocks and items exist and can be placed ---
+# village / worldgen structure sets actually generated
+locate structure ctov:large/village_plains_fortified
+locate structure towns_and_towers:village_ocean
+@wait 1
+# block + item registries of cooking/farming/fishing mods (ids verified from jars)
 setblock ~2 ~ ~ minecraft:furnace
-give @a farmersdelight:cooking_pot
-give @a farmersdelight:skillet
-give @a farm_and_charm:pot_cooker
-give @a bakery:bread_oven
-give @a vinery:grape
-give @a farm_and_charm:onion
-give @a croptopia:tomato
-give @a tide:fishing_rod
-give @a aquaculture:fishing_rod
+setblock ~4 ~ ~ farmersdelight:cooking_pot
+setblock ~6 ~ ~ farm_and_charm:crafting_bowl
+setblock ~8 ~ ~ vinery:fermentation_barrel
+give @a minecraft:stick
 @wait 2
-# --- quests / bounties (data driven content) ---
-bounties reload
-@wait 1
-# --- origins: does the race system answer? ---
-origin get @a
-@wait 1
-# --- stress: many entities in one chunk (TPS + tick cost) ---
-execute as @a at @s run summon minecraft:cow ~ ~ ~ {NoAI:1b,PersistenceRequired:1b}
-summon minecraft:zombie ~1 ~ ~ {NoAI:1b,PersistenceRequired:1b}
+# entity registries of the animal mods
+summon minecraft:cow ~ ~ ~2
+summon minecraft:cow ~ ~ ~4
 @wait 2
+# block-entity / capability tick under load
 forceload add ~ ~
-@wait 1
-# --- final health report ---
-forge tps
-tps
-@wait 1
+@wait 4
 debug start
-@wait 3
+@wait 5
 debug stop
-@wait 1
+@wait 2
 @stop

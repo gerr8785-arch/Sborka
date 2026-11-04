@@ -28,9 +28,11 @@ FAIL_PATTERNS = [
     (re.compile(r"---- Minecraft Crash Report ----"), "crash report"),
     (re.compile(r"Unknown or incomplete command"), "command/data error"),
     (re.compile(r"There is no such structure"), "missing structure (content not loaded)"),
-    (re.compile(r"Unknown item|Unknown entity"), "missing registry entry"),
+    (re.compile(r"Unknown item|Unknown entity|Can't find element"), "missing registry entry"),
+    (re.compile(r"Exception in thread"), "thread crash"),
 ]
 WARN_PATTERNS = [
+    (re.compile(r"Non-existent template pool reference"), "structure jigsaw reference missing (usually optional compat)"),
     (re.compile(r"Can't keep up|Running \d+ms behind"), "server lag warning"),
     (re.compile(r"Failed to (load|parse) .*?(recipe|advancement|loot)"), "datapack entry skipped"),
 ]
@@ -73,8 +75,16 @@ def main() -> int:
                 proc.stdin.flush()
             except BrokenPipeError:
                 break
+        # wait for stop confirmation (commands are processed asynchronously)
+        stop_deadline = time.time() + 120
+        while time.time() < stop_deadline:
+            if "Stopping server" in open(LOG, errors="replace").read():
+                break
+            if proc.poll() is not None:
+                break
+            time.sleep(1)
         # wait for clean exit
-        deadline = time.time() + 120
+        deadline = time.time() + 180
         while proc.poll() is None and time.time() < deadline:
             time.sleep(2)
         if proc.poll() is None:
