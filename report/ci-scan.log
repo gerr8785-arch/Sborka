@@ -1,5 +1,5 @@
 jars: 128  mod ids: 293
-problems: 40
+problems: 39
   !! origins: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! origins: missing required dependency 'playerabilitylib' (>=1.3.0) — needed by Origins-1.10.2+mc.1.20.x.jar
   !! apoli: missing required dependency 'calio' (>=1.11.0) — needed by Origins-1.10.2+mc.1.20.x.jar
@@ -10,7 +10,6 @@ problems: 40
   !! medievalorigins: declares BREAKS with 'icarus' ['<=2.5.0', '>2.13.2'], but it is installed (medievalorigins-fabric-1.20.1-6.7.9.jar)
   !! paladins: missing required dependency 'structure_pool_api' (*) — needed by paladins-fabric-3.1.3+1.20.1.jar
   !! rogues: missing required dependency 'structure_pool_api' (*) — needed by rogues-fabric-3.1.3+1.20.1.jar
-  !! sspb: declares BREAKS with 'sodium' ['<0.4.3', '>=0.6.0-'], but it is installed (sodium-shadowy-path-blocks-3.4.2.jar)
   !! wizards: missing required dependency 'structure_pool_api' (*) — needed by wizards-fabric-3.1.3+1.20.1.jar
   !! duplicate mod id 'com_github_llamalad7_mixinextras' shipped by: BadOptimizations-2.4.1-1.20.1.jar, Debugify-1.20.1+2.0.jar, Heracles-fabric-1.20.1-1.1.13.jar, bettercombat-fabric-1.9.0+1.20.1.jar
   !! duplicate mod id 'cloth-config' shipped by: BetterF3-7.0.2-Fabric-1.20.1.jar, appleskin-fabric-mc1.20.1-2.5.2.jar, cloth-config-11.1.136-fabric.jar, letsdo-farm_and_charm-fabric-1.0.14.jar, letsdo-vinery-fabric-1.4.41.jar, naturalist-fabric-4.0.3-1.20.1.jar
@@ -40,7 +39,7 @@ problems: 40
   !! duplicate mod id 'tiny_config' shipped by: jewelry-fabric-2.4.0+1.20.1.jar, spell_engine-fabric-1.10.10+1.20.1.jar, spell_power-fabric-1.6.1+1.20.1.jar
   !! duplicate mod id 'shield_api' shipped by: paladins-fabric-3.1.3+1.20.1.jar, shield_api-fabric-2.2.0+1.20.1.jar
   !! curated rule: wizards requires spell-engine (RPG Series работает на Spell Engine)
-warnings: 20
+warnings: 21
    ~ debugify: recommends 'yet-another-config-lib' which is not installed
    ~ immediatelyfast: declares breaks with memoryleakfix <=1.1.1; installed 1.1.5 is outside that range — ok
    ~ roughlyenoughitems: declares breaks with cloth-config2 <6.2-; installed 11.1.106 is outside that range — ok
@@ -60,4 +59,5 @@ warnings: 20
    ~ sodium: declares breaks with sodium-extra <0.5.4; installed 0.5.9+mc1.20.1 is outside that range — ok
    ~ sodium: declares breaks with sspb <3.2.0; installed 3.4.2 is outside that range — ok
    ~ sodium: declares breaks with supplementaries <=1.20-2.7.32; installed 1.20-3.1.44 is outside that range — ok
+   ~ sspb: declares breaks with sodium ['<0.4.3', '>=0.6.0-']; installed 0.5.13+mc1.20.1 is outside that range — ok
    ~ wizards: recommends 'runes' which is not installed

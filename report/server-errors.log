@@ -1,6 +1,6 @@
-[19:34:20] [main/WARN]: Mod resolution failed
-[19:34:20] [main/INFO]: Reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}]
-[19:34:20] [main/ERROR]: Incompatible mods found!
+[19:36:41] [main/WARN]: Mod resolution failed
+[19:36:41] [main/INFO]: Reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}]
+[19:36:41] [main/ERROR]: Incompatible mods found!
 net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
 	 - Mod 'Medieval Origins Revival' (medievalorigins) 6.7.9 is incompatible with version 2.5.0 or earlier or any version after 2.13.2 of mod 'Icarus' (icarus), yet a conflicting version is present: 2.14.1!
 	 - Mod 'Simply Swords' (simplyswords) 1.70.2-1.20.1 requires any version of simplytooltips, which is missing!
@@ -50,18 +50,18 @@ Unpacking org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.
 Unpacking org/joml/joml/1.10.5/joml-1.10.5.jar (libraries:org.joml:joml:1.10.5) to libraries/org/joml/joml/1.10.5/joml-1.10.5.jar
 Unpacking org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar (libraries:org.slf4j:slf4j-api:2.0.1) to libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar
 Starting net.fabricmc.loader.impl.game.minecraft.BundlerClassPathCapture
-[19:34:19] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.20.1
-[19:34:19] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
-[19:34:19] [ForkJoinPool-1-worker-4/WARN]: Mod ends_delight uses the version refabricated-1.20.1-2.1 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'refabricated'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[19:34:19] [ForkJoinPool-1-worker-1/WARN]: The mod "dungeons_arise" contains invalid entries in its mod json:
+[19:36:40] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.20.1
+[19:36:40] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[19:36:40] [ForkJoinPool-1-worker-3/WARN]: Mod ends_delight uses the version refabricated-1.20.1-2.1 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'refabricated'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[19:36:40] [ForkJoinPool-1-worker-4/WARN]: The mod "dungeons_arise" contains invalid entries in its mod json:
 - Unsupported root entry "credits" at line 12 column 12
-[19:34:19] [ForkJoinPool-1-worker-3/WARN]: Mod mr_dungeons_andtaverns uses the version 3.0.3.f which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'f'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[19:34:20] [main/WARN]: Mod resolution failed
-[19:34:20] [main/INFO]: Immediate reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, ROOT_FORCELOAD_SINGLE icarus 2.14.1, ROOT_FORCELOAD_SINGLE medievalorigins 6.7.9]
-[19:34:20] [main/INFO]: Reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}]
-[19:34:20] [main/INFO]: SERVER environment disabled: [c2me-client-uncapvd, fabric-renderer-api-v1, fabric-model-loading-api-v1, fabric-keybindings-v0, fabric-client-tags-api-v1, fabric-screen-api-v1, fabric-renderer-indigo, fabric-blockrenderlayer-v1, fabric-renderer-registries-v1, fabric-models-v0, fabric-rendering-v0, fabric-sound-api-v1, fabric-rendering-v1, fabric-key-binding-api-v1]
-[19:34:20] [main/INFO]: Fix: add [add:simplytooltips 1 ([(-∞,∞)])], remove [], replace [[medievalorigins 6.7.9] -> add:medievalorigins 1 ([(-∞,∞)])]
-[19:34:20] [main/ERROR]: Incompatible mods found!
+[19:36:41] [ForkJoinPool-1-worker-1/WARN]: Mod mr_dungeons_andtaverns uses the version 3.0.3.f which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'f'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[19:36:41] [main/WARN]: Mod resolution failed
+[19:36:41] [main/INFO]: Immediate reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, ROOT_FORCELOAD_SINGLE icarus 2.14.1, ROOT_FORCELOAD_SINGLE medievalorigins 6.7.9]
+[19:36:41] [main/INFO]: Reason: [NEG_HARD_DEP medievalorigins 6.7.9 {breaks icarus @ [<=2.5.0 || >2.13.2]}, HARD_DEP simplyswords 1.70.2-1.20.1 {depends simplytooltips @ [*]}]
+[19:36:41] [main/INFO]: SERVER environment disabled: [c2me-client-uncapvd, fabric-model-loading-api-v1, fabric-renderer-api-v1, fabric-keybindings-v0, fabric-client-tags-api-v1, fabric-screen-api-v1, fabric-renderer-indigo, fabric-blockrenderlayer-v1, fabric-renderer-registries-v1, fabric-models-v0, fabric-sound-api-v1, fabric-rendering-v0, fabric-key-binding-api-v1, fabric-rendering-v1]
+[19:36:41] [main/INFO]: Fix: add [add:simplytooltips 1 ([(-∞,∞)])], remove [], replace [[medievalorigins 6.7.9] -> add:medievalorigins 1 ([(-∞,∞)])]
+[19:36:41] [main/ERROR]: Incompatible mods found!
 net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
 A potential solution has been determined, this may resolve your problem:
 	 - Install simplytooltips, any version.
