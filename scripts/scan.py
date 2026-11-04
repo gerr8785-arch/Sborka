@@ -145,9 +145,9 @@ def scan_jars(mods_dir: str):
                                 if isinstance(item, str):
                                     info["mixins"].append(item)
                     if isinstance(fabric.get("jars"), list):
-                        for sub in fabric["jars"]:
-                            if isinstance(sub, dict) and sub.get("file", "").endswith(".jar"):
-                                info["errors"].append(f"nested jar (Jar-in-Jar): {sub['file']} — check for bundled deps")
+                        info["nested"] = [
+                            sub["file"] for sub in fabric["jars"] if isinstance(sub, dict) and sub.get("file", "").endswith(".jar")
+                        ]
                     for mid, mdata in (fabric.get("depends", {}) or {}).items():
                         pass
                     info["mods"].append(
@@ -202,6 +202,31 @@ def main() -> int:
         out_json = sys.argv[sys.argv.index("--json") + 1]
 
     jars = scan_jars(mods_dir)
+
+    # ids shipped inside jars (JiJ) and ids provided by Fabric API modules
+    bundled: dict[str, str] = {}
+    for j in jars:
+        for sub in j.get("nested", []):
+            bundled[os.path.basename(sub)[:-4].lower()] = j["file"]
+    provided_by_api = {
+        "fabric-api-base", "fabric-api-lookup-api-v1", "fabric-biome-api-v1", "fabric-block-api-v1",
+        "fabric-blockrenderlayer-v1", "fabric-client-tags-api-v1", "fabric-command-api-v1",
+        "fabric-command-api-v2", "fabric-content-registries-v0", "fabric-convention-tags-v1",
+        "fabric-crash-report-info-v1", "fabric-data-attachment-api-v1", "fabric-data-generation-api-v1",
+        "fabric-dimensions-v1", "fabric-entity-events-v1", "fabric-events-interaction-v0",
+        "fabric-events-lifecycle-v0", "fabric-game-rule-api-v1", "fabric-gametest-api-v1",
+        "fabric-item-api-v1", "fabric-item-group-api-v1", "fabric-key-binding-api-v1",
+        "fabric-lifecycle-events-v1", "fabric-loot-api-v2", "fabric-message-api-v1",
+        "fabric-mining-level-api-v1", "fabric-model-loading-api-v1", "fabric-models-v0",
+        "fabric-networking-api-v1", "fabric-object-builder-api-v1", "fabric-particles-v1",
+        "fabric-recipe-api-v1", "fabric-registry-sync-v0", "fabric-renderer-api-v1",
+        "fabric-renderer-indigo", "fabric-rendering-fluids-v1", "fabric-rendering-v0",
+        "fabric-rendering-v1", "fabric-resource-conditions-api-v1", "fabric-resource-loader-v0",
+        "fabric-screen-api-v1", "fabric-screen-handler-api-v1", "fabric-sound-api-v1",
+        "fabric-transfer-api-v1", "fabric-transitive-access-wideners-v1", "fabric-tag-api-v1",
+        "fabric-loot-tables-v1", "fabric-keybindings-v0", "fabric-biomes-v1", "fabric",
+        "fabric-loader", "minecraft", "java", "fabricloader",
+    }
     # global id registry
     have: dict[str, list] = {}
     for j in jars:
@@ -222,6 +247,10 @@ def main() -> int:
             for dep, pred in m["depends"].items():
                 if dep in ("minecraft", "java", "fabricloader", "fabric"):
                     continue
+                if dep in provided_by_api:
+                    continue
+                if dep not in have and dep.lower() in bundled:
+                    continue
                 if dep not in have:
                     problems.append(f"{m['id']}: missing required dependency '{dep}' ({pred}) — needed by {j['file']}")
                     continue
@@ -236,6 +265,13 @@ def main() -> int:
             for key in ("breaks", "conflicts"):
                 for other, pred in (m[key] or {}).items():
                     if other in have:
+                        if isinstance(pred, str) and pred not in ("*", "") and not any(
+                            satisfies(v, pred) for v, _ in have[other]
+                        ):
+                            warnings.append(
+                                f"{m['id']}: declares {key} with {other} {pred}; installed {have[other][0][0]} is outside that range — ok"
+                            )
+                            continue
                         problems.append(f"{m['id']}: declares {key.upper()} with '{other}' {pred}, but it is installed ({j['file']})")
             for other, pred in (m["recommends"] or {}).items():
                 if other not in have:
