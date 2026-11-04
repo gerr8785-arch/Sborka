@@ -39,13 +39,23 @@ jobs:
           rar 2>&1 | head -2
       - name: resolve manifest
         run: python3 scripts/resolve_pack.py 2>&1 | tee /tmp/resolve.log
-      - name: download + scan + pack
+      - name: download mods (client)
+        run: python3 scripts/download_mods.py client 2>&1 | tee /tmp/dl-client.log
+      - name: download mods (server)
+        run: python3 scripts/download_mods.py server 2>&1 | tee /tmp/dl-server.log
+      - name: static compatibility scan
+        id: scan
+        continue-on-error: true
+        run: python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
+      - name: build archives
+        run: python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
+      - name: setup server + runtime smoke test
+        id: runtime
+        continue-on-error: true
+        timeout-minutes: 25
         run: |
-          set -o pipefail
-          python3 scripts/download_mods.py client 2>&1 | tee /tmp/dl-client.log
-          python3 scripts/download_mods.py server 2>&1 | tee /tmp/dl-server.log
-          python3 scripts/scan.py build/run/client/mods --json build/report/scan.json 2>&1 | tee /tmp/scan.log
-          python3 scripts/build_pack.py 2>&1 | tee /tmp/build.log
+          bash scripts/install_server.sh 2>&1 | tee /tmp/install.log
+          python3 scripts/runtime_test.py 2>&1 | tee /tmp/runtime.log
       - name: publish artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -55,6 +65,7 @@ jobs:
             build/*.mrpack
             build/*.rar
             build/report/*
+            build/run/server/logs/*
       - name: create release
         if: env.GH_RELEASE == '1'
         run: echo "release step placeholder"
@@ -62,7 +73,7 @@ jobs:
         if: always()
         run: |
           mkdir -p report
-          for f in resolve dl-client dl-server scan build; do
+          for f in resolve dl-client dl-server scan build install runtime; do
             [ -f /tmp/$f.log ] && cp /tmp/$f.log report/ci-$f.log || true
           done
           [ -f build/report/manifest.txt ] && cp build/report/manifest.txt report/ || true

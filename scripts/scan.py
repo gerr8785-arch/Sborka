@@ -61,7 +61,9 @@ def _expand(op: str, ver):
     """return list of (op, version) terms for ^ / ~ / wildcards"""
     text = ver
     wild = re.match(r"^[vV]?(\d+)(?:\.(\d+|x|\*))?(?:\.(\d+|x|\*))?$", text)
-    if op in ("^", "~") or (op == "" and wild and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*"))):
+    if wild is None:
+        return [(op or "=", text)]
+    if op in ("^", "~") or (op == "" and (wild.group(2) in ("x", "*") or wild.group(3) in ("x", "*"))):
         parts = [int(wild.group(1)) if wild.group(1) else 0]
         for g in (wild.group(2), wild.group(3)):
             parts.append(int(g) if g and g not in ("x", "*") else None)
@@ -82,6 +84,10 @@ def _expand(op: str, ver):
 def satisfies(version: str, predicate: str) -> bool:
     if not predicate or predicate.strip() in ("*", "*.*", "any"):
         return True
+    pred = predicate.strip()
+    dash = re.fullmatch(r"(\d+(?:\.\d+)*)\s*-\s*(\d+(?:\.\d+)*)", pred)
+    if dash:  # "1.20-1.20.1" style range
+        return satisfies(version, f">={dash.group(1)} <={dash.group(2)}")
     vp = parse_ver(version)
     if vp is None:
         return True  # unparsable version: don't false-positive
