@@ -228,6 +228,15 @@ def scan_jars(mods_dir: str):
     return jars
 
 
+def _matches_any(pred, installed_versions) -> bool:
+    """True when at least one installed version falls into the predicate."""
+    if isinstance(pred, list):
+        return any(_matches_any(p, installed_versions) for p in pred)
+    if not isinstance(pred, str) or pred in ("*", "", "any"):
+        return True
+    return any(satisfies(v, pred) for v in installed_versions)
+
+
 def main() -> int:
     mods_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "build", "run", "client", "mods")
     out_json = None
@@ -301,9 +310,7 @@ def main() -> int:
             for key in ("breaks", "conflicts"):
                 for other, pred in (m[key] or {}).items():
                     if other in have:
-                        if isinstance(pred, str) and pred not in ("*", "") and not any(
-                            satisfies(v, pred) for v, _ in have[other]
-                        ):
+                        if not _matches_any(pred, [v for v, _ in have[other]]):
                             warnings.append(
                                 f"{m['id']}: declares {key} with {other} {pred}; installed {have[other][0][0]} is outside that range — ok"
                             )
