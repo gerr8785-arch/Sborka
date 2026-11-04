@@ -78,6 +78,9 @@ jobs:
           done
           [ -f build/report/manifest.txt ] && cp build/report/manifest.txt report/ || true
           [ -f build/report/scan.json ] && cp build/report/scan.json report/ || true
+          [ -f build/report/runtime.txt ] && cp build/report/runtime.txt report/ || true
+          [ -f build/report/server-errors.log ] && cp build/report/server-errors.log report/ || true
+          [ -f build/run/server/logs/latest.log ] && tail -c 400000 build/run/server/logs/latest.log > report/server-latest.log || true
           git config user.name "ci"; git config user.email "ci@local"
           git add -A report || true
           git commit -m "ci: package logs" || echo "nothing to commit"

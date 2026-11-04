@@ -104,6 +104,13 @@ def main() -> int:
     for key in ("Done (", "TPS", "Loaded ", "structure"):
         for m in re.finditer(rf"^.*{re.escape(key)}.*$", text, re.M):
             pass
+    # keep the interesting slice of the log for the CI report
+    keys = re.compile(r"(Incompatible|incompatible|Failed|failed|Error|error|Exception|Exception|requires|depends|Mixin|missing|Missing|Caused by|Mod resolution|----)")
+    interesting = [ln for ln in text.splitlines() if keys.search(ln)]
+    trim = os.path.join(ROOT, "build", "report", "server-errors.log")
+    with open(trim, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(interesting[-400:]) + "\n\n=== tail ===\n" + "\n".join(text.splitlines()[-120:]))
+
     report = os.path.join(ROOT, "build", "report", "runtime.txt")
     with open(report, "w", encoding="utf-8") as fh:
         fh.write(f"done={done} uptime={uptime}s exit={proc.returncode}\n\nPROBLEMS\n" + "\n".join(dict.fromkeys(problems)))
