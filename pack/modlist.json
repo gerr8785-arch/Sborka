@@ -1,122 +1,534 @@
 {
-  "_comment": "Curated RPG / cozy-village pack. Fabric 1.20.1. 'limit' counts every jar (mods + libraries). resolve_pack.py adds required libraries automatically and fails if the limit is exceeded or a dependency is missing.",
-  "limit": 150,
-  "mods": [
-    {"slug": "fabric-api", "category": "library", "why": "ядро Fabric API"},
-    {"slug": "fabric-language-kotlin", "category": "library", "why": "Kotlin-рантайм для модов"},
-
-    {"slug": "sodium", "category": "optimization", "why": "рендер: главный прирост FPS"},
-    {"slug": "sodium-extra", "category": "optimization", "why": "доп. настройки графики (туман, частицы)"},
-    {"slug": "reeses-sodium-options", "category": "optimization", "why": "удобное меню графики"},
-    {"slug": "indium", "category": "optimization", "why": "FRAPI-совместимость Sodium (нужно для модов на жидкостях/моделях)"},
-    {"slug": "iris", "category": "optimization", "why": "шейдеры (опционально, по умолчанию выключены)"},
-    {"slug": "lithium", "category": "optimization", "why": "оптимизация тиков мира/ИИ"},
-    {"slug": "ferrite-core", "category": "optimization", "why": "экономия ОЗУ"},
-    {"slug": "krypton", "category": "optimization", "why": "сетевая оптимизация (сервер/мультиплеер)"},
-    {"slug": "c2me-fabric", "category": "optimization", "why": "многопоточная загрузка чанков", "allow_beta": true},
-    {"slug": "memoryleakfix", "category": "optimization", "why": "утечки памяти"},
-    {"slug": "moreculling", "category": "optimization", "why": "отсечение невидимых граней"},
-    {"slug": "immediatelyfast", "category": "optimization", "why": "быстрый HUD/интерфейс/текст"},
-    {"slug": "entityculling", "category": "optimization", "why": "не рендерить сущности за стенами"},
-    {"slug": "clumps", "category": "optimization", "why": "слипание сфер опыта (меньше лагов)"},
-    {"slug": "debugify", "category": "optimization", "why": "фиксы багов ванилы"},
-    {"slug": "badoptimizations", "category": "optimization", "why": "микро-оптимизации рендера"},
-    {"slug": "dynamic-fps", "category": "optimization", "why": "снижает FPS в меню/фоне"},
-    {"slug": "modernfix", "category": "optimization", "why": "быстрый старт, меньше памяти"},
-
-    {"slug": "modmenu", "category": "ui", "why": "меню модов"},
-    {"slug": "appleskin", "category": "ui", "why": "показ сытости/насыщения"},
-    {"slug": "jade", "category": "ui", "why": "подсказки о блоках и сущностях"},
-    {"slug": "betterf3", "category": "ui", "why": "читаемый F3"},
-    {"slug": "controlling", "category": "ui", "why": "поиск по клавишам"},
-    {"slug": "mouse-tweaks", "category": "ui", "why": "удобные инвентари"},
-    {"slug": "ok-zoomer", "category": "ui", "why": "зум"},
-    {"slug": "xaeros-minimap", "category": "ui", "why": "миникарта"},
-    {"slug": "rei", "category": "ui", "why": "просмотр рецептов (в т.ч. модовых)"},
-    {"slug": "travelers-titles", "category": "ui", "why": "титулы биомов — атмосфера"},
-
-    {"slug": "origins", "category": "races", "why": "выбор расы/происхождения"},
-    {"slug": "origins-classes", "category": "races", "why": "классы поверх расы"},
-    {"slug": "medieval-origins-revival", "category": "races", "why": "расы в средневеково-фэнтезийном стиле"},
-    {"slug": "origins-plus-plus", "category": "races", "why": "100+ дополнительных происхождений"},
-    {"slug": "extra-origins", "category": "races", "why": "ещё происхождения"},
-    {"slug": "originstweaks", "category": "races", "why": "баланс ванильных рас"},
-
-    {"slug": "wizards", "category": "magic", "why": "магия: посохи, заклинания"},
-    {"slug": "jewelry", "category": "magic", "why": "ювелирка и самоцветы"},
-    {"slug": "paladins-and-priests", "category": "magic", "why": "паладины и жрецы"},
-    {"slug": "archers", "category": "magic", "why": "стрельба из лука"},
-    {"slug": "rogues-and-warriors", "category": "magic", "why": "ближний бой, кинжалы"},
-    {"slug": "gazebos", "category": "magic", "why": "беседки-библиотеки заклинаний в деревнях"},
-    {"slug": "better-combat", "category": "combat", "why": "анимации и ощущение боя"},
-    {"slug": "combat-roll", "category": "combat", "why": "перекаты"},
-    {"slug": "simply-swords", "category": "combat", "why": "уникальные мечи с абилками"},
-    {"slug": "artifacts", "category": "combat", "why": "находки-артефакты в сундуках"},
-    {"slug": "rpgdifficulty", "category": "combat", "why": "мобы крепчают с расстоянием"},
-    {"slug": "patchouli", "category": "library", "why": "книги-гайды"},
-
-    {"slug": "ftb-quests-fabric", "category": "quests", "why": "квесты (дерево заданий)"},
-    {"slug": "quests-teams-fixes", "category": "quests", "why": "фикс квестов"},
-    {"slug": "ftb-quests-freeze-fix", "category": "quests", "why": "убирает фризы меню квестов"},
-    {"slug": "bountiful", "category": "quests", "why": "доски контрактов у жителей"},
-
-    {"slug": "villagersplus", "category": "villages", "why": "новые профессии/торговля"},
-    {"slug": "guard-villagers-fabricquilt", "category": "villages", "why": "стража деревень"},
-    {"slug": "villager-names-serilum", "category": "villages", "why": "у жителей есть имена"},
-    {"slug": "trade-cycling", "category": "villages", "why": "перегенерация сделок"},
-    {"slug": "smarter-farmers-farmers-replant", "category": "villages", "why": "фермеры пересеивают модовые культуры"},
-    {"slug": "chefs-delight", "category": "villages", "why": "повара-жители"},
-
-    {"slug": "tide", "category": "fishing", "why": "рыбалка: новые рыбы и трофеи"},
-    {"slug": "fish-of-thieves", "category": "fishing", "why": "рыбалка с приколами, трофеи"},
-    {"slug": "fishing-real", "category": "fishing", "why": "реальные сущности-рыбы"},
-    {"slug": "random-fishing-crates", "category": "fishing", "why": "ящики с добычей"},
-    {"slug": "enchanted-fishing-line", "category": "fishing", "why": "красивая леска"},
-    {"slug": "fishing-rod-fix", "category": "fishing", "why": "фикс рендера удочки"},
-
-    {"slug": "farmers-delight-refabricated", "category": "cooking", "why": "готовка: ножи, сковорода, кастрюля"},
-    {"slug": "more-delight", "category": "cooking", "why": "ещё блюда и ножи"},
-    {"slug": "ends-delight", "category": "cooking", "why": "блюда Края"},
-    {"slug": "cooking-for-blockheads", "category": "cooking", "why": "кухня-мультиблок, видно что можно приготовить"},
-    {"slug": "lets-do-farm-charm", "category": "cooking", "why": "ферма и уют: сыроварня, печь"},
-    {"slug": "lets-do-bakery", "category": "cooking", "why": "пекарня и выпечка"},
-    {"slug": "lets-do-vinery", "category": "cooking", "why": "виноград и вино"},
-    {"slug": "lets-do-candlelight", "category": "cooking", "why": "кухня, свечи, уют"},
-    {"slug": "overweight-farming", "category": "farming", "why": "больше культур и еды"},
-    {"slug": "farming-for-blockheads", "category": "farming", "why": "рынок семян, спринклеры"},
-    {"slug": "serene-seasons", "category": "farming", "why": "сезоны — уютный ритм года"},
-
-    {"slug": "terralith", "category": "worldgen", "why": "красивые биомы без лагов"},
-    {"slug": "incendium", "category": "worldgen", "why": "переработка Нижнего мира"},
-    {"slug": "structory", "category": "structures", "why": "атмосферные постройки"},
-    {"slug": "structory-towers", "category": "structures", "why": "башни для исследования"},
-    {"slug": "ct-overhaul-village", "category": "structures", "why": "большие красивые деревни"},
-    {"slug": "villages-and-pillages", "category": "structures", "why": "лагеря разбойников и деревни"},
-    {"slug": "towns-and-towers", "category": "structures", "why": "города и башни"},
-    {"slug": "dungeons-and-taverns", "category": "structures", "why": "таверны и подземелья"},
-    {"slug": "yungs-better-dungeons", "category": "structures", "why": "подземелья"},
-    {"slug": "when-dungeons-arise", "category": "structures", "why": "подземелья-руины"},
-
-    {"slug": "waystones", "category": "travel", "why": "телепорты между деревнями"},
-    {"slug": "inmis", "category": "storage", "why": "рюкзаки"},
-    {"slug": "comforts", "category": "travel", "why": "спальные мешки"},
-    {"slug": "trinkets", "category": "library", "why": "слоты украшений"},
-
-    {"slug": "handcrafted", "category": "decoration", "why": "мебель и декор"},
-    {"slug": "twigs", "category": "decoration", "why": "декор из дерева/камня"},
-    {"slug": "supplementaries", "category": "decoration", "why": "фонари, верёвки, таблички, уют"},
-
-    {"slug": "critters-and-companions", "category": "animals", "why": "зверьё для фермы"},
-    {"slug": "naturalist", "category": "animals", "why": "животные, пчёлы, медведи"},
-    {"slug": "friends-and-foes", "category": "animals", "why": "дружелюбные мобы"},
-    {"slug": "doggytalents", "category": "animals", "why": "дрессировка собак"},
-
-    {"slug": "ambientsounds", "category": "audio", "why": "атмосферные звуки"},
-    {"slug": "presence-footsteps", "category": "audio", "why": "шаги по поверхностям"},
-    {"slug": "fallingleaves", "category": "visual", "why": "падающие листья"},
-    {"slug": "not-enough-animations", "category": "visual", "why": "анимации игрока и мобов"},
-    {"slug": "visuality", "category": "visual", "why": "мелкие визуальные детали"},
-    {"slug": "make-bubbles-pop", "category": "visual", "why": "пузырьки"},
-    {"slug": "sodium-shadowy-path-blocks", "category": "visual", "why": "мягкие тени у неполных блоков"}
-  ]
+ "_comment": "Curated RPG / cozy-village pack. Fabric 1.20.1. 'limit' counts every jar (mods + libraries). resolve_pack.py adds required libraries automatically and fails if the limit is exceeded or a required dependency is missing.",
+ "limit": 150,
+ "mods": [
+  {
+   "slug": "fabric-api",
+   "category": "library",
+   "why": "ядро Fabric API"
+  },
+  {
+   "slug": "fabric-language-kotlin",
+   "category": "library",
+   "why": "Kotlin-рантайм для модов"
+  },
+  {
+   "slug": "sodium",
+   "category": "optimization",
+   "why": "рендер: главный прирост FPS"
+  },
+  {
+   "slug": "sodium-extra",
+   "category": "optimization",
+   "why": "доп. настройки графики (туман, частицы, звёзды)"
+  },
+  {
+   "slug": "reeses-sodium-options",
+   "category": "optimization",
+   "why": "удобное меню графики"
+  },
+  {
+   "slug": "indium",
+   "category": "optimization",
+   "why": "FRAPI-совместимость Sodium (нужно для модов на жидкостях/моделях)"
+  },
+  {
+   "slug": "iris",
+   "category": "optimization",
+   "why": "шейдеры (опционально, по умолчанию выключены)"
+  },
+  {
+   "slug": "lithium",
+   "category": "optimization",
+   "why": "оптимизация тиков мира и ИИ"
+  },
+  {
+   "slug": "ferrite-core",
+   "category": "optimization",
+   "why": "экономия ОЗУ"
+  },
+  {
+   "slug": "krypton",
+   "category": "optimization",
+   "why": "сетевая оптимизация"
+  },
+  {
+   "slug": "c2me-fabric",
+   "category": "optimization",
+   "why": "многопоточная загрузка чанков",
+   "allow_beta": true
+  },
+  {
+   "slug": "memoryleakfix",
+   "category": "optimization",
+   "why": "утечки памяти"
+  },
+  {
+   "slug": "moreculling",
+   "category": "optimization",
+   "why": "отсечение невидимых граней"
+  },
+  {
+   "slug": "immediatelyfast",
+   "category": "optimization",
+   "why": "быстрый HUD/интерфейс/текст"
+  },
+  {
+   "slug": "entityculling",
+   "category": "optimization",
+   "why": "не рендерить сущности за стенами"
+  },
+  {
+   "slug": "clumps",
+   "category": "optimization",
+   "why": "слипание сфер опыта"
+  },
+  {
+   "slug": "debugify",
+   "category": "optimization",
+   "why": "фиксы багов ванилы"
+  },
+  {
+   "slug": "badoptimizations",
+   "category": "optimization",
+   "why": "микро-оптимизации рендера"
+  },
+  {
+   "slug": "dynamic-fps",
+   "category": "optimization",
+   "why": "снижает FPS в меню и фоне"
+  },
+  {
+   "slug": "modernfix",
+   "category": "optimization",
+   "why": "быстрый старт, меньше памяти"
+  },
+  {
+   "slug": "modmenu",
+   "category": "ui",
+   "why": "меню модов"
+  },
+  {
+   "slug": "appleskin",
+   "category": "ui",
+   "why": "показ сытости и насыщения"
+  },
+  {
+   "slug": "jade",
+   "category": "ui",
+   "why": "подсказки о блоках и сущностях"
+  },
+  {
+   "slug": "betterf3",
+   "category": "ui",
+   "why": "читаемый F3"
+  },
+  {
+   "slug": "controlling",
+   "category": "ui",
+   "why": "поиск по клавишам"
+  },
+  {
+   "slug": "mouse-tweaks",
+   "category": "ui",
+   "why": "удобные инвентари"
+  },
+  {
+   "slug": "ok-zoomer",
+   "category": "ui",
+   "why": "зум"
+  },
+  {
+   "slug": "xaeros-minimap",
+   "category": "ui",
+   "why": "миникарта"
+  },
+  {
+   "slug": "rei",
+   "category": "ui",
+   "why": "просмотр рецептов (в т.ч. модовых)"
+  },
+  {
+   "slug": "travelers-titles",
+   "category": "ui",
+   "why": "титулы биомов — атмосфера"
+  },
+  {
+   "slug": "origins",
+   "category": "races",
+   "why": "выбор расы/происхождения"
+  },
+  {
+   "slug": "origins-classes",
+   "category": "races",
+   "why": "классы поверх расы"
+  },
+  {
+   "slug": "medieval-origins-revival",
+   "category": "races",
+   "why": "расы в средневеково-фэнтезийном стиле"
+  },
+  {
+   "slug": "origins-plus-plus",
+   "category": "races",
+   "why": "100+ дополнительных происхождений"
+  },
+  {
+   "slug": "extra-origins",
+   "category": "races",
+   "why": "ещё происхождения"
+  },
+  {
+   "slug": "originstweaks",
+   "category": "races",
+   "why": "баланс ванильных рас"
+  },
+  {
+   "slug": "wizards",
+   "category": "magic",
+   "why": "магия: посохи и заклинания"
+  },
+  {
+   "slug": "jewelry",
+   "category": "magic",
+   "why": "ювелирка и самоцветы"
+  },
+  {
+   "slug": "paladins-and-priests",
+   "category": "magic",
+   "why": "паладины и жрецы"
+  },
+  {
+   "slug": "archers",
+   "category": "magic",
+   "why": "стрельба из лука"
+  },
+  {
+   "slug": "rogues-and-warriors",
+   "category": "magic",
+   "why": "кинжалы и ближний бой"
+  },
+  {
+   "slug": "gazebos",
+   "category": "magic",
+   "why": "беседки-библиотеки заклинаний в деревнях"
+  },
+  {
+   "slug": "better-combat",
+   "category": "combat",
+   "why": "анимации и ощущение боя"
+  },
+  {
+   "slug": "combat-roll",
+   "category": "combat",
+   "why": "перекаты"
+  },
+  {
+   "slug": "simply-swords",
+   "category": "combat",
+   "why": "уникальные мечи с абилками"
+  },
+  {
+   "slug": "artifacts",
+   "category": "combat",
+   "why": "артефакты в сундуках"
+  },
+  {
+   "slug": "rpgdifficulty",
+   "category": "combat",
+   "why": "мобы крепчают с расстоянием"
+  },
+  {
+   "slug": "patchouli",
+   "category": "library",
+   "why": "книги-гайды"
+  },
+  {
+   "slug": "odyssey-quests",
+   "category": "quests",
+   "why": "квесты с деревом заданий"
+  },
+  {
+   "slug": "bountiful",
+   "category": "quests",
+   "why": "доски контрактов у жителей — «квесты у жителей»"
+  },
+  {
+   "slug": "villagersplus",
+   "category": "villages",
+   "why": "новые профессии и торговля"
+  },
+  {
+   "slug": "guard-villagers-fabricquilt",
+   "category": "villages",
+   "why": "стража деревень"
+  },
+  {
+   "slug": "villager-names-serilum",
+   "category": "villages",
+   "why": "у жителей есть имена"
+  },
+  {
+   "slug": "trade-cycling",
+   "category": "villages",
+   "why": "перегенерация сделок"
+  },
+  {
+   "slug": "smarter-farmers-farmers-replant",
+   "category": "villages",
+   "why": "фермеры пересеивают модовые культуры"
+  },
+  {
+   "slug": "tide",
+   "category": "fishing",
+   "why": "рыбалка: новые рыбы и трофеи"
+  },
+  {
+   "slug": "fish-of-thieves",
+   "category": "fishing",
+   "why": "рыбалка с трофеями и приколами"
+  },
+  {
+   "slug": "fishing-real",
+   "category": "fishing",
+   "why": "реальные сущности-рыбы"
+  },
+  {
+   "slug": "random-fishing-crates",
+   "category": "fishing",
+   "why": "ящики с добычей"
+  },
+  {
+   "slug": "enchanted-fishing-line",
+   "category": "fishing",
+   "why": "красивая леска"
+  },
+  {
+   "slug": "farmers-delight-refabricated",
+   "category": "cooking",
+   "why": "готовка: ножи, сковорода, кастрюля"
+  },
+  {
+   "slug": "more-delight",
+   "category": "cooking",
+   "why": "ещё блюда и ножи"
+  },
+  {
+   "slug": "ends-delight",
+   "category": "cooking",
+   "why": "блюда Края"
+  },
+  {
+   "slug": "cooking-for-blockheads",
+   "category": "cooking",
+   "why": "кухня-мультиблок: видно, что можно приготовить"
+  },
+  {
+   "slug": "lets-do-farm-charm",
+   "category": "cooking",
+   "why": "сыроварня, печь, фермерские мелочи"
+  },
+  {
+   "slug": "lets-do-bakery",
+   "category": "cooking",
+   "why": "пекарня и выпечка"
+  },
+  {
+   "slug": "lets-do-vinery",
+   "category": "cooking",
+   "why": "виноград и вино"
+  },
+  {
+   "slug": "lets-do-candlelight",
+   "category": "cooking",
+   "why": "кухня, свечи, уют"
+  },
+  {
+   "slug": "overweight-farming",
+   "category": "farming",
+   "why": "больше культур и еды"
+  },
+  {
+   "slug": "farming-for-blockheads",
+   "category": "farming",
+   "why": "рынок семян и спринклеры"
+  },
+  {
+   "slug": "serene-seasons",
+   "category": "farming",
+   "why": "сезоны — уютный ритм года",
+   "allow_beta": true
+  },
+  {
+   "slug": "terralith",
+   "category": "worldgen",
+   "why": "красивые биомы без просадок"
+  },
+  {
+   "slug": "incendium",
+   "category": "worldgen",
+   "why": "переработка Нижнего мира"
+  },
+  {
+   "slug": "structory",
+   "category": "structures",
+   "why": "атмосферные постройки"
+  },
+  {
+   "slug": "structory-towers",
+   "category": "structures",
+   "why": "башни для исследования"
+  },
+  {
+   "slug": "ct-overhaul-village",
+   "category": "structures",
+   "why": "большие красивые деревни"
+  },
+  {
+   "slug": "villages-and-pillages",
+   "category": "structures",
+   "why": "лагеря и поселения разбойников"
+  },
+  {
+   "slug": "towns-and-towers",
+   "category": "structures",
+   "why": "городки и башни"
+  },
+  {
+   "slug": "dungeons-and-taverns",
+   "category": "structures",
+   "why": "таверны и подземелья"
+  },
+  {
+   "slug": "yungs-better-dungeons",
+   "category": "structures",
+   "why": "подземелья"
+  },
+  {
+   "slug": "yungs-better-mineshafts",
+   "category": "structures",
+   "why": "шахты"
+  },
+  {
+   "slug": "when-dungeons-arise",
+   "category": "structures",
+   "why": "подземелья-руины"
+  },
+  {
+   "slug": "deeperdarker",
+   "category": "structures",
+   "why": "измерение Глубинной тьмы для исследования"
+  },
+  {
+   "slug": "waystones",
+   "category": "travel",
+   "why": "телепорты между деревнями"
+  },
+  {
+   "slug": "inmis",
+   "category": "storage",
+   "why": "рюкзаки"
+  },
+  {
+   "slug": "comforts",
+   "category": "travel",
+   "why": "спальные мешки"
+  },
+  {
+   "slug": "smallships",
+   "category": "travel",
+   "why": "лодки-кораблики для рек и морей"
+  },
+  {
+   "slug": "natures-compass",
+   "category": "travel",
+   "why": "компас к биомам"
+  },
+  {
+   "slug": "handcrafted",
+   "category": "decoration",
+   "why": "мебель и декор"
+  },
+  {
+   "slug": "twigs",
+   "category": "decoration",
+   "why": "декор из дерева и камня"
+  },
+  {
+   "slug": "supplementaries",
+   "category": "decoration",
+   "why": "фонари, верёвки, таблички — уют"
+  },
+  {
+   "slug": "trinkets",
+   "category": "library",
+   "why": "слоты украшений"
+  },
+  {
+   "slug": "critters-and-companions",
+   "category": "animals",
+   "why": "зверьё для фермы"
+  },
+  {
+   "slug": "naturalist",
+   "category": "animals",
+   "why": "животные, пчёлы, медведи",
+   "allow_beta": true
+  },
+  {
+   "slug": "friends-and-foes",
+   "category": "animals",
+   "why": "дружелюбные мобы"
+  },
+  {
+   "slug": "ambientsounds",
+   "category": "audio",
+   "why": "атмосферные звуки"
+  },
+  {
+   "slug": "presence-footsteps",
+   "category": "audio",
+   "why": "шаги по поверхностям"
+  },
+  {
+   "slug": "immersive-melodies",
+   "category": "audio",
+   "why": "музыка в меню, битвах и пещерах"
+  },
+  {
+   "slug": "fallingleaves",
+   "category": "visual",
+   "why": "падающие листья"
+  },
+  {
+   "slug": "not-enough-animations",
+   "category": "visual",
+   "why": "анимации игрока и мобов"
+  },
+  {
+   "slug": "visuality",
+   "category": "visual",
+   "why": "мелкие визуальные детали"
+  },
+  {
+   "slug": "eating-animation",
+   "category": "visual",
+   "why": "анимация еды"
+  },
+  {
+   "slug": "visual-workbench",
+   "category": "visual",
+   "why": "предметы на верстаке"
+  },
+  {
+   "slug": "sodium-shadowy-path-blocks",
+   "category": "visual",
+   "why": "мягкие тени у неполных блоков"
+  }
+ ],
+ "never_auto": [
+  "farmers-delight-fabric",
+  "bp-lib",
+  "nonexistent-lib"
+ ]
 }

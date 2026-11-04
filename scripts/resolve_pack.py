@@ -88,12 +88,19 @@ def choose(slug: str, allow_beta: bool = False, exact: str | None = None):
 
 def main() -> int:
     modlist = json.load(open(os.path.join(ROOT, "pack", "modlist.json"), encoding="utf-8"))
+    banned = set(modlist.get("never_auto", []))
+    order = {m["slug"]: i for i, m in enumerate(modlist["mods"])}
     limit = modlist.get("limit", 150)
     selected: dict[str, dict] = {}
     errors: list[str] = []
 
     def add(slug: str, category: str, why: str, required_by: str | None, pin: str | None, allow_beta: bool):
         if slug in selected:
+            if required_by:
+                selected[slug]["required_by"] = (selected[slug].get("required_by") or "") + f",{required_by}"
+            return
+        if slug in banned and required_by:
+            errors.append(f"{slug}: auto-dependency {required_by} is banned (curated alternative needed)")
             return
         try:
             proj = project(slug)

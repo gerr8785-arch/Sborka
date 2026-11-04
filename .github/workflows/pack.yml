@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "pack/modlist.json"
-      - "pack/candidates.json"
       - "scripts/resolve_pack.py"
 jobs:
   resolve:
@@ -20,9 +19,10 @@ jobs:
       - name: commit report
         run: |
           set -e
-          cp build/report/manifest.txt /tmp/ 2>/dev/null || true
-          mkdir -p report && cp /tmp/manifest.txt report/manifest.txt 2>/dev/null || true
           git config user.name "ci"; git config user.email "ci@local"
+          mkdir -p report
+          cp build/report/manifest.txt report/manifest.txt 2>/dev/null || true
+          cp build/report/scan.json report/scan.json 2>/dev/null || true
           git add -A report || true
           git commit -m "ci: pack resolve report" || echo "nothing"
           git push origin HEAD:arena/326781c7-sborka || true
