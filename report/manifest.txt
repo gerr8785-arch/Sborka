@@ -1,8 +1,9 @@
-134 mods, 256.8 MB
+137 mods, 280.7 MB
 animals        critters-and-companions                2.7.1                                  release re/re 
 animals        friends-and-foes                       fabric-5.0.4+mc1.20.1                  release re/re 
 animals        naturalist                             4.0.3                                  release re/re 
 audio          ambientsounds                          6.3.11                                 release re/un 
+audio          immersive-melodies                     0.8.2+1.20.1                           release re/re 
 audio          presence-footsteps                     1.10.1+1.20.1                          release re/un 
 combat         artifacts                              9.5.17                                 release re/re 
 combat         better-combat                          1.9.0+1.20.1-fabric                    release re/re 
@@ -26,7 +27,6 @@ farming        serene-seasons                         9.1.0.3                   
 fishing        enchanted-fishing-line                 1.0.0                                  release un/un 
 fishing        fish-of-thieves                        3.4.0-fabric                           release re/re 
 fishing        fishing-real                           1.9.1-backport                         release re/re 
-fishing        fishing-rod-fix                        1.20-1.20.1-v0.6                       release re/un 
 fishing        random-fishing-crates                  1.3.3+mod                              release op/re 
 fishing        tide                                   2.1.1                                  release re/re 
 library        architectury-api                       9.2.14+fabric                          release re/re rei
@@ -40,7 +40,6 @@ library        cristel-lib                            1.1.5-fabric              
 library        do-api                                 1.2.14                                 release re/re lets-do-bakery
 library        fabric-api                             0.92.12+1.20.1                         release op/op 
 library        fabric-language-kotlin                 1.14.2+kotlin.2.4.21                   release op/op 
-library        farmers-delight-fabric                 1.4.3                                  beta    re/re chefs-delight
 library        forge-config-api-port                  v8.0.3-1.20.1-Fabric                   release op/op fishing-real
 library        fzzy-config                            0.7.7+1.20.1                           release re/re simply-tooltips
 library        geckolib                               4.8.4                                  release re/op critters-and-companions
@@ -50,13 +49,14 @@ library        kambrik                                6.1.1+1.20.1              
 library        lithostitched                          1.4.11-fabric-1.20                     release un/re ct-overhaul-village
 library        moonlight                              1.20-2.16.38B-fabric                   release re/re smarter-farmers-farmers-replant
 library        origins-dietary-delights               1.9.8                                  release op/re originstweaks
+library        owo-lib                                0.11.2+1.20                            release re/re deeperdarker
 library        patchouli                              1.20.1-85-fabric                       release re/re 
 library        pehkui                                 3.8.3+1.14.4-1.21                      release re/re medieval-origins-revival
 library        playeranimator                         1.0.2-rc1+1.20-fabric                  beta    re/re spell-engine
+library        puzzles-lib                            v8.1.36-1.20.1-Fabric                  release op/op visual-workbench
 library        ranged-weapon-api                      2.3.4+1.20.1-fabric                    release re/re archers
 library        resourceful-config                     2.1.3                                  release op/op icarus
-library        resourceful-lib                        2.1.29                                 release re/re handcrafted
-library        s-lib                                  3.0.1+1.20.1                           release re/un quests-teams-fixes
+library        resourceful-lib                        2.1.29                                 release re/re odyssey-quests
 library        searchables                            1.0.3                                  release re/un controlling
 library        shield-api                             2.2.0+1.20.1-fabric                    release re/re paladins-and-priests
 library        simply-tooltips                        0.1.5-1.20.1                           release re/un simply-swords
@@ -92,8 +92,7 @@ optimization   reeses-sodium-options                  mc1.20.1-1.7.2            
 optimization   sodium                                 mc1.20.1-0.5.13-fabric                 release re/un 
 optimization   sodium-extra                           mc1.20.1-0.5.9                         release re/un 
 quests         bountiful                              6.0.4+1.20.1                           release re/re 
-quests         ftb-quests-freeze-fix                  1.0.0                                  release re/un 
-quests         quests-teams-fixes                     1.0.2+1.20.1                           release re/re 
+quests         odyssey-quests                         1.1.13                                 release re/re 
 races          extra-origins                          1.20-8                                 release re/re 
 races          medieval-origins-revival               Fabric-6.7.9+1.20.1                    release re/re 
 races          origins                                1.10.2+mc.1.20.1                       release re/re 
@@ -102,6 +101,7 @@ races          origins-plus-plus                      2.4                       
 races          originstweaks                          1.18.3                                 release re/re 
 storage        inmis                                  2.7.2+1.20.1                           release re/re 
 structures     ct-overhaul-village                    3.4.14                                 release un/re 
+structures     deeperdarker                           1.3.3-plus-b-fabric+1.20               release re/re 
 structures     dungeons-and-taverns                   3.0.3.f+mod                            release op/re 
 structures     structory                              1.3.5                                  release op/re 
 structures     structory-towers                       1.0.7                                  release op/re 
@@ -109,7 +109,9 @@ structures     towns-and-towers                       1.12                      
 structures     villages-and-pillages                  fabric-2.0.0+mc1.20.1                  release un/re 
 structures     when-dungeons-arise                    2.1.57-1.20.1                          release un/re 
 structures     yungs-better-dungeons                  1.20-Fabric-4.0.4                      release un/re 
+structures     yungs-better-mineshafts                1.20-Fabric-4.0.4                      release un/re 
 travel         comforts                               6.4.0+1.20.1                           release re/re 
+travel         natures-compass                        1.20.1-2.6.0-fabric                    release re/re 
 travel         waystones                              14.1.21+fabric-1.20.1                  release re/re 
 ui             appleskin                              2.5.2+mc1.20.1                         release op/op 
 ui             betterf3                               7.0.2                                  release re/un 
@@ -121,21 +123,19 @@ ui             ok-zoomer                              5.4.0-beta.9+fabric       
 ui             rei                                    12.1.785+fabric                        release op/op 
 ui             travelers-titles                       1.20-Fabric-4.0.2                      release re/un 
 ui             xaeros-minimap                         fabric-1.20.1-26.6.0                   release re/op 
-villages       chefs-delight                          1.0.5-fa-1.20.1                        release re/re 
 villages       guard-villagers-fabricquilt            2.0.9-1.20.1                           release re/re 
 villages       smarter-farmers-farmers-replant        1.20-2.1.2                             release un/re 
 villages       trade-cycling                          fabric-1.20.1-1.0.7                    release re/re 
 villages       villager-names-serilum                 1.20.1-8.9-fabric+forge+neo            release op/re 
 villages       villagersplus                          4.1.1+mc1.20.1-fabric                  release re/re 
+visual         eating-animation                       1.9.61                                 release re/un 
 visual         fallingleaves                          1.15.6+1.20.1                          release re/un 
 visual         not-enough-animations                  1.12.7                                 release re/un 
 visual         sodium-shadowy-path-blocks             3.4.2                                  release re/un 
+visual         visual-workbench                       v8.0.1-1.20.1-Fabric                   release re/re 
 visual         visuality                              0.7.1+1.20                             beta    re/un 
 worldgen       incendium                              5.3.5                                  release op/re 
 worldgen       terralith                              2.5.4                                  release op/re 
 
 ERRORS:
-slug ftb-quests-fabric not found on Modrinth (HTTP Error 404: Not Found)
-slug doggytalents not found on Modrinth (HTTP Error 404: Not Found)
-slug make-bubbles-pop not found on Modrinth (HTTP Error 404: Not Found)
-fishing-rod-fix: declares INCOMPATIBLE with FtXZNeim which is in the pack
+slug smallships not found on Modrinth (HTTP Error 404: Not Found)
