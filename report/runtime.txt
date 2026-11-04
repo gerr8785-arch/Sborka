@@ -1,6 +1,8 @@
-done=True uptime=68s exit=0
+done=True uptime=76s exit=0
 
 PROBLEMS
 
 
 WARNINGS
+structure jigsaw reference missing (usually optional compat): Non-existent template pool reference
+server lag warning: Can't keep up

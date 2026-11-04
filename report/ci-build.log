@@ -1,138 +1,146 @@
-[1/135] critters-and-companions                  crittersandcompanions-fabric-1.20.1-2.7.1.jar
-[2/135] friends-and-foes                         friendsandfoes-fabric-5.0.4+mc1.20.1.jar
-[3/135] naturalist                               naturalist-fabric-4.0.3-1.20.1.jar
-[4/135] ambientsounds                            AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar
-[5/135] immersive-melodies                       immersive_melodies-0.8.2+1.20.1-fabric.jar
-[6/135] presence-footsteps                       PresenceFootsteps-1.10.1+1.20.1.jar
-[7/135] artifacts                                artifacts-fabric-9.5.17.jar
-[8/135] better-combat                            bettercombat-fabric-1.9.0+1.20.1.jar
-[9/135] combat-roll                              combatroll-fabric-1.3.3+1.20.1.jar
-[10/135] rpgdifficulty                            rpgdifficulty-1.3.16.jar
-[11/135] simply-swords                            simplyswords-fabric-1.70.2-1.20.1.jar
-[12/135] cooking-for-blockheads                   cookingforblockheads-fabric-1.20.1-16.0.15.jar
-[13/135] ends-delight                             ends_delight-refabricated-1.20.1-2.1.jar
-[14/135] farmers-delight-refabricated             FarmersDelight-1.20.1-2.5.7+refabricated.jar
-[15/135] lets-do-farm-charm                       letsdo-farm_and_charm-fabric-1.0.14.jar
-[16/135] lets-do-vinery                           letsdo-vinery-fabric-1.4.41.jar
-[17/135] more-delight                             moredelight-26.05.07-1.20-fabric.jar
-[18/135] handcrafted                              handcrafted-fabric-1.20.1-3.0.6.jar
-[19/135] supplementaries                          supplementaries-1.20-3.1.44-fabric.jar
-[20/135] twigs                                    twigs-3.1.0-fabric.jar
-[21/135] farming-for-blockheads                   farmingforblockheads-fabric-1.20.1-14.0.4.jar
-[22/135] overweight-farming                       overweightfarming-1.20.1-2.0.3-fabric.jar
-[23/135] serene-seasons                           SereneSeasons-fabric-1.20.1-9.1.0.3.jar
-[24/135] enchanted-fishing-line                   enchanted_fishing_line-1.0.0-fabric-1.20.1.jar
-[25/135] fish-of-thieves                          fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar
-[26/135] fishing-real                             fishingreal-fabric-1.20.1-1.9.1-backport.jar
-[27/135] random-fishing-crates                    random-fishing-crates-1.3.3.jar
-[28/135] tide                                     tide-fabric-1.20.1-2.1.1.jar
-[29/135] architectury-api                         architectury-9.2.14-fabric.jar
-[30/135] armor-model-api                          armor_model_api-fabric-1.0.0+1.20.1.jar
-[31/135] balm                                     balm-fabric-1.20.1-7.3.44.jar
-[32/135] cloth-config                             cloth-config-11.1.136-fabric.jar
-[33/135] collective                               collective-1.20.1-8.79.jar
-[34/135] common-network                           common-networking-fabric-1.0.6-1.20.1.jar
-[35/135] creativecore                             CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar
-[36/135] cristel-lib                              cristellib-1.1.5-fabric.jar
-[37/135] fabric-api                               fabric-api-0.92.12+1.20.1.jar
-[38/135] fabric-language-kotlin                   fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar
-[39/135] forge-config-api-port                    ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar
-[40/135] fzzy-config                              fzzy_config-0.7.7+1.20.1.jar
-[41/135] geckolib                                 geckolib-fabric-1.20.1-4.8.4.jar
-[42/135] glitchcore                               GlitchCore-fabric-1.20.1-0.0.1.1.jar
-[43/135] kambrik                                  Kambrik-6.1.1+1.20.1-fabric.jar
-[44/135] kirin                                    kirin-1.15.6+1.20.1.jar
-[45/135] lithostitched                            lithostitched-fabric-1.20.1-1.4.11.jar
-[46/135] moonlight                                moonlight-1.20-2.16.38B-fabric.jar
-[47/135] origins-dietary-delights                 origins-dietary-delights-1.9.8.jar
-[48/135] owo-lib                                  owo-lib-0.11.2+1.20.jar
-[49/135] patchouli                                Patchouli-1.20.1-85-FABRIC.jar
-[50/135] pehkui                                   Pehkui-3.8.3+1.14.4-1.21.jar
-[51/135] playeranimator                           player-animation-lib-fabric-1.0.2-rc1+1.20.jar
-[52/135] puzzles-lib                              PuzzlesLib-v8.1.36-1.20.1-Fabric.jar
-[53/135] ranged-weapon-api                        ranged_weapon_api-fabric-2.3.4+1.20.1.jar
-[54/135] resourceful-config                       resourcefulconfig-fabric-1.20.1-2.1.3.jar
-[55/135] resourceful-lib                          resourcefullib-fabric-1.20.1-2.1.29.jar
-[56/135] searchables                              Searchables-fabric-1.20.1-1.0.3.jar
-[57/135] shield-api                               shield_api-fabric-2.2.0+1.20.1.jar
-[58/135] simply-tooltips                          SimplyTooltips-fabric-0.1.5-1.20.1.jar
-[59/135] spell-engine                             spell_engine-fabric-1.10.10+1.20.1.jar
-[60/135] spell-power                              spell_power-fabric-1.6.1+1.20.1.jar
-[61/135] structure-pool-api                       structure_pool_api-fabric-1.2.1+1.20.1.jar
-[62/135] trinkets                                 trinkets-3.7.2.jar
-[63/135] villagerstradingplus                     villagertradingplus-fabric-mc1.20.1-1.1.1.jar
-[64/135] yacl                                     yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar
-[65/135] yungs-api                                YungsApi-1.20-Fabric-4.0.6.jar
-[66/135] archers                                  archers-fabric-3.1.4+1.20.1.jar
-[67/135] gazebos                                  gazebo-fabric-2.2.0+1.20.1.jar
-[68/135] jewelry                                  jewelry-fabric-2.4.0+1.20.1.jar
-[69/135] paladins-and-priests                     paladins-fabric-3.1.3+1.20.1.jar
-[70/135] rogues-and-warriors                      rogues-fabric-3.1.3+1.20.1.jar
-[71/135] wizards                                  wizards-fabric-3.1.3+1.20.1.jar
-[72/135] badoptimizations                         BadOptimizations-2.4.1-1.20.1.jar
-[73/135] c2me-fabric                              c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
-[74/135] clumps                                   Clumps-fabric-1.20.1-12.0.0.4.jar
-[75/135] debugify                                 Debugify-1.20.1+2.0.jar
-[76/135] dynamic-fps                              dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
-[77/135] entityculling                            entityculling-fabric-1.11.3-mc1.20.1.jar
-[78/135] ferrite-core                             ferritecore-6.0.1-fabric.jar
-[79/135] immediatelyfast                          ImmediatelyFast-Fabric-1.5.5+1.20.4.jar
-[80/135] indium                                   indium-1.0.36+mc1.20.1.jar
-[81/135] iris                                     iris-1.7.6+mc1.20.1.jar
-[82/135] krypton                                  krypton-0.2.3.jar
-[83/135] lithium                                  lithium-fabric-mc1.20.1-0.11.4.jar
-[84/135] memoryleakfix                            memoryleakfix-fabric-1.17+-1.1.5.jar
-[85/135] modernfix                                modernfix-fabric-5.25.2+mc1.20.1.jar
-[86/135] moreculling                              moreculling-1.20.1-0.24.6.jar
-[87/135] reeses-sodium-options                    reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar
-[88/135] sodium                                   sodium-fabric-0.5.13+mc1.20.1.jar
-[89/135] sodium-extra                             sodium-extra-0.5.9+mc1.20.1.jar
-[90/135] bountiful                                Bountiful-6.0.4+1.20.1-fabric.jar
-[91/135] odyssey-quests                           Heracles-fabric-1.20.1-1.1.13.jar
-[92/135] extra-origins                            extraorigins-1.20-8.jar
-[93/135] medieval-origins-revival                 medievalorigins-fabric-1.20.1-6.7.9.jar
-[94/135] origins                                  Origins-1.10.2+mc.1.20.x.jar
-[95/135] origins-classes                          Origins-Classes-1.20-1.7.0.jar
-[96/135] origins-plus-plus                        origins-plus-plus-2.4.jar
-[97/135] originstweaks                            originstweaks-1.18.3.jar
-[98/135] inmis                                    inmis-2.7.2-1.20.1.jar
-[99/135] ct-overhaul-village                      [fabric]ctov-3.4.14.jar
-[100/135] deeperdarker                             deeperdarker-fabric-1.20-1.3.3-plus-b.jar
-[101/135] dungeons-and-taverns                     dungeons-and-taverns-3.0.3.f.jar
-[102/135] structory                                Structory_1.20.x_v1.3.5.jar
-[103/135] structory-towers                         Structory_Towers_1.20.x_v1.0.7.jar
-[104/135] towns-and-towers                         Towns-and-Towers-1.12-Fabric+Forge.jar
-[105/135] villages-and-pillages                    villagesandpillages-fabric-2.0.0+mc1.20.1.jar
-[106/135] when-dungeons-arise                      DungeonsArise-1.20.1-2.1.57-fabric-release.jar
-[107/135] yungs-better-dungeons                    YungsBetterDungeons-1.20-Fabric-4.0.4.jar
-[108/135] yungs-better-mineshafts                  YungsBetterMineshafts-1.20-Fabric-4.0.4.jar
-[109/135] comforts                                 comforts-fabric-6.4.0+1.20.1.jar
-[110/135] icarus                                   Icarus-Fabric-2.13.2.jar
-[111/135] natures-compass                          NaturesCompass-1.20.1-2.6.0-fabric.jar
-[112/135] waystones                                waystones-fabric-1.20.1-14.1.21.jar
-[113/135] appleskin                                appleskin-fabric-mc1.20.1-2.5.2.jar
-[114/135] betterf3                                 BetterF3-7.0.2-Fabric-1.20.1.jar
-[115/135] controlling                              Controlling-fabric-1.20.1-12.0.2.jar
-[116/135] jade                                     Jade-1.20-Fabric-11.13.3.jar
-[117/135] modmenu                                  modmenu-7.2.2.jar
-[118/135] mouse-tweaks                             MouseTweaks-fabric-mc1.20-2.26.jar
-[119/135] ok-zoomer                                ok_zoomer-fabric-5.4.0-beta.9.jar
-[120/135] rei                                      RoughlyEnoughItems-12.1.785-fabric.jar
-[121/135] travelers-titles                         TravelersTitles-1.20-Fabric-4.0.2.jar
-[122/135] xaeros-minimap                           xaerominimap-fabric-1.20.1-26.6.0.jar
-[123/135] guard-villagers-fabricquilt              guardvillagers-2.0.9-1.20.1.jar
-[124/135] smarter-farmers-farmers-replant          smarterfarmers-1.20-2.1.2-fabric.jar
-[125/135] trade-cycling                            trade-cycling-fabric-1.20.1-1.0.7.jar
-[126/135] villager-names-serilum                   villagernames-1.20.1-8.9.jar
-[127/135] villagersplus                            villagersplus-fabric-mc1.20.1-4.1.1.jar
-[128/135] eating-animation                         eating-animation-1.20+1.9.61.jar
-[129/135] fallingleaves                            fallingleaves-1.15.6+1.20.1.jar
-[130/135] not-enough-animations                    notenoughanimations-fabric-1.12.7-mc1.20.1.jar
-[131/135] sodium-shadowy-path-blocks               sodium-shadowy-path-blocks-3.4.2.jar
-[132/135] visual-workbench                         VisualWorkbench-v8.0.1-1.20.1-Fabric.jar
-[133/135] visuality                                visuality-0.7.1+1.20.jar
-[134/135] incendium                                Incendium_1.20.x_v5.3.5.jar
-[135/135] terralith                                Terralith_1.20.x_v2.5.4.jar
+[1/143] critters-and-companions                  crittersandcompanions-fabric-1.20.1-2.7.1.jar
+[2/143] friends-and-foes                         friendsandfoes-fabric-5.0.4+mc1.20.1.jar
+[3/143] naturalist                               naturalist-fabric-4.0.3-1.20.1.jar
+[4/143] ambientsounds                            AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar
+[5/143] immersive-melodies                       immersive_melodies-0.8.2+1.20.1-fabric.jar
+[6/143] presence-footsteps                       PresenceFootsteps-1.10.1+1.20.1.jar
+[7/143] artifacts                                artifacts-fabric-9.5.17.jar
+[8/143] better-combat                            bettercombat-fabric-1.9.0+1.20.1.jar
+[9/143] combat-roll                              combatroll-fabric-1.3.3+1.20.1.jar
+[10/143] rpgdifficulty                            rpgdifficulty-1.3.16.jar
+[11/143] simply-swords                            simplyswords-fabric-1.70.2-1.20.1.jar
+[12/143] cooking-for-blockheads                   cookingforblockheads-fabric-1.20.1-16.0.15.jar
+[13/143] ends-delight                             ends_delight-refabricated-1.20.1-2.1.jar
+[14/143] farmers-delight-refabricated             FarmersDelight-1.20.1-2.5.7+refabricated.jar
+[15/143] lets-do-farm-charm                       letsdo-farm_and_charm-fabric-1.0.14.jar
+[16/143] lets-do-vinery                           letsdo-vinery-fabric-1.4.41.jar
+[17/143] more-delight                             moredelight-26.05.07-1.20-fabric.jar
+[18/143] handcrafted                              handcrafted-fabric-1.20.1-3.0.6.jar
+[19/143] supplementaries                          supplementaries-1.20-3.1.44-fabric.jar
+[20/143] twigs                                    twigs-3.1.0-fabric.jar
+[21/143] farming-for-blockheads                   farmingforblockheads-fabric-1.20.1-14.0.4.jar
+[22/143] overweight-farming                       overweightfarming-1.20.1-2.0.3-fabric.jar
+[23/143] serene-seasons                           SereneSeasons-fabric-1.20.1-9.1.0.3.jar
+[24/143] enchanted-fishing-line                   enchanted_fishing_line-1.0.0-fabric-1.20.1.jar
+[25/143] fish-of-thieves                          fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar
+[26/143] fishing-real                             fishingreal-fabric-1.20.1-1.9.1-backport.jar
+[27/143] random-fishing-crates                    random-fishing-crates-1.3.3.jar
+[28/143] tide                                     tide-fabric-1.20.1-2.1.1.jar
+[29/143] architectury-api                         architectury-9.2.14-fabric.jar
+[30/143] armor-model-api                          armor_model_api-fabric-1.0.0+1.20.1.jar
+[31/143] balm                                     balm-fabric-1.20.1-7.3.44.jar
+[32/143] cardinal-components-api                  cardinal-components-api-5.2.3.jar
+[33/143] cloth-config                             cloth-config-11.1.136-fabric.jar
+[34/143] collective                               collective-1.20.1-8.79.jar
+[35/143] common-network                           common-networking-fabric-1.0.6-1.20.1.jar
+[36/143] creativecore                             CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar
+[37/143] cristel-lib                              cristellib-1.1.5-fabric.jar
+[38/143] fabric-api                               fabric-api-0.92.12+1.20.1.jar
+[39/143] fabric-language-kotlin                   fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar
+[40/143] forge-config-api-port                    ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar
+[41/143] fzzy-config                              fzzy_config-0.7.7+1.20.1.jar
+[42/143] geckolib                                 geckolib-fabric-1.20.1-4.8.4.jar
+[43/143] glitchcore                               GlitchCore-fabric-1.20.1-0.0.1.1.jar
+[44/143] kambrik                                  Kambrik-6.1.1+1.20.1-fabric.jar
+[45/143] kirin                                    kirin-1.15.6+1.20.1.jar
+[46/143] lithostitched                            lithostitched-fabric-1.20.1-1.4.11.jar
+[47/143] midnightlib                              midnightlib-fabric-1.9.3+1.20.1.jar
+[48/143] moonlight                                moonlight-1.20-2.16.38B-fabric.jar
+[49/143] origins-dietary-delights                 origins-dietary-delights-1.9.8.jar
+[50/143] owo-lib                                  owo-lib-0.11.2+1.20.jar
+[51/143] patchouli                                Patchouli-1.20.1-85-FABRIC.jar
+[52/143] pehkui                                   Pehkui-3.8.3+1.14.4-1.21.jar
+[53/143] playeranimator                           player-animation-lib-fabric-1.0.2-rc1+1.20.jar
+[54/143] puzzles-lib                              PuzzlesLib-v8.1.36-1.20.1-Fabric.jar
+[55/143] ranged-weapon-api                        ranged_weapon_api-fabric-2.3.4+1.20.1.jar
+[56/143] resourceful-config                       resourcefulconfig-fabric-1.20.1-2.1.3.jar
+[57/143] resourceful-lib                          resourcefullib-fabric-1.20.1-2.1.29.jar
+[58/143] searchables                              Searchables-fabric-1.20.1-1.0.3.jar
+[59/143] shield-api                               shield_api-fabric-2.2.0+1.20.1.jar
+[60/143] simply-tooltips                          SimplyTooltips-fabric-0.1.5-1.20.1.jar
+[61/143] spell-engine                             spell_engine-fabric-1.10.10+1.20.1.jar
+[62/143] spell-power                              spell_power-fabric-1.6.1+1.20.1.jar
+[63/143] structure-pool-api                       structure_pool_api-fabric-1.2.1+1.20.1.jar
+[64/143] trinkets                                 trinkets-3.7.2.jar
+[65/143] villagerstradingplus                     villagertradingplus-fabric-mc1.20.1-1.1.1.jar
+[66/143] yacl                                     yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar
+[67/143] yungs-api                                YungsApi-1.20-Fabric-4.0.6.jar
+[68/143] archers                                  archers-fabric-3.1.4+1.20.1.jar
+[69/143] gazebos                                  gazebo-fabric-2.2.0+1.20.1.jar
+[70/143] jewelry                                  jewelry-fabric-2.4.0+1.20.1.jar
+[71/143] paladins-and-priests                     paladins-fabric-3.1.3+1.20.1.jar
+[72/143] rogues-and-warriors                      rogues-fabric-3.1.3+1.20.1.jar
+[73/143] wizards                                  wizards-fabric-3.1.3+1.20.1.jar
+[74/143] badoptimizations                         BadOptimizations-2.4.1-1.20.1.jar
+[75/143] c2me-fabric                              c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar
+[76/143] clumps                                   Clumps-fabric-1.20.1-12.0.0.4.jar
+[77/143] debugify                                 Debugify-1.20.1+2.0.jar
+[78/143] dynamic-fps                              dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar
+[79/143] entityculling                            entityculling-fabric-1.11.3-mc1.20.1.jar
+[80/143] ferrite-core                             ferritecore-6.0.1-fabric.jar
+[81/143] immediatelyfast                          ImmediatelyFast-Fabric-1.5.5+1.20.4.jar
+[82/143] indium                                   indium-1.0.36+mc1.20.1.jar
+[83/143] iris                                     iris-1.7.6+mc1.20.1.jar
+[84/143] krypton                                  krypton-0.2.3.jar
+[85/143] lithium                                  lithium-fabric-mc1.20.1-0.11.4.jar
+[86/143] memoryleakfix                            memoryleakfix-fabric-1.17+-1.1.5.jar
+[87/143] modernfix                                modernfix-fabric-5.25.2+mc1.20.1.jar
+[88/143] moreculling                              moreculling-1.20.1-0.24.6.jar
+[89/143] reeses-sodium-options                    reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar
+[90/143] sodium                                   sodium-fabric-0.5.13+mc1.20.1.jar
+[91/143] sodium-extra                             sodium-extra-0.5.9+mc1.20.1.jar
+[92/143] bountiful                                Bountiful-6.0.4+1.20.1-fabric.jar
+[93/143] odyssey-quests                           Heracles-fabric-1.20.1-1.1.13.jar
+[94/143] extra-origins                            extraorigins-1.20-8.jar
+[95/143] medieval-origins-revival                 medievalorigins-fabric-1.20.1-6.7.9.jar
+[96/143] origins                                  Origins-1.10.2+mc.1.20.x.jar
+[97/143] origins-classes                          Origins-Classes-1.20-1.7.0.jar
+[98/143] origins-plus-plus                        origins-plus-plus-2.4.jar
+[99/143] originstweaks                            originstweaks-1.18.3.jar
+[100/143] inmis                                    inmis-2.7.2-1.20.1.jar
+[101/143] travelersbackpack                        travelersbackpack-fabric-1.20.1-9.1.56.jar
+[102/143] ct-overhaul-village                      [fabric]ctov-3.4.14.jar
+[103/143] deeperdarker                             deeperdarker-fabric-1.20-1.3.3-plus-b.jar
+[104/143] dungeons-and-taverns                     dungeons-and-taverns-3.0.3.f.jar
+[105/143] structory                                Structory_1.20.x_v1.3.5.jar
+[106/143] structory-towers                         Structory_Towers_1.20.x_v1.0.7.jar
+[107/143] the-bumblezone-fabric                    the_bumblezone-7.15.2+1.20.1-fabric.jar
+[108/143] towns-and-towers                         Towns-and-Towers-1.12-Fabric+Forge.jar
+[109/143] villages-and-pillages                    villagesandpillages-fabric-2.0.0+mc1.20.1.jar
+[110/143] when-dungeons-arise                      DungeonsArise-1.20.1-2.1.57-fabric-release.jar
+[111/143] yungs-better-dungeons                    YungsBetterDungeons-1.20-Fabric-4.0.4.jar
+[112/143] yungs-better-mineshafts                  YungsBetterMineshafts-1.20-Fabric-4.0.4.jar
+[113/143] yungs-better-strongholds                 YungsBetterStrongholds-1.20-Fabric-4.0.3.jar
+[114/143] yungs-better-witch-huts                  YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar
+[115/143] comforts                                 comforts-fabric-6.4.0+1.20.1.jar
+[116/143] explorers-compass                        ExplorersCompass-1.20.1-2.6.0-fabric.jar
+[117/143] icarus                                   Icarus-Fabric-2.13.2.jar
+[118/143] natures-compass                          NaturesCompass-1.20.1-2.6.0-fabric.jar
+[119/143] waystones                                waystones-fabric-1.20.1-14.1.21.jar
+[120/143] appleskin                                appleskin-fabric-mc1.20.1-2.5.2.jar
+[121/143] betterf3                                 BetterF3-7.0.2-Fabric-1.20.1.jar
+[122/143] controlling                              Controlling-fabric-1.20.1-12.0.2.jar
+[123/143] jade                                     Jade-1.20-Fabric-11.13.3.jar
+[124/143] modmenu                                  modmenu-7.2.2.jar
+[125/143] mouse-tweaks                             MouseTweaks-fabric-mc1.20-2.26.jar
+[126/143] ok-zoomer                                ok_zoomer-fabric-5.4.0-beta.9.jar
+[127/143] polymorph                                polymorph-fabric-0.49.11+1.20.1.jar
+[128/143] rei                                      RoughlyEnoughItems-12.1.785-fabric.jar
+[129/143] travelers-titles                         TravelersTitles-1.20-Fabric-4.0.2.jar
+[130/143] xaeros-minimap                           xaerominimap-fabric-1.20.1-26.6.0.jar
+[131/143] guard-villagers-fabricquilt              guardvillagers-2.0.9-1.20.1.jar
+[132/143] smarter-farmers-farmers-replant          smarterfarmers-1.20-2.1.2-fabric.jar
+[133/143] trade-cycling                            trade-cycling-fabric-1.20.1-1.0.7.jar
+[134/143] villager-names-serilum                   villagernames-1.20.1-8.9.jar
+[135/143] villagersplus                            villagersplus-fabric-mc1.20.1-4.1.1.jar
+[136/143] eating-animation                         eating-animation-1.20+1.9.61.jar
+[137/143] fallingleaves                            fallingleaves-1.15.6+1.20.1.jar
+[138/143] not-enough-animations                    notenoughanimations-fabric-1.12.7-mc1.20.1.jar
+[139/143] sodium-shadowy-path-blocks               sodium-shadowy-path-blocks-3.4.2.jar
+[140/143] visual-workbench                         VisualWorkbench-v8.0.1-1.20.1-Fabric.jar
+[141/143] visuality                                visuality-0.7.1+1.20.jar
+[142/143] incendium                                Incendium_1.20.x_v5.3.5.jar
+[143/143] terralith                                Terralith_1.20.x_v2.5.4.jar
 
 UNRAR 7.00 freeware      Copyright (c) 1993-2024 Alexander Roshal
 
@@ -144,124 +152,129 @@ Testing     client/mods/fabric-api-0.92.12+1.20.1.jar                      0
 Testing     client/mods/lithium-fabric-mc1.20.1-0.11.4.jar                 0%  OK 
 Testing     client/mods/ok_zoomer-fabric-5.4.0-beta.9.jar                  0%  OK 
 Testing     client/mods/MouseTweaks-fabric-mc1.20-2.26.jar                 0%  OK 
-Testing     client/mods/letsdo-farm_and_charm-fabric-1.0.14.jar            1%  OK 
-Testing     client/mods/sodium-extra-0.5.9+mc1.20.1.jar                    1%  OK 
-Testing     client/mods/Searchables-fabric-1.20.1-1.0.3.jar                1%  OK 
-Testing     client/mods/NaturesCompass-1.20.1-2.6.0-fabric.jar             1%  OK 
-Testing     client/mods/dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar       1%  OK 
+Testing     client/mods/letsdo-farm_and_charm-fabric-1.0.14.jar            0%  OK 
+Testing     client/mods/sodium-extra-0.5.9+mc1.20.1.jar                    0%  OK 
+Testing     client/mods/Searchables-fabric-1.20.1-1.0.3.jar                0%  OK 
+Testing     client/mods/NaturesCompass-1.20.1-2.6.0-fabric.jar             0%  OK 
+Testing     client/mods/dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar       0%  OK 
 Testing     client/mods/visuality-0.7.1+1.20.jar                           1%  OK 
 Testing     client/mods/resourcefulconfig-fabric-1.20.1-2.1.3.jar          1%  OK 
-Testing     client/mods/immersive_melodies-0.8.2+1.20.1-fabric.jar         2%  OK 
-Testing     client/mods/resourcefullib-fabric-1.20.1-2.1.29.jar            2%  OK 
-Testing     client/mods/villagersplus-fabric-mc1.20.1-4.1.1.jar            2%  OK 
-Testing     client/mods/moredelight-26.05.07-1.20-fabric.jar               2%  OK 
+Testing     client/mods/immersive_melodies-0.8.2+1.20.1-fabric.jar         1%  OK 
+Testing     client/mods/resourcefullib-fabric-1.20.1-2.1.29.jar            1%  OK 
+Testing     client/mods/villagersplus-fabric-mc1.20.1-4.1.1.jar            1%  OK 
+Testing     client/mods/moredelight-26.05.07-1.20-fabric.jar               1%  OK 
 Testing     client/mods/Jade-1.20-Fabric-11.13.3.jar                       2%  OK 
 Testing     client/mods/cloth-config-11.1.136-fabric.jar                   2%  OK 
-Testing     client/mods/friendsandfoes-fabric-5.0.4+mc1.20.1.jar           3%  OK 
-Testing     client/mods/reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar       3%  OK 
-Testing     client/mods/fishingreal-fabric-1.20.1-1.9.1-backport.jar       3%  OK 
-Testing     client/mods/kirin-1.15.6+1.20.1.jar                            3%  OK 
-Testing     client/mods/villagernames-1.20.1-8.9.jar                       3%  OK 
-Testing     client/mods/ranged_weapon_api-fabric-2.3.4+1.20.1.jar          3%  OK 
-Testing     client/mods/ImmediatelyFast-Fabric-1.5.5+1.20.4.jar            4%  OK 
-Testing     client/mods/archers-fabric-3.1.4+1.20.1.jar                    4%  OK 
-Testing     client/mods/overweightfarming-1.20.1-2.0.3-fabric.jar          4%  OK 
-Testing     client/mods/cristellib-1.1.5-fabric.jar                        4%  OK 
-Testing     client/mods/GlitchCore-fabric-1.20.1-0.0.1.1.jar               4%  OK 
-Testing     client/mods/Heracles-fabric-1.20.1-1.1.13.jar                  4%  OK 
-Testing     client/mods/random-fishing-crates-1.3.3.jar                    4%  OK 
-Testing     client/mods/farmingforblockheads-fabric-1.20.1-14.0.4.jar       4%  OK 
-Testing     client/mods/Structory_1.20.x_v1.3.5.jar                        5%  OK 
-Testing     client/mods/entityculling-fabric-1.11.3-mc1.20.1.jar           5%  OK 
-Testing     client/mods/Patchouli-1.20.1-85-FABRIC.jar                     5%  OK 
-Testing     client/mods/extraorigins-1.20-8.jar                            5%  OK 
-Testing     client/mods/wizards-fabric-3.1.3+1.20.1.jar                    6%  OK 
-Testing     client/mods/originstweaks-1.18.3.jar                           6%  OK 
-Testing     client/mods/ferritecore-6.0.1-fabric.jar                       6%  OK 
-Testing     client/mods/Towns-and-Towers-1.12-Fabric+Forge.jar             6%  OK 
-Testing     client/mods/collective-1.20.1-8.79.jar                         7%  OK 
-Testing     client/mods/architectury-9.2.14-fabric.jar                     7%  OK 
-Testing     client/mods/eating-animation-1.20+1.9.61.jar                   7%  OK 
-Testing     client/mods/villagertradingplus-fabric-mc1.20.1-1.1.1.jar       7%  OK 
-Testing     client/mods/notenoughanimations-fabric-1.12.7-mc1.20.1.jar       7%  OK 
-Testing     client/mods/structure_pool_api-fabric-1.2.1+1.20.1.jar         7%  OK 
-Testing     client/mods/ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar        7%  OK 
-Testing     client/mods/crittersandcompanions-fabric-1.20.1-2.7.1.jar       8%  OK 
-Testing     client/mods/guardvillagers-2.0.9-1.20.1.jar                    8%  OK 
-Testing     client/mods/Origins-Classes-1.20-1.7.0.jar                     8%  OK 
-Testing     client/mods/Controlling-fabric-1.20.1-12.0.2.jar               8%  OK 
-Testing     client/mods/handcrafted-fabric-1.20.1-3.0.6.jar                8%  OK 
-Testing     client/mods/yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar       9%  OK 
-Testing     client/mods/trinkets-3.7.2.jar                                 9%  OK 
-Testing     client/mods/Kambrik-6.1.1+1.20.1-fabric.jar                    9%  OK 
-Testing     client/mods/Clumps-fabric-1.20.1-12.0.0.4.jar                  9%  OK 
-Testing     client/mods/spell_power-fabric-1.6.1+1.20.1.jar                9%  OK 
-Testing     client/mods/balm-fabric-1.20.1-7.3.44.jar                      9%  OK 
-Testing     client/mods/YungsBetterDungeons-1.20-Fabric-4.0.4.jar          9%  OK 
-Testing     client/mods/fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar      10% 11%  OK 
-Testing     client/mods/moreculling-1.20.1-0.24.6.jar                     11%  OK 
-Testing     client/mods/letsdo-vinery-fabric-1.4.41.jar                   11%  OK 
-Testing     client/mods/[fabric]ctov-3.4.14.jar                           12%  OK 
-Testing     client/mods/spell_engine-fabric-1.10.10+1.20.1.jar            13%  OK 
-Testing     client/mods/ends_delight-refabricated-1.20.1-2.1.jar          13%  OK 
-Testing     client/mods/Debugify-1.20.1+2.0.jar                           13%  OK 
-Testing     client/mods/xaerominimap-fabric-1.20.1-26.6.0.jar             14%  OK 
-Testing     client/mods/simplyswords-fabric-1.70.2-1.20.1.jar             14% 15% 16%  OK 
-Testing     client/mods/memoryleakfix-fabric-1.17+-1.1.5.jar              16%  OK 
-Testing     client/mods/comforts-fabric-6.4.0+1.20.1.jar                  16%  OK 
-Testing     client/mods/DungeonsArise-1.20.1-2.1.57-fabric-release.jar      17% 18%  OK 
-Testing     client/mods/YungsApi-1.20-Fabric-4.0.6.jar                    18%  OK 
-Testing     client/mods/modmenu-7.2.2.jar                                 19%  OK 
-Testing     client/mods/Terralith_1.20.x_v2.5.4.jar                       19%  OK 
-Testing     client/mods/PresenceFootsteps-1.10.1+1.20.1.jar               20%  OK 
-Testing     client/mods/rogues-fabric-3.1.3+1.20.1.jar                    20%  OK 
-Testing     client/mods/CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar         21%  OK 
-Testing     client/mods/bettercombat-fabric-1.9.0+1.20.1.jar              21%  OK 
-Testing     client/mods/krypton-0.2.3.jar                                 21%  OK 
-Testing     client/mods/lithostitched-fabric-1.20.1-1.4.11.jar            21%  OK 
-Testing     client/mods/Pehkui-3.8.3+1.14.4-1.21.jar                      21%  OK 
-Testing     client/mods/BetterF3-7.0.2-Fabric-1.20.1.jar                  21%  OK 
-Testing     client/mods/geckolib-fabric-1.20.1-4.8.4.jar                  22%  OK 
-Testing     client/mods/jewelry-fabric-2.4.0+1.20.1.jar                   22%  OK 
-Testing     client/mods/artifacts-fabric-9.5.17.jar                       22%  OK 
-Testing     client/mods/enchanted_fishing_line-1.0.0-fabric-1.20.1.jar      22%  OK 
-Testing     client/mods/indium-1.0.36+mc1.20.1.jar                        22%  OK 
-Testing     client/mods/origins-plus-plus-2.4.jar                         22%  OK 
-Testing     client/mods/deeperdarker-fabric-1.20-1.3.3-plus-b.jar         23% 24% 25% 26%  OK 
-Testing     client/mods/AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar         26% 27% 28% 29% 30% 31% 32% 33% 34% 35% 36%  OK 
-Testing     client/mods/combatroll-fabric-1.3.3+1.20.1.jar                36%  OK 
-Testing     client/mods/iris-1.7.6+mc1.20.1.jar                           37%  OK 
-Testing     client/mods/modernfix-fabric-5.25.2+mc1.20.1.jar              37%  OK 
-Testing     client/mods/twigs-3.1.0-fabric.jar                            37%  OK 
-Testing     client/mods/tide-fabric-1.20.1-2.1.1.jar                      37%  OK 
-Testing     client/mods/supplementaries-1.20-3.1.44-fabric.jar            38% 39% 40%  OK 
-Testing     client/mods/BadOptimizations-2.4.1-1.20.1.jar                 40%  OK 
-Testing     client/mods/villagesandpillages-fabric-2.0.0+mc1.20.1.jar      40%  OK 
-Testing     client/mods/PuzzlesLib-v8.1.36-1.20.1-Fabric.jar              40%  OK 
-Testing     client/mods/player-animation-lib-fabric-1.0.2-rc1+1.20.jar      40%  OK 
-Testing     client/mods/cookingforblockheads-fabric-1.20.1-16.0.15.jar      40%  OK 
-Testing     client/mods/Structory_Towers_1.20.x_v1.0.7.jar                40%  OK 
-Testing     client/mods/appleskin-fabric-mc1.20.1-2.5.2.jar               41%  OK 
-Testing     client/mods/Bountiful-6.0.4+1.20.1-fabric.jar                 41%  OK 
-Testing     client/mods/naturalist-fabric-4.0.3-1.20.1.jar                42%  OK 
-Testing     client/mods/sodium-shadowy-path-blocks-3.4.2.jar              42%  OK 
-Testing     client/mods/dungeons-and-taverns-3.0.3.f.jar                  42% 43%  OK 
-Testing     client/mods/Origins-1.10.2+mc.1.20.x.jar                      43%  OK 
-Testing     client/mods/FarmersDelight-1.20.1-2.5.7+refabricated.jar      44%  OK 
-Testing     client/mods/YungsBetterMineshafts-1.20-Fabric-4.0.4.jar       44%  OK 
-Testing     client/mods/rpgdifficulty-1.3.16.jar                          44%  OK 
-Testing     client/mods/waystones-fabric-1.20.1-14.1.21.jar               44%  OK 
-Testing     client/mods/RoughlyEnoughItems-12.1.785-fabric.jar            45%  OK 
-Testing     client/mods/armor_model_api-fabric-1.0.0+1.20.1.jar           45%  OK 
-Testing     client/mods/common-networking-fabric-1.0.6-1.20.1.jar         45%  OK 
-Testing     client/mods/inmis-2.7.2-1.20.1.jar                            45%  OK 
-Testing     client/mods/fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar        45%  OK 
-Testing     client/mods/fzzy_config-0.7.7+1.20.1.jar                      45%  OK 
+Testing     client/mods/friendsandfoes-fabric-5.0.4+mc1.20.1.jar           2%  OK 
+Testing     client/mods/reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar       2%  OK 
+Testing     client/mods/fishingreal-fabric-1.20.1-1.9.1-backport.jar       2%  OK 
+Testing     client/mods/kirin-1.15.6+1.20.1.jar                            2%  OK 
+Testing     client/mods/villagernames-1.20.1-8.9.jar                       2%  OK 
+Testing     client/mods/ranged_weapon_api-fabric-2.3.4+1.20.1.jar          2%  OK 
+Testing     client/mods/ImmediatelyFast-Fabric-1.5.5+1.20.4.jar            3%  OK 
+Testing     client/mods/archers-fabric-3.1.4+1.20.1.jar                    3%  OK 
+Testing     client/mods/overweightfarming-1.20.1-2.0.3-fabric.jar          3%  OK 
+Testing     client/mods/cristellib-1.1.5-fabric.jar                        3%  OK 
+Testing     client/mods/GlitchCore-fabric-1.20.1-0.0.1.1.jar               3%  OK 
+Testing     client/mods/Heracles-fabric-1.20.1-1.1.13.jar                  3%  OK 
+Testing     client/mods/YungsBetterStrongholds-1.20-Fabric-4.0.3.jar       3%  OK 
+Testing     client/mods/random-fishing-crates-1.3.3.jar                    3%  OK 
+Testing     client/mods/farmingforblockheads-fabric-1.20.1-14.0.4.jar       3%  OK 
+Testing     client/mods/Structory_1.20.x_v1.3.5.jar                        3%  OK 
+Testing     client/mods/entityculling-fabric-1.11.3-mc1.20.1.jar           4%  OK 
+Testing     client/mods/Patchouli-1.20.1-85-FABRIC.jar                     4%  OK 
+Testing     client/mods/extraorigins-1.20-8.jar                            4%  OK 
+Testing     client/mods/wizards-fabric-3.1.3+1.20.1.jar                    4%  OK 
+Testing     client/mods/originstweaks-1.18.3.jar                           4%  OK 
+Testing     client/mods/ferritecore-6.0.1-fabric.jar                       4%  OK 
+Testing     client/mods/Towns-and-Towers-1.12-Fabric+Forge.jar             5%  OK 
+Testing     client/mods/collective-1.20.1-8.79.jar                         5%  OK 
+Testing     client/mods/architectury-9.2.14-fabric.jar                     5%  OK 
+Testing     client/mods/eating-animation-1.20+1.9.61.jar                   5%  OK 
+Testing     client/mods/villagertradingplus-fabric-mc1.20.1-1.1.1.jar       5%  OK 
+Testing     client/mods/notenoughanimations-fabric-1.12.7-mc1.20.1.jar       5%  OK 
+Testing     client/mods/structure_pool_api-fabric-1.2.1+1.20.1.jar         5%  OK 
+Testing     client/mods/ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar        5%  OK 
+Testing     client/mods/crittersandcompanions-fabric-1.20.1-2.7.1.jar       6%  OK 
+Testing     client/mods/guardvillagers-2.0.9-1.20.1.jar                    6%  OK 
+Testing     client/mods/Origins-Classes-1.20-1.7.0.jar                     6%  OK 
+Testing     client/mods/Controlling-fabric-1.20.1-12.0.2.jar               6%  OK 
+Testing     client/mods/handcrafted-fabric-1.20.1-3.0.6.jar                6%  OK 
+Testing     client/mods/yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar       6%  OK 
+Testing     client/mods/trinkets-3.7.2.jar                                 6%  OK 
+Testing     client/mods/polymorph-fabric-0.49.11+1.20.1.jar                6%  OK 
+Testing     client/mods/Kambrik-6.1.1+1.20.1-fabric.jar                    7%  OK 
+Testing     client/mods/Clumps-fabric-1.20.1-12.0.0.4.jar                  7%  OK 
+Testing     client/mods/spell_power-fabric-1.6.1+1.20.1.jar                7%  OK 
+Testing     client/mods/balm-fabric-1.20.1-7.3.44.jar                      7%  OK 
+Testing     client/mods/YungsBetterDungeons-1.20-Fabric-4.0.4.jar          7%  OK 
+Testing     client/mods/fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar       7%  8%  OK 
+Testing     client/mods/moreculling-1.20.1-0.24.6.jar                      8%  OK 
+Testing     client/mods/letsdo-vinery-fabric-1.4.41.jar                    8%  OK 
+Testing     client/mods/[fabric]ctov-3.4.14.jar                            9%  OK 
+Testing     client/mods/spell_engine-fabric-1.10.10+1.20.1.jar            10%  OK 
+Testing     client/mods/ends_delight-refabricated-1.20.1-2.1.jar          10%  OK 
+Testing     client/mods/Debugify-1.20.1+2.0.jar                           10%  OK 
+Testing     client/mods/xaerominimap-fabric-1.20.1-26.6.0.jar             10%  OK 
+Testing     client/mods/simplyswords-fabric-1.70.2-1.20.1.jar             11% 12%  OK 
+Testing     client/mods/memoryleakfix-fabric-1.17+-1.1.5.jar              12%  OK 
+Testing     client/mods/comforts-fabric-6.4.0+1.20.1.jar                  12%  OK 
+Testing     client/mods/DungeonsArise-1.20.1-2.1.57-fabric-release.jar      13% 14%  OK 
+Testing     client/mods/YungsApi-1.20-Fabric-4.0.6.jar                    14%  OK 
+Testing     client/mods/modmenu-7.2.2.jar                                 14%  OK 
+Testing     client/mods/Terralith_1.20.x_v2.5.4.jar                       14%  OK 
+Testing     client/mods/PresenceFootsteps-1.10.1+1.20.1.jar               15%  OK 
+Testing     client/mods/rogues-fabric-3.1.3+1.20.1.jar                    15%  OK 
+Testing     client/mods/CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar         16%  OK 
+Testing     client/mods/bettercombat-fabric-1.9.0+1.20.1.jar              16%  OK 
+Testing     client/mods/krypton-0.2.3.jar                                 16%  OK 
+Testing     client/mods/lithostitched-fabric-1.20.1-1.4.11.jar            16%  OK 
+Testing     client/mods/Pehkui-3.8.3+1.14.4-1.21.jar                      16%  OK 
+Testing     client/mods/BetterF3-7.0.2-Fabric-1.20.1.jar                  16%  OK 
+Testing     client/mods/geckolib-fabric-1.20.1-4.8.4.jar                  16%  OK 
+Testing     client/mods/the_bumblezone-7.15.2+1.20.1-fabric.jar           17% 18% 19% 20% 21% 22% 23% 24% 25% 26% 27% 28%  OK 
+Testing     client/mods/jewelry-fabric-2.4.0+1.20.1.jar                   28%  OK 
+Testing     client/mods/artifacts-fabric-9.5.17.jar                       28%  OK 
+Testing     client/mods/enchanted_fishing_line-1.0.0-fabric-1.20.1.jar      28%  OK 
+Testing     client/mods/indium-1.0.36+mc1.20.1.jar                        28%  OK 
+Testing     client/mods/origins-plus-plus-2.4.jar                         29%  OK 
+Testing     client/mods/deeperdarker-fabric-1.20-1.3.3-plus-b.jar         29% 30% 31%  OK 
+Testing     client/mods/AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar         32% 33% 34% 35% 36% 37% 38% 39%  OK 
+Testing     client/mods/combatroll-fabric-1.3.3+1.20.1.jar                39%  OK 
+Testing     client/mods/iris-1.7.6+mc1.20.1.jar                           40%  OK 
+Testing     client/mods/modernfix-fabric-5.25.2+mc1.20.1.jar              40%  OK 
+Testing     client/mods/twigs-3.1.0-fabric.jar                            40%  OK 
+Testing     client/mods/tide-fabric-1.20.1-2.1.1.jar                      40%  OK 
+Testing     client/mods/supplementaries-1.20-3.1.44-fabric.jar            41% 42%  OK 
+Testing     client/mods/BadOptimizations-2.4.1-1.20.1.jar                 42%  OK 
+Testing     client/mods/villagesandpillages-fabric-2.0.0+mc1.20.1.jar      42%  OK 
+Testing     client/mods/PuzzlesLib-v8.1.36-1.20.1-Fabric.jar              42%  OK 
+Testing     client/mods/player-animation-lib-fabric-1.0.2-rc1+1.20.jar      42%  OK 
+Testing     client/mods/cookingforblockheads-fabric-1.20.1-16.0.15.jar      42%  OK 
+Testing     client/mods/Structory_Towers_1.20.x_v1.0.7.jar                42%  OK 
+Testing     client/mods/appleskin-fabric-mc1.20.1-2.5.2.jar               43%  OK 
+Testing     client/mods/Bountiful-6.0.4+1.20.1-fabric.jar                 43%  OK 
+Testing     client/mods/naturalist-fabric-4.0.3-1.20.1.jar                43%  OK 
+Testing     client/mods/sodium-shadowy-path-blocks-3.4.2.jar              43%  OK 
+Testing     client/mods/dungeons-and-taverns-3.0.3.f.jar                  44%  OK 
+Testing     client/mods/YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar        44%  OK 
+Testing     client/mods/Origins-1.10.2+mc.1.20.x.jar                      44%  OK 
+Testing     client/mods/FarmersDelight-1.20.1-2.5.7+refabricated.jar      45%  OK 
+Testing     client/mods/YungsBetterMineshafts-1.20-Fabric-4.0.4.jar       45%  OK 
+Testing     client/mods/rpgdifficulty-1.3.16.jar                          45%  OK 
+Testing     client/mods/waystones-fabric-1.20.1-14.1.21.jar               45%  OK 
+Testing     client/mods/RoughlyEnoughItems-12.1.785-fabric.jar            46%  OK 
+Testing     client/mods/armor_model_api-fabric-1.0.0+1.20.1.jar           46%  OK 
+Testing     client/mods/cardinal-components-api-5.2.3.jar                 46%  OK 
+Testing     client/mods/common-networking-fabric-1.0.6-1.20.1.jar         46%  OK 
+Testing     client/mods/inmis-2.7.2-1.20.1.jar                            46%  OK 
+Testing     client/mods/fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar        46%  OK 
+Testing     client/mods/fzzy_config-0.7.7+1.20.1.jar                      46%  OK 
 Testing     client/mods/c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar        46%  OK 
-Testing     client/mods/medievalorigins-fabric-1.20.1-6.7.9.jar           46%  OK 
-Testing     client/mods/gazebo-fabric-2.2.0+1.20.1.jar                    46%  OK 
+Testing     client/mods/medievalorigins-fabric-1.20.1-6.7.9.jar           47%  OK 
+Testing     client/mods/gazebo-fabric-2.2.0+1.20.1.jar                    47%  OK 
 Testing     client/mods/paladins-fabric-3.1.3+1.20.1.jar                  47%  OK 
-Testing     client/mods/origins-dietary-delights-1.9.8.jar                47%  OK 
+Testing     client/mods/origins-dietary-delights-1.9.8.jar                48%  OK 
 Testing     client/mods/SimplyTooltips-fabric-0.1.5-1.20.1.jar            48%  OK 
 Testing     client/mods/owo-lib-0.11.2+1.20.jar                           48%  OK 
 Testing     client/mods/VisualWorkbench-v8.0.1-1.20.1-Fabric.jar          48%  OK 
@@ -272,13 +285,17 @@ Testing     client/mods/TravelersTitles-1.20-Fabric-4.0.2.jar             48
 Testing     client/mods/moonlight-1.20-2.16.38B-fabric.jar                49%  OK 
 Testing     client/mods/Icarus-Fabric-2.13.2.jar                          49%  OK 
 Testing     client/mods/Incendium_1.20.x_v5.3.5.jar                       49%  OK 
+Testing     client/mods/travelersbackpack-fabric-1.20.1-9.1.56.jar        49%  OK 
 Testing     client/mods/shield_api-fabric-2.2.0+1.20.1.jar                49%  OK 
 Testing     client/mods/trade-cycling-fabric-1.20.1-1.0.7.jar             49%  OK 
+Testing     client/mods/ExplorersCompass-1.20.1-2.6.0-fabric.jar          49%  OK 
+Testing     client/mods/midnightlib-fabric-1.9.3+1.20.1.jar               49%  OK 
 Testing     client/docs/README_УСТАНОВКА.txt                              49%  OK 
 Testing     client/docs/README_INSTALL_EN.txt                             49%  OK 
 Testing     client/README_УСТАНОВКА.txt                                   49%  OK 
 Testing     client/mmc-pack.json                                          49%  OK 
 Testing     client/README_INSTALL_EN.txt                                  49%  OK 
+Testing     client/manifest.json                                          49%  OK 
 Testing     client/instance.cfg                                           49%  OK 
 Testing     client/config/README.txt                                      49%  OK 
 Testing     client/config/sodium-options.json.example                     49%  OK 
@@ -289,124 +306,129 @@ Testing     server/mods/fabric-api-0.92.12+1.20.1.jar                     50
 Testing     server/mods/lithium-fabric-mc1.20.1-0.11.4.jar                50%  OK 
 Testing     server/mods/ok_zoomer-fabric-5.4.0-beta.9.jar                 50%  OK 
 Testing     server/mods/MouseTweaks-fabric-mc1.20-2.26.jar                50%  OK 
-Testing     server/mods/letsdo-farm_and_charm-fabric-1.0.14.jar           51%  OK 
-Testing     server/mods/sodium-extra-0.5.9+mc1.20.1.jar                   51%  OK 
-Testing     server/mods/Searchables-fabric-1.20.1-1.0.3.jar               51%  OK 
-Testing     server/mods/NaturesCompass-1.20.1-2.6.0-fabric.jar            51%  OK 
-Testing     server/mods/dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar      51%  OK 
+Testing     server/mods/letsdo-farm_and_charm-fabric-1.0.14.jar           50%  OK 
+Testing     server/mods/sodium-extra-0.5.9+mc1.20.1.jar                   50%  OK 
+Testing     server/mods/Searchables-fabric-1.20.1-1.0.3.jar               50%  OK 
+Testing     server/mods/NaturesCompass-1.20.1-2.6.0-fabric.jar            50%  OK 
+Testing     server/mods/dynamic-fps-3.11.4+minecraft-1.20.0-fabric.jar      50%  OK 
 Testing     server/mods/visuality-0.7.1+1.20.jar                          51%  OK 
 Testing     server/mods/resourcefulconfig-fabric-1.20.1-2.1.3.jar         51%  OK 
-Testing     server/mods/immersive_melodies-0.8.2+1.20.1-fabric.jar        52%  OK 
-Testing     server/mods/resourcefullib-fabric-1.20.1-2.1.29.jar           52%  OK 
-Testing     server/mods/villagersplus-fabric-mc1.20.1-4.1.1.jar           52%  OK 
-Testing     server/mods/moredelight-26.05.07-1.20-fabric.jar              52%  OK 
+Testing     server/mods/immersive_melodies-0.8.2+1.20.1-fabric.jar        51%  OK 
+Testing     server/mods/resourcefullib-fabric-1.20.1-2.1.29.jar           51%  OK 
+Testing     server/mods/villagersplus-fabric-mc1.20.1-4.1.1.jar           51%  OK 
+Testing     server/mods/moredelight-26.05.07-1.20-fabric.jar              51%  OK 
 Testing     server/mods/Jade-1.20-Fabric-11.13.3.jar                      52%  OK 
 Testing     server/mods/cloth-config-11.1.136-fabric.jar                  52%  OK 
-Testing     server/mods/friendsandfoes-fabric-5.0.4+mc1.20.1.jar          53%  OK 
-Testing     server/mods/reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar      53%  OK 
-Testing     server/mods/fishingreal-fabric-1.20.1-1.9.1-backport.jar      53%  OK 
-Testing     server/mods/kirin-1.15.6+1.20.1.jar                           53%  OK 
-Testing     server/mods/villagernames-1.20.1-8.9.jar                      53%  OK 
-Testing     server/mods/ranged_weapon_api-fabric-2.3.4+1.20.1.jar         53%  OK 
-Testing     server/mods/ImmediatelyFast-Fabric-1.5.5+1.20.4.jar           54%  OK 
-Testing     server/mods/archers-fabric-3.1.4+1.20.1.jar                   54%  OK 
-Testing     server/mods/overweightfarming-1.20.1-2.0.3-fabric.jar         54%  OK 
-Testing     server/mods/cristellib-1.1.5-fabric.jar                       54%  OK 
-Testing     server/mods/GlitchCore-fabric-1.20.1-0.0.1.1.jar              54%  OK 
-Testing     server/mods/Heracles-fabric-1.20.1-1.1.13.jar                 54%  OK 
-Testing     server/mods/random-fishing-crates-1.3.3.jar                   54%  OK 
-Testing     server/mods/farmingforblockheads-fabric-1.20.1-14.0.4.jar      54%  OK 
-Testing     server/mods/Structory_1.20.x_v1.3.5.jar                       55%  OK 
-Testing     server/mods/entityculling-fabric-1.11.3-mc1.20.1.jar          55%  OK 
-Testing     server/mods/Patchouli-1.20.1-85-FABRIC.jar                    55%  OK 
-Testing     server/mods/extraorigins-1.20-8.jar                           55%  OK 
-Testing     server/mods/wizards-fabric-3.1.3+1.20.1.jar                   56%  OK 
-Testing     server/mods/originstweaks-1.18.3.jar                          56%  OK 
-Testing     server/mods/ferritecore-6.0.1-fabric.jar                      56%  OK 
-Testing     server/mods/Towns-and-Towers-1.12-Fabric+Forge.jar            56%  OK 
-Testing     server/mods/collective-1.20.1-8.79.jar                        57%  OK 
-Testing     server/mods/architectury-9.2.14-fabric.jar                    57%  OK 
-Testing     server/mods/eating-animation-1.20+1.9.61.jar                  57%  OK 
-Testing     server/mods/villagertradingplus-fabric-mc1.20.1-1.1.1.jar      57%  OK 
-Testing     server/mods/notenoughanimations-fabric-1.12.7-mc1.20.1.jar      57%  OK 
-Testing     server/mods/structure_pool_api-fabric-1.2.1+1.20.1.jar        57%  OK 
-Testing     server/mods/ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar       57%  OK 
-Testing     server/mods/crittersandcompanions-fabric-1.20.1-2.7.1.jar      58%  OK 
-Testing     server/mods/guardvillagers-2.0.9-1.20.1.jar                   58%  OK 
-Testing     server/mods/Origins-Classes-1.20-1.7.0.jar                    58%  OK 
-Testing     server/mods/Controlling-fabric-1.20.1-12.0.2.jar              58%  OK 
-Testing     server/mods/handcrafted-fabric-1.20.1-3.0.6.jar               58%  OK 
-Testing     server/mods/yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar      59%  OK 
-Testing     server/mods/trinkets-3.7.2.jar                                59%  OK 
-Testing     server/mods/Kambrik-6.1.1+1.20.1-fabric.jar                   59%  OK 
-Testing     server/mods/Clumps-fabric-1.20.1-12.0.0.4.jar                 59%  OK 
-Testing     server/mods/spell_power-fabric-1.6.1+1.20.1.jar               59%  OK 
-Testing     server/mods/balm-fabric-1.20.1-7.3.44.jar                     59%  OK 
-Testing     server/mods/YungsBetterDungeons-1.20-Fabric-4.0.4.jar         59%  OK 
-Testing     server/mods/fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar      60% 61%  OK 
-Testing     server/mods/moreculling-1.20.1-0.24.6.jar                     61%  OK 
-Testing     server/mods/letsdo-vinery-fabric-1.4.41.jar                   61%  OK 
-Testing     server/mods/[fabric]ctov-3.4.14.jar                           62%  OK 
-Testing     server/mods/spell_engine-fabric-1.10.10+1.20.1.jar            63%  OK 
-Testing     server/mods/ends_delight-refabricated-1.20.1-2.1.jar          63%  OK 
-Testing     server/mods/Debugify-1.20.1+2.0.jar                           63%  OK 
-Testing     server/mods/xaerominimap-fabric-1.20.1-26.6.0.jar             64%  OK 
-Testing     server/mods/simplyswords-fabric-1.70.2-1.20.1.jar             64% 65% 66%  OK 
-Testing     server/mods/memoryleakfix-fabric-1.17+-1.1.5.jar              66%  OK 
-Testing     server/mods/comforts-fabric-6.4.0+1.20.1.jar                  66%  OK 
-Testing     server/mods/DungeonsArise-1.20.1-2.1.57-fabric-release.jar      67% 68%  OK 
-Testing     server/mods/YungsApi-1.20-Fabric-4.0.6.jar                    68%  OK 
-Testing     server/mods/modmenu-7.2.2.jar                                 69%  OK 
-Testing     server/mods/Terralith_1.20.x_v2.5.4.jar                       69%  OK 
-Testing     server/mods/PresenceFootsteps-1.10.1+1.20.1.jar               70%  OK 
-Testing     server/mods/rogues-fabric-3.1.3+1.20.1.jar                    70%  OK 
-Testing     server/mods/CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar         71%  OK 
-Testing     server/mods/bettercombat-fabric-1.9.0+1.20.1.jar              71%  OK 
-Testing     server/mods/krypton-0.2.3.jar                                 71%  OK 
-Testing     server/mods/lithostitched-fabric-1.20.1-1.4.11.jar            71%  OK 
-Testing     server/mods/Pehkui-3.8.3+1.14.4-1.21.jar                      71%  OK 
-Testing     server/mods/BetterF3-7.0.2-Fabric-1.20.1.jar                  71%  OK 
-Testing     server/mods/geckolib-fabric-1.20.1-4.8.4.jar                  72%  OK 
-Testing     server/mods/jewelry-fabric-2.4.0+1.20.1.jar                   72%  OK 
-Testing     server/mods/artifacts-fabric-9.5.17.jar                       72%  OK 
-Testing     server/mods/enchanted_fishing_line-1.0.0-fabric-1.20.1.jar      72%  OK 
-Testing     server/mods/indium-1.0.36+mc1.20.1.jar                        72%  OK 
-Testing     server/mods/origins-plus-plus-2.4.jar                         72%  OK 
-Testing     server/mods/deeperdarker-fabric-1.20-1.3.3-plus-b.jar         73% 74% 75% 76%  OK 
-Testing     server/mods/AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar         76% 77% 78% 79% 80% 81% 82% 83% 84% 85% 86%  OK 
-Testing     server/mods/combatroll-fabric-1.3.3+1.20.1.jar                86%  OK 
-Testing     server/mods/iris-1.7.6+mc1.20.1.jar                           87%  OK 
-Testing     server/mods/modernfix-fabric-5.25.2+mc1.20.1.jar              87%  OK 
-Testing     server/mods/twigs-3.1.0-fabric.jar                            87%  OK 
-Testing     server/mods/tide-fabric-1.20.1-2.1.1.jar                      87%  OK 
-Testing     server/mods/supplementaries-1.20-3.1.44-fabric.jar            88% 89% 90%  OK 
-Testing     server/mods/BadOptimizations-2.4.1-1.20.1.jar                 90%  OK 
-Testing     server/mods/villagesandpillages-fabric-2.0.0+mc1.20.1.jar      90%  OK 
-Testing     server/mods/PuzzlesLib-v8.1.36-1.20.1-Fabric.jar              90%  OK 
-Testing     server/mods/player-animation-lib-fabric-1.0.2-rc1+1.20.jar      90%  OK 
-Testing     server/mods/cookingforblockheads-fabric-1.20.1-16.0.15.jar      90%  OK 
-Testing     server/mods/Structory_Towers_1.20.x_v1.0.7.jar                90%  OK 
-Testing     server/mods/appleskin-fabric-mc1.20.1-2.5.2.jar               91%  OK 
-Testing     server/mods/Bountiful-6.0.4+1.20.1-fabric.jar                 91%  OK 
-Testing     server/mods/naturalist-fabric-4.0.3-1.20.1.jar                92%  OK 
-Testing     server/mods/sodium-shadowy-path-blocks-3.4.2.jar              92%  OK 
-Testing     server/mods/dungeons-and-taverns-3.0.3.f.jar                  92% 93%  OK 
-Testing     server/mods/Origins-1.10.2+mc.1.20.x.jar                      93%  OK 
-Testing     server/mods/FarmersDelight-1.20.1-2.5.7+refabricated.jar      94%  OK 
-Testing     server/mods/YungsBetterMineshafts-1.20-Fabric-4.0.4.jar       94%  OK 
-Testing     server/mods/rpgdifficulty-1.3.16.jar                          94%  OK 
-Testing     server/mods/waystones-fabric-1.20.1-14.1.21.jar               94%  OK 
-Testing     server/mods/RoughlyEnoughItems-12.1.785-fabric.jar            95%  OK 
-Testing     server/mods/armor_model_api-fabric-1.0.0+1.20.1.jar           95%  OK 
-Testing     server/mods/common-networking-fabric-1.0.6-1.20.1.jar         95%  OK 
-Testing     server/mods/inmis-2.7.2-1.20.1.jar                            95%  OK 
-Testing     server/mods/fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar        95%  OK 
-Testing     server/mods/fzzy_config-0.7.7+1.20.1.jar                      95%  OK 
+Testing     server/mods/friendsandfoes-fabric-5.0.4+mc1.20.1.jar          52%  OK 
+Testing     server/mods/reeses_sodium_options-1.7.2+mc1.20.1-build.101.jar      52%  OK 
+Testing     server/mods/fishingreal-fabric-1.20.1-1.9.1-backport.jar      52%  OK 
+Testing     server/mods/kirin-1.15.6+1.20.1.jar                           52%  OK 
+Testing     server/mods/villagernames-1.20.1-8.9.jar                      52%  OK 
+Testing     server/mods/ranged_weapon_api-fabric-2.3.4+1.20.1.jar         52%  OK 
+Testing     server/mods/ImmediatelyFast-Fabric-1.5.5+1.20.4.jar           53%  OK 
+Testing     server/mods/archers-fabric-3.1.4+1.20.1.jar                   53%  OK 
+Testing     server/mods/overweightfarming-1.20.1-2.0.3-fabric.jar         53%  OK 
+Testing     server/mods/cristellib-1.1.5-fabric.jar                       53%  OK 
+Testing     server/mods/GlitchCore-fabric-1.20.1-0.0.1.1.jar              53%  OK 
+Testing     server/mods/Heracles-fabric-1.20.1-1.1.13.jar                 53%  OK 
+Testing     server/mods/YungsBetterStrongholds-1.20-Fabric-4.0.3.jar      53%  OK 
+Testing     server/mods/random-fishing-crates-1.3.3.jar                   53%  OK 
+Testing     server/mods/farmingforblockheads-fabric-1.20.1-14.0.4.jar      53%  OK 
+Testing     server/mods/Structory_1.20.x_v1.3.5.jar                       53%  OK 
+Testing     server/mods/entityculling-fabric-1.11.3-mc1.20.1.jar          54%  OK 
+Testing     server/mods/Patchouli-1.20.1-85-FABRIC.jar                    54%  OK 
+Testing     server/mods/extraorigins-1.20-8.jar                           54%  OK 
+Testing     server/mods/wizards-fabric-3.1.3+1.20.1.jar                   54%  OK 
+Testing     server/mods/originstweaks-1.18.3.jar                          54%  OK 
+Testing     server/mods/ferritecore-6.0.1-fabric.jar                      54%  OK 
+Testing     server/mods/Towns-and-Towers-1.12-Fabric+Forge.jar            55%  OK 
+Testing     server/mods/collective-1.20.1-8.79.jar                        55%  OK 
+Testing     server/mods/architectury-9.2.14-fabric.jar                    55%  OK 
+Testing     server/mods/eating-animation-1.20+1.9.61.jar                  55%  OK 
+Testing     server/mods/villagertradingplus-fabric-mc1.20.1-1.1.1.jar      55%  OK 
+Testing     server/mods/notenoughanimations-fabric-1.12.7-mc1.20.1.jar      55%  OK 
+Testing     server/mods/structure_pool_api-fabric-1.2.1+1.20.1.jar        55%  OK 
+Testing     server/mods/ForgeConfigAPIPort-v8.0.3-1.20.1-Fabric.jar       55%  OK 
+Testing     server/mods/crittersandcompanions-fabric-1.20.1-2.7.1.jar      56%  OK 
+Testing     server/mods/guardvillagers-2.0.9-1.20.1.jar                   56%  OK 
+Testing     server/mods/Origins-Classes-1.20-1.7.0.jar                    56%  OK 
+Testing     server/mods/Controlling-fabric-1.20.1-12.0.2.jar              56%  OK 
+Testing     server/mods/handcrafted-fabric-1.20.1-3.0.6.jar               56%  OK 
+Testing     server/mods/yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar      56%  OK 
+Testing     server/mods/trinkets-3.7.2.jar                                56%  OK 
+Testing     server/mods/polymorph-fabric-0.49.11+1.20.1.jar               56%  OK 
+Testing     server/mods/Kambrik-6.1.1+1.20.1-fabric.jar                   57%  OK 
+Testing     server/mods/Clumps-fabric-1.20.1-12.0.0.4.jar                 57%  OK 
+Testing     server/mods/spell_power-fabric-1.6.1+1.20.1.jar               57%  OK 
+Testing     server/mods/balm-fabric-1.20.1-7.3.44.jar                     57%  OK 
+Testing     server/mods/YungsBetterDungeons-1.20-Fabric-4.0.4.jar         57%  OK 
+Testing     server/mods/fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar      57% 58%  OK 
+Testing     server/mods/moreculling-1.20.1-0.24.6.jar                     58%  OK 
+Testing     server/mods/letsdo-vinery-fabric-1.4.41.jar                   58%  OK 
+Testing     server/mods/[fabric]ctov-3.4.14.jar                           59%  OK 
+Testing     server/mods/spell_engine-fabric-1.10.10+1.20.1.jar            60%  OK 
+Testing     server/mods/ends_delight-refabricated-1.20.1-2.1.jar          60%  OK 
+Testing     server/mods/Debugify-1.20.1+2.0.jar                           60%  OK 
+Testing     server/mods/xaerominimap-fabric-1.20.1-26.6.0.jar             60%  OK 
+Testing     server/mods/simplyswords-fabric-1.70.2-1.20.1.jar             61% 62%  OK 
+Testing     server/mods/memoryleakfix-fabric-1.17+-1.1.5.jar              62%  OK 
+Testing     server/mods/comforts-fabric-6.4.0+1.20.1.jar                  62%  OK 
+Testing     server/mods/DungeonsArise-1.20.1-2.1.57-fabric-release.jar      63% 64%  OK 
+Testing     server/mods/YungsApi-1.20-Fabric-4.0.6.jar                    64%  OK 
+Testing     server/mods/modmenu-7.2.2.jar                                 64%  OK 
+Testing     server/mods/Terralith_1.20.x_v2.5.4.jar                       64%  OK 
+Testing     server/mods/PresenceFootsteps-1.10.1+1.20.1.jar               65%  OK 
+Testing     server/mods/rogues-fabric-3.1.3+1.20.1.jar                    65%  OK 
+Testing     server/mods/CreativeCore_FABRIC_v2.12.41_mc1.20.1.jar         66%  OK 
+Testing     server/mods/bettercombat-fabric-1.9.0+1.20.1.jar              66%  OK 
+Testing     server/mods/krypton-0.2.3.jar                                 66%  OK 
+Testing     server/mods/lithostitched-fabric-1.20.1-1.4.11.jar            66%  OK 
+Testing     server/mods/Pehkui-3.8.3+1.14.4-1.21.jar                      66%  OK 
+Testing     server/mods/BetterF3-7.0.2-Fabric-1.20.1.jar                  66%  OK 
+Testing     server/mods/geckolib-fabric-1.20.1-4.8.4.jar                  66%  OK 
+Testing     server/mods/the_bumblezone-7.15.2+1.20.1-fabric.jar           67% 68% 69% 70% 71% 72% 73% 74% 75% 76% 77% 78%  OK 
+Testing     server/mods/jewelry-fabric-2.4.0+1.20.1.jar                   78%  OK 
+Testing     server/mods/artifacts-fabric-9.5.17.jar                       78%  OK 
+Testing     server/mods/enchanted_fishing_line-1.0.0-fabric-1.20.1.jar      78%  OK 
+Testing     server/mods/indium-1.0.36+mc1.20.1.jar                        78%  OK 
+Testing     server/mods/origins-plus-plus-2.4.jar                         79%  OK 
+Testing     server/mods/deeperdarker-fabric-1.20-1.3.3-plus-b.jar         79% 80% 81%  OK 
+Testing     server/mods/AmbientSounds_FABRIC_v6.3.11_mc1.20.1.jar         82% 83% 84% 85% 86% 87% 88% 89%  OK 
+Testing     server/mods/combatroll-fabric-1.3.3+1.20.1.jar                89%  OK 
+Testing     server/mods/iris-1.7.6+mc1.20.1.jar                           90%  OK 
+Testing     server/mods/modernfix-fabric-5.25.2+mc1.20.1.jar              90%  OK 
+Testing     server/mods/twigs-3.1.0-fabric.jar                            90%  OK 
+Testing     server/mods/tide-fabric-1.20.1-2.1.1.jar                      90%  OK 
+Testing     server/mods/supplementaries-1.20-3.1.44-fabric.jar            91% 92%  OK 
+Testing     server/mods/BadOptimizations-2.4.1-1.20.1.jar                 92%  OK 
+Testing     server/mods/villagesandpillages-fabric-2.0.0+mc1.20.1.jar      92%  OK 
+Testing     server/mods/PuzzlesLib-v8.1.36-1.20.1-Fabric.jar              92%  OK 
+Testing     server/mods/player-animation-lib-fabric-1.0.2-rc1+1.20.jar      92%  OK 
+Testing     server/mods/cookingforblockheads-fabric-1.20.1-16.0.15.jar      92%  OK 
+Testing     server/mods/Structory_Towers_1.20.x_v1.0.7.jar                92%  OK 
+Testing     server/mods/appleskin-fabric-mc1.20.1-2.5.2.jar               93%  OK 
+Testing     server/mods/Bountiful-6.0.4+1.20.1-fabric.jar                 93%  OK 
+Testing     server/mods/naturalist-fabric-4.0.3-1.20.1.jar                93%  OK 
+Testing     server/mods/sodium-shadowy-path-blocks-3.4.2.jar              93%  OK 
+Testing     server/mods/dungeons-and-taverns-3.0.3.f.jar                  94%  OK 
+Testing     server/mods/YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar        94%  OK 
+Testing     server/mods/Origins-1.10.2+mc.1.20.x.jar                      94%  OK 
+Testing     server/mods/FarmersDelight-1.20.1-2.5.7+refabricated.jar      95%  OK 
+Testing     server/mods/YungsBetterMineshafts-1.20-Fabric-4.0.4.jar       95%  OK 
+Testing     server/mods/rpgdifficulty-1.3.16.jar                          95%  OK 
+Testing     server/mods/waystones-fabric-1.20.1-14.1.21.jar               95%  OK 
+Testing     server/mods/RoughlyEnoughItems-12.1.785-fabric.jar            96%  OK 
+Testing     server/mods/armor_model_api-fabric-1.0.0+1.20.1.jar           96%  OK 
+Testing     server/mods/cardinal-components-api-5.2.3.jar                 96%  OK 
+Testing     server/mods/common-networking-fabric-1.0.6-1.20.1.jar         96%  OK 
+Testing     server/mods/inmis-2.7.2-1.20.1.jar                            96%  OK 
+Testing     server/mods/fish_of_thieves-mc1.20.1-v3.4.0-fabric.jar        96%  OK 
+Testing     server/mods/fzzy_config-0.7.7+1.20.1.jar                      96%  OK 
 Testing     server/mods/c2me-fabric-mc1.20.1-0.2.0+alpha.11.18.jar        96%  OK 
-Testing     server/mods/medievalorigins-fabric-1.20.1-6.7.9.jar           96%  OK 
-Testing     server/mods/gazebo-fabric-2.2.0+1.20.1.jar                    96%  OK 
+Testing     server/mods/medievalorigins-fabric-1.20.1-6.7.9.jar           97%  OK 
+Testing     server/mods/gazebo-fabric-2.2.0+1.20.1.jar                    97%  OK 
 Testing     server/mods/paladins-fabric-3.1.3+1.20.1.jar                  97%  OK 
-Testing     server/mods/origins-dietary-delights-1.9.8.jar                97%  OK 
+Testing     server/mods/origins-dietary-delights-1.9.8.jar                98%  OK 
 Testing     server/mods/SimplyTooltips-fabric-0.1.5-1.20.1.jar            98%  OK 
 Testing     server/mods/owo-lib-0.11.2+1.20.jar                           98%  OK 
 Testing     server/mods/VisualWorkbench-v8.0.1-1.20.1-Fabric.jar          98%  OK 
@@ -417,8 +439,11 @@ Testing     server/mods/TravelersTitles-1.20-Fabric-4.0.2.jar             98
 Testing     server/mods/moonlight-1.20-2.16.38B-fabric.jar                99%  OK 
 Testing     server/mods/Icarus-Fabric-2.13.2.jar                          99%  OK 
 Testing     server/mods/Incendium_1.20.x_v5.3.5.jar                       99%  OK 
+Testing     server/mods/travelersbackpack-fabric-1.20.1-9.1.56.jar        99%  OK 
 Testing     server/mods/shield_api-fabric-2.2.0+1.20.1.jar                99%  OK 
 Testing     server/mods/trade-cycling-fabric-1.20.1-1.0.7.jar             99%  OK 
+Testing     server/mods/ExplorersCompass-1.20.1-2.6.0-fabric.jar          99%  OK 
+Testing     server/mods/midnightlib-fabric-1.9.3+1.20.1.jar               99%  OK 
 Testing     server/docs/README_УСТАНОВКА.txt                              99%  OK 
 Testing     server/docs/README_INSTALL_EN.txt                             99%  OK 
 Testing     server/README_УСТАНОВКА.txt                                   99%  OK 
@@ -438,7 +463,7 @@ Testing     server/config                                             OK
 Testing     client                                                    OK
 Testing     server                                                    OK
 All OK
-downloads: {'cached': 135, 'downloaded': 0}
+downloads: {'cached': 143, 'downloaded': 0}
 mrpack: /home/runner/work/Sborka/Sborka/build/Sborka-RPG-1.0.0.mrpack 0.0 MB
-rar: /home/runner/work/Sborka/Sborka/build/Sborka-RPG-1.0.0.rar 482.3 MB
+rar: /home/runner/work/Sborka/Sborka/build/Sborka-RPG-1.0.0.rar 643.7 MB
 checksums written

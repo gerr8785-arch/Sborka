@@ -1,6 +1,6 @@
 {
  "mc": "1.20.1",
- "jar_count": 135,
+ "jar_count": 143,
  "top_level_ids": [
   "ambientsounds",
   "appleskin",
@@ -14,8 +14,11 @@
   "betterdungeons",
   "betterf3",
   "bettermineshafts",
+  "betterstrongholds",
+  "betterwitchhuts",
   "bountiful",
   "c2me",
+  "cardinal-components",
   "cloth-config",
   "clumps",
   "collective",
@@ -36,6 +39,7 @@
   "enchanted_fishing_line",
   "ends_delight",
   "entityculling",
+  "explorerscompass",
   "extraorigins",
   "fabric-api",
   "fabric-language-kotlin",
@@ -71,6 +75,7 @@
   "lithostitched",
   "medievalorigins",
   "memoryleakfix",
+  "midnightlib",
   "modernfix",
   "modmenu",
   "moonlight",
@@ -94,6 +99,7 @@
   "patchouli",
   "pehkui",
   "player-animator",
+  "polymorph",
   "presencefootsteps",
   "puzzleslib",
   "ranged_weapon_api",
@@ -120,8 +126,10 @@
   "supplementaries",
   "t_and_t",
   "terralith",
+  "the_bumblezone",
   "tide",
   "trade_cycling",
+  "travelersbackpack",
   "travelerstitles",
   "trinkets",
   "twigs",
@@ -147,6 +155,7 @@
   "architectury": "9.2.14",
   "armor_model_api": "1.0.0+1.20.1",
   "artifacts": "9.5.17",
+  "athena": "3.1.2",
   "badoptimizations": "2.4.1",
   "balm": "7.3.44",
   "balm-fabric": "7.3.44",
@@ -154,6 +163,8 @@
   "betterdungeons": "1.20-Fabric-4.0.4",
   "betterf3": "7.0.2",
   "bettermineshafts": "1.20-Fabric-4.0.4",
+  "betterstrongholds": "1.20-Fabric-4.0.3",
+  "betterwitchhuts": "1.20-Fabric-3.0.3",
   "blue_endless_jankson": "1.2.3",
   "bountiful": "6.0.4+1.20.1",
   "bundleapi": "1.3.0+1.20.1",
@@ -180,8 +191,15 @@
   "c2me-threading-worldgen": "0.2.0+alpha.11.18",
   "caffeineconfig": "1.3.0+1.17",
   "calio": "1.11.2+mc.1.20.x",
+  "cardinal-components": "5.2.3",
   "cardinal-components-base": "5.2.1",
+  "cardinal-components-block": "5.2.3",
+  "cardinal-components-chunk": "5.2.3",
   "cardinal-components-entity": "5.2.1",
+  "cardinal-components-item": "5.2.3",
+  "cardinal-components-level": "5.2.3",
+  "cardinal-components-scoreboard": "5.2.3",
+  "cardinal-components-world": "5.2.3",
   "cloth-basic-math": "0.6.1",
   "cloth-config": "11.1.106",
   "cloth-config2": "11.1.106",
@@ -223,6 +241,7 @@
   "entityculling": "1.11.3",
   "error_notifier": "1.0.9",
   "expandability": "9.0.4",
+  "explorerscompass": "1.20.1-2.6.0-fabric",
   "extraorigins": "1.20-8",
   "fabric": "0.92.12+1.20.1",
   "fabric-api": "0.92.12+1.20.1",
@@ -340,6 +359,7 @@
   "net_minecraftforge_eventbus": "6.2.33",
   "net_objecthunter_exp4j": "0.4.8",
   "net_peanuuutz_tomlkt_tomlkt-jvm": "0.3.7",
+  "noindium": "1.1.0+1.20",
   "notenoughanimations": "1.12.7",
   "ok_zoomer": "5.4.0-beta.9",
   "omega-config": "1.2.3-1.18.1",
@@ -377,6 +397,7 @@
   "pehkui": "3.8.3+1.14.4-1.21",
   "player-animator": "1.0.2-rc1+1.20",
   "playerabilitylib": "1.8.0",
+  "polymorph": "0.49.11+1.20.1",
   "porting_lib_accessors": "2.3.15+1.20.1",
   "porting_lib_attributes": "2.3.15+1.20.1",
   "porting_lib_base": "2.3.15+1.20.1",
@@ -428,10 +449,12 @@
   "supplementaries": "1.20-3.1.44",
   "t_and_t": "1.12",
   "terralith": "2.5.4",
+  "the_bumblezone": "$version",
   "tide": "2.1.1",
   "tiny_config": "3.1.0",
   "trade_cycling": "1.20.1-1.0.7",
   "transition": "1.0.26",
+  "travelersbackpack": "9.1.56",
   "travelerstitles": "1.20-Fabric-4.0.2",
   "trender": "1.0.17",
   "trinkets": "3.7.2",
@@ -809,6 +832,35 @@
     }
    ],
    "mixins": [],
+   "errors": [],
+   "nested_ids": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "ExplorersCompass-1.20.1-2.6.0-fabric.jar",
+   "mods": [
+    {
+     "id": "explorerscompass",
+     "version": "1.20.1-2.6.0-fabric",
+     "name": "Explorer's Compass",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": "*",
+      "minecraft": "~1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "explorerscompass.mixins.json"
+   ],
    "errors": [],
    "nested_ids": [],
    "loader": "fabric"
@@ -2842,6 +2894,100 @@
    "loader": "fabric"
   },
   {
+   "file": "YungsBetterStrongholds-1.20-Fabric-4.0.3.jar",
+   "mods": [
+    {
+     "id": "betterstrongholds",
+     "version": "1.20-Fabric-4.0.3",
+     "name": "YUNG's Better Strongholds",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "cloth-config2": ">=11.0.99",
+      "java": ">=17",
+      "yungsapi": ">=1.20-Fabric-4.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "betterstrongholds.mixins.json",
+    "betterstrongholds_fabric.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [
+    "org_reflections_reflections@0.10.2"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar",
+   "mods": [
+    {
+     "id": "betterwitchhuts",
+     "version": "1.20-Fabric-3.0.3",
+     "name": "YUNG's Better Witch Huts",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.21",
+      "fabric": ">=0.83.0",
+      "minecraft": ">=1.20",
+      "cloth-config2": ">=11.0.99",
+      "java": ">=17",
+      "yungsapi": ">=1.20-Fabric-4.0.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "org_reflections_reflections",
+     "version": "0.10.2",
+     "name": "reflections",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "betterwitchhuts.mixins.json",
+    "betterwitchhuts_fabric.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [
+    "org_reflections_reflections@0.10.2"
+   ],
+   "loader": "fabric"
+  },
+  {
    "file": "[fabric]ctov-3.4.14.jar",
    "mods": [
     {
@@ -3768,6 +3914,183 @@
     "org_threadly_threadly@7.0",
     "net_objecthunter_exp4j@0.4.8",
     "mixinextras@0.3.6"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "cardinal-components-api-5.2.3.jar",
+   "mods": [
+    {
+     "id": "cardinal-components",
+     "version": "5.2.3",
+     "name": "Cardinal Components API",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-block",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (blocks)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "fabric-api-lookup-api-v1": "*",
+      "fabric-networking-api-v1": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-chunk",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (chunks)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "fabric-networking-api-v1": "*"
+     },
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-item",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (items)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {
+      "optifabric": "*"
+     },
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-level",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (world saves)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "cardinal-components-world": "*"
+     },
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-scoreboard",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (scoreboard)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-world",
+     "version": "5.2.3",
+     "name": "Cardinal Components API (worlds)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*",
+      "fabric-networking-api-v1": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [],
+   "errors": [],
+   "nested_ids": [
+    "cardinal-components-base@5.2.3",
+    "cardinal-components-block@5.2.3",
+    "cardinal-components-chunk@5.2.3",
+    "cardinal-components-entity@5.2.3",
+    "cardinal-components-item@5.2.3",
+    "cardinal-components-level@5.2.3",
+    "cardinal-components-scoreboard@5.2.3",
+    "cardinal-components-world@5.2.3"
    ],
    "loader": "fabric"
   },
@@ -6849,6 +7172,33 @@
    "loader": "fabric"
   },
   {
+   "file": "midnightlib-fabric-1.9.3+1.20.1.jar",
+   "mods": [
+    {
+     "id": "midnightlib",
+     "version": "1.9.3",
+     "name": "MidnightLib",
+     "environment": "*",
+     "depends": {
+      "fabric-resource-loader-v0": "*",
+      "minecraft": ">=1.20 <=1.20.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "midnightlib.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [],
+   "loader": "fabric"
+  },
+  {
    "file": "modernfix-fabric-5.25.2+mc1.20.1.jar",
    "mods": [
     {
@@ -7599,6 +7949,162 @@
    ],
    "errors": [],
    "nested_ids": [],
+   "loader": "fabric"
+  },
+  {
+   "file": "polymorph-fabric-0.49.11+1.20.1.jar",
+   "mods": [
+    {
+     "id": "polymorph",
+     "version": "0.49.11+1.20.1",
+     "name": "Polymorph",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.23",
+      "fabric": "*",
+      "minecraft": "1.20.x",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "spectrelib",
+     "version": "0.13.17+1.20.1",
+     "name": "SpectreLib",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": ">=1.20",
+      "java": ">=17"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "com_electronwill_night-config_core",
+     "version": "3.6.7",
+     "name": "core",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 1
+    },
+    {
+     "id": "com_electronwill_night-config_toml",
+     "version": "3.6.7",
+     "name": "toml",
+     "environment": "*",
+     "depends": {},
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 1
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "fabric-networking-api-v1": "*"
+     },
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-block",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (blocks)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "fabric-api-lookup-api-v1": "*",
+      "fabric-networking-api-v1": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-item",
+     "version": "5.2.1",
+     "name": "Cardinal Components API (items)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {
+      "optifabric": "*"
+     },
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "polymorph.mixins.json",
+    "polymorph.fabric.mixins.json",
+    "polymorph-integrations.fabric.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [
+    "spectrelib@0.13.17+1.20.1",
+    "com_electronwill_night-config_core@3.6.7",
+    "com_electronwill_night-config_toml@3.6.7",
+    "cardinal-components-base@5.2.1",
+    "cardinal-components-entity@5.2.1",
+    "cardinal-components-block@5.2.1",
+    "cardinal-components-item@5.2.1"
+   ],
    "loader": "fabric"
   },
   {
@@ -8362,6 +8868,130 @@
    "loader": "fabric"
   },
   {
+   "file": "the_bumblezone-7.15.2+1.20.1-fabric.jar",
+   "mods": [
+    {
+     "id": "the_bumblezone",
+     "version": "$version",
+     "name": "The Bumblezone - Fabric",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25",
+      "minecraft": ">=1.20",
+      "fabric": ">=0.83.0",
+      "midnightlib": ">=1.4.0"
+     },
+     "breaks": {
+      "structureessentials": "=1.20.1-4.5"
+     },
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "noindium",
+     "version": "1.1.0+1.20",
+     "name": "No Indium?",
+     "environment": "client",
+     "depends": {
+      "minecraft": ">=1.20-beta.1",
+      "fabricloader": "*",
+      "fabric": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "athena",
+     "version": "3.1.2",
+     "name": "Athena",
+     "environment": "*",
+     "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-base",
+     "version": "5.2.0",
+     "name": "Cardinal Components API (base)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": ">=0.1.2"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "cardinal-components-entity",
+     "version": "5.2.0",
+     "name": "Cardinal Components API (entities)",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.17-",
+      "fabric-api-base": "*",
+      "cardinal-components-base": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {
+      "fabric-networking-api-v1": "*"
+     },
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    },
+    {
+     "id": "mixinextras",
+     "version": "0.4.1",
+     "name": "MixinExtras",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.25"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [
+      "com_github_llamalad7_mixinextras"
+     ],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "the_bumblezone-fabric.mixins.json",
+    "the_bumblezone-fabric-base.mixins.json",
+    "the_bumblezone-common.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [
+    "noindium@1.1.0+1.20",
+    "athena@3.1.2",
+    "cardinal-components-base@5.2.0",
+    "cardinal-components-entity@5.2.0",
+    "mixinextras@0.4.1"
+   ],
+   "loader": "fabric"
+  },
+  {
    "file": "tide-fabric-1.20.1-2.1.1.jar",
    "mods": [
     {
@@ -8513,6 +9143,58 @@
     "fabric-key-binding-api-v1@1.0.36+fb8d95da82",
     "fabric-networking-api-v1@1.3.8+b3afc78b82",
     "fabric-screen-api-v1@2.0.6+b3afc78b82"
+   ],
+   "loader": "fabric"
+  },
+  {
+   "file": "travelersbackpack-fabric-1.20.1-9.1.56.jar",
+   "mods": [
+    {
+     "id": "travelersbackpack",
+     "version": "9.1.56",
+     "name": "Traveler's Backpack",
+     "environment": "*",
+     "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.90.0",
+      "minecraft": "~1.20.1",
+      "java": ">=17",
+      "cardinal-components-base": "*",
+      "cardinal-components-entity": "*",
+      "cloth-config2": "*"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": false,
+     "depth": 0
+    },
+    {
+     "id": "reach-entity-attributes",
+     "version": "2.4.0",
+     "name": "Reach Entity Attributes",
+     "environment": "*",
+     "depends": {
+      "minecraft": ">=1.20",
+      "fabricloader": ">=0.14.21",
+      "fabric-registry-sync-v0": ">=2.1.3",
+      "fabric-resource-loader-v0": ">=0.11.1"
+     },
+     "breaks": {},
+     "conflicts": {},
+     "recommends": {},
+     "provides": [],
+     "bundled": true,
+     "depth": 0
+    }
+   ],
+   "mixins": [
+    "travelersbackpack.mixins.json"
+   ],
+   "errors": [],
+   "nested_ids": [
+    "reach-entity-attributes@2.4.0"
    ],
    "loader": "fabric"
   },

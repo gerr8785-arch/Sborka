@@ -1,112 +1,522 @@
-
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_4_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_5_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_relics (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:56] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_relics (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_0_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_theme/golden_weapon (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_2_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_3_accessories (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_weapons (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_armors (Probably just needs a game restart)
+[20:48:57] [main/INFO]: [STDERR]: RPG Series loot config: failed to resolve itemList for: #rpg_series:loot_tier/tier_1_accessories (Probably just needs a game restart)
+[20:48:57] [main/ERROR]: Parsing error loading recipe supplementaries:integration/lapis_bricks_fd
+com.google.gson.JsonParseException: An ingredient entry needs either a tag or an item
+[20:48:57] [main/ERROR]: Parsing error loading recipe supplementaries:integration/ash_bricks_fd
+com.google.gson.JsonParseException: An ingredient entry needs either a tag or an item
+[20:48:57] [main/ERROR]: Parsing error loading custom advancement overweight_farming:husbandry/peel_overweight_onion: Failed to parse 'location' field
+[20:48:57] [main/ERROR]: Parsing error loading custom advancement overweight_farming:husbandry/unpeel_vegetables: Failed to parse 'location' field
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:high_elf/cryomancer/gear_spawn (skipping): Error reading data field at entity_action_chosen.actions.[1].stack.item: Identifier "runes:frost_stone" was not registered in registry "minecraft:item".
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:high_elf/pyromancer/gear_spawn (skipping): Error reading data field at entity_action_chosen.actions.[1].stack.item: Identifier "runes:fire_stone" was not registered in registry "minecraft:item".
+[20:48:57] [main/ERROR]: There was a problem reading power file origins:vegetarian (skipping): Error reading data field at item_condition: ItemCondition json type "origins:all_of" is not defined.
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:test (skipping): Error reading data field at entity_action.cast_time: JSON requires field: cast_time
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:test_2 (skipping): Error reading data field at entity_action.bientity_action.cast_time: JSON requires field: cast_time
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "originstweaks:slender_body_projectile_dodge" in power file "originstweaks:slender_body": Error reading data field at self_action.actions.[0]: EntityAction json type "origins:random_teleport" is not defined.
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:high_elf/arcanist/gear_spawn (skipping): Error reading data field at entity_action_chosen.actions.[1].stack.item: Identifier "runes:arcane_stone" was not registered in registry "minecraft:item".
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "medievalorigins:revenant/poor_reputation_tradingpost" in power file "medievalorigins:revenant/poor_reputation": Error reading data field at block_condition.block: Identifier "tradingpost:trading_post" was not registered in registry "minecraft:block".
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "medievalorigins:revenant/poor_reputation_tradingpost_msg" in power file "medievalorigins:revenant/poor_reputation": Error reading data field at block_condition.block: Identifier "tradingpost:trading_post" was not registered in registry "minecraft:block".
+[20:48:57] [main/ERROR]: There was a problem reading power file medievalorigins:siren/siren_ignore (skipping): Error reading data field at mob_condition.entity_type: Identifier "iceandfire:siren" was not registered in registry "minecraft:entity_type".
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "medievalorigins:high_elf/mana_rpgmana_max_mana" in power file "medievalorigins:high_elf/mana_rpgmana": Error reading data field at modifiers.[0].attribute: Identifier "rpgmana:mana" was not registered in registry "minecraft:attribute".
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "medievalorigins:high_elf/mana_rpgmana_highborne_regen" in power file "medievalorigins:high_elf/mana_rpgmana": Error reading data field at modifiers.[0].attribute: Identifier "rpgmana:manaregen" was not registered in registry "minecraft:attribute".
+[20:48:57] [main/ERROR]: There was a problem reading sub-power "medievalorigins:valkyrie/vanquisher_spell_power_forge" in power file "medievalorigins:valkyrie/vanquisher": Error reading data field at attribute: Identifier "irons_spellbooks:holy_spell_power" was not registered in registry "minecraft:attribute".
+[20:48:57] [main/ERROR]: There was a problem reading Origin file medievalorigins:high_elf/pyromancer (skipping): Error reading data field at icon.item: Identifier "wizards:fire_spell_book" was not registered in registry "minecraft:item".
+[20:48:57] [main/ERROR]: There was a problem reading Origin file medievalorigins:high_elf/cryomancer (skipping): Error reading data field at icon.item: Identifier "wizards:frost_spell_book" was not registered in registry "minecraft:item".
+[20:48:57] [main/ERROR]: There was a problem reading Origin file medievalorigins:high_elf/arcanist (skipping): Error reading data field at icon.item: Identifier "wizards:arcane_spell_book" was not registered in registry "minecraft:item".
+[20:48:57] [main/WARN]: Could not decode GlobalLootModifier with json id supplementaries:ash_from_burning_mobs - error: Unknown registry key in ResourceKey[minecraft:root / porting_lib:global_loot_modifier_serializers]: moonlight:add_item
+[20:48:57] [main/WARN]: Could not decode GlobalLootModifier with json id supplementaries:straw_from_flax - error: Unknown registry key in ResourceKey[minecraft:root / porting_lib:global_loot_modifier_serializers]: moonlight:add_item
+[20:48:57] [main/WARN]: Could not decode GlobalLootModifier with json id supplementaries:fishing_antique_ink - error: Unknown registry key in ResourceKey[minecraft:root / porting_lib:global_loot_modifier_serializers]: moonlight:add_item
+[20:48:57] [main/WARN]: Could not decode GlobalLootModifier with json id supplementaries:fishing_antique_ink_treasure - error: Unknown registry key in ResourceKey[minecraft:root / porting_lib:global_loot_modifier_serializers]: moonlight:add_item
+[20:48:57] [main/WARN]: Could not decode GlobalLootModifier with json id supplementaries:replace_rope - error: Unknown registry key in ResourceKey[minecraft:root / porting_lib:global_loot_modifier_serializers]: supplementaries:replace_rope
 
 === tail ===
-Downloading Minecraft server
-Installing Fabric Loader 0.20.1(1.20.1) on the server
-Downloading required files
-Downloading library org.ow2.asm:asm:9.10.1
-Downloading library org.ow2.asm:asm-analysis:9.10.1
-Downloading library org.ow2.asm:asm-commons:9.10.1
-Downloading library org.ow2.asm:asm-tree:9.10.1
-Downloading library org.ow2.asm:asm-util:9.10.1
-Downloading library net.fabricmc:sponge-mixin:0.17.5+mixin.0.8.7
-Downloading library net.fabricmc:intermediary:1.20.1
-Downloading library net.fabricmc:fabric-loader:0.20.1
-Generating server launch JAR
-Unpacking 1.20.1/server-1.20.1.jar (versions:1.20.1) to versions/1.20.1/server-1.20.1.jar
-Unpacking com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar (libraries:com.github.oshi:oshi-core:6.2.2) to libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar
-Unpacking com/google/code/gson/gson/2.10/gson-2.10.jar (libraries:com.google.code.gson:gson:2.10) to libraries/com/google/code/gson/gson/2.10/gson-2.10.jar
-Unpacking com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar (libraries:com.google.guava:failureaccess:1.0.1) to libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
-Unpacking com/google/guava/guava/31.1-jre/guava-31.1-jre.jar (libraries:com.google.guava:guava:31.1-jre) to libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
-Unpacking com/mojang/authlib/4.0.43/authlib-4.0.43.jar (libraries:com.mojang:authlib:4.0.43) to libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar
-Unpacking com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar (libraries:com.mojang:brigadier:1.1.8) to libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar
-Unpacking com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar (libraries:com.mojang:datafixerupper:6.0.8) to libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar
-Unpacking com/mojang/logging/1.1.1/logging-1.1.1.jar (libraries:com.mojang:logging:1.1.1) to libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar
-Unpacking commons-io/commons-io/2.11.0/commons-io-2.11.0.jar (libraries:commons-io:commons-io:2.11.0) to libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar
-Unpacking io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar (libraries:io.netty:netty-buffer:4.1.82.Final) to libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar
-Unpacking io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar (libraries:io.netty:netty-codec:4.1.82.Final) to libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar
-Unpacking io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar (libraries:io.netty:netty-common:4.1.82.Final) to libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar
-Unpacking io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar (libraries:io.netty:netty-handler:4.1.82.Final) to libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar
-Unpacking io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar (libraries:io.netty:netty-resolver:4.1.82.Final) to libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar
-Unpacking io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar (libraries:io.netty:netty-transport:4.1.82.Final) to libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar
-Unpacking io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar (libraries:io.netty:netty-transport-classes-epoll:4.1.82.Final) to libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar
-Unpacking io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar (libraries:io.netty:netty-transport-native-epoll:4.1.82.Final:linux-x86_64) to libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar
-Unpacking io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar (libraries:io.netty:netty-transport-native-epoll:4.1.82.Final:linux-aarch_64) to libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar
-Unpacking io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar (libraries:io.netty:netty-transport-native-unix-common:4.1.82.Final) to libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar
-Unpacking it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar (libraries:it.unimi.dsi:fastutil:8.5.9) to libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar
-Unpacking net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar (libraries:net.java.dev.jna:jna:5.12.1) to libraries/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar
-Unpacking net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar (libraries:net.java.dev.jna:jna-platform:5.12.1) to libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar
-Unpacking net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar (libraries:net.sf.jopt-simple:jopt-simple:5.0.4) to libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar
-Unpacking org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (libraries:org.apache.commons:commons-lang3:3.12.0) to libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
-Unpacking org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-api:2.19.0) to libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar
-Unpacking org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-core:2.19.0) to libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar
-Unpacking org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar (libraries:org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0) to libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar
-Unpacking org/joml/joml/1.10.5/joml-1.10.5.jar (libraries:org.joml:joml:1.10.5) to libraries/org/joml/joml/1.10.5/joml-1.10.5.jar
-Unpacking org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar (libraries:org.slf4j:slf4j-api:2.0.1) to libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar
-Starting net.fabricmc.loader.impl.game.minecraft.BundlerClassPathCapture
-[20:42:13] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.20.1
-[20:42:13] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
-[20:42:13] [main/INFO]: Loading 4 mods:
-	- fabricloader 0.20.1
-	   \-- mixinextras 0.5.5
-	- java 17
-	- minecraft 1.20.1
-[20:42:13] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/runner/work/Sborka/Sborka/build/run/server/libraries/net/fabricmc/sponge-mixin/0.17.5+mixin.0.8.7/sponge-mixin-0.17.5+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[20:42:17] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:42:18] [main/ERROR]: No key layers in MapLike[{}]
-[20:42:19] [main/INFO]: Loaded 7 recipes
-[20:42:19] [main/INFO]: Loaded 1271 advancements
-[20:42:19] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[20:42:19] [Server thread/INFO]: Loading properties
-[20:42:19] [Server thread/INFO]: Default game type: SURVIVAL
-[20:42:19] [Server thread/INFO]: Generating keypair
-[20:42:19] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:42:19] [Server thread/INFO]: Using epoll channel type
-[20:42:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:42:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:42:19] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:42:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:42:19] [Server thread/INFO]: Preparing level "world"
-[20:42:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:42:21] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[20:42:21] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[20:42:21] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[20:42:22] [Worker-Main-1/INFO]: Preparing spawn area: 1%
-[20:42:22] [Worker-Main-1/INFO]: Preparing spawn area: 18%
-[20:42:23] [Worker-Main-3/INFO]: Preparing spawn area: 40%
-[20:42:23] [Worker-Main-3/INFO]: Preparing spawn area: 61%
-[20:42:24] [Worker-Main-2/INFO]: Preparing spawn area: 89%
-[20:42:24] [Server thread/INFO]: Time elapsed: 3596 ms
-[20:42:24] [Server thread/INFO]: Done (4.177s)! For help, type "help"
-[20:43:09] [Server thread/INFO]: Gamerule doDaylightCycle is now set to: false
-[20:43:09] [Server thread/INFO]: Gamerule randomTickSpeed is now set to: 3
-[20:43:09] [Server thread/INFO]: Set the time to 1000
-[20:43:09] [Server thread/INFO]: The difficulty has been set to Peaceful
-[20:43:11] [Server thread/INFO]: There are 1 data pack(s) enabled: [vanilla (built-in)]
-[20:43:11] [Server thread/INFO]: There are no more data packs available
-[20:43:13] [Server thread/INFO]: There is no structure with type "ctov:large/village_plains_fortified"
-[20:43:13] [Server thread/INFO]: There is no structure with type "towns_and_towers:village_ocean"
-[20:43:14] [Server thread/INFO]: Changed the block at 2, -60, 0
-[20:43:14] [Server thread/INFO]: Unknown block type 'farmersdelight:cooking_pot'
-[20:43:14] [Server thread/INFO]: ...ck ~4 ~ ~ farmersdelight:cooking_pot<--[HERE]
-[20:43:14] [Server thread/INFO]: Unknown block type 'farm_and_charm:crafting_bowl'
-[20:43:14] [Server thread/INFO]: ...ck ~6 ~ ~ farm_and_charm:crafting_bowl<--[HERE]
-[20:43:14] [Server thread/INFO]: Unknown block type 'vinery:fermentation_barrel'
-[20:43:14] [Server thread/INFO]: ...ck ~8 ~ ~ vinery:fermentation_barrel<--[HERE]
-[20:43:14] [Server thread/INFO]: No player was found
-[20:43:16] [Server thread/INFO]: Summoned new Cow
-[20:43:16] [Server thread/INFO]: Summoned new Cow
-[20:43:18] [Server thread/INFO]: Marked chunk [0, 0] in minecraft:overworld to be force loaded
-[20:43:22] [Server thread/INFO]: Started tick profiling
-[20:43:27] [Server thread/INFO]: Stopped tick profiling after 4.95 seconds and 100 ticks (20.19 ticks per second)
-[20:43:29] [Server thread/INFO]: Stopping the server
-[20:43:29] [Server thread/INFO]: Stopping server
-[20:43:29] [Server thread/INFO]: Saving players
-[20:43:29] [Server thread/INFO]: Saving worlds
-[20:43:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[20:43:30] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[20:43:30] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[20:43:30] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[20:43:30] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:43:30] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:43:30] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:49:19] [Worker-Main-2/INFO]: Preparing spawn area: 9%
+[20:49:19] [Worker-Main-1/INFO]: Preparing spawn area: 9%
+[20:49:21] [Worker-Main-3/INFO]: Preparing spawn area: 9%
+[20:49:21] [Worker-Main-3/INFO]: Preparing spawn area: 9%
+[20:49:21] [Worker-Main-2/INFO]: Preparing spawn area: 9%
+[20:49:21] [Worker-Main-3/INFO]: Preparing spawn area: 9%
+[20:49:22] [Worker-Main-3/INFO]: Preparing spawn area: 10%
+[20:49:22] [Worker-Main-1/INFO]: Preparing spawn area: 12%
+[20:49:23] [Worker-Main-1/INFO]: Preparing spawn area: 13%
+[20:49:25] [Worker-Main-1/INFO]: Preparing spawn area: 15%
+[20:49:25] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[20:49:25] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[20:49:25] [Worker-Main-1/INFO]: Preparing spawn area: 15%
+[20:49:25] [Worker-Main-3/INFO]: Preparing spawn area: 15%
+[20:49:26] [Worker-Main-1/INFO]: Preparing spawn area: 15%
+[20:49:26] [Worker-Main-1/INFO]: Preparing spawn area: 16%
+[20:49:27] [Worker-Main-3/INFO]: Preparing spawn area: 17%
+[20:49:27] [Worker-Main-2/INFO]: Preparing spawn area: 19%
+[20:49:28] [Worker-Main-2/INFO]: Preparing spawn area: 21%
+[20:49:28] [Worker-Main-3/INFO]: Preparing spawn area: 22%
+[20:49:29] [Worker-Main-1/INFO]: Preparing spawn area: 23%
+[20:49:29] [Worker-Main-2/INFO]: Preparing spawn area: 24%
+[20:49:30] [Worker-Main-2/INFO]: Preparing spawn area: 25%
+[20:49:30] [Worker-Main-3/INFO]: Preparing spawn area: 27%
+[20:49:31] [Worker-Main-3/INFO]: Preparing spawn area: 29%
+[20:49:31] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[20:49:32] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[20:49:32] [Worker-Main-1/INFO]: Preparing spawn area: 32%
+[20:49:33] [Worker-Main-3/INFO]: Preparing spawn area: 33%
+[20:49:33] [Worker-Main-1/INFO]: Preparing spawn area: 34%
+[20:49:34] [Worker-Main-1/INFO]: Preparing spawn area: 36%
+[20:49:34] [Worker-Main-1/INFO]: Preparing spawn area: 37%
+[20:49:35] [Worker-Main-1/INFO]: Preparing spawn area: 39%
+[20:49:35] [Worker-Main-1/INFO]: Preparing spawn area: 40%
+[20:49:36] [Worker-Main-3/INFO]: Preparing spawn area: 42%
+[20:49:36] [Worker-Main-1/INFO]: Preparing spawn area: 43%
+[20:49:37] [Worker-Main-3/INFO]: Preparing spawn area: 45%
+[20:49:37] [Worker-Main-2/INFO]: Preparing spawn area: 47%
+[20:49:38] [Worker-Main-2/INFO]: Preparing spawn area: 48%
+[20:49:38] [Worker-Main-2/INFO]: Preparing spawn area: 50%
+[20:49:39] [Worker-Main-2/INFO]: Preparing spawn area: 53%
+[20:49:39] [Worker-Main-1/INFO]: Preparing spawn area: 53%
+[20:49:40] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[20:49:40] [Worker-Main-3/INFO]: Preparing spawn area: 56%
+[20:49:41] [Worker-Main-3/INFO]: Preparing spawn area: 57%
+[20:49:41] [Worker-Main-1/INFO]: Preparing spawn area: 58%
+[20:49:42] [Worker-Main-3/INFO]: Preparing spawn area: 61%
+[20:49:42] [Worker-Main-1/INFO]: Preparing spawn area: 63%
+[20:49:43] [Worker-Main-1/INFO]: Preparing spawn area: 65%
+[20:49:43] [Worker-Main-1/INFO]: Preparing spawn area: 66%
+[20:49:44] [Worker-Main-3/INFO]: Preparing spawn area: 68%
+[20:49:44] [Worker-Main-1/INFO]: Preparing spawn area: 70%
+[20:49:45] [Worker-Main-3/INFO]: Preparing spawn area: 72%
+[20:49:45] [Worker-Main-1/INFO]: Preparing spawn area: 73%
+[20:49:46] [Worker-Main-3/INFO]: Preparing spawn area: 75%
+[20:49:46] [Worker-Main-1/INFO]: Preparing spawn area: 77%
+[20:49:47] [Worker-Main-3/INFO]: Preparing spawn area: 80%
+[20:49:47] [Worker-Main-1/INFO]: Preparing spawn area: 81%
+[20:49:48] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[20:49:48] [Worker-Main-1/INFO]: Preparing spawn area: 83%
+[20:49:49] [Worker-Main-2/INFO]: Preparing spawn area: 86%
+[20:49:49] [Worker-Main-3/INFO]: Preparing spawn area: 87%
+[20:49:50] [Worker-Main-1/INFO]: Preparing spawn area: 89%
+[20:49:50] [Worker-Main-2/INFO]: Preparing spawn area: 91%
+[20:49:51] [Worker-Main-3/INFO]: Preparing spawn area: 93%
+[20:49:51] [Worker-Main-1/INFO]: Preparing spawn area: 96%
+[20:49:52] [Worker-Main-1/INFO]: Preparing spawn area: 97%
+[20:49:52] [Server thread/INFO]: Time elapsed: 40895 ms
+[20:49:52] [Server thread/INFO]: Done (53.910s)! For help, type "help"
+[20:49:52] [Server thread/WARN]: Dedicated server took 80.345 seconds to load
+[20:49:52] [Server thread/INFO]: Encoded Weapon Attribute registry size: 175330 bytes (uncompressed), 9704 bytes (compressed), compression ratio: 94.5% (in 1 string chunks with the size of 10000)
+[20:49:52] [Server thread/INFO]: Start loading plugin from Balm
+[20:49:52] [Server thread/INFO]: Start loading plugin from Cooking for Blockheads
+[20:49:52] [Server thread/INFO]: Start loading plugin from Jade
+[20:49:52] [Server thread/INFO]: Start loading plugin from Jade
+[20:49:52] [Server thread/INFO]: Start loading plugin from Jade
+[20:49:52] [Server thread/INFO]: Start loading plugin from Supplementaries
+[20:49:52] [Server thread/INFO]: Start loading plugin from Waystones
+[20:49:52] [Server thread/INFO]: Loading Xaero's Minimap - Stage 2/2 (Server)
+[20:49:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2168ms or 43 ticks behind
+[20:50:39] [Server thread/INFO]: Gamerule doDaylightCycle is now set to: false
+[20:50:39] [Server thread/INFO]: Gamerule randomTickSpeed is now set to: 3
+[20:50:39] [Server thread/INFO]: Set the time to 1000
+[20:50:39] [Server thread/INFO]: The difficulty has been set to Peaceful
+[20:50:41] [Server thread/INFO]: There are 6 data pack(s) enabled: [vanilla (built-in)], [fabric (Fabric mod)], [spell_engine:trinkets_compat (built-in: Spell Engine)], [lithostitched:breaks_seed_parity (built-in: Lithostitched)], [resources/t_and_t_waystones_patch_1.19.2 (Built-in Datapack, supplied by Cristel Lib)], [Supplementaries Generated Pack (built-in)]
+[20:50:41] [Server thread/INFO]: There are no more data packs available
+[20:50:59] [Worker-Main-1/WARN]: Non-existent template pool reference: ctov:village/vampirism/totem
+[20:51:00] [Worker-Main-1/WARN]: Non-existent template pool reference: ctov:village/bounty/plains
+[20:51:00] [Worker-Main-1/WARN]: Non-existent template pool reference: ctov:village/waystone/normal
+[20:51:07] [Server thread/INFO]: The nearest ctov:large/village_plains_fortified is at [-1264, ~, -3136] (3410 blocks away)
+[20:51:07] [Server thread/INFO]: Locating element ctov:large/village_plains_fortified took 23949 ms
+[20:51:07] [Server thread/INFO]: The nearest towns_and_towers:village_ocean is at [208, ~, 1904] (1883 blocks away)
+[20:51:07] [Server thread/INFO]: Locating element towns_and_towers:village_ocean took 318 ms
+[20:51:07] [Server thread/INFO]: Changed the block at 2, 85, 32
+[20:51:07] [Server thread/INFO]: Changed the block at 4, 85, 32
+[20:51:07] [Server thread/INFO]: Changed the block at 6, 85, 32
+[20:51:07] [Server thread/INFO]: Changed the block at 8, 85, 32
+[20:51:07] [Server thread/INFO]: No player was found
+[20:51:07] [Server thread/INFO]: Summoned new Cow
+[20:51:07] [Server thread/INFO]: Summoned new Cow
+[20:51:07] [Server thread/INFO]: Marked chunk [0, 2] in minecraft:overworld to be force loaded
+[20:51:07] [Server thread/INFO]: Started tick profiling
+[20:51:07] [Server thread/INFO]: Stopped tick profiling after 0.00 seconds and 0 ticks (NaN ticks per second)
+[20:51:07] [Server thread/INFO]: Stopping the server
+[20:51:07] [Server thread/INFO]: [STDOUT]: Saving server results
+[20:51:07] [Server thread/INFO]: [STDOUT]: Saving config results
+[20:51:07] [Server thread/INFO]: Stopping server
+[20:51:07] [Server thread/INFO]: Saving players
+[20:51:07] [Server thread/INFO]: Saving worlds
+[20:51:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:51:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[20:51:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/the_bumblezone:the_bumblezone
+[20:51:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[20:51:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/deeperdarker:otherside
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (the_bumblezone): All chunks are saved
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage (otherside): All chunks are saved
+[20:51:09] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

@@ -1,4 +1,4 @@
-jars: 135  top-level mod ids: 135  ids incl. bundled: 312
+jars: 143  top-level mod ids: 143  ids incl. bundled: 327
 problems: 0
 warnings: 7
    ~ debugify: recommends 'yet-another-config-lib' which is not installed
